@@ -8,7 +8,7 @@
 #require components/samba.lst
 #copy mtos/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1mtos\2/
-#copy domU/etc/fstab-with-swapfile /etc/fstab
+#copy domU/fstab-with-swapfile /etc/fstab
 #swap /swapfile 128
 #extract mtos/MTOS-5.14-ja.zip /var/www/localhost/cgi-bin
 #chrootexec mv /var/www/localhost/cgi-bin/MTOS-5.14-ja /var/www/localhost/cgi-bin/mt

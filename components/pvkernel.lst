@@ -1,0 +1,4 @@
+/boot/kernel
+#dir /boot/grub
+#copy domU/menu.lst /boot/grub/menu.lst
+#kernel /boot/kernel

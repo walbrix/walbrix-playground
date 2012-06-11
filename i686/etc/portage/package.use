@@ -1,0 +1,12 @@
+www-apache/mod_extract_forwarded mod_proxy
+www-servers/apache apache2_modules_proxy_connect apache2_modules_proxy apache2_modules_proxy_http apache2_modules_proxy_ajp
+
+net-misc/openvpn passwordsave
+net-fs/samba -cups winbind
+dev-perl/GD jpeg png truetype
+media-gfx/imagemagick perl jpeg jpeg2k png svg truetype webp
+gnome-base/librsvg -gtk
+media-libs/gd png jpeg truetype
+x11-libs/cairo X
+dev-lang/php apache2 cjk gd mysql mysqli xsl zip pdo
+sys-kernel/vanilla-sources symlink

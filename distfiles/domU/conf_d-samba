@@ -1,0 +1,8 @@
+daemon_list="nmbd"
+my_service_name="samba"
+my_service_PRE="unset TMP TMPDIR"
+my_service_POST=""
+nmbd_start_options="-D"
+nmbd_start="start-stop-daemon --start --exec /usr/sbin/nmbd -- ${nmbd_start_options}"
+nmbd_stop="start-stop-daemon --stop --exec /usr/sbin/nmbd"
+nmbd_reload="killall -HUP nmbd"

@@ -1,0 +1,290 @@
+#dir /proc
+#dir /etc
+#require run.lst
+/tmp/.keep
+/root/.keep
+/home/.keep
+/sys/.keep
+/var/tmp/.keep
+/var/log/.keep
+/var/cache/.keep
+/var/lib/.keep
+/var/spool/.keep
+/mnt/.keep
+#require dev.lst
+#require coreutils.lst
+#require util-linux.lst
+#require openrc.lst
+#require openssh.lst
+#require openssl.lst
+#require openvpn.lst
+#require ntp.lst
+#require udev.lst
+#require timezone-data.lst
+#require locales.lst
+#require nss-mdns.lst
+#copy domU/fstab /etc/fstab
+#copy domU/group /etc/group
+#copy domU/inittab /etc/inittab
+#symlink /etc/localtime ../../usr/share/zoneinfo/Asia/Tokyo
+#copy domU/passwd /etc/passwd
+#copy domU/resolv.conf /etc/resolv.conf
+#copy domU/securetty /etc/securetty
+#copy domU/shadow /etc/shadow
+/bin/bunzip2
+/bin/bzcat
+/bin/bzip2
+/bin/cpio
+/bin/dnsdomainname
+/bin/egrep
+/bin/fgrep
+/bin/fuser
+/bin/gawk
+/bin/gunzip
+/bin/gzip
+/bin/hostname
+/bin/kill
+/bin/login
+/bin/lsmod
+/bin/netstat
+/bin/passwd
+/bin/ping
+/bin/ping6
+/bin/ps
+/bin/sed
+/bin/su
+/bin/tar
+/bin/uncompress
+/bin/zcat
+/bin/grep
+/bin/sh
+/bin/bash
+/bin/busybox
+/bin/pidof
+/etc/bash/bashrc
+/etc/fuse.conf
+/etc/host.conf
+/etc/hosts
+/etc/ld.so.conf
+/etc/ld.so.cache
+/etc/ld.so.conf.d/05binutils.conf
+/etc/profile
+/etc/login.defs
+/etc/init.d/fuse
+/etc/services
+/etc/shells
+/etc/ssl/certs/ca-certificates.crt
+/etc/runlevels/sysinit/devfs
+/etc/runlevels/sysinit/dmesg
+/etc/runlevels/sysinit/udev
+/etc/runlevels/boot/fsck
+/etc/runlevels/boot/hostname
+/etc/runlevels/boot/root
+/etc/runlevels/boot/bootmisc
+/etc/runlevels/boot/localmount
+/etc/runlevels/boot/mtab
+/etc/runlevels/boot/procfs
+/etc/runlevels/boot/urandom
+/etc/runlevels/boot/net.lo
+/etc/runlevels/boot/sysctl
+/etc/runlevels/boot/swap
+#symlink /etc/init.d/net.eth0 net.lo
+#symlink /etc/runlevels/default/net.eth0 /etc/init.d/net.eth0
+/etc/runlevels/shutdown/killprocs
+/etc/runlevels/shutdown/mount-ro
+/etc/runlevels/shutdown/savecache
+/lib/libnss_compat.so.2 
+/lib/libnss_files.so.2
+/lib/libnss_dns.so.2
+/sbin/arping
+./sbin/depmod
+./sbin/halt
+./sbin/ifconfig
+./sbin/init
+/sbin/killall5
+./sbin/ldconfig
+/sbin/modprobe
+/sbin/mount.fuse
+./sbin/nameif
+./sbin/poweroff
+./sbin/reboot
+./sbin/route
+/sbin/runlevel
+./sbin/sulogin
+/sbin/shutdown
+./sbin/sysctl
+./usr/bin/ar
+./usr/bin/awk
+./usr/bin/clear
+./usr/bin/cmp
+#symlink /usr/bin/diff ../../bin/busybox
+/usr/bin/file
+./usr/bin/find
+./usr/bin/free
+/usr/bin/getent
+./usr/bin/killall
+./usr/bin/last
+./usr/bin/ldd
+/usr/bin/lddlibc4
+#symlink /usr/bin/less ../../bin/busybox
+./usr/bin/locale
+/usr/bin/lzma
+/usr/bin/make
+./usr/bin/mesg
+./usr/bin/passwd
+./usr/bin/pgrep
+./usr/bin/pkill
+./usr/bin/reset
+./usr/bin/split
+/usr/bin/strace
+./usr/bin/strings
+./usr/bin/top
+/usr/bin/tput
+/usr/bin/unlzma
+./usr/bin/unxz
+#symlink /usr/bin/unzip ../../bin/busybox
+./usr/bin/uptime
+#symlink /usr/bin/vi ../../bin/busybox
+/usr/bin/vmstat
+/usr/bin/w
+/usr/bin/watch
+./usr/bin/wget
+./usr/bin/which
+./usr/bin/xargs
+./usr/bin/xz
+./usr/bin/xzcat
+/usr/lib/cracklib_dict.pwd
+/usr/lib/cracklib_dict.pwi
+./usr/lib/gconv/ANSI_X3.110.so
+./usr/lib/gconv/gconv-modules
+./usr/lib/gconv/ISO8859-1.so
+./usr/lib/gconv/ISO8859-15.so
+./usr/lib/gconv/ISO8859-2.so
+./usr/lib/gconv/UNICODE.so
+./usr/sbin/chpasswd
+#/usr/sbin/ethtool
+#/usr/sbin/xfs_admin
+#/usr/sbin/xfs_check
+#/usr/sbin/xfs_copy
+#/usr/sbin/xfs_db
+#/usr/sbin/xfs_freeze
+/usr/sbin/xfs_growfs
+./usr/share/i18n/charmaps/ANSI_X3.110-1983.gz
+./usr/share/i18n/charmaps/ANSI_X3.4-1968.gz
+./usr/share/i18n/charmaps/ISO-8859-1.gz
+./usr/share/i18n/charmaps/ISO-8859-15.gz
+./usr/share/i18n/charmaps/ISO-8859-2.gz
+./usr/share/locale/locale.alias
+/usr/share/misc/magic.mgc
+./usr/share/tabset/std
+./usr/share/tabset/stdcrt
+./usr/share/tabset/vt100
+./usr/share/tabset/vt300
+./usr/share/terminfo/a/ansi
+./usr/share/terminfo/l/linux
+./usr/share/terminfo/r/rxvt
+./usr/share/terminfo/v/vt100
+./usr/share/terminfo/v/vt102
+./usr/share/terminfo/v/vt102+enq
+./usr/share/terminfo/v/vt102-nsgr
+./usr/share/terminfo/v/vt102-w
+./usr/share/terminfo/x/xterm
+/usr/share/terminfo/x/xterm-256color
+./usr/share/terminfo/x/xterm-color
+./usr/share/terminfo/x/xterm-new
+./usr/share/terminfo/x/xterm-vt220
+#pam
+/etc/pam.d/system-auth
+/etc/pam.d/chgpasswd
+/etc/pam.d/su
+/etc/pam.d/groupadd
+/etc/pam.d/chsh
+/etc/pam.d/groupmod
+/etc/pam.d/chage
+/etc/pam.d/shadow
+/etc/pam.d/system-remote-login
+/etc/pam.d/login
+/etc/pam.d/groupdel
+/etc/pam.d/system-local-login
+/etc/pam.d/other
+/etc/pam.d/usermod
+/etc/pam.d/system-login
+/etc/pam.d/useradd
+/etc/pam.d/userdel
+/etc/pam.d/groupmems
+/etc/pam.d/chfn
+/etc/pam.d/newusers
+/etc/pam.d/passwd
+/etc/pam.d/chpasswd
+/etc/pam.d/system-services
+/etc/environment
+/etc/security/access.conf
+/etc/security/group.conf
+/etc/security/limits.conf
+/etc/security/namespace.conf
+/etc/security/namespace.init
+/etc/security/pam_env.conf
+/etc/security/time.conf
+/lib/libpam.so
+/lib/libpam_misc.so
+/lib/libpamc.so
+/lib/security/pam_access.so
+/lib/security/pam_cracklib.so
+/lib/security/pam_debug.so
+/lib/security/pam_deny.so
+/lib/security/pam_echo.so
+/lib/security/pam_env.so
+/lib/security/pam_exec.so
+/lib/security/pam_faildelay.so
+/lib/security/pam_filter.so
+/lib/security/pam_filter/upperLOWER
+/lib/security/pam_ftp.so
+/lib/security/pam_group.so
+/lib/security/pam_issue.so
+/lib/security/pam_keyinit.so
+/lib/security/pam_lastlog.so
+/lib/security/pam_limits.so
+/lib/security/pam_listfile.so
+/lib/security/pam_localuser.so
+/lib/security/pam_loginuid.so
+/lib/security/pam_mail.so
+/lib/security/pam_mkhomedir.so
+/lib/security/pam_motd.so
+/lib/security/pam_namespace.so
+/lib/security/pam_nologin.so
+/lib/security/pam_permit.so
+/lib/security/pam_pwhistory.so
+/lib/security/pam_rhosts.so
+/lib/security/pam_rootok.so
+/lib/security/pam_securetty.so
+/lib/security/pam_shells.so
+/lib/security/pam_stress.so
+/lib/security/pam_succeed_if.so
+/lib/security/pam_tally.so
+/lib/security/pam_tally2.so
+/lib/security/pam_time.so
+/lib/security/pam_timestamp.so
+/lib/security/pam_umask.so
+/lib/security/pam_unix.so
+/lib/security/pam_userdb.so
+/lib/security/pam_warn.so
+/lib/security/pam_wheel.so
+/lib/security/pam_xauth.so
+
+# avahi-daemon
+/usr/sbin/avahi-daemon
+/etc/avahi/avahi-daemon.conf
+/etc/init.d/avahi-daemon
+#sed /etc/avahi/avahi-daemon.conf s/^#\(allow-interfaces=eth0\)$/\1/
+#symlink /etc/runlevels/default/avahi-daemon /etc/init.d/avahi-daemon
+
+# nmbd
+/usr/sbin/nmbd
+/var/log/samba/.keep_net-fs_samba-0
+/usr/lib/samba/charset/CP437.so
+/usr/lib/samba/charset/CP850.so
+#copy domU/conf_d-samba /etc/conf.d/samba
+#dir /etc/samba
+#copy domU/smb.conf /etc/samba/smb.conf
+/etc/init.d/samba
+#symlink /etc/runlevels/default/samba /etc/init.d/samba

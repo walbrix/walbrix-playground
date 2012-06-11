@@ -1,0 +1,6 @@
+default=0
+timeout=1
+
+title Linux
+root (hd0)
+kernel (hd0)/boot/kernel root=/dev/xvda1

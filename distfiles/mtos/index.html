@@ -1,0 +1,51 @@
+<html lang="ja">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>MovableType 5.14(オープンソース版)</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/redmond/jquery-ui.css" type="text/css"/>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">google.load("jquery", "1.4.2");</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+	<script type="text/javascript">google.load("jqueryui", "1.8.1");</script>
+	<script language="JavaScript"><!--
+	  $(function(){
+	    var hostname = location.hostname;
+	    $("#tabs").tabs();
+		$("span.hostname").html(hostname);
+	  });
+	//--></script>
+  </head>
+
+  <h1>MovableType 5.14(オープンソース版)</h1>
+
+  <div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">概要と使い方</a></li>
+		<li><a href="#tabs-2">追加情報</a></li>
+	</ul>
+	<div id="tabs-1">
+	  <h3>MovableTypeの初期設定</h3>
+	  <p>
+	  <a href="/cgi-bin/mt/mt.cgi">MovableTypeの設定をここから開始します</a>。<br/>
+	  MySQLとの接続設定などは既にされていますので、ただ上記のリンクより先に進むだけで利用を開始できます。
+	  </p>
+	  <p>
+	  Webサイト作成の際、URLにホスト名を含めるようにしてください。(誤)http://first_website/ (正)http://<span class="hostname">HOSTNAME</span>/first_website/ ルート階層に直接 MovableTypeのサイトを作成してしまいたい場合は http://<span class="hostname">HOSTNAME</span>/ にすることもできます。 
+	  </p>
+	  <h3>Webコンテンツの編集や MovableTypeへのアクセス</h3>
+	  Windows共有で下記の共有フォルダへアクセスすることが出来ます。
+	  <ul>
+		<li>￥￥<span class="hostname">HOSTNAME</span>￥￥www - Webサーバのコンテンツを配置する場所(このページもここにあります)</li>
+		<li>￥￥<span class="hostname">HOSTNAME</span>￥￥mt - MovableType本体のインストールされている場所(プラグインのインストールなどはここへ)</li>
+	  </ul>
+	  <h3>PHPについて</h3>
+	  標準で PHPスクリプトが動作するように設定されています。GDライブラリが組み込まれており、mbstringも有効になっています。
+	  <h3>SSHによるログイン</h3>
+	  sshで<span class="hostname">HOSTNAME</span>へログインすることもできます。rootの初期パスワードは Walbrixのシリアルナンバー（未登録の場合 "WBFREE01"）です。
+	</div>
+	<div id="tabs-2">
+	  <a href="http://www.movabletype.jp/opensource/" target="_blank">MTOS: Movable Type オープンソース・プロジェクト</a>
+	</div>
+	<div align="right" style="margin-top:1em;"><a href="http://walbrix.net/" target="_blank">Walbrix</a></div>
+  </div>
+</html>

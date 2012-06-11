@@ -1,0 +1,21 @@
+/etc/conf.d/sshd
+/etc/init.d/sshd
+/etc/pam.d/sshd
+/etc/ssh/moduli
+/etc/ssh/ssh_config
+/etc/ssh/sshd_config
+/usr/bin/scp
+/usr/bin/sftp
+/usr/bin/slogin
+/usr/bin/ssh-add
+/usr/bin/ssh-agent
+/usr/bin/ssh-copy-id
+/usr/bin/ssh-keygen
+/usr/bin/ssh-keyscan
+/usr/lib/misc/sftp-server
+/usr/lib/misc/ssh-keysign
+/usr/lib/misc/ssh-pkcs11-helper
+/usr/sbin/sshd
+/var/empty/.keep_net-misc_openssh-0
+/var/empty/dev/.keep_net-misc_openssh-0
+#symlink /etc/runlevels/default/sshd /etc/init.d/sshd

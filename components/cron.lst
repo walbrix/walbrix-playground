@@ -1,0 +1,20 @@
+# needs sendmail(like postfix, ssmtp)
+/usr/lib/sendmail
+#require nano.lst
+/etc/cron.daily/.keep_sys-process_cronbase-0
+/etc/cron.hourly/.keep_sys-process_cronbase-0
+/etc/cron.monthly/.keep_sys-process_cronbase-0
+/etc/cron.weekly/.keep_sys-process_cronbase-0
+/usr/sbin/run-crons
+/var/spool/cron/.keep_sys-process_cronbase-0
+/var/spool/cron/lastrun/.keep_sys-process_cronbase-0
+/etc/cron.d/.keep_sys-process_vixie-cron-0
+/etc/cron.deny
+/etc/crontab
+/etc/pam.d/cron
+/usr/bin/crontab
+/usr/sbin/cron
+/var/spool/cron/crontabs/.keep_sys-process_vixie-cron-0
+/etc/init.d/vixie-cron
+#dir /etc/runlevels/default
+#symlink /etc/runlevels/default/vixie-cron /etc/init.d/vixie-cron

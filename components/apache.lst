@@ -339,6 +339,7 @@
 /var/lib/dav/.keep_www-servers_apache-2
 /var/log/apache2/.keep_www-servers_apache-2
 #dir /var/www/localhost/htdocs
+#dir /var/www/localhost/cgi-bin
 
 # from mime-types
 /etc/mime.types

@@ -1,5 +1,7 @@
 app-arch/cpio
 app-portage/gentoolkit
+dev-db/postgresql-server
+dev-java/icedtea-bin
 dev-lang/php
 dev-perl/Archive-Zip
 dev-perl/Cache
@@ -28,3 +30,4 @@ sys-kernel/genkernel
 sys-kernel/vanilla-sources
 sys-process/vixie-cron
 www-apache/mod_extract_forwarded
+www-servers/tomcat

@@ -10,3 +10,4 @@ media-libs/gd png jpeg truetype
 x11-libs/cairo X
 dev-lang/php apache2 cjk gd mysql mysqli xsl zip pdo
 sys-kernel/vanilla-sources symlink
+dev-java/icedtea-bin -X -alsa -cups cjk

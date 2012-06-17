@@ -1,0 +1,9 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/postgresql.lst
+#require components/tomcat.lst
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1aipo\2/
+#copy aipo/aipo7000ja_src.zip /root/aipo7000ja_src.zip
+#extract aipo/aipo7000.tar.gz /root

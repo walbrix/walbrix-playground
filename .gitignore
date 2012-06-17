@@ -1,5 +1,5 @@
-*.tar.xz
-*.tmp
+/*.tar.xz
+/*.tmp
 *~
 
 /x86_64/*

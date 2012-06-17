@@ -1,0 +1,21 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php53.lst
+#require components/samba.lst
+#copy wordpress/smb.conf /etc/samba/smb.conf
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1wordpress\2/
+#copy domU/fstab-with-swapfile /etc/fstab
+#swap /swapfile 128
+#extract wordpress/wordpress-3.4-ja.zip /var/www/localhost
+#chrootexec mv /var/www/localhost/wordpress/* /var/www/localhost/htdocs
+#chrootexec rmdir /var/www/localhost/wordpress
+#chrootexec mv /var/www/localhost/htdocs/wp-config-sample.php /var/www/localhost/htdocs/wp-config.php
+#patchsinglefile /var/www/localhost/htdocs/wp-config.php wordpress/wp-config.diff
+#chrootexec chown -R apache.apache /var/www/localhost
+# cd /var/lib/mysql && tar zcvpf initial-database.tar.gz ib_logfile* ibdata1 mysql/db.MY* mysql/user.MY* wordpress
+#extract wordpress/initial-database.tar.gz /var/lib/mysql
+#copy wordpress/wb-va.xml /etc/wb-va.xml
+

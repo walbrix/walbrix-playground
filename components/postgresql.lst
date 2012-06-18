@@ -457,4 +457,6 @@
 /usr/share/postgresql-9.1/tsearch_data/turkish.stop
 /usr/share/postgresql-9.1/tsearch_data/unaccent.rules
 /usr/share/postgresql-9.1/tsearch_data/xsyn_sample.rules
+#extract postgresql/initial-database.tar.gz /
+#symlink /etc/runlevels/default/postgresql-9.1 /etc/init.d/postgresql-9.1
 

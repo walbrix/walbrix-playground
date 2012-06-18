@@ -11,6 +11,7 @@ cron:x:16:
 cdrom:x:19:
 tape:x:26:root
 mysql:x:60:
+postgres:x:70:70:added by portage for postgresql-server:/var/lib/postgresql:/bin/bash
 apache:x:81:
 usb::85:
 users:x:100:
@@ -20,6 +21,7 @@ avahi:x:248:
 dhcp:x:408:
 uucp::14:uucp
 portage::250:portage
+tomcat:x:265:
 crontab:x:410:
 nogroup:x:65533:
 nobody:x:65534:

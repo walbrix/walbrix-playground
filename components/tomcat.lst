@@ -140,3 +140,5 @@
 /var/log/tomcat-7/.keep_www-servers_tomcat-7
 #/var/run/tomcat-7/.keep_www-servers_tomcat-7
 #dir /var/tmp/tomcat-7
+#sed /etc/init.d/tomcat-7 s/\(JAVA_HOME=\).\+$/\1\/etc\/java-config-2\/current-system-vm/
+#symlink /etc/runlevels/default/tomcat-7 /etc/init.d/tomcat-7

@@ -14,6 +14,7 @@
 #require dev.lst
 #require coreutils.lst
 #require util-linux.lst
+#require shadow.lst
 #require openrc.lst
 #require openssh.lst
 #require openssl.lst
@@ -44,15 +45,12 @@
 /bin/gzip
 /bin/hostname
 /bin/kill
-/bin/login
 /bin/lsmod
 /bin/netstat
-/bin/passwd
 /bin/ping
 /bin/ping6
 /bin/ps
 /bin/sed
-/bin/su
 /bin/tar
 /bin/uncompress
 /bin/zcat
@@ -69,7 +67,6 @@
 /etc/ld.so.cache
 /etc/ld.so.conf.d/05binutils.conf
 /etc/profile
-/etc/login.defs
 /etc/init.d/fuse
 /etc/services
 /etc/shells
@@ -131,7 +128,6 @@
 /usr/bin/lzma
 /usr/bin/make
 ./usr/bin/mesg
-./usr/bin/passwd
 ./usr/bin/pgrep
 ./usr/bin/pkill
 ./usr/bin/reset
@@ -161,7 +157,6 @@
 ./usr/lib/gconv/ISO8859-15.so
 ./usr/lib/gconv/ISO8859-2.so
 ./usr/lib/gconv/UNICODE.so
-./usr/sbin/chpasswd
 #/usr/sbin/ethtool
 #/usr/sbin/xfs_admin
 #/usr/sbin/xfs_check
@@ -195,27 +190,10 @@
 ./usr/share/terminfo/x/xterm-vt220
 #pam
 /etc/pam.d/system-auth
-/etc/pam.d/chgpasswd
-/etc/pam.d/su
-/etc/pam.d/groupadd
-/etc/pam.d/chsh
-/etc/pam.d/groupmod
-/etc/pam.d/chage
-/etc/pam.d/shadow
 /etc/pam.d/system-remote-login
-/etc/pam.d/login
-/etc/pam.d/groupdel
 /etc/pam.d/system-local-login
 /etc/pam.d/other
-/etc/pam.d/usermod
 /etc/pam.d/system-login
-/etc/pam.d/useradd
-/etc/pam.d/userdel
-/etc/pam.d/groupmems
-/etc/pam.d/chfn
-/etc/pam.d/newusers
-/etc/pam.d/passwd
-/etc/pam.d/chpasswd
 /etc/pam.d/system-services
 /etc/environment
 /etc/security/access.conf

@@ -7,3 +7,9 @@
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1aipo\2/
 #copy aipo/aipo7000ja_src.zip /root/aipo7000ja_src.zip
 #extract aipo/aipo7000.tar.gz /root
+#chrootexec mv /root/aipo/src/webapps/* /var/lib/tomcat-7/webapps/
+#chrootexec mv /root/aipo/src/postgresql-8.4-702.jdbc4.jar /usr/share/tomcat-7/lib/
+#dir /usr/local/aipo
+#chrootexec mv /root/aipo/license /root/aipo/logs /root/aipo/src/bin /root/aipo/src/initdata /root/aipo/src/tomcat_diff /usr/local/aipo/
+#chrootexec rm -rf /root/aipo
+

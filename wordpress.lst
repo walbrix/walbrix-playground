@@ -5,6 +5,7 @@
 #require components/mysql.lst
 #require components/php53.lst
 #require components/samba.lst
+#require components/postfix.lst
 #copy wordpress/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1wordpress\2/
 #copy domU/fstab-with-swapfile /etc/fstab

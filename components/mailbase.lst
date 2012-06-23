@@ -1,0 +1,10 @@
+/etc/mail/aliases
+/etc/mailcap
+/etc/pam.d/imap4
+/etc/pam.d/imap4s
+/etc/pam.d/imaps
+/etc/pam.d/pop3
+/etc/pam.d/pop3s
+/etc/pam.d/pops
+/var/spool/mail/.keep_net-mail_mailbase-0
+#symlink /var/mail /var/spool/mail

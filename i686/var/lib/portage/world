@@ -2,7 +2,9 @@ app-arch/cpio
 app-portage/gentoolkit
 dev-db/postgresql-server
 dev-java/icedtea-bin
+dev-java/jdbc-postgresql
 dev-lang/php
+dev-libs/iniparser
 dev-perl/Archive-Zip
 dev-perl/Cache
 dev-perl/Cache-Memcached

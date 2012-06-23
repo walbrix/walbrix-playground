@@ -4,11 +4,12 @@
 #require components/apache.lst
 #require components/postgresql.lst
 #require components/tomcat.lst
+/usr/share/jdbc-postgresql/lib/jdbc-postgresql.jar
+#symlink /usr/share/tomcat-7/lib/jdbc-postgresql.jar /usr/share/jdbc-postgresql/lib/jdbc-postgresql.jar
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1aipo\2/
 #copy aipo/aipo7000ja_src.zip /root/aipo7000ja_src.zip
 #extract aipo/aipo7000.tar.gz /root
 #chrootexec mv /root/aipo/src/webapps/* /var/lib/tomcat-7/webapps/
-#chrootexec mv /root/aipo/src/postgresql-8.4-702.jdbc4.jar /usr/share/tomcat-7/lib/
 #dir /usr/local/aipo
 #chrootexec mv /root/aipo/license /root/aipo/logs /root/aipo/src/bin /root/aipo/src/tomcat_diff /usr/local/aipo/
 #sed /var/lib/tomcat-7/webapps/aipo/WEB-INF/datasource/dbcp-org001.properties s/cayenne.dbcp.username=postgres/cayenne.dbcp.username=aipo_postgres/g
@@ -29,3 +30,6 @@
 ## tar zcvpf ~/walbrix-playground/distfiles/aipo/initial-database.tar.gz --exclude='data/postmaster.*' data
 #extract aipo/initial-database.tar.gz /var/lib/postgresql/9.1
 #chrootexec rm -rf /root/aipo
+#patchsinglefile /etc/apache2/vhosts.d/default_vhost.include aipo/default_vhost.patch
+#copy aipo/wb-va.xml /etc/wb-va.xml
+

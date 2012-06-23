@@ -20,4 +20,5 @@
 /usr/share/php5/.keep_dev-lang_php-5.3
 
 #sed /etc/php/apache2-php5.3/php.ini s/^;date\.timezone.*$/date.timezone=Asia\/Tokyo/
+#sed /etc/php/cli-php5.3/php.ini s/^;date\.timezone.*$/date.timezone=Asia\/Tokyo/
 #sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D PHP5"/

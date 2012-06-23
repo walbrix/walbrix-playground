@@ -5,6 +5,7 @@
 #require components/mysql.lst
 #require components/php53.lst
 #require components/samba.lst
+#require components/postfix.lst
 #copy openpne/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1openpne\2/
 #copy domU/fstab-with-swapfile /etc/fstab
@@ -17,8 +18,14 @@
 ## ./symfony openpne:install
 ## diff -rq orig installed
 #extract openpne/initial-components.tar.gz /var/www/localhost/htdocs
+#chrootexec rm /var/www/localhost/htdocs/web/*_dev.php
 #chrootexec chown -R apache.apache /var/www/localhost
 # cd /var/lib/mysql && tar zcvpf initial-database.tar.gz ib_logfile* ibdata1 mysql/db.MY* mysql/user.MY* openpne
 #extract openpne/initial-database.tar.gz /var/lib/mysql
+#sed /etc/apache2/vhosts.d/default_vhost.include s/\(\/var\/www\/localhost\/\htdocs\)/\1\/web/
+#sed /var/www/localhost/htdocs/config/OpenPNE.yml s/http:\/\/example\.com//
+#copy openpne/crontab /var/spool/cron/crontabs/root
+#chrootexec echo 'openpne_user: "| php /var/www/localhost/htdocs/symfony openpne:execute-mail-action"' >> /etc/mail/aliases
+#chrootexec /usr/bin/newaliases
 #copy openpne/wb-va.xml /etc/wb-va.xml
 

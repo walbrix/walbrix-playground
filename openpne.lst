@@ -15,8 +15,10 @@
 #chrootexec mv /var/www/localhost/htdocs/config/ProjectConfiguration.class.php.sample /var/www/localhost/htdocs/config/ProjectConfiguration.class.php
 #chrootexec mv /var/www/localhost/htdocs/config/OpenPNE.yml.sample /var/www/localhost/htdocs/config/OpenPNE.yml
 ## ./symfony openpne:install
+## diff -rq orig installed
+#extract openpne/initial-components.tar.gz /var/www/localhost/htdocs
 #chrootexec chown -R apache.apache /var/www/localhost
 # cd /var/lib/mysql && tar zcvpf initial-database.tar.gz ib_logfile* ibdata1 mysql/db.MY* mysql/user.MY* openpne
-##extract openpne/initial-database.tar.gz /var/lib/mysql
-##copy openpne/wb-va.xml /etc/wb-va.xml
+#extract openpne/initial-database.tar.gz /var/lib/mysql
+#copy openpne/wb-va.xml /etc/wb-va.xml
 

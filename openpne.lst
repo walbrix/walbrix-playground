@@ -1,0 +1,22 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php53.lst
+#require components/samba.lst
+#copy openpne/smb.conf /etc/samba/smb.conf
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1openpne\2/
+#copy domU/fstab-with-swapfile /etc/fstab
+#swap /swapfile 128
+#extract openpne/OpenPNE-3.6.4.zip /var/www/localhost
+#chrootexec mv /var/www/localhost/openpne-OpenPNE3-b595f32/* /var/www/localhost/htdocs/
+#chrootexec rm -rf /var/www/localhost/openpne-OpenPNE3-b595f32
+#chrootexec mv /var/www/localhost/htdocs/config/ProjectConfiguration.class.php.sample /var/www/localhost/htdocs/config/ProjectConfiguration.class.php
+#chrootexec mv /var/www/localhost/htdocs/config/OpenPNE.yml.sample /var/www/localhost/htdocs/config/OpenPNE.yml
+## ./symfony openpne:install
+#chrootexec chown -R apache.apache /var/www/localhost
+# cd /var/lib/mysql && tar zcvpf initial-database.tar.gz ib_logfile* ibdata1 mysql/db.MY* mysql/user.MY* openpne
+##extract openpne/initial-database.tar.gz /var/lib/mysql
+##copy openpne/wb-va.xml /etc/wb-va.xml
+

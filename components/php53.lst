@@ -12,8 +12,11 @@
 /usr/lib/apache2/modules/libphp5.so
 /usr/lib/php5.3/apache2/libphp5.so
 /usr/lib/php5.3/bin/php
+#symlink /usr/bin/php ../lib/php5.3/bin/php
 /usr/lib/php5.3/bin/php-config
+#symlink /usr/bin/php-config ../lib/php5.3/bin/php-config
 /usr/lib/php5.3/bin/phpize
+#symlink /usr/bin/phpize ../lib/php5.3/bin/phpize
 /usr/share/php5/.keep_dev-lang_php-5.3
 
 #sed /etc/php/apache2-php5.3/php.ini s/^;date\.timezone.*$/date.timezone=Asia\/Tokyo/

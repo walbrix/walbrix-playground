@@ -12,8 +12,8 @@
 #extract openpne/OpenPNE-3.6.4.zip /var/www/localhost
 #chrootexec mv /var/www/localhost/openpne-OpenPNE3-b595f32/* /var/www/localhost/htdocs/
 #chrootexec rm -rf /var/www/localhost/openpne-OpenPNE3-b595f32
-#chrootexec mv /var/www/localhost/htdocs/config/ProjectConfiguration.class.php.sample /var/www/localhost/htdocs/config/ProjectConfiguration.class.php
-#chrootexec mv /var/www/localhost/htdocs/config/OpenPNE.yml.sample /var/www/localhost/htdocs/config/OpenPNE.yml
+#chrootexec cp /var/www/localhost/htdocs/config/ProjectConfiguration.class.php.sample /var/www/localhost/htdocs/config/ProjectConfiguration.class.php
+#chrootexec cp /var/www/localhost/htdocs/config/OpenPNE.yml.sample /var/www/localhost/htdocs/config/OpenPNE.yml
 ## ./symfony openpne:install
 ## diff -rq orig installed
 #extract openpne/initial-components.tar.gz /var/www/localhost/htdocs

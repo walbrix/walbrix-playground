@@ -1,4 +1,4 @@
 =sys-auth/nss-mdns-0.10-r1
-=sys-kernel/vanilla-sources-3.0.35
+=sys-kernel/gentoo-sources-3.0.36
 =sys-auth/nss-myhostname-0.3
 =dev-java/jdbc-postgresql-9.1_p902

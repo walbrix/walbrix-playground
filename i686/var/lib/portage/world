@@ -18,8 +18,10 @@ dev-perl/Mail-Sendmail
 dev-perl/XML-Atom
 dev-perl/XML-Parser
 dev-perl/crypt-dsa
+dev-python/pygame
 dev-util/strace
 mail-mta/postfix
+media-fonts/vlgothic
 media-gfx/imagemagick
 net-fs/samba
 net-misc/ntp
@@ -29,7 +31,7 @@ sys-auth/nss-myhostname
 sys-fs/fuse
 sys-fs/xfsprogs
 sys-kernel/genkernel
-sys-kernel/vanilla-sources
+sys-kernel/gentoo-sources
 sys-process/vixie-cron
 www-apache/mod_extract_forwarded
 www-servers/tomcat

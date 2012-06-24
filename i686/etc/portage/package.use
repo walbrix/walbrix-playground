@@ -9,5 +9,7 @@ gnome-base/librsvg -gtk
 media-libs/gd png jpeg truetype
 x11-libs/cairo X
 dev-lang/php apache2 cjk gd mysql mysqli xsl zip pdo
-sys-kernel/vanilla-sources symlink
+sys-kernel/gentoo-sources symlink
 dev-java/icedtea-bin -X -alsa -cups cjk
+media-libs/libsdl fbcon
+media-libs/sdl-image png jpeg

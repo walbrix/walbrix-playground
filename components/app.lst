@@ -1,0 +1,15 @@
+/bin/sh
+/bin/chown
+/lib/libnss_compat.so.2
+/lib/libnss_dns.so.2
+/lib/libnss_files.so.2
+/usr/lib/gcc/i686-pc-linux-gnu/4.5.3/libgcc_s.so.1
+/usr/bin/strace
+/etc/nsswitch.conf
+#dir /proc
+#dir /dev
+#copy app/passwd /etc/passwd
+#copy app/group /etc/group
+#copy app/resolv.conf /etc/resolv.conf
+#dir /home/nobody
+#chrootexec chown nobody.nobody /home/nobody

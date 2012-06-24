@@ -1,0 +1,13 @@
+#require components/app.lst
+#require components/pygame.lst
+/usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf
+#copy dollarone/HuiFontP29.ttf /home/nobody/HuiFontP29.ttf
+#copy dollarone/background.png /home/nobody/background.png
+#copy dollarone/character.png /home/nobody/character.png
+#copy dollarone/dollarone.py /home/nobody/dollarone.py
+#copy dollarone/iso8601.py /home/nobody/iso8601.py
+#copy dollarone/pygamehelper.py /home/nobody/pygamehelper.py
+#copy dollarone/twitter.py /home/nobody/twitter.py
+#copy dollarone/init /init
+#copy dollarone/wb-app.xml /etc/wb-app.xml
+

@@ -24,8 +24,8 @@ frame_rate = 30
 background = pygame.image.load("background.png")
 character = pygame.image.load("character.png").convert_alpha()
 font = pygame.font.Font("HuiFontP29.ttf", 28)
-clock_font = pygame.font.Font("VL-PGothic-Regular.ttf", 24)
-fps_font = pygame.font.Font("VL-PGothic-Regular.ttf", 12)
+clock_font = pygame.font.Font("/usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf", 24)
+fps_font = pygame.font.Font("/usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf", 12)
 header_bk = pygame.Surface((450,24), pygame.SRCALPHA,32)
 for i in range(0,24):
 	pygame.draw.line(header_bk, (178,155,172,128-i*5), (0,i),(450,i))

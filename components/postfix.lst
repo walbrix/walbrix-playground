@@ -64,4 +64,4 @@
 /usr/sbin/smtp-source
 /var/lib/postfix/.keep_mail-mta_postfix-0
 /var/spool/postfix/.keep_mail-mta_postfix-0
-
+#chrootexec /usr/bin/newaliases

@@ -26,6 +26,5 @@
 #sed /var/www/localhost/htdocs/config/OpenPNE.yml s/http:\/\/example\.com//
 #copy openpne/crontab /var/spool/cron/crontabs/root
 #chrootexec echo 'openpne_user: "| php /var/www/localhost/htdocs/symfony openpne:execute-mail-action"' >> /etc/mail/aliases
-#chrootexec /usr/bin/newaliases
 #copy openpne/wb-va.xml /etc/wb-va.xml
 

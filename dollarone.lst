@@ -1,6 +1,8 @@
 #require components/app.lst
 #require components/pygame.lst
 /usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf
+/usr/share/zoneinfo/Asia/Tokyo
+#symlink /etc/localtime ../usr/share/zoneinfo/Asia/Tokyo
 #copy dollarone/HuiFontP29.ttf /home/nobody/HuiFontP29.ttf
 #copy dollarone/background.png /home/nobody/background.png
 #copy dollarone/character.png /home/nobody/character.png

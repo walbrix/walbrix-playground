@@ -1,0 +1,12 @@
+/etc/conf.d/svnserve
+/etc/init.d/svnserve
+/etc/xinetd.d/svnserve
+/usr/bin/svn
+/usr/bin/svn-hot-backup
+/usr/bin/svnadmin
+/usr/bin/svndumpfilter
+/usr/bin/svnlook
+/usr/bin/svnserve
+/usr/bin/svnsync
+/usr/bin/svnversion
+

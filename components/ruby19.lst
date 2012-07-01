@@ -1,7 +1,9 @@
 # ruby
 #detectarch /usr/bin/ruby
 /usr/bin/erb19
+#symlink /usr/bin/erb erb19
 /usr/bin/irb19
+#symlink /usr/bin/irb irb19
 /usr/bin/ruby19
 #symlink /usr/bin/ruby ruby19
 /usr/bin/testrb19

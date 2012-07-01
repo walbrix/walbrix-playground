@@ -20,8 +20,15 @@ dev-perl/XML-Atom
 dev-perl/XML-Parser
 dev-perl/crypt-dsa
 dev-python/pygame
+dev-ruby/mocha
+dev-ruby/mysql-ruby
+dev-ruby/mysql2
+dev-ruby/pg
 dev-ruby/rails
 dev-ruby/rmagick
+dev-ruby/shoulda
+dev-ruby/sqlite3-ruby
+dev-ruby/yard
 dev-util/strace
 dev-vcs/git
 dev-vcs/mercurial

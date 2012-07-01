@@ -1,0 +1,15 @@
+#require components/domU.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php53.lst
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1orangehrm\2/
+#copy domU/fstab-with-swapfile /etc/fstab
+#swap /swapfile 32
+#extract orangehrm/orangehrm-2.7.tar.gz /var/www/localhost
+#chrootexec rm -rf /var/www/localhost/htdocs
+#chrootexec mv /var/www/localhost/orangehrm-2.7 /var/www/localhost/htdocs
+#chrootexec chown -R apache.apache /var/www/localhost/htdocs
+#patchsinglefile /var/www/localhost/htdocs/symfony/apps/orangehrm/modules/auth/templates/loginSuccess.php orangehrm/default-idpass.patch
+#extract orangehrm/initial-db-and-config.tar.gz /
+#copy orangehrm/wb-va.xml /etc/wb-va.xml

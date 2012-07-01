@@ -6,8 +6,11 @@
 /usr/lib/gcc/i686-pc-linux-gnu/4.5.3/libgcc_s.so.1
 /usr/bin/strace
 /etc/nsswitch.conf
+#dir /tmp
 #dir /proc
 #dir /dev
+/usr/share/zoneinfo/Asia/Tokyo
+#symlink /etc/localtime ../../usr/share/zoneinfo/Asia/Tokyo
 #copy app/passwd /etc/passwd
 #copy app/group /etc/group
 #copy app/resolv.conf /etc/resolv.conf

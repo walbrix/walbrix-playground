@@ -20,6 +20,7 @@ dev-perl/XML-Atom
 dev-perl/XML-Parser
 dev-perl/crypt-dsa
 dev-python/pygame
+dev-ruby/coderay
 dev-ruby/mocha
 dev-ruby/mysql-ruby
 dev-ruby/mysql2

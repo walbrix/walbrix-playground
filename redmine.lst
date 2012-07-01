@@ -1,0 +1,18 @@
+#require components/domU.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/rails.lst
+#require components/redmine-rubygems.lst
+
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1redmine\2/
+#copy domU/fstab-with-swapfile /etc/fstab
+#swap /swapfile 64
+#extract redmine/redmine-2.0.3.tar.gz /var/www/localhost
+#chrootexec rm -rf /var/www/localhost/htdocs
+#chrootexec mv /var/www/localhost/redmine-2.0.3 /var/www/localhost/htdocs
+#chrootexec chown -R apache.apache /var/www/localhost/htdocs
+#sed /etc/apache2/vhosts.d/default_vhost.include s/\(\/var\/www\/localhost\/\htdocs\)/\1\/public/
+#sed /etc/apache2/modules.d/30_mod_passenger.conf s/\(\/usr\/bin\/ruby\)18$/\119/
+#extract redmine/initial-db-and-config.tar.gz /
+#copy redmine/wb-va.xml /etc/wb-va.xml

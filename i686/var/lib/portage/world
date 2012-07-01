@@ -1,5 +1,6 @@
 app-arch/cpio
 app-portage/gentoolkit
+app-vim/rails
 dev-db/postgresql-server
 dev-java/icedtea-bin
 dev-java/jdbc-postgresql
@@ -19,7 +20,12 @@ dev-perl/XML-Atom
 dev-perl/XML-Parser
 dev-perl/crypt-dsa
 dev-python/pygame
+dev-ruby/rails
+dev-ruby/rmagick
 dev-util/strace
+dev-vcs/git
+dev-vcs/mercurial
+dev-vcs/subversion
 mail-mta/postfix
 media-fonts/vlgothic
 media-gfx/imagemagick
@@ -34,4 +40,5 @@ sys-kernel/genkernel
 sys-kernel/gentoo-sources
 sys-process/vixie-cron
 www-apache/mod_extract_forwarded
+www-apache/passenger
 www-servers/tomcat

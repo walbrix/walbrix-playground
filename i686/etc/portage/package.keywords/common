@@ -2,3 +2,6 @@
 =sys-kernel/gentoo-sources-3.0.36
 =sys-auth/nss-myhostname-0.3
 =dev-java/jdbc-postgresql-9.1_p902
+=net-libs/nodejs-0.8.0
+=dev-lang/v8-3.11.10.12
+

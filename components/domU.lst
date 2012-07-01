@@ -24,6 +24,7 @@
 #require timezone-data.lst
 #require locales.lst
 #require nss-mdns.lst
+#require syslog.lst
 #copy domU/fstab /etc/fstab
 #copy domU/group /etc/group
 #copy domU/inittab /etc/inittab

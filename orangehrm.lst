@@ -5,7 +5,7 @@
 #require components/php53.lst
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1orangehrm\2/
 #copy domU/fstab-with-swapfile /etc/fstab
-#swap /swapfile 32
+#swap /swapfile 96
 #extract orangehrm/orangehrm-2.7.tar.gz /var/www/localhost
 #chrootexec rm -rf /var/www/localhost/htdocs
 #chrootexec mv /var/www/localhost/orangehrm-2.7 /var/www/localhost/htdocs

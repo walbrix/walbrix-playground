@@ -1,7 +1,10 @@
 app-admin/sysklogd
+app-admin/webapp-config
 app-arch/cpio
+app-editors/emacs
 app-portage/gentoolkit
 app-vim/rails
+app-vim/vimpython
 dev-db/postgresql-server
 dev-java/icedtea-bin
 dev-java/jdbc-postgresql
@@ -20,6 +23,7 @@ dev-perl/Mail-Sendmail
 dev-perl/XML-Atom
 dev-perl/XML-Parser
 dev-perl/crypt-dsa
+dev-python/django
 dev-python/pygame
 dev-ruby/coderay
 dev-ruby/mocha
@@ -49,5 +53,6 @@ sys-kernel/genkernel
 sys-kernel/gentoo-sources
 sys-process/vixie-cron
 www-apache/mod_extract_forwarded
+www-apache/mod_wsgi
 www-apache/passenger
 www-servers/tomcat

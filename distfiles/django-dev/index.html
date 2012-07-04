@@ -1,0 +1,50 @@
+<html lang="ja">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Django開発環境</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/redmond/jquery-ui.css" type="text/css"/>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">google.load("jquery", "1.4.2");</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+	<script type="text/javascript">google.load("jqueryui", "1.8.1");</script>
+	<script language="JavaScript"><!--
+	  $(function(){
+	    var hostname = location.hostname;
+	    $("#tabs").tabs();
+		$("span.hostname").html(hostname);
+		$("a.link_accordingly").attr("href", function() {return $(this).text()});
+	  });
+	//--></script>
+  </head>
+
+  <h1>Django開発環境</h1>
+
+  <div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">概要と使い方</a></li>
+		<li><a href="#tabs-2">追加情報</a></li>
+	</ul>
+	<div id="tabs-1">
+	  <h3>開発用IDでのログイン</h3>
+	  <p>
+	    ssh django@<span class="hostname">HOSTNAME</span><br/>
+	    Password: django
+	  </p>
+	  <h3>サンプルWebアプリケーション</h3>
+	  <p>
+	    python example/manage.py runserver <span class="hostname">HOSTNAME</span>:8000<br/>
+	    Webブラウザより <a class="link_accordingly" href="">http://<span class="hostname">HOSTNAME</span>:8000</a>へアクセス
+	  </p>
+	  <h3>MySQLの管理</h3>
+	  <p>
+	    SQL Buddyで MySQLに直接アクセスして管理できます。初期状態では rootのパスワードはブランクです。<br/>
+	    <a href="/sqlbuddy/">SQL Buddyで MySQLを管理する</a>
+	  </p>
+	</div>
+	<div id="tabs-2">
+	  <a href="https://www.djangoproject.com/" target="_blank">Django</a><br/>
+	  <a href="http://djangoproject.jp/" target="_blank">Djangoと日本の仲間たち</a><br/>
+	</div>
+	<div align="right" style="margin-top:1em;"><a href="http://walbrix.net/" target="_blank">Walbrix</a></div>
+  </div>
+</html>

@@ -1,0 +1,15 @@
+#require components/domU.lst
+#require components/pvkernel.lst
+#require components/django.lst
+#require components/postfix.lst
+#require components/emacs.lst
+#require components/vimpython.lst
+#require components/sqlbuddy.lst
+
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1django-dev\2/
+#appendline /etc/passwd django:x:100:100:django developer:/home/django:/bin/bash
+#appendline /etc/shadow django:$6$frHaUSh8$X8iyzMMKbNm0teDAy1yl07/00El39Ay4Ja8T0gp45DhdEZHLzJ7llv3Yfg7L6i0LGSupFtjYMw4Kw5mbKW2Au.:15469:0:99999:7:::
+#extract django-dev/initial-database.tar.gz /var/lib/mysql
+#extract django-dev/user.tar.gz /home
+#copy django-dev/index.html /var/www/localhost/htdocs/index.html
+#chrootexec chown apache.apache /var/www/localhost/htdocs/index.html

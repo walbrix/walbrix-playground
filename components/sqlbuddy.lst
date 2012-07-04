@@ -1,0 +1,4 @@
+#require php53.lst
+#extract sqlbuddy/calvinlough-sqlbuddy-207c6fc.zip /var/www/localhost/htdocs
+#chrootexec mv /var/www/localhost/htdocs/calvinlough-sqlbuddy-207c6fc /var/www/localhost/htdocs/sqlbuddy
+#chrootexec chown apache.apache /var/www/localhost/htdocs/sqlbuddy

@@ -151,12 +151,12 @@
 /usr/share/git-core/templates/info/exclude
 /usr/share/git-core/templates/hooks/commit-msg.sample
 /usr/share/git-core/templates/hooks/post-update.sample
-/usr/share/git-core/templates/hooks/post-receive.sample
+#/usr/share/git-core/templates/hooks/post-receive.sample
 /usr/share/git-core/templates/hooks/pre-applypatch.sample
 /usr/share/git-core/templates/hooks/pre-rebase.sample
 /usr/share/git-core/templates/hooks/prepare-commit-msg.sample
 /usr/share/git-core/templates/hooks/pre-commit.sample
-/usr/share/git-core/templates/hooks/post-commit.sample
+#/usr/share/git-core/templates/hooks/post-commit.sample
 /usr/share/git-core/templates/hooks/update.sample
 /usr/share/git-core/templates/hooks/applypatch-msg.sample
 

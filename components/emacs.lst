@@ -32,7 +32,7 @@
 /usr/share/emacs/23.4/etc/DEBUG
 /usr/share/emacs/23.4/etc/DEVEL.HUMOR
 /usr/share/emacs/23.4/etc/DISTRIB
-/usr/share/emacs/23.4/etc/DOC-23.4.2
+/usr/share/emacs/23.4/etc/DOC-23.4.1
 /usr/share/emacs/23.4/etc/ERC-NEWS
 /usr/share/emacs/23.4/etc/ETAGS.EBNF
 /usr/share/emacs/23.4/etc/ETAGS.README
@@ -3556,4 +3556,3 @@
 /usr/share/emacs/23.4/lisp/xt-mouse.el
 /usr/share/emacs/23.4/lisp/xt-mouse.elc
 /usr/share/emacs/site-lisp/site-gentoo.d/20emacs-23-gentoo.el
-/var/lib/games/emacs/.keep_app-editors_emacs-23

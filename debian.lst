@@ -1,0 +1,13 @@
+#require pvkernel.lst
+#extract debian/debian-$(ARCH).tar.xz /
+#swap /swapfile 256
+#sed /etc/shadow s/^\(root:\)[^:]*\(:.*\)$/\1\2/
+#copy domU/resolv.conf /etc/resolv.conf
+#copy domU/fstab /etc/fstab
+#chrootexec mkdir /root/.ssh && chmod 700 /root/.ssh && touch /root/.ssh/authorized_keys
+#copy debian/wb-va.xml /etc/wb-va.xml
+#chrootexec apt-get update -y
+#chrootexec apt-get upgrade -y
+#chrootexec apt-get clean
+#copy domU/smb.conf /etc/samba/smb.conf
+

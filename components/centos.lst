@@ -16,10 +16,15 @@
 #chrootexec chkconfig ip6tables off
 #chrootexec chkconfig iptables off
 #chrootexec yum update -y
-#chrootexec yum install -y samba avahi ntp
+#chrootexec yum install -y samba avahi ntp lzo
 #chrootexec chkconfig nmb on
 #chrootexec chkconfig ntpd on
 #chrootexec yum clean -y all
 #copy domU/smb.conf /etc/samba/smb.conf
 #chrootexec rm -rf /lib/modules /lib/firmware /etc/ssh/sshd_host_*
+#copy centos/openvpn-2.2.2-1.el6.rf.i686.rpm /openvpn.rpm
+#copy centos/pkcs11-helper-1.08-1.el6.rf.i686.rpm /pkcs11-helper.rpm
+#chrootexec rpm -ivh /openvpn.rpm /pkcs11-helper.rpm
+#chrootexec rm /openvpn.rpm /pkcs11-helper.rpm
+
 

@@ -1,0 +1,16 @@
+#require components/domU.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/tomcat.lst
+#require components/mongodb.lst
+#require components/postfix.lst
+#require components/emacs.lst
+#require components/vimpython.lst
+#require components/sqlbuddy.lst
+
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1mongodb-dev\2/
+#appendline /etc/passwd mongodb:x:103:117:added by portage for mongodb:/var/lib/mongodb:/sbin/nologin
+#appendline /etc/shadow mongodb:x:117:
+#copy mongodb-dev/index.html /var/www/localhost/htdocs/index.html
+#chrootexec chown -R apache.apache /var/www/localhost/htdocs
+#extract mongodb-dev/mViewer-v0.9.1.tar.gz /root

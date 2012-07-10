@@ -1,0 +1,40 @@
+<html lang="ja">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>MongoDB開発環境</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/redmond/jquery-ui.css" type="text/css"/>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">google.load("jquery", "1.4.2");</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+	<script type="text/javascript">google.load("jqueryui", "1.8.1");</script>
+	<script language="JavaScript"><!--
+	  $(function(){
+	    var hostname = location.hostname;
+	    $("#tabs").tabs();
+		$("span.hostname").html(hostname);
+		$("a.link_accordingly").attr("href", function() {return $(this).text()});
+	  });
+	//--></script>
+  </head>
+
+  <h1>MongoDB開発環境</h1>
+
+  <div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">概要と使い方</a></li>
+		<li><a href="#tabs-2">追加情報</a></li>
+	</ul>
+	<div id="tabs-1">
+	  <h3>MongoDBの管理</h3>
+	  <p>
+	    mViewerで MongoDBに直接アクセスして管理できます。<br/>
+	    <a href="/mViewer/">mViewerで MongoDBを管理する</a>
+	  </p>
+	</div>
+	<div id="tabs-2">
+	  <a href="http://www.mongodb.org/" target="_blank">MongoDB</a><br/>
+	  <a href="http://www.mongodb.jp/" target="_blank">MongoDB JP</a><br/>
+	</div>
+	<div align="right" style="margin-top:1em;"><a href="http://walbrix.net/" target="_blank">Walbrix</a></div>
+  </div>
+</html>

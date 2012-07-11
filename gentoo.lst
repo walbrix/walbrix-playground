@@ -1,0 +1,25 @@
+#require components/pvkernel.lst
+#extract gentoo/gentoo-i686.tar.bz2 /
+#sed /etc/conf.d/hostname s/^hostname=.*$/hostname="gentoo"/
+#copy domU/resolv.conf /etc/resolv.conf
+#sed /etc/shadow s/^\(root:\)[^:]*\(:.*\)$/\1\2/
+#chrootexec mkdir /root/.ssh && chmod 700 /root/.ssh && touch /root/.ssh/authorized_keys
+#swap /swapfile 256
+#copy domU/fstab-with-swapfile /etc/fstab
+#patchsinglefile /etc/inittab gentoo/inittab.patch
+#chrootexec echo "hvc0" >> /etc/securetty
+#copy gentoo/wb-va.xml /etc/wb-va.xml
+#chrootexec wget http://ftp.kddilabs.jp/pub/Linux/distributions/gentoo/snapshots/portage-latest.tar.xz -O- | tar Jxpf - -C /usr
+#chrootexec echo "net-fs/samba -cups" >> /etc/portage/package.use
+#chrootexec echo "=sys-auth/nss-mdns-0.10-r1" >> /etc/portage/package.keywords
+#chrootexec emerge -uDN nvi avahi samba nss-mdns ntp world
+#chrootexec rm -rf /usr/portage/distfiles/*
+#chrootexec rc-update add avahi-daemon default
+#chrootexec rc-update add sshd default
+#chrootexec rc-update add samba default
+#chrootexec rc-update add ntpd default
+#copy domU/smb.conf /etc/samba/smb.conf
+#sed /etc/nsswitch.conf s/^\(hosts:.* \)dns\( *\)/\1mdn_minimal [NOTFOUND=return] dns mdns\2/
+#chrootexec rm -f /etc/localtime
+#symlink /etc/localtime ../usr/share/zoneinfo/Asia/Tokyo
+

@@ -1,0 +1,15 @@
+74a75,86
+> gen_keys() {
+>     if [ ! -e /etc/ssh/ssh_host_key ] ; then
+>         /usr/bin/ssh-keygen -t rsa1 -f /etc/ssh/ssh_host_key -N '' || return 1
+>     fi
+>     if [ ! -e /etc/ssh/ssh_host_dsa_key ] ; then
+>         /usr/bin/ssh-keygen -d -f /etc/ssh/ssh_host_dsa_key -N '' || return 1
+>     fi
+>     if [ ! -e /etc/ssh/ssh_host_rsa_key ] ; then
+>         /usr/bin/ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N '' || return 1
+>     fi
+> }
+> 
+81a94
+> 	gen_keys

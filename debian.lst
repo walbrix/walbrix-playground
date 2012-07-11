@@ -1,13 +1,18 @@
-#require pvkernel.lst
+#require components/pvkernel.lst
 #extract debian/debian-$(ARCH).tar.xz /
 #swap /swapfile 256
+#chrootexec echo "debian" >> /etc/hostname
 #sed /etc/shadow s/^\(root:\)[^:]*\(:.*\)$/\1\2/
 #copy domU/resolv.conf /etc/resolv.conf
-#copy domU/fstab /etc/fstab
+#copy domU/fstab-with-swapfile /etc/fstab
 #chrootexec mkdir /root/.ssh && chmod 700 /root/.ssh && touch /root/.ssh/authorized_keys
 #copy debian/wb-va.xml /etc/wb-va.xml
-#chrootexec apt-get update -y
-#chrootexec apt-get upgrade -y
-#chrootexec apt-get clean
+#chrootexec apt-get update -y && apt-get upgrade -y && apt-get clean
 #copy domU/smb.conf /etc/samba/smb.conf
+#chrootexec rm -f /etc/ssh/ssh_host_*
+#patchsinglefile /etc/init.d/ssh debian/ssh.patch
+#patchsinglefile /etc/inittab debian/inittab.patch
+#copy debian/interfaces /etc/network/interfaces
+#chrootexec rm -f /etc/localtime
+#symlink /etc/localtime ../usr/share/zoneinfo/Asia/Tokyo
 

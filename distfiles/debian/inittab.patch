@@ -1,0 +1,14 @@
+54,59c54,59
+< 1:2345:respawn:/sbin/getty 38400 tty1
+< 2:23:respawn:/sbin/getty 38400 tty2
+< 3:23:respawn:/sbin/getty 38400 tty3
+< 4:23:respawn:/sbin/getty 38400 tty4
+< 5:23:respawn:/sbin/getty 38400 tty5
+< 6:23:respawn:/sbin/getty 38400 tty6
+---
+> 1:2345:respawn:/sbin/getty 38400 hvc0
+> #2:23:respawn:/sbin/getty 38400 tty2
+> #3:23:respawn:/sbin/getty 38400 tty3
+> #4:23:respawn:/sbin/getty 38400 tty4
+> #5:23:respawn:/sbin/getty 38400 tty5
+> #6:23:respawn:/sbin/getty 38400 tty6

@@ -1,4 +1,4 @@
-#require components/pvkernel.lst
+#require pvkernel.lst
 #extract debian/debian-$(ARCH).tar.xz /
 #swap /swapfile 256
 #chrootexec echo "debian" >> /etc/hostname
@@ -13,6 +13,4 @@
 #patchsinglefile /etc/init.d/ssh debian/ssh.patch
 #patchsinglefile /etc/inittab debian/inittab.patch
 #copy debian/interfaces /etc/network/interfaces
-#chrootexec rm -f /etc/localtime
-#symlink /etc/localtime ../usr/share/zoneinfo/Asia/Tokyo
 

@@ -1,4 +1,3 @@
-#require components/debian.lst
 #chrootexec rm -f /etc/localtime
 #symlink /etc/localtime ../usr/share/zoneinfo/Asia/Kolkata
 

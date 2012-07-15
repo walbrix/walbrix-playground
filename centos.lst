@@ -1,5 +1,5 @@
-#require dev.lst
-#require pvkernel.lst
+#require components/dev.lst
+#require components/pvkernel.lst
 #extract centos/centos-$(ARCH).tar.xz /
 #sed /etc/init/start-ttys.conf s/ACTIVE_CONSOLES=\/dev\/.*$/ACTIVE_CONSOLES=\/dev\/hvc0/
 #chrootexec echo "hvc0" >> /etc/securetty
@@ -26,5 +26,4 @@
 #copy centos/pkcs11-helper-1.08-1.el6.rf.i686.rpm /pkcs11-helper.rpm
 #chrootexec rpm -ivh /openvpn.rpm /pkcs11-helper.rpm
 #chrootexec rm /openvpn.rpm /pkcs11-helper.rpm
-
-
+#require components/centos-$(REGION).lst

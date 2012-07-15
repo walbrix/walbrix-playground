@@ -24,7 +24,7 @@
 =dev-lang/ruby-1.9.3_p194
 =app-admin/eselect-rails-0.18
 =dev-ruby/railties-3.2.6
-=dev-ruby/uglifier-1.2.4
+=dev-ruby/uglifier-1.2.6
 =dev-ruby/coffee-script-source-1.2.0 **
 =dev-ruby/rake-0.9.2.2
 =dev-ruby/rack-1.4.1

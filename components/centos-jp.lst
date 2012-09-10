@@ -1,0 +1,3 @@
+#sed /etc/sysconfig/i18n s/^LANG=.*$/LANG="ja_JP.UTF-8"/
+#require timezone-jp.lst
+

@@ -1,0 +1,29 @@
+#require components/dev.lst
+#require components/pvkernel.lst
+#extract centos/centos-$(ARCH).tar.xz /
+#sed /etc/init/start-ttys.conf s/ACTIVE_CONSOLES=\/dev\/.*$/ACTIVE_CONSOLES=\/dev\/hvc0/
+#chrootexec echo "hvc0" >> /etc/securetty
+#sed /etc/sysconfig/network s/^HOSTNAME=.*/HOSTNAME=centos/
+#sed /etc/sysconfig/network-scripts/ifcfg-eth0 s/^\(HWADDR\|UUID\)=.*$//
+#swap /swapfile 256
+#sed /etc/shadow s/^\(root:\)[^:]*\(:.*\)$/\1\2/
+#copy domU/resolv.conf /etc/resolv.conf
+#sed /etc/selinux/config s/^SELINUX=enforcing$/SELINUX=disabled/
+#copy centos/fstab /etc/fstab
+#chrootexec mkdir /root/.ssh && chmod 700 /root/.ssh && touch /root/.ssh/authorized_keys
+#copy centos/wb-va.xml /etc/wb-va.xml
+#chrootexec echo "i686-centos-linux" > /etc/rpm/platform
+#chrootexec chkconfig ip6tables off
+#chrootexec chkconfig iptables off
+#chrootexec yum update -y
+#chrootexec yum install -y samba avahi ntp lzo
+#chrootexec chkconfig nmb on
+#chrootexec chkconfig ntpd on
+#chrootexec yum clean -y all
+#copy domU/smb.conf /etc/samba/smb.conf
+#chrootexec rm -rf /lib/modules /lib/firmware /etc/ssh/sshd_host_*
+#copy centos/openvpn-2.2.2-1.el6.rf.i686.rpm /openvpn.rpm
+#copy centos/pkcs11-helper-1.08-1.el6.rf.i686.rpm /pkcs11-helper.rpm
+#chrootexec rpm -ivh /openvpn.rpm /pkcs11-helper.rpm
+#chrootexec rm /openvpn.rpm /pkcs11-helper.rpm
+#require components/centos-$(REGION).lst

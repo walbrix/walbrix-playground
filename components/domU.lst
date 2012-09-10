@@ -28,7 +28,6 @@
 #copy domU/fstab /etc/fstab
 #copy domU/group /etc/group
 #copy domU/inittab /etc/inittab
-#symlink /etc/localtime ../../usr/share/zoneinfo/Asia/Tokyo
 #copy domU/passwd /etc/passwd
 #copy domU/resolv.conf /etc/resolv.conf
 #copy domU/securetty /etc/securetty
@@ -267,3 +266,7 @@
 #copy domU/smb.conf /etc/samba/smb.conf
 /etc/init.d/samba
 #symlink /etc/runlevels/default/samba /etc/init.d/samba
+
+# timezone
+#require timezone-$(REGION).lst
+

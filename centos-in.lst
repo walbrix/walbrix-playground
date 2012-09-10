@@ -1,5 +1,0 @@
-#require components/centos.lst
-#sed /etc/sysconfig/i18n s/^LANG=.*$/LANG="en_US.UTF-8"/
-#chrootexec rm -f /etc/localtime
-#symlink /etc/localtime ../usr/share/zoneinfo/Asia/Kolkata
-

@@ -25,6 +25,7 @@ dev-perl/XML-Parser
 dev-perl/crypt-dsa
 dev-python/django
 dev-python/pygame
+dev-python/setuptools
 dev-ruby/coderay
 dev-ruby/mocha
 dev-ruby/mysql-ruby
@@ -33,7 +34,7 @@ dev-ruby/pg
 dev-ruby/rails
 dev-ruby/rmagick
 dev-ruby/shoulda
-dev-ruby/sqlite3-ruby
+dev-ruby/sqlite3
 dev-ruby/yard
 dev-util/strace
 dev-vcs/git

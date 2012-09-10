@@ -2,7 +2,8 @@ dev-ruby/mocha ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/metaclass ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/ruby-net-ldap ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/pg ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/sqlite3-ruby ruby_targets_ruby19 -ruby_targets_ruby18
+# move dev-ruby/sqlite3-ruby dev-ruby/sqlite3
+dev-ruby/sqlite3 ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/hoe ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/yard ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/shoulda ruby_targets_ruby19 -ruby_targets_ruby18

@@ -13,3 +13,4 @@ sys-kernel/gentoo-sources symlink
 dev-java/icedtea-bin -X -alsa -cups cjk
 media-libs/libsdl fbcon X
 media-libs/sdl-image png jpeg
+app-editors/emacs -gpm -xpm

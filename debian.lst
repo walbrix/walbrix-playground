@@ -1,4 +1,4 @@
-#require pvkernel.lst
+#require components/pvkernel.lst
 #extract debian/debian-$(ARCH).tar.xz /
 #swap /swapfile 256
 #chrootexec echo "debian" >> /etc/hostname

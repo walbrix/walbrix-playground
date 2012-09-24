@@ -2,6 +2,7 @@ app-admin/sysklogd
 app-admin/webapp-config
 app-arch/cpio
 app-editors/emacs
+app-editors/nano
 app-portage/gentoolkit
 app-vim/rails
 app-vim/vimpython

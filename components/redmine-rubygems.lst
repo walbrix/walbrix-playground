@@ -113,13 +113,13 @@
 /usr/lib/ruby/gems/1.9.1/specifications/rmagick-2.13.1.gemspec
 
 # pg
-/usr/lib/ruby/gems/1.9.1/gems/pg-0.13.2/lib/pg.rb
-/usr/lib/ruby/gems/1.9.1/gems/pg-0.13.2/lib/pg/connection.rb
-/usr/lib/ruby/gems/1.9.1/gems/pg-0.13.2/lib/pg/constants.rb
-/usr/lib/ruby/gems/1.9.1/gems/pg-0.13.2/lib/pg/exceptions.rb
-/usr/lib/ruby/gems/1.9.1/gems/pg-0.13.2/lib/pg/result.rb
-/usr/lib/ruby/gems/1.9.1/gems/pg-0.13.2/lib/pg_ext.so
-/usr/lib/ruby/gems/1.9.1/specifications/pg-0.13.2.gemspec
+/usr/lib/ruby/gems/1.9.1/gems/pg-0.14.0/lib/pg.rb
+/usr/lib/ruby/gems/1.9.1/gems/pg-0.14.0/lib/pg/connection.rb
+/usr/lib/ruby/gems/1.9.1/gems/pg-0.14.0/lib/pg/constants.rb
+/usr/lib/ruby/gems/1.9.1/gems/pg-0.14.0/lib/pg/exceptions.rb
+/usr/lib/ruby/gems/1.9.1/gems/pg-0.14.0/lib/pg/result.rb
+/usr/lib/ruby/gems/1.9.1/gems/pg-0.14.0/lib/pg_ext.so
+/usr/lib/ruby/gems/1.9.1/specifications/pg-0.14.0.gemspec
 
 # hoe
 /usr/bin/sow

@@ -1,0 +1,5 @@
+#require apache.lst
+/etc/apache2/modules.d/47_mod_dav_svn.conf
+/usr/lib/apache2/modules/mod_authz_svn.so
+/usr/lib/apache2/modules/mod_dav_svn.so
+#sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D SVN -D SVN_AUTHZ"/

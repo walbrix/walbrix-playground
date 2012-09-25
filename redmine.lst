@@ -1,25 +1,37 @@
 #require components/domU.lst
 #require components/pvkernel.lst
 #require components/apache.lst
+#require components/php53.lst
 #require components/mysql.lst
 #require components/postfix.lst
 #require components/rails.lst
 #require components/redmine-rubygems.lst
 #require components/subversion.lst
+#require components/dav_svn.lst
+#require components/websvn.lst
 #require components/mercurial.lst
 #require components/git.lst
 
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1redmine\2/
 #copy domU/fstab-with-swapfile /etc/fstab
 #swap /swapfile 64
-#extract redmine/redmine-2.0.3.tar.gz /var/www/localhost
+#extract redmine/redmine-2.1.0.tar.gz /var/www/localhost
 #chrootexec rm -rf /var/www/localhost/htdocs
-#chrootexec mv /var/www/localhost/redmine-2.0.3 /var/www/localhost/htdocs
-#sed /etc/apache2/vhosts.d/default_vhost.include s/\(\/var\/www\/localhost\/\htdocs\)/\1\/public/
+#chrootexec mv /var/www/localhost/redmine-2.1.0 /var/www/localhost/htdocs
+#copy redmine/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
 #sed /etc/apache2/modules.d/30_mod_passenger.conf s/\(\/usr\/bin\/ruby\)18$/\119/
 #extract redmine/initial-db-and-config.tar.gz /
 #copy redmine/configuration.yml /var/www/localhost/htdocs/config/configuration.yml
 #chrootexec chown -R apache.apache /var/www/localhost/htdocs
+
+#chrootexec svnadmin create /var/svn
+#chrootexec echo '[/]' > /var/svn/conf/authz
+#chrootexec echo '*=rw' >> /var/svn/conf/authz
+#chrootexec chown -R apache.apache /var/svn
+#copy redmine/passwd.rb /var/www/localhost/passwd.rb
+#patchsinglefile /usr/share/webapps/websvn/2.3.2/htdocs/include/config.php redmine/config.php.patch
+
 #copy redmine/generate-secret-token /etc/init.d/generate-secret-token
+#sed /etc/init.d/generate-secret-token s/'\''ja'\''/'\''$(LANGUAGE)'\''/
 #sed /etc/init.d/apache2 s/\(need net\)$/\1 generate-secret-token/
 #copy redmine/wb-va.xml /etc/wb-va.xml

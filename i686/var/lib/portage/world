@@ -36,6 +36,7 @@ dev-ruby/rails
 dev-ruby/rmagick
 dev-ruby/shoulda
 dev-ruby/sqlite3
+dev-ruby/test-unit
 dev-ruby/yard
 dev-util/strace
 dev-vcs/git
@@ -54,7 +55,9 @@ sys-fs/xfsprogs
 sys-kernel/genkernel
 sys-kernel/gentoo-sources
 sys-process/vixie-cron
+www-apache/mod_authnz_external
 www-apache/mod_extract_forwarded
 www-apache/mod_wsgi
 www-apache/passenger
+www-apps/websvn
 www-servers/tomcat

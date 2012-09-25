@@ -26,9 +26,9 @@
 /etc/apache2/vhosts.d/00_default_vhost.conf
 /etc/apache2/vhosts.d/default_vhost.include
 /etc/conf.d/apache2
-# disable SSL / enable PROXY 
+# disable SSL / enable PROXY and DAV
 #sed /etc/conf.d/apache2 s/-D SSL//
-#sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D PROXY"/
+#sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D PROXY -D DAV"/
 /etc/init.d/apache2
 #symlink /etc/runlevels/default/apache2 /etc/init.d/apache2
 /etc/logrotate.d/apache2
@@ -349,3 +349,9 @@
 #sed /etc/apache2/modules.d/98_mod_extract_forwarded.conf s/localhost/all/
 /usr/lib/apache2/modules/mod_extract_forwarded.so
 #sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D EXTRACT_FORWARDED"/
+
+# from mod_authnz_external
+/etc/apache2/modules.d/10_mod_authnz_external.conf
+/usr/lib/apache2/modules/mod_authnz_external.so
+#sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D AUTHNZ_EXTERNAL"/
+

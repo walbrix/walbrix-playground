@@ -1,0 +1,4 @@
+82c82
+< // $config->addRepository('NameToDisplay', 'URL to repository (e.g. file:///c:/svn/proj)');
+---
+> $config->addRepository('Repository', 'file:///var/svn');

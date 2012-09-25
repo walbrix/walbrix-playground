@@ -2534,19 +2534,18 @@
 /usr/lib/ruby/gems/1.9.1/specifications/fssm-0.2.8.1.gemspec
 
 # jquery-rails
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/lib/generators/jquery/install/install_generator.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/lib/jquery-rails.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/lib/jquery/assert_select.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/lib/jquery/rails.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/lib/jquery/rails/engine.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/lib/jquery/rails/railtie.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/lib/jquery/rails/version.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery-ui.js
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery-ui.min.js
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.js
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.min.js
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.js
-/usr/lib/ruby/gems/1.9.1/specifications/jquery-rails-1.0.19.gemspec
+/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/lib/generators/jquery/install/install_generator.rb
+/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/lib/jquery-rails.rb
+/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/lib/jquery/assert_select.rb
+/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/lib/jquery/rails.rb
+/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/lib/jquery/rails/engine.rb
+/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/lib/jquery/rails/version.rb
+/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery-ui.js
+/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery-ui.min.js
+/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery.js
+/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery.min.js
+/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery_ujs.js
+/usr/lib/ruby/gems/1.9.1/specifications/jquery-rails-2.0.2.gemspec
 
 # sass
 /usr/bin/sass

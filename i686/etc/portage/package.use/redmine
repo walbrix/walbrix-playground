@@ -8,3 +8,5 @@ dev-ruby/hoe ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/yard ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/shoulda ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/coderay ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/test-unit ruby_targets_ruby19 -ruby_targets_ruby18
+dev-vcs/subversion apache2

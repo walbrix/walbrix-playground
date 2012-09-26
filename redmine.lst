@@ -11,6 +11,8 @@
 #require components/websvn.lst
 #require components/mercurial.lst
 #require components/git.lst
+# to enable thumbnail
+#require components/imagemagick.lst
 
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1redmine\2/
 #copy domU/fstab-with-swapfile /etc/fstab

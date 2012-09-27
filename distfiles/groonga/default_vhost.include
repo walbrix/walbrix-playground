@@ -1,0 +1,29 @@
+ServerAdmin groonga-dev@example.com
+DocumentRoot "/var/www/localhost/htdocs"
+<Directory "/var/www/localhost/htdocs">
+	Options Indexes FollowSymLinks
+	AllowOverride All
+	Order allow,deny
+	Allow from all
+</Directory>
+
+<IfModule alias_module>
+	ScriptAlias /cgi-bin/ "/var/www/localhost/cgi-bin/"
+</IfModule>
+
+<Directory "/var/www/localhost/cgi-bin">
+	AllowOverride None
+	Options None
+	Order allow,deny
+	Allow from all
+</Directory>
+
+Alias /phpmyadmin /usr/share/webapps/phpmyadmin/3.5.2.2/htdocs
+
+<Directory /usr/share/webapps/phpmyadmin/3.5.2.2/htdocs>
+    DirectoryIndex index.php
+    Options FollowSymLinks
+    Order allow,deny
+    Allow from all
+</Directory>
+

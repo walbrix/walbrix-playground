@@ -105,6 +105,9 @@
 /var/log/mysql/.keep_dev-db_mysql-0
 #/var/run/mysqld/.keep_dev-db_mysql-0
 
+/usr/include/mysql/mysql_version.h
+/usr/include/mysql/my_config.h
+
 # from mysql-init-scripts
 /etc/conf.d/mysql
 /etc/init.d/mysql

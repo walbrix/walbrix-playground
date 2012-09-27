@@ -20,5 +20,6 @@
 #/usr/lib/mecab/dic/ipadic/sys.dic
 #/usr/lib/mecab/dic/ipadic/unk.dic
 
-#extract groonga/groonga-2.0.6.tar.gz /root
-#chrootexec cd /root/groonga-2.0.6 && ./configure --prefix=/usr --localstatedir=/var && make && make install
+#copy groonga/groonga-2.0.6.tar.gz /root/groonga.tar.gz
+#chrootexec cd /root && tar zxvf groonga.tar.gz && cd groonga-2.0.6 && ./configure --prefix=/usr --localstatedir=/var && make && make install
+#chrootexec rm -rf /root/groonga-2.0.6

@@ -188,7 +188,6 @@
 /usr/include/linux/errqueue.h
 /usr/include/linux/ethtool.h
 /usr/include/linux/eventpoll.h
-/usr/include/linux/ext2_fs.h
 /usr/include/linux/fadvise.h
 /usr/include/linux/falloc.h
 /usr/include/linux/fanotify.h
@@ -436,13 +435,11 @@
 /usr/include/linux/netfilter_ipv4/ipt_ECN.h
 /usr/include/linux/netfilter_ipv4/ipt_LOG.h
 /usr/include/linux/netfilter_ipv4/ipt_REJECT.h
-/usr/include/linux/netfilter_ipv4/ipt_SAME.h
 /usr/include/linux/netfilter_ipv4/ipt_TTL.h
 /usr/include/linux/netfilter_ipv4/ipt_ULOG.h
 /usr/include/linux/netfilter_ipv4/ipt_addrtype.h
 /usr/include/linux/netfilter_ipv4/ipt_ah.h
 /usr/include/linux/netfilter_ipv4/ipt_ecn.h
-/usr/include/linux/netfilter_ipv4/ipt_realm.h
 /usr/include/linux/netfilter_ipv4/ipt_ttl.h
 /usr/include/linux/netfilter_ipv6.h
 /usr/include/linux/netfilter_ipv6/ip6_tables.h
@@ -467,12 +464,11 @@
 /usr/include/linux/nfs_idmap.h
 /usr/include/linux/nfs_mount.h
 /usr/include/linux/nfsacl.h
-/usr/include/linux/nfsd/const.h
+#/usr/include/linux/nfsd/cld.h
 /usr/include/linux/nfsd/debug.h
 /usr/include/linux/nfsd/export.h
 /usr/include/linux/nfsd/nfsfh.h
 /usr/include/linux/nfsd/stats.h
-/usr/include/linux/nfsd/syscall.h
 /usr/include/linux/nl80211.h
 /usr/include/linux/nubus.h
 /usr/include/linux/nvram.h

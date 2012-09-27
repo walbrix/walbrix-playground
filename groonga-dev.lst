@@ -1,3 +1,15 @@
 #require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/php53.lst
+#require components/mysql.lst
+#require components/phpmyadmin.lst
+#require components/git.lst
+#require components/emacs.lst
+#require components/vim.lst
 #require components/groonga.lst
+#require components/mroonga.lst
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1groonga-dev\2/
+#sed /etc/mysql/my.cnf s/^bind-address/#bind-address/
+#copy groonga/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include

@@ -1,0 +1,3 @@
+#require components/domU.lst
+#require components/groonga.lst
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1groonga-dev\2/

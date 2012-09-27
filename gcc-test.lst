@@ -1,0 +1,5 @@
+#require components/domU.lst
+#require components/gcc.lst
+#copy gcc-test/hello.cpp /hello.cpp
+#chrootexec g++ -o hello hello.cpp
+#chrootexec /hello

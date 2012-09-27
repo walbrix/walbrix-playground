@@ -8,6 +8,7 @@
 #require components/git.lst
 #require components/emacs.lst
 #require components/vim.lst
+#require components/s3cmd.lst
 #require components/groonga.lst
 #require components/mroonga.lst
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1groonga-dev\2/

@@ -1,0 +1,13 @@
+#require ruby19.lst
+
+# io-like
+#copy groonga/io-like-0.3.0.gem /io-like.gem
+#chrootexec gem install --no-rdoc --no-ri -l /io-like.gem && rm /io-like.gem
+
+# archive-zip
+#copy groonga/archive-zip-0.5.0.gem /archive-zip.gem
+#chrootexec gem install --no-rdoc --no-ri -l /archive-zip.gem && rm /archive-zip.gem
+
+# rroonga
+#copy groonga/rroonga-2.0.5.gem /rroonga.gem
+#chrootexec gem install --no-rdoc --no-ri -l /rroonga.gem && rm /rroonga.gem

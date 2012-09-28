@@ -8,6 +8,8 @@
 /usr/bin/gcc-4.5.4
 #symlink /usr/bin/gcc gcc-4.5.4
 #detectarch /usr/bin/gcc
+#symlink /usr/bin/$(ARCH)-pc-linux-gnu-gcc gcc
+#symlink /usr/bin/$(ARCH)-pc-linux-gnu-g++ g++
 /etc/env.d/gcc/config-$(ARCH)-pc-linux-gnu
 /etc/env.d/binutils/config-$(ARCH)-pc-linux-gnu
 #sed /etc/env.d/binutils/config-$(ARCH)-pc-linux-gnu s/^CURRENT=.*$//
@@ -25,6 +27,7 @@
 /usr/lib/crtn.o
 /usr/lib/libc.so
 /usr/lib/libm.so
+/usr/lib/librt.so
 /usr/lib/libpthread.so
 /usr/lib/libpthread_nonshared.a
 /usr/lib/libc_nonshared.a

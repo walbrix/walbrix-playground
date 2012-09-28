@@ -11,6 +11,7 @@
 #require components/s3cmd.lst
 #require components/groonga.lst
 #require components/mroonga.lst
+#require components/rroonga.lst
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1groonga-dev\2/
 #sed /etc/mysql/my.cnf s/^bind-address/#bind-address/
 #copy groonga/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include

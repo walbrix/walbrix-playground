@@ -6,6 +6,8 @@ app-portage/gentoolkit
 dev-db/mysql
 dev-db/phpmyadmin
 dev-lang/php
+dev-lang/ruby
+dev-ruby/pkg-config
 dev-util/strace
 dev-vcs/git
 net-dns/avahi

@@ -4,4 +4,10 @@ www-apache/mod_extract_forwarded mod_proxy
 www-servers/apache apache2_modules_proxy_connect apache2_modules_proxy apache2_modules_proxy_http apache2_modules_proxy_ajp
 dev-lang/php apache2 cjk gd mysql mysqli xsl zip pdo
 app-editors/emacs -gpm -xpm
-
+dev-ruby/rubygems -ruby_targets_ruby18
+virtual/rubygems -ruby_targets_ruby18
+dev-ruby/rake -ruby_targets_ruby18
+dev-ruby/racc -ruby_targets_ruby18
+dev-ruby/json -ruby_targets_ruby18
+dev-ruby/rdoc -ruby_targets_ruby18
+dev-ruby/pkg-config -ruby_targets_ruby18

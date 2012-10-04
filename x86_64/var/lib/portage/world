@@ -7,6 +7,9 @@ dev-db/mysql
 dev-db/phpmyadmin
 dev-lang/php
 dev-lang/ruby
+dev-python/beautifulsoup
+dev-python/mysql-python
+dev-python/setuptools
 dev-ruby/pkg-config
 dev-util/strace
 dev-vcs/git

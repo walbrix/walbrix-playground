@@ -1,6 +1,6 @@
 #require components/dev.lst
 #require components/pvkernel.lst
-#extract centos/centos-$(ARCH).tar.xz /
+#extract centos/centos-6.3-$(ARCH).tar.xz /
 #sed /etc/init/start-ttys.conf s/ACTIVE_CONSOLES=\/dev\/.*$/ACTIVE_CONSOLES=\/dev\/hvc0/
 #chrootexec echo "hvc0" >> /etc/securetty
 #sed /etc/sysconfig/network s/^HOSTNAME=.*/HOSTNAME=centos/

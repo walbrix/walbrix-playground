@@ -1,5 +1,5 @@
 =sys-auth/nss-mdns-0.10-r1
-=sys-kernel/gentoo-sources-3.0.43
+=sys-kernel/gentoo-sources-3.0.45
 =sys-auth/nss-myhostname-0.3
 =dev-java/jdbc-postgresql-9.1_p902
 =net-libs/nodejs-0.9.0-r2

@@ -1,5 +1,5 @@
 =sys-libs/glibc-2.15-r3
-=sys-kernel/gentoo-sources-3.0.43
+=sys-kernel/gentoo-sources-3.0.45
 =net-dns/avahi-0.6.30-r3
 =sys-auth/nss-myhostname-0.3
 

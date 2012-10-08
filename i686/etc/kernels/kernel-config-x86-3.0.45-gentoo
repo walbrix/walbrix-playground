@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Linux/x86 3.0.43-gentoo Kernel Configuration
+# Linux/x86 3.0.45-gentoo Kernel Configuration
 #
 # CONFIG_64BIT is not set
 CONFIG_X86_32=y

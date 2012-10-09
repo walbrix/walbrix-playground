@@ -1,6 +1,7 @@
 #require components/domU.lst
 #require components/cron.lst
 #require components/pvkernel.lst
+#require components/sudo.lst
 #require components/apache.lst
 #require components/php53.lst
 #require components/mysql.lst
@@ -8,6 +9,7 @@
 #require components/phpmyadmin.lst
 #require components/beautifulsoup.lst
 #require components/flask.lst
+#require components/pip.lst
 #require components/git.lst
 #require components/emacs.lst
 #require components/vim.lst

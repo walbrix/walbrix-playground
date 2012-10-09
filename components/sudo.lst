@@ -1,0 +1,9 @@
+/etc/pam.d/sudo
+/etc/sudoers
+/usr/bin/sudo
+/usr/bin/sudoedit
+/usr/bin/sudoreplay
+/usr/lib/sudo/sudoers.so
+/usr/libexec/sudo_noexec.so
+/usr/sbin/visudo
+/var/db/sudo/.keep_app-admin_sudo-0

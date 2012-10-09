@@ -8,6 +8,7 @@ dev-db/phpmyadmin
 dev-lang/php
 dev-lang/ruby
 dev-python/beautifulsoup
+dev-python/flask
 dev-python/mysql-python
 dev-python/setuptools
 dev-ruby/pkg-config
@@ -27,4 +28,5 @@ sys-kernel/gentoo-sources
 sys-process/vixie-cron
 www-apache/mod_authnz_external
 www-apache/mod_extract_forwarded
+www-apache/mod_wsgi
 www-servers/apache

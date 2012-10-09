@@ -11,3 +11,4 @@ dev-ruby/racc -ruby_targets_ruby18
 dev-ruby/json -ruby_targets_ruby18
 dev-ruby/rdoc -ruby_targets_ruby18
 dev-ruby/pkg-config -ruby_targets_ruby18
+dev-python/jinja vim-syntax i18n

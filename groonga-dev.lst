@@ -7,6 +7,7 @@
 #require components/mysql-python.lst
 #require components/phpmyadmin.lst
 #require components/beautifulsoup.lst
+#require components/flask.lst
 #require components/git.lst
 #require components/emacs.lst
 #require components/vim.lst

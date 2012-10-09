@@ -1,0 +1,2 @@
+#sed /var/www/localhost/cgi-bin/mt/mt-config.cgi s/^\(DefaultLanguage en_US\)$/#\1/
+#sed /var/www/localhost/cgi-bin/mt/mt-config.cgi s/^#\(DefaultLanguage ja\)$/\1/

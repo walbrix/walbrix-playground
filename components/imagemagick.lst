@@ -244,10 +244,10 @@
 /usr/lib/ImageMagick-6.7.8/modules-Q16/coders/yuv.so
 /usr/lib/ImageMagick-6.7.8/modules-Q16/filters/analyze.la
 /usr/lib/ImageMagick-6.7.8/modules-Q16/filters/analyze.so
-/usr/lib/perl5/vendor_perl/5.12.4/i686-linux/Image/Magick.pm
-/usr/lib/perl5/vendor_perl/5.12.4/i686-linux/auto/Image/Magick/Magick.bs
-/usr/lib/perl5/vendor_perl/5.12.4/i686-linux/auto/Image/Magick/Magick.so
-/usr/lib/perl5/vendor_perl/5.12.4/i686-linux/auto/Image/Magick/autosplit.ix
+/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Image/Magick.pm
+/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Image/Magick/Magick.bs
+/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Image/Magick/Magick.so
+/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Image/Magick/autosplit.ix
 /usr/share/ImageMagick-6.7.8/english.xml
 /usr/share/ImageMagick-6.7.8/francais.xml
 /usr/share/ImageMagick-6.7.8/locale.xml

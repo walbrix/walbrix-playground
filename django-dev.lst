@@ -5,6 +5,9 @@
 #require components/emacs.lst
 #require components/vimpython.lst
 #require components/sqlbuddy.lst
+#require components/subversion.lst
+#require components/mercurial.lst
+#require components/git.lst
 
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1django-dev\2/
 #appendline /etc/passwd django:x:100:100:django developer:/home/django:/bin/bash

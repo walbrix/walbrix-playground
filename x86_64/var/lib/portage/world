@@ -7,6 +7,7 @@ dev-db/mysql
 dev-db/phpmyadmin
 dev-lang/php
 dev-lang/ruby
+dev-python/pip
 dev-ruby/pkg-config
 dev-util/strace
 dev-vcs/git

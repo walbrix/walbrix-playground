@@ -1,0 +1,8 @@
+{
+	"id":"groonga-dev",
+	"title":"Groonga dev",
+	"tarball":"groonga-dev-x86_64-in.tar.xz",
+	"minimum_ram":256,
+	"minimum_hd":1
+}
+

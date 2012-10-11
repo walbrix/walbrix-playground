@@ -10,6 +10,7 @@ dev-db/postgresql-server
 dev-java/icedtea-bin
 dev-java/jdbc-postgresql
 dev-lang/php
+dev-lang/python
 dev-libs/iniparser
 dev-perl/Archive-Zip
 dev-perl/Cache

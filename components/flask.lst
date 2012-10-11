@@ -22,7 +22,6 @@
 
 # dev-python/Babel
 /usr/bin/pybabel
-/usr/bin/pybabel-2.7
 /usr/lib/python2.7/site-packages/babel/__init__.py
 /usr/lib/python2.7/site-packages/babel/core.py
 /usr/lib/python2.7/site-packages/babel/dates.py

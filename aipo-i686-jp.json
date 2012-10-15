@@ -1,0 +1,10 @@
+{
+	"id":"aipo",
+	"title":"グループウェア Aipo(アイポ) 7.0.1",
+	"images":[{"url":"http://va.walbrix.net/img/aipo01.png"}],	
+	"tarball":"aipo-i686-jp.tar.xz",
+	"description":"オープンソースグループウェア 『アイポ』は、スケジュール管理機能、Webメール機能、 ワークフロー機能のほか、ブログ、掲示板機能などを搭載した、無料で利用できるグループウェアです。",
+	"minimum_ram":128,
+	"minimum_hd":3
+}
+

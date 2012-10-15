@@ -53,4 +53,4 @@ dev-ruby/daemon_controller ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/rmagick ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/mysql-ruby ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/mysql2 ruby_targets_ruby19 -ruby_targets_ruby18
-
+dev-ruby/pkg-config ruby_targets_ruby19 -ruby_targets_ruby18

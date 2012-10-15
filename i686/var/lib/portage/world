@@ -33,6 +33,7 @@ dev-ruby/mocha
 dev-ruby/mysql-ruby
 dev-ruby/mysql2
 dev-ruby/pg
+dev-ruby/pkg-config
 dev-ruby/rails
 dev-ruby/rmagick
 dev-ruby/shoulda

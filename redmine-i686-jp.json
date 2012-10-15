@@ -1,0 +1,9 @@
+{
+	"id":"redmine",
+	"title":"プロジェクト管理 Redmine 2.1.2",
+	"images":[{"url":"http://va.walbrix.net/img/redmine01.png"}],	
+	"tarball":"redmine-i686-jp.tar.xz",
+	"description":"Redmineは、Ruby on Railsで記述された、オープンソースのプロジェクト管理ソフトウェアです。Walbrix特別仕様として Subversionのリポジトリが統合されており、Redmineと共通のユーザー名とパスワードを使ってリポジトリにアクセスすることが出来ます。",
+	"minimum_ram":128,
+	"minimum_hd":3
+}

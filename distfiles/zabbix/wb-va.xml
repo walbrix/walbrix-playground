@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtual-appliance uuid="251982d3-b142-4368-ad03-17a84776db50">
+  <version>2.0.3</version>
+  <instruction>デフォルトの管理者ID/Passwordは admin/zabbixです。</instruction>
+  <instruction xml:lang="en">The default admin id/password is admin/zabbix</instruction>
+</virtual-appliance>

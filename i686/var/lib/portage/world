@@ -47,6 +47,7 @@ dev-vcs/subversion
 mail-mta/postfix
 media-fonts/vlgothic
 media-gfx/imagemagick
+net-analyzer/zabbix
 net-fs/samba
 net-misc/ntp
 net-misc/openvpn

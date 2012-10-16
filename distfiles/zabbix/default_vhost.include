@@ -1,0 +1,10 @@
+ServerAdmin zabbix@example.com
+
+DocumentRoot "/usr/share/webapps/zabbix/2.0.3/htdocs"
+<Directory "/usr/share/webapps/zabbix/2.0.3/htdocs">
+	DirectoryIndex index.php
+	Options Indexes FollowSymLinks
+	AllowOverride All
+	Allow from all
+</Directory>
+

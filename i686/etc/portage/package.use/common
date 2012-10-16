@@ -14,3 +14,5 @@ dev-java/icedtea-bin -X -alsa -cups cjk
 media-libs/libsdl fbcon X
 media-libs/sdl-image png jpeg
 app-editors/emacs -gpm -xpm
+net-analyzer/zabbix ipv6 curl frontend jabber java mysql openipmi server snmp ssh
+sys-libs/openipmi snmp

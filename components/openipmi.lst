@@ -1,0 +1,9 @@
+#require net-snmp.lst
+/usr/sbin/ipmi_ui
+/usr/sbin/ipmicmd
+/usr/sbin/ipmilan
+/usr/sbin/ipmish
+/usr/sbin/openipmicmd
+/usr/sbin/openipmish
+/usr/sbin/rmcp_ping
+/usr/sbin/solterm

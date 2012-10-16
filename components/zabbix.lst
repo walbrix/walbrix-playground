@@ -841,6 +841,7 @@
 #chrootexec cp -a /etc/group /tmp/group && echo "zabbix:x:118:" >> /tmp/group && mv /tmp/group /etc/group
 
 #sed /etc/zabbix/zabbix_server.conf s/^DBUser=root$/DBUser=zabbix/
+#sed /etc/zabbix/zabbix_trapper.conf s/^DBUser=root$/DBUser=zabbix/
 
 #sed /etc/php/apache2-php5.3/php.ini s/^max_execution_time.\+$/max_execution_time = 300/ 
 #sed /etc/php/apache2-php5.3/php.ini s/^max_input_time.\+$/max_input_time = 300/

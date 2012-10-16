@@ -828,7 +828,7 @@
 /var/lib/zabbix/home/.keep_net-analyzer_zabbix-0
 /var/lib/zabbix/scripts/.keep_net-analyzer_zabbix-0
 /var/log/zabbix/.keep_net-analyzer_zabbix-0
-/var/run/zabbix/.keep_net-analyzer_zabbix-0
+#/var/run/zabbix/.keep_net-analyzer_zabbix-0
 
 #copy zabbix/zabbix.conf.php /usr/share/webapps/zabbix/2.0.3/htdocs/conf/zabbix.conf.php
 /usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf

@@ -25,6 +25,7 @@
 #require locales.lst
 #require nss-mdns.lst
 #require syslog.lst
+#require zabbix-agent.lst
 #copy domU/fstab /etc/fstab
 #copy domU/group /etc/group
 #copy domU/inittab /etc/inittab

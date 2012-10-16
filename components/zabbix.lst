@@ -840,9 +840,6 @@
 #extract zabbix/initial-database-$(LANGUAGE).tar.gz /var/lib/mysql
 # copy zabbix/initial-database-$(LANGUAGE).sh /root/initial-database.sh
 
-#chrootexec cp -a /etc/passwd /tmp/passwd && echo "zabbix:x:103:118:added by portage for zabbix:/var/lib/zabbix/home:/sbin/nologin" >> /tmp/passwd && mv /tmp/passwd /etc/passwd
-#chrootexec cp -a /etc/group /tmp/group && echo "zabbix:x:118:" >> /tmp/group && mv /tmp/group /etc/group
-
 #sed /etc/zabbix/zabbix_server.conf s/^DBUser=root$/DBUser=zabbix/
 #sed /etc/zabbix/zabbix_trapper.conf s/^DBUser=root$/DBUser=zabbix/
 

@@ -16,6 +16,7 @@ postgres:x:70:70:added by portage for postgresql-server:/var/lib/postgresql:/bin
 apache:x:81:
 usb::85:
 users:x:100:
+zabbix:x:118:
 postfix:x:207:
 postdrop:x:208:
 avahi:x:248:

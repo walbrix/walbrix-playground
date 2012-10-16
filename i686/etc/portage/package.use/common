@@ -8,7 +8,7 @@ media-gfx/imagemagick perl jpeg jpeg2k png svg truetype webp
 gnome-base/librsvg -gtk
 media-libs/gd png jpeg truetype
 x11-libs/cairo X
-dev-lang/php apache2 cjk gd mysql mysqli xsl zip pdo
+dev-lang/php apache2 cjk gd mysql mysqli xsl zip pdo truetype xmlwriter bcmath xmlreader sysvipc sockets
 sys-kernel/gentoo-sources symlink
 dev-java/icedtea-bin -X -alsa -cups cjk
 media-libs/libsdl fbcon X

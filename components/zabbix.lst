@@ -838,6 +838,7 @@
 #symlink /etc/runlevels/default/zabbix-server /etc/init.d/zabbix-server
 
 #extract zabbix/initial-database-$(LANGUAGE).tar.gz /var/lib/mysql
+#chrootexec chown -R mysql.mysql /var/lib/mysql
 # copy zabbix/initial-database-$(LANGUAGE).sh /root/initial-database.sh
 
 #sed /etc/zabbix/zabbix_server.conf s/^DBUser=root$/DBUser=zabbix/

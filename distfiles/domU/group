@@ -19,7 +19,6 @@ users:x:100:
 postfix:x:207:
 postdrop:x:208:
 avahi:x:248:
-dhcp:x:408:
 uucp::14:uucp
 portage::250:portage
 tomcat:x:265:

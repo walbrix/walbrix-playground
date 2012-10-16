@@ -27,12 +27,12 @@
 #require syslog.lst
 #require zabbix-agent.lst
 #copy domU/fstab /etc/fstab
-#copy domU/group /etc/group
+/etc/group
 #copy domU/inittab /etc/inittab
-#copy domU/passwd /etc/passwd
+/etc/passwd
 #copy domU/resolv.conf /etc/resolv.conf
 #copy domU/securetty /etc/securetty
-#copy domU/shadow /etc/shadow
+/etc/shadow
 /bin/bunzip2
 /bin/bzcat
 /bin/bzip2

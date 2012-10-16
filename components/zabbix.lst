@@ -831,6 +831,9 @@
 /var/run/zabbix/.keep_net-analyzer_zabbix-0
 
 #copy zabbix/zabbix.conf.php /usr/share/webapps/zabbix/2.0.3/htdocs/conf/zabbix.conf.php
+/usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf
+#symlink /usr/share/webapps/zabbix/2.0.3/htdocs/fonts/VL-PGothic-Regular.ttf ../../../../../fonts/vlgothic/VL-PGothic-Regular.ttf
+#sed /usr/share/webapps/zabbix/2.0.3/htdocs/include/defines.inc.php s/DejaVuSans/VL-PGothic-Regular/
 
 #symlink /etc/runlevels/default/zabbix-server /etc/init.d/zabbix-server
 

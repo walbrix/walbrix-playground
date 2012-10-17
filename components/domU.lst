@@ -33,6 +33,7 @@
 #copy domU/resolv.conf /etc/resolv.conf
 #copy domU/securetty /etc/securetty
 /etc/shadow
+#sed /etc/shadow s/^root:\*:/root::/
 /bin/bunzip2
 /bin/bzcat
 /bin/bzip2

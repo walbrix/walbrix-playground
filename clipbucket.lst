@@ -14,8 +14,8 @@
 #copy clipbucket/ixed.5.3.lin /usr/lib/php5.3/lib/extensions/no-debug-non-zts-20090626/ixed.5.3.lin
 #sed /etc/php/apache2-php5.3/php.ini s/^short_open_tag.\+$/short_open_tag = On/
 #sed /etc/php/apache2-php5.3/php.ini s/^max_execution_time.\+$/max_execution_time = 0/ 
-#sed /etc/php/apache2-php5.3/php.ini s/^upload_max_filesize.\+$/upload_max_filesize = 100M/
-#sed /etc/php/apache2-php5.3/php.ini s/^post_max_size.\+$/post_max_size = 100M/
+#sed /etc/php/apache2-php5.3/php.ini s/^upload_max_filesize.\+$/upload_max_filesize = 512M/
+#sed /etc/php/apache2-php5.3/php.ini s/^post_max_size.\+$/post_max_size = 768M/
 #sed /etc/php/apache2-php5.3/php.ini s/^;extension=php_zip\.dll$/extension=ixed.5.3.lin/
 #copy clipbucket/flvtool2-1.0.6.gem /flvtool2.gem
 #chrootexec gem install -l /flvtool2.gem && rm /flvtool2.gem

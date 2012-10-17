@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtual-appliance uuid="490db749-eb98-42d1-abae-e4438b5da342">
+  <version>2.6</version>
+  <instruction>管理画面のURIは/admin_area/で、デフォルトの管理者ID/Passwordは admin/adminです。</instruction>
+  <instruction xml:lang="en">Admin panel's URI is /admin_area/. The default admin id/password is admin/admin</instruction>
+</virtual-appliance>

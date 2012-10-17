@@ -10,7 +10,7 @@ media-libs/gd png jpeg truetype
 x11-libs/cairo X
 
 # cjk removed because of gd truetype rendering problem
-dev-lang/php apache2 gd mysql mysqli xsl zip pdo truetype xmlwriter bcmath xmlreader sysvipc sockets -cjk
+dev-lang/php apache2 gd mysql mysqli xsl zip pdo truetype xmlwriter bcmath xmlreader sysvipc sockets curl -cjk
 sys-kernel/gentoo-sources symlink
 dev-java/icedtea-bin -X -alsa -cups cjk
 media-libs/libsdl fbcon X
@@ -18,3 +18,5 @@ media-libs/sdl-image png jpeg
 app-editors/emacs -gpm -xpm
 net-analyzer/zabbix ipv6 curl frontend jabber java mysql openipmi server snmp ssh agent
 sys-libs/openipmi snmp
+media-video/ffmpeg mp3 faac xvid x264
+

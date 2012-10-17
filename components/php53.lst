@@ -1,4 +1,3 @@
-# dev-lang/php apache2 cjk gd mysql mysqli xsl zip pdo
 #require apache.lst
 /etc/apache2/modules.d/70_mod_php5.conf
 /etc/env.d/20php5.3

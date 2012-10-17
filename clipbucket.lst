@@ -1,0 +1,42 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/ruby18.lst
+#require components/php53.lst
+#require components/mysql.lst
+#require components/ffmpeg.lst
+#require components/postfix.lst
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1clipbucket\2/
+#copy domU/fstab-with-swapfile /etc/fstab
+#swap /swapfile 128
+
+#dir /usr/lib/php5.3/lib/extensions/no-debug-non-zts-20090626
+#copy clipbucket/ixed.5.3.lin /usr/lib/php5.3/lib/extensions/no-debug-non-zts-20090626/ixed.5.3.lin
+#sed /etc/php/apache2-php5.3/php.ini s/^short_open_tag.\+$/short_open_tag = On/
+#sed /etc/php/apache2-php5.3/php.ini s/^max_execution_time.\+$/max_execution_time = 0/ 
+#sed /etc/php/apache2-php5.3/php.ini s/^upload_max_filesize.\+$/upload_max_filesize = 100M/
+#sed /etc/php/apache2-php5.3/php.ini s/^post_max_size.\+$/post_max_size = 100M/
+#sed /etc/php/apache2-php5.3/php.ini s/^;extension=php_zip\.dll$/extension=ixed.5.3.lin/
+#copy clipbucket/flvtool2-1.0.6.gem /flvtool2.gem
+#chrootexec gem install -l /flvtool2.gem && rm /flvtool2.gem
+
+#extract clipbucket/clipbucket-2.6-r738.zip /var/www/localhost
+#chrootexec rm -rf /var/www/localhost/htdocs
+#chrootexec mv /var/www/localhost/upload /var/www/localhost/htdocs
+#copy clipbucket/dbconnect.php /var/www/localhost/htdocs/includes/dbconnect.php
+#copy clipbucket/clipbucket.php /var/www/localhost/htdocs/includes/clipbucket.php
+#chrootexec rm -rf /var/www/localhost/htdocs/cb_install /var/www/localhost/htdocs/files/temp/install.me
+#chrootexec chown -R apache.apache /var/www/localhost/htdocs
+
+#copy clipbucket/libx264-normal.ffpreset /usr/share/ffmpeg/libx264-normal.ffpreset
+#copy clipbucket/crontab /var/spool/cron/crontabs/root
+#chrootexec chown root.root /var/spool/cron/crontabs/root
+
+##copy clipbucket/initial-database0.sql /root/initial-database0.sql
+##copy clipbucket/initial-database1.sql /root/initial-database1.sql
+##copy clipbucket/initial-database-jp.sql /root/initial-database-jp.sql
+##copy clipbucket/initial-database-jp.sh /root/initial-database-jp.sh
+#extract clipbucket/initial-database-jp.tar.gz /var/lib/mysql
+
+#copy clipbucket/wb-va.xml /etc/wb-va.xml
+

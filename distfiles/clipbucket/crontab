@@ -1,0 +1,3 @@
+* * * * * wget -q -O /dev/null http://localhost/actions/video_convert.php
+* * * * * wget -q -O /dev/null http://localhost/actions/verify_converted_videos.php
+0 0,12,13 * * * wget -q -O /dev/null http://localhost/actions/update_cb_stats.php

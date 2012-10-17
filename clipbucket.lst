@@ -26,6 +26,11 @@
 #copy clipbucket/dbconnect.php /var/www/localhost/htdocs/includes/dbconnect.php
 #copy clipbucket/clipbucket.php /var/www/localhost/htdocs/includes/clipbucket.php
 #chrootexec rm -rf /var/www/localhost/htdocs/cb_install /var/www/localhost/htdocs/files/temp/install.me
+#sed /var/www/localhost/htdocs/admin_area/styles/cbv2/layout/header.html s/ href="{\$baseurl}"/ href="{$baseurl}\/"/
+#sed /var/www/localhost/htdocs/admin_area/styles/cbv2/layout/login.html s/ href="{\$baseurl}"/ href="{$baseurl}\/"/
+#sed /var/www/localhost/htdocs/styles/cbv2new/layout/header.html s/ href="{\$baseurl}"/ href="{$baseurl}\/"/
+#sed /var/www/localhost/htdocs/styles/cbv2new/layout/view_item.html s/ href="{\$baseurl}"/ href="{$baseurl}\/"/
+#sed /var/www/localhost/htdocs/includes/classes/ClipBucket.class.php s/\(.link.=>BASEURL\)/\1."\/"/g
 #chrootexec chown -R apache.apache /var/www/localhost/htdocs
 
 #copy clipbucket/libx264-normal.ffpreset /usr/share/ffmpeg/libx264-normal.ffpreset

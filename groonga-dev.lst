@@ -12,7 +12,7 @@
 #copy phpmyadmin/config.inc.allownopassword.php /usr/share/webapps/phpmyadmin/3.5.2.2/htdocs/config.inc.php
 #require components/beautifulsoup.lst
 #require components/flask.lst
-#require components/pip.lst
+##require components/pip.lst
 #require components/git.lst
 #require components/emacs.lst
 #require components/vim.lst

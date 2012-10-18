@@ -1,0 +1,6 @@
+dev-ruby/rexical ruby_targets_ruby19 -ruby_targets_ruby18 
+dev-ruby/daemons ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/nokogiri ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/mechanize ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/chronic ruby_targets_ruby19 -ruby_targets_ruby18
+

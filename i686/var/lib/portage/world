@@ -1,3 +1,4 @@
+app-admin/sudo
 app-admin/sysklogd
 app-admin/webapp-config
 app-arch/cpio
@@ -28,10 +29,14 @@ dev-perl/crypt-dsa
 dev-python/django
 dev-python/pygame
 dev-python/setuptools
+dev-ruby/chronic
 dev-ruby/coderay
+dev-ruby/daemons
+dev-ruby/mechanize
 dev-ruby/mocha
 dev-ruby/mysql-ruby
 dev-ruby/mysql2
+dev-ruby/nokogiri
 dev-ruby/pg
 dev-ruby/pkg-config
 dev-ruby/rails

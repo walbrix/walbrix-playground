@@ -1,0 +1,36 @@
+#require components/domU.lst
+#require components/pvkernel.lst
+#require components/sudo.lst
+#require components/apache.lst
+#require components/php53.lst
+#require components/postgresql.lst
+#require components/postfix.lst
+#require components/rails.lst
+#require components/danbooru-rubygems.lst
+#require components/imagemagick.lst
+
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1danbooru\2/
+#copy domU/fstab-with-swapfile /etc/fstab
+#swap /swapfile 128
+#extract danbooru/danbooru2.tar.gz /var/www/localhost
+#chrootexec rm -rf /var/www/localhost/htdocs
+#chrootexec mv /var/www/localhost/danbooru2 /var/www/localhost/htdocs
+#copy danbooru/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
+#copy danbooru/Gemfile /var/www/localhost/htdocs/Gemfile
+#chrootexec rm /var/www/localhost/htdocs/Gemfile.lock 
+#chrootexec mkdir -p /var/www/localhost/htdocs/public/data/preview
+#sed /etc/apache2/modules.d/30_mod_passenger.conf s/\(\/usr\/bin\/ruby\)18$/\119/
+
+#copy danbooru/database.yml /var/www/localhost/htdocs/config/database.yml
+#copy danbooru/danbooru_local_config.rb /var/www/localhost/htdocs/config/danbooru_local_config.rb
+#chrootexec chown -R apache.apache /var/www/localhost/htdocs
+#&& chmod -R g+w /var/www/localhost/htdocs
+
+##extract danbooru/initial-database.tar.gz /var/lib/postgresql/9.1
+#extract danbooru/initial-database.tar.gz /var/lib/postgresql/9.1
+
+##chrootexec cp -a /etc/passwd /etc/shadow /etc/group /tmp/ && mv /tmp/passwd /tmp/shadow /tmp/group /etc/ && useradd -d /var/www/localhost/htdocs -G apache danbooru
+#copy danbooru/delayed_job.start /etc/local.d/delayed_job.start
+#copy danbooru/delayed_job.stop /etc/local.d/delayed_job.stop
+
+#copy danbooru/wb-va.xml /etc/wb-va.xml

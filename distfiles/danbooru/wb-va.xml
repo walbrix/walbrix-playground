@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtual-appliance uuid="b41d55b8-ecb3-4d2e-8302-c47dd7a103be">
+  <version>201210</version>
+  <instruction>最初に作成したユーザが自動的に管理ユーザになります</instruction>
+  <instruction xml:lang="en">The first account you create will automatically become the administrator</instruction>
+</virtual-appliance>

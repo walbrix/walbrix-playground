@@ -1,0 +1,36 @@
+source 'http://gemcutter.org'
+
+group :test do
+  gem "shoulda"
+  gem "factory_girl"
+  gem "mocha"
+  gem "ffaker"
+  gem "simplecov", :require => false
+end
+
+group :assets do
+  gem "sass-rails"
+  gem "uglifier", ">= 1.0.3"
+#  gem "therubyracer"
+end
+
+gem "rails", "3.2.8"
+gem "pg"
+gem "memcache-client", :require => "memcache"
+gem "delayed_job"
+gem "delayed_job_active_record"
+gem "super_exception_notifier"
+gem "simple_form"
+gem "mechanize"
+gem "nokogiri"
+gem "meta_search"
+#gem "whenever", :require => false
+gem "sanitize"
+gem 'rmagick', :require => "RMagick"
+gem 'daemons'
+gem 'newrelic_rpm'
+
+group :development do
+#  gem 'pry'
+  gem 'awesome_print'
+end

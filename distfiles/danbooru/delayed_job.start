@@ -1,0 +1,4 @@
+#!/bin/sh
+cd /var/www/localhost/htdocs
+sudo -u apache sh -c "export RAILS_ENV=production && ./script/delayed_job start"
+

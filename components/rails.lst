@@ -1,6 +1,5 @@
 #require nodejs.lst
 #require ruby19.lst
-#require mysql.lst
 #require apache.lst
 
 # ragel
@@ -1226,6 +1225,7 @@
 /usr/lib/ruby/gems/1.9.1/gems/memcache-client-1.8.5/lib/memcache/event_machine.rb
 /usr/lib/ruby/gems/1.9.1/gems/memcache-client-1.8.5/lib/memcache/version.rb
 /usr/lib/ruby/gems/1.9.1/gems/memcache-client-1.8.5/lib/memcache_util.rb
+/usr/lib/ruby/gems/1.9.1/specifications/memcache-client-1.8.5.gemspec
 
 # rack-cache
 /usr/lib/ruby/gems/1.9.1/gems/rack-cache-1.2/lib/rack-cache.rb

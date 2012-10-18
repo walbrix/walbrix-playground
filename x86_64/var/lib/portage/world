@@ -11,10 +11,10 @@ dev-lang/ruby
 dev-python/beautifulsoup
 dev-python/flask
 dev-python/mysql-python
-dev-python/pip
 dev-ruby/pkg-config
 dev-util/strace
 dev-vcs/git
+net-analyzer/zabbix
 net-dns/avahi
 net-fs/samba
 net-misc/ntp

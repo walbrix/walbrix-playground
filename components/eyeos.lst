@@ -9361,6 +9361,7 @@
 #dir /usr/share/webapps/eyeos/2.5/conf
 
 #copy eyeos/settings.php /usr/share/webapps/eyeos/2.5/htdocs/settings.php
+#chrootexec rm -rf /usr/share/webapps/eyeos/2.5/htdocs/install
 #chrootexec chown -R apache.apache /usr/share/webapps/eyeos/2.5/htdocs
 
 ##copy eyeos/initial-database-$(REGION).sh /root/initial-database-$(REGION).sh

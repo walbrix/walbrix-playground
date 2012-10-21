@@ -1,1 +1,2 @@
 >=sys-kernel/gentoo-sources-3.1.0
+>=dev-lang/php-5.4

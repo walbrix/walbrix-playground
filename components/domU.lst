@@ -141,7 +141,7 @@
 /usr/bin/tput
 /usr/bin/unlzma
 ./usr/bin/unxz
-#symlink /usr/bin/unzip ../../bin/busybox
+/usr/bin/unzip
 ./usr/bin/uptime
 #symlink /usr/bin/vi ../../bin/busybox
 /usr/bin/vmstat
@@ -152,6 +152,7 @@
 ./usr/bin/xargs
 ./usr/bin/xz
 ./usr/bin/xzcat
+/usr/bin/zip
 /usr/lib/cracklib_dict.pwd
 /usr/lib/cracklib_dict.pwi
 /usr/lib/gconv/ANSI_X3.110.so

@@ -2,6 +2,7 @@ app-admin/sudo
 app-admin/sysklogd
 app-admin/webapp-config
 app-arch/cpio
+app-arch/zip
 app-editors/emacs
 app-editors/nano
 app-portage/gentoolkit
@@ -52,6 +53,7 @@ dev-vcs/subversion
 mail-mta/postfix
 media-fonts/vlgothic
 media-gfx/imagemagick
+media-libs/exiftool
 media-video/ffmpeg
 media-video/gpac
 net-analyzer/zabbix
@@ -69,5 +71,6 @@ www-apache/mod_authnz_external
 www-apache/mod_extract_forwarded
 www-apache/mod_wsgi
 www-apache/passenger
+www-apps/eyeos
 www-apps/websvn
 www-servers/tomcat

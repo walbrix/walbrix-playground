@@ -1,0 +1,11 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/eyeos.lst
+#require components/postfix.lst
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1eyeos\2/
+#copy domU/fstab-with-swapfile /etc/fstab
+#swap /swapfile 128
+#copy eyeos/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
+#copy eyeos/wb-va.xml /etc/wb-va.xml
+

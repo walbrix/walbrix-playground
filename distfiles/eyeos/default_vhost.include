@@ -1,0 +1,10 @@
+ServerAdmin eyeos@example.com
+
+DocumentRoot "/usr/share/webapps/eyeos/2.5/htdocs"
+<Directory "/usr/share/webapps/eyeos/2.5/htdocs">
+	DirectoryIndex index.php
+	Options Indexes FollowSymLinks
+	AllowOverride All
+	Allow from all
+</Directory>
+

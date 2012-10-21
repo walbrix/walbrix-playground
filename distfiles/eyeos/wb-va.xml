@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtual-appliance uuid="616b2382-a8a1-4774-ae40-7ffa185bbee9">
+  <version>2.5</version>
+  <instruction>eyeOSの管理者ID/パスワードはデフォルトで root/root です。</instruction>
+  <instruction xml:lang="en">The default admin ID/Password is root/root .</instruction>
+</virtual-appliance>

@@ -329,7 +329,6 @@
 
 #dir /var/lib/couchdb
 #dir /var/log/couchdb
-#chrootexec chown couchdb /var/lib/couchdb /var/log/couchdb
+#chrootexec chown couchdb /var/lib/couchdb /var/log/couchdb /etc/couchdb/local.ini
 #patchsinglefile /etc/init.d/couchdb couchdb/couchdb.patch
-
 

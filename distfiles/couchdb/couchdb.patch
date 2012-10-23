@@ -1,0 +1,3 @@
+11a12,13
+> 	[ -d /var/run/couchdb ] || mkdir -p /var/run/couchdb && chown couchdb /var/run/couchdb
+> 

@@ -1,0 +1,40 @@
+<html lang="ja">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CouchDB</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/redmond/jquery-ui.css" type="text/css"/>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">google.load("jquery", "1.4.2");</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+	<script type="text/javascript">google.load("jqueryui", "1.8.1");</script>
+	<script language="JavaScript"><!--
+	  $(function(){
+	    var hostname = location.hostname;
+		var http_couch = "http://" + hostname + ":5984/_utils/";
+	    $("#tabs").tabs();
+		$("span.hostname").html(hostname);
+		$("span.http-couch").html(http_couch);
+		$("a.http-couch").attr("href", http_couch);
+	  });
+//--></script>
+  </head>
+
+  <h1>CouchDB</h1>
+
+  <div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">使い方</a></li>
+		<li><a href="#tabs-2">追加情報</a></li>
+	</ul>
+	<div id="tabs-1">
+	  <p>Apache CouchDB は、RESTful HTTP/JSON API 経由でアクセス可能な、分散型で耐障害性の高い、スキーマ不要のドキュメント指向データベースです。</p>
+	  <p>管理URLは <a class="http-couch" href="#" target="_blank"><span class="http-couch"></span></a> になります。</p>
+	  <p>URLからポート番号の指定を省略する(80番ポートで CouchDBを利用できるようにする)には、/etc/apache2/vhosts.d/default_vhost.include ファイルの末尾に下記の記述を加え、/etc/init.d/apache2 restart でApacheを再起動してください。（その設定をすると、この画面は見られなくなります）</p>
+	  <pre>ProxyPass / http://localhost:5984/</pre>
+	</div>
+	<div id="tabs-2">
+	  <a href="http://couchdb.apache.org/">CouchDB オフィシャルサイト</a>
+	</div>
+	<div align="right" style="margin-top:1em;"><a href="http://walbrix.net/" target="_blank">Walbrix</a></div>
+  </div>
+</html>

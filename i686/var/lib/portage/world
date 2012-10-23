@@ -8,6 +8,7 @@ app-editors/nano
 app-portage/gentoolkit
 app-vim/rails
 app-vim/vimpython
+dev-db/couchdb
 dev-db/postgresql-server
 dev-java/icedtea-bin
 dev-java/jdbc-postgresql

@@ -20,3 +20,5 @@ net-analyzer/zabbix ipv6 curl frontend jabber java mysql openipmi server snmp ss
 sys-libs/openipmi snmp
 media-video/ffmpeg mp3 faac xvid x264
 
+dev-lang/erlang smp kpoll
+

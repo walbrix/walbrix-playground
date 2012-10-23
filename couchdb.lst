@@ -1,0 +1,12 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/postfix.lst
+#require components/couchdb.lst
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1couchdb\2/
+#copy domU/fstab-with-swapfile /etc/fstab
+#swap /swapfile 128
+#copy couchdb/index.html /var/www/localhost/htdocs/index.html
+#copy couchdb/wb-va.xml /etc/wb-va.xml
+

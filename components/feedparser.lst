@@ -1,0 +1,4 @@
+#require python27.lst
+/usr/lib/python2.7/site-packages/_feedparser_sgmllib.py
+/usr/lib/python2.7/site-packages/feedparser.py
+

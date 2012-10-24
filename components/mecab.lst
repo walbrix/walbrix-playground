@@ -1,0 +1,19 @@
+# app-text/mecab
+/etc/mecabrc
+/usr/bin/mecab
+/usr/libexec/mecab/mecab-cost-train
+/usr/libexec/mecab/mecab-dict-gen
+/usr/libexec/mecab/mecab-dict-index
+/usr/libexec/mecab/mecab-system-eval
+/usr/libexec/mecab/mecab-test-gen
+
+# app-dicts/mecab-ipadic
+/usr/lib/mecab/dic/ipadic/char.bin
+/usr/lib/mecab/dic/ipadic/dicrc
+/usr/lib/mecab/dic/ipadic/left-id.def
+/usr/lib/mecab/dic/ipadic/matrix.bin
+/usr/lib/mecab/dic/ipadic/pos-id.def
+/usr/lib/mecab/dic/ipadic/rewrite.def
+/usr/lib/mecab/dic/ipadic/right-id.def
+/usr/lib/mecab/dic/ipadic/sys.dic
+/usr/lib/mecab/dic/ipadic/unk.dic

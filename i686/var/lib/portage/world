@@ -29,6 +29,7 @@ dev-perl/XML-Atom
 dev-perl/XML-Parser
 dev-perl/crypt-dsa
 dev-python/django
+dev-python/mecab-python
 dev-python/pygame
 dev-python/setuptools
 dev-ruby/chronic

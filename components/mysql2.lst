@@ -1,0 +1,9 @@
+#require ruby19.lst
+/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2.rb
+/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2/client.rb
+/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2/em.rb
+/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2/error.rb
+/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2/mysql2.so
+/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2/result.rb
+/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2/version.rb
+/usr/lib/ruby/gems/1.9.1/specifications/mysql2-0.3.11.gemspec

@@ -1,0 +1,32 @@
+#require rack.lst
+#require builder.lst
+#require tilt.lst
+#require passenger.lst
+
+# dev-ruby/rack-protection
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack-protection.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/authenticity_token.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/base.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/escaped_params.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/form_token.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/frame_options.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/ip_spoofing.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/json_csrf.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/path_traversal.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/remote_referrer.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/remote_token.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/session_hijacking.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/version.rb
+/usr/lib/ruby/gems/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb
+/usr/lib/ruby/gems/1.9.1/specifications/rack-protection-1.2.0.gemspec
+
+# dev-ruby/sinatra
+/usr/lib/ruby/gems/1.9.1/gems/sinatra-1.3.3/lib/sinatra.rb
+/usr/lib/ruby/gems/1.9.1/gems/sinatra-1.3.3/lib/sinatra/base.rb
+/usr/lib/ruby/gems/1.9.1/gems/sinatra-1.3.3/lib/sinatra/images/404.png
+/usr/lib/ruby/gems/1.9.1/gems/sinatra-1.3.3/lib/sinatra/images/500.png
+/usr/lib/ruby/gems/1.9.1/gems/sinatra-1.3.3/lib/sinatra/main.rb
+/usr/lib/ruby/gems/1.9.1/gems/sinatra-1.3.3/lib/sinatra/showexceptions.rb
+/usr/lib/ruby/gems/1.9.1/gems/sinatra-1.3.3/lib/sinatra/version.rb
+/usr/lib/ruby/gems/1.9.1/specifications/sinatra-1.3.3.gemspec

@@ -14,3 +14,17 @@ dev-ruby/pkg-config -ruby_targets_ruby18
 dev-python/jinja vim-syntax i18n
 sys-kernel/gentoo-sources symlink
 net-analyzer/zabbix agent -sqlite
+
+dev-ruby/rack-protection -ruby_targets_ruby18
+dev-ruby/rack -ruby_targets_ruby18
+dev-ruby/builder -ruby_targets_ruby18
+dev-ruby/tilt -ruby_targets_ruby18
+dev-ruby/sinatra -ruby_targets_ruby18
+dev-ruby/daemon_controller -ruby_targets_ruby18
+dev-ruby/highline -ruby_targets_ruby18
+dev-ruby/rubyforge -ruby_targets_ruby18
+dev-ruby/echoe -ruby_targets_ruby18
+dev-ruby/fastthread -ruby_targets_ruby18
+www-apache/passenger -ruby_targets_ruby18
+dev-ruby/mysql2 -ruby_targets_ruby18
+

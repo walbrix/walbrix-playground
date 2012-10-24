@@ -10,8 +10,13 @@ dev-lang/php
 dev-lang/ruby
 dev-python/beautifulsoup
 dev-python/flask
+dev-python/mecab-python
 dev-python/mysql-python
+dev-ruby/builder
+dev-ruby/builder:0
+dev-ruby/mysql2
 dev-ruby/pkg-config
+dev-ruby/sinatra
 dev-util/strace
 dev-vcs/git
 net-analyzer/zabbix
@@ -30,4 +35,5 @@ sys-process/vixie-cron
 www-apache/mod_authnz_external
 www-apache/mod_extract_forwarded
 www-apache/mod_wsgi
+www-apache/passenger
 www-servers/apache

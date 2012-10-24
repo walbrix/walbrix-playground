@@ -1,0 +1,4 @@
+#require python27.lst
+#require mecab.lst
+/usr/lib/python2.7/site-packages/MeCab.py
+/usr/lib/python2.7/site-packages/_MeCab.so

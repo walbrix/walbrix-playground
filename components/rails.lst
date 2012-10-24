@@ -1,77 +1,14 @@
 #require nodejs.lst
 #require ruby19.lst
 #require apache.lst
+#require rack.lst
+#require builder.lst
+#require tilt.lst
+#require passenger.lst
+#require mysql2.lst
 
 # ragel
 /usr/bin/ragel
-
-# rack
-/usr/bin/rackup
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/bin/rackup
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/auth/abstract/handler.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/auth/abstract/request.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/auth/basic.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/auth/digest/md5.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/auth/digest/nonce.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/auth/digest/params.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/auth/digest/request.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/backports/uri/common_18.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/backports/uri/common_192.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/body_proxy.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/builder.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/cascade.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/chunked.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/commonlogger.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/config.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/content_type.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/deflater.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/directory.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/file.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/cgi.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/evented_mongrel.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/fastcgi.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/lsws.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/mongrel.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/scgi.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/swiftiplied_mongrel.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/thin.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/head.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/lint.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/lobster.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/logger.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/mime.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/mock.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/multipart.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/multipart/generator.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/multipart/parser.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/multipart/uploaded_file.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/nulllogger.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/recursive.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/reloader.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/request.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/response.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/rewindable_input.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/sendfile.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/server.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/cookie.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/memcache.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/pool.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/showexceptions.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/showstatus.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/static.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/urlmap.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/utils.rb
-/usr/lib/ruby/gems/1.9.1/specifications/rack-1.4.1.gemspec
 
 # rake
 /usr/bin/rake
@@ -353,16 +290,6 @@
 /usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.0/lib/i18n/tests/procs.rb
 /usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.0/lib/i18n/version.rb
 /usr/lib/ruby/gems/1.9.1/specifications/i18n-0.6.0.gemspec
-
-# dev-ruby/builder
-/usr/lib/ruby/gems/1.9.1/gems/builder-3.0.0/lib/blankslate.rb
-/usr/lib/ruby/gems/1.9.1/gems/builder-3.0.0/lib/builder.rb
-/usr/lib/ruby/gems/1.9.1/gems/builder-3.0.0/lib/builder/blankslate.rb
-/usr/lib/ruby/gems/1.9.1/gems/builder-3.0.0/lib/builder/xchar.rb
-/usr/lib/ruby/gems/1.9.1/gems/builder-3.0.0/lib/builder/xmlbase.rb
-/usr/lib/ruby/gems/1.9.1/gems/builder-3.0.0/lib/builder/xmlevents.rb
-/usr/lib/ruby/gems/1.9.1/gems/builder-3.0.0/lib/builder/xmlmarkup.rb
-/usr/lib/ruby/gems/1.9.1/specifications/builder-3.0.0.gemspec
 
 # dev-ruby/multi_json
 /usr/lib/ruby/gems/1.9.1/gems/multi_json-1.3.6/lib/multi_json.rb
@@ -1525,28 +1452,6 @@
 /usr/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/xml_mini/rexml.rb
 /usr/lib/ruby/gems/1.9.1/specifications/activesupport-3.2.8.gemspec
 
-# tilt
-/usr/bin/tilt
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/bin/tilt
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/builder.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/coffee.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/css.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/erb.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/haml.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/liquid.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/markaby.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/markdown.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/nokogiri.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/radius.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/rdoc.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/string.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/template.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/textile.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/wiki.rb
-/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.3/lib/tilt/yajl.rb
-/usr/lib/ruby/gems/1.9.1/specifications/tilt-1.3.3.gemspec
-
 # treetop
 /usr/bin/tt
 /usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/bin/tt
@@ -2689,135 +2594,3 @@
 # mysql-ruby
 /usr/lib/ruby/gems/1.9.1/specifications/mysql-2.8.2.gemspec
 /usr/lib/ruby/site_ruby/1.9.1/i686-linux/mysql.so
-
-# mysql2
-/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2.rb
-/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2/client.rb
-/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2/em.rb
-/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2/error.rb
-/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2/mysql2.so
-/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2/result.rb
-/usr/lib/ruby/gems/1.9.1/gems/mysql2-0.3.11/lib/mysql2/version.rb
-/usr/lib/ruby/gems/1.9.1/specifications/mysql2-0.3.11.gemspec
-
-# passenger
-/etc/apache2/modules.d/30_mod_passenger.conf
-/usr/bin/passenger
-/usr/bin/passenger-config
-/usr/bin/passenger-install-nginx-module
-/usr/lib/apache2/modules/mod_passenger.so
-/usr/lib/ruby/site_ruby/1.9.1/i686-linux/passenger_native_support.so
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/abstract_installer.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/abstract_request_handler.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/abstract_server.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/abstract_server_collection.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/admin_tools.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/admin_tools/memory_stats.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/admin_tools/server_instance.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/analytics_logger.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/app_process.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/classic_rails/application_spawner.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/classic_rails/cgi_fixed.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/classic_rails/framework_spawner.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/classic_rails/request_handler.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/classic_rails_extensions/analytics_logging/ac_base_extension.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/classic_rails_extensions/analytics_logging/ac_benchmarking_extension.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/classic_rails_extensions/analytics_logging/ac_rescue_extension.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/classic_rails_extensions/analytics_logging/ar_abstract_adapter_extension.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/classic_rails_extensions/analytics_logging/as_cache_extension.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/classic_rails_extensions/analytics_logging/av_benchmark_helper_extension.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/classic_rails_extensions/init.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/console_text_template.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/constants.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/debug_logging.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/dependencies.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/exceptions.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/html_template.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/message_channel.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/message_client.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/native_support.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/packaging.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/platform_info.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/platform_info/apache.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/platform_info/binary_compatibility.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/platform_info/compiler.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/platform_info/curl.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/platform_info/linux.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/platform_info/operating_system.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/platform_info/ruby.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/platform_info/zlib.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/plugin.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/public_api.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/rack/application_spawner.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/rack/request_handler.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/rails3_extensions/init.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/simple_benchmarking.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/spawn_manager.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/standalone/app_finder.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/standalone/command.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/standalone/config_file.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/standalone/help_command.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/standalone/main.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/standalone/package_runtime_command.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/standalone/runtime_installer.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/standalone/start_command.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/standalone/status_command.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/standalone/stop_command.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/standalone/utils.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/standalone/version_command.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/apache2/apache_must_be_compiled_with_compatible_mpm.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/apache2/config_snippets.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/apache2/deployment_example.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/apache2/no_write_permission_to_passenger_root.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/apache2/possible_solutions_for_compilation_and_installation_problems.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/apache2/run_installer_as_root.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/apache2/welcome.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/app_exited_during_initialization.html.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/app_init_error.html.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/database_error.html.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/error_layout.css
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/error_layout.html.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/framework_init_error.html.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/general_error.html.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/load_error.html.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/ask_for_extra_configure_flags.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/cannot_write_to_dir.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/config_snippets.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/config_snippets_inserted.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/confirm_extra_configure_flags.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/deployment_example.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/pcre_could_not_be_downloaded.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/pcre_could_not_be_extracted.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/possible_solutions_for_compilation_and_installation_problems.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/possible_solutions_for_download_and_extraction_problems.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/query_download_and_install.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/run_installer_as_root.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/nginx/welcome.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/standalone/cannot_write_to_dir.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/standalone/config.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/standalone/possible_solutions_for_download_and_extraction_problems.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/standalone/run_installer_as_root.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/standalone/welcome.txt.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/standalone_default_root/index.html
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/templates/version_not_found.html.erb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/utils.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/utils/file_system_watcher.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/utils/hosts_file_parser.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/utils/rewindable_input.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/utils/tmpdir.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/utils/unseekable_socket.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/wsgi/application_spawner.rb
-/usr/lib/ruby/site_ruby/1.9.1/phusion_passenger/wsgi/request_handler.py
-/usr/libexec/phusion-passenger/agents/PassengerLoggingAgent
-/usr/libexec/phusion-passenger/agents/PassengerWatchdog
-/usr/libexec/phusion-passenger/agents/apache2/PassengerHelperAgent
-/usr/libexec/phusion-passenger/agents/nginx/PassengerHelperAgent
-/usr/sbin/passenger-make-enterprisey
-/usr/sbin/passenger-memory-stats
-/usr/sbin/passenger-status
-/usr/share/phusion-passenger/helper-scripts/passenger-spawn-server
-/usr/share/phusion-passenger/helper-scripts/prespawn
-/usr/share/phusion-passenger/mime.types
-#sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D PASSENGER"/
-

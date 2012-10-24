@@ -11,6 +11,7 @@
 #require components/phpmyadmin.lst
 #copy phpmyadmin/config.inc.allownopassword.php /usr/share/webapps/phpmyadmin/3.5.2.2/htdocs/config.inc.php
 #require components/beautifulsoup.lst
+#require components/feedparser.lst
 #require components/flask.lst
 ##require components/pip.lst
 #require components/git.lst
@@ -20,6 +21,9 @@
 #require components/groonga.lst
 #require components/mroonga.lst
 #require components/rroonga.lst
+#require components/mecab-python.lst
+#require components/sinatra.lst
+#require components/mysql2.lst
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1groonga-dev\2/
 #sed /etc/mysql/my.cnf s/^bind-address/#bind-address/
 #copy groonga/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include

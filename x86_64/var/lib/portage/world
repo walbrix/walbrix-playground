@@ -15,7 +15,6 @@ dev-python/flask
 dev-python/mecab-python
 dev-python/mysql-python
 dev-ruby/builder
-dev-ruby/builder:0
 dev-ruby/mysql2
 dev-ruby/pkg-config
 dev-ruby/sinatra

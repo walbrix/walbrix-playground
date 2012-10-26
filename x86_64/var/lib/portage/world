@@ -26,6 +26,7 @@ net-fs/samba
 net-misc/ntp
 net-misc/openvpn
 net-misc/s3cmd
+net-proxy/squid
 sys-auth/nss-mdns
 sys-auth/nss-myhostname
 sys-fs/fuse

@@ -1,0 +1,187 @@
+/etc/conf.d/squid
+/etc/cron.weekly/squid.cron
+/etc/init.d/squid
+#dir /etc/runlevels/default
+#symlink /etc/runlevels/default/squid /etc/init.d/squid
+/etc/pam.d/squid
+/etc/squid/cachemgr.conf
+/etc/squid/cachemgr.conf.default
+/etc/squid/errorpage.css
+/etc/squid/errorpage.css.default
+/etc/squid/mime.conf
+/etc/squid/mime.conf.default
+/etc/squid/msntauth.conf
+/etc/squid/msntauth.conf.default
+/etc/squid/squid.conf
+/etc/squid/squid.conf.default
+/usr/bin/squidclient
+/usr/libexec/squid/cachemgr.cgi
+/usr/libexec/squid/digest_pw_auth
+/usr/libexec/squid/diskd
+/usr/libexec/squid/fakeauth_auth
+/usr/libexec/squid/getpwname_auth
+/usr/libexec/squid/ip_user_check
+/usr/libexec/squid/msnt_auth
+/usr/libexec/squid/ncsa_auth
+/usr/libexec/squid/pam_auth
+/usr/libexec/squid/squid_session
+/usr/libexec/squid/squid_unix_group
+/usr/libexec/squid/unlinkd
+/usr/sbin/squid
+/usr/share/squid/errors/en/ERR_ACCESS_DENIED
+#symlink /usr/share/squid/errors/en-au en
+#symlink /usr/share/squid/errors/en-bz en
+#symlink /usr/share/squid/errors/en-ca en
+#symlink /usr/share/squid/errors/en-gb en
+#symlink /usr/share/squid/errors/en-ie en
+#symlink /usr/share/squid/errors/en-in en
+#symlink /usr/share/squid/errors/en-jm en
+#symlink /usr/share/squid/errors/en-nz en
+#symlink /usr/share/squid/errors/en-ph en
+#symlink /usr/share/squid/errors/en-sg en
+#symlink /usr/share/squid/errors/en-tt en
+#symlink /usr/share/squid/errors/en-uk en
+#symlink /usr/share/squid/errors/en-us en
+#symlink /usr/share/squid/errors/en-za en
+#symlink /usr/share/squid/errors/en-zw en
+/usr/share/squid/errors/en/ERR_CACHE_ACCESS_DENIED
+/usr/share/squid/errors/en/ERR_CACHE_MGR_ACCESS_DENIED
+/usr/share/squid/errors/en/ERR_CANNOT_FORWARD
+/usr/share/squid/errors/en/ERR_CONNECT_FAIL
+/usr/share/squid/errors/en/ERR_DIR_LISTING
+/usr/share/squid/errors/en/ERR_DNS_FAIL
+/usr/share/squid/errors/en/ERR_ESI
+/usr/share/squid/errors/en/ERR_FORWARDING_DENIED
+/usr/share/squid/errors/en/ERR_FTP_DISABLED
+/usr/share/squid/errors/en/ERR_FTP_FAILURE
+/usr/share/squid/errors/en/ERR_FTP_FORBIDDEN
+/usr/share/squid/errors/en/ERR_FTP_NOT_FOUND
+/usr/share/squid/errors/en/ERR_FTP_PUT_CREATED
+/usr/share/squid/errors/en/ERR_FTP_PUT_ERROR
+/usr/share/squid/errors/en/ERR_FTP_PUT_MODIFIED
+/usr/share/squid/errors/en/ERR_FTP_UNAVAILABLE
+/usr/share/squid/errors/en/ERR_GATEWAY_FAILURE
+/usr/share/squid/errors/en/ERR_ICAP_FAILURE
+/usr/share/squid/errors/en/ERR_INVALID_REQ
+/usr/share/squid/errors/en/ERR_INVALID_RESP
+/usr/share/squid/errors/en/ERR_INVALID_URL
+/usr/share/squid/errors/en/ERR_LIFETIME_EXP
+/usr/share/squid/errors/en/ERR_NO_RELAY
+/usr/share/squid/errors/en/ERR_ONLY_IF_CACHED_MISS
+/usr/share/squid/errors/en/ERR_PRECONDITION_FAILED
+/usr/share/squid/errors/en/ERR_READ_ERROR
+/usr/share/squid/errors/en/ERR_READ_TIMEOUT
+/usr/share/squid/errors/en/ERR_SECURE_CONNECT_FAIL
+/usr/share/squid/errors/en/ERR_SHUTTING_DOWN
+/usr/share/squid/errors/en/ERR_SOCKET_FAILURE
+/usr/share/squid/errors/en/ERR_TOO_BIG
+/usr/share/squid/errors/en/ERR_UNSUP_HTTPVERSION
+/usr/share/squid/errors/en/ERR_UNSUP_REQ
+/usr/share/squid/errors/en/ERR_URN_RESOLVE
+/usr/share/squid/errors/en/ERR_WRITE_ERROR
+/usr/share/squid/errors/en/ERR_ZERO_SIZE_OBJECT
+#symlink /usr/share/squid/errors/ja-jp ja
+/usr/share/squid/errors/ja/ERR_ACCESS_DENIED
+/usr/share/squid/errors/ja/ERR_CACHE_ACCESS_DENIED
+/usr/share/squid/errors/ja/ERR_CACHE_MGR_ACCESS_DENIED
+/usr/share/squid/errors/ja/ERR_CANNOT_FORWARD
+/usr/share/squid/errors/ja/ERR_CONNECT_FAIL
+/usr/share/squid/errors/ja/ERR_DIR_LISTING
+/usr/share/squid/errors/ja/ERR_DNS_FAIL
+/usr/share/squid/errors/ja/ERR_ESI
+/usr/share/squid/errors/ja/ERR_FORWARDING_DENIED
+/usr/share/squid/errors/ja/ERR_FTP_DISABLED
+/usr/share/squid/errors/ja/ERR_FTP_FAILURE
+/usr/share/squid/errors/ja/ERR_FTP_FORBIDDEN
+/usr/share/squid/errors/ja/ERR_FTP_NOT_FOUND
+/usr/share/squid/errors/ja/ERR_FTP_PUT_CREATED
+/usr/share/squid/errors/ja/ERR_FTP_PUT_ERROR
+/usr/share/squid/errors/ja/ERR_FTP_PUT_MODIFIED
+/usr/share/squid/errors/ja/ERR_FTP_UNAVAILABLE
+/usr/share/squid/errors/ja/ERR_GATEWAY_FAILURE
+/usr/share/squid/errors/ja/ERR_ICAP_FAILURE
+/usr/share/squid/errors/ja/ERR_INVALID_REQ
+/usr/share/squid/errors/ja/ERR_INVALID_RESP
+/usr/share/squid/errors/ja/ERR_INVALID_URL
+/usr/share/squid/errors/ja/ERR_LIFETIME_EXP
+/usr/share/squid/errors/ja/ERR_NO_RELAY
+/usr/share/squid/errors/ja/ERR_ONLY_IF_CACHED_MISS
+/usr/share/squid/errors/ja/ERR_PRECONDITION_FAILED
+/usr/share/squid/errors/ja/ERR_READ_ERROR
+/usr/share/squid/errors/ja/ERR_READ_TIMEOUT
+/usr/share/squid/errors/ja/ERR_SECURE_CONNECT_FAIL
+/usr/share/squid/errors/ja/ERR_SHUTTING_DOWN
+/usr/share/squid/errors/ja/ERR_SOCKET_FAILURE
+/usr/share/squid/errors/ja/ERR_TOO_BIG
+/usr/share/squid/errors/ja/ERR_UNSUP_HTTPVERSION
+/usr/share/squid/errors/ja/ERR_UNSUP_REQ
+/usr/share/squid/errors/ja/ERR_URN_RESOLVE
+/usr/share/squid/errors/ja/ERR_WRITE_ERROR
+/usr/share/squid/errors/ja/ERR_ZERO_SIZE_OBJECT
+/usr/share/squid/errors/templates/ERR_ACCESS_DENIED
+/usr/share/squid/errors/templates/ERR_CACHE_ACCESS_DENIED
+/usr/share/squid/errors/templates/ERR_CACHE_MGR_ACCESS_DENIED
+/usr/share/squid/errors/templates/ERR_CANNOT_FORWARD
+/usr/share/squid/errors/templates/ERR_CONNECT_FAIL
+/usr/share/squid/errors/templates/ERR_DIR_LISTING
+/usr/share/squid/errors/templates/ERR_DNS_FAIL
+/usr/share/squid/errors/templates/ERR_ESI
+/usr/share/squid/errors/templates/ERR_FORWARDING_DENIED
+/usr/share/squid/errors/templates/ERR_FTP_DISABLED
+/usr/share/squid/errors/templates/ERR_FTP_FAILURE
+/usr/share/squid/errors/templates/ERR_FTP_FORBIDDEN
+/usr/share/squid/errors/templates/ERR_FTP_NOT_FOUND
+/usr/share/squid/errors/templates/ERR_FTP_PUT_CREATED
+/usr/share/squid/errors/templates/ERR_FTP_PUT_ERROR
+/usr/share/squid/errors/templates/ERR_FTP_PUT_MODIFIED
+/usr/share/squid/errors/templates/ERR_FTP_UNAVAILABLE
+/usr/share/squid/errors/templates/ERR_GATEWAY_FAILURE
+/usr/share/squid/errors/templates/ERR_ICAP_FAILURE
+/usr/share/squid/errors/templates/ERR_INVALID_REQ
+/usr/share/squid/errors/templates/ERR_INVALID_RESP
+/usr/share/squid/errors/templates/ERR_INVALID_URL
+/usr/share/squid/errors/templates/ERR_LIFETIME_EXP
+/usr/share/squid/errors/templates/ERR_NO_RELAY
+/usr/share/squid/errors/templates/ERR_ONLY_IF_CACHED_MISS
+/usr/share/squid/errors/templates/ERR_PRECONDITION_FAILED
+/usr/share/squid/errors/templates/ERR_READ_ERROR
+/usr/share/squid/errors/templates/ERR_READ_TIMEOUT
+/usr/share/squid/errors/templates/ERR_SECURE_CONNECT_FAIL
+/usr/share/squid/errors/templates/ERR_SHUTTING_DOWN
+/usr/share/squid/errors/templates/ERR_SOCKET_FAILURE
+/usr/share/squid/errors/templates/ERR_TOO_BIG
+/usr/share/squid/errors/templates/ERR_UNSUP_HTTPVERSION
+/usr/share/squid/errors/templates/ERR_UNSUP_REQ
+/usr/share/squid/errors/templates/ERR_URN_RESOLVE
+/usr/share/squid/errors/templates/ERR_WRITE_ERROR
+/usr/share/squid/errors/templates/ERR_ZERO_SIZE_OBJECT
+/usr/share/squid/icons/anthony-binhex.gif
+/usr/share/squid/icons/anthony-bomb.gif
+/usr/share/squid/icons/anthony-box.gif
+/usr/share/squid/icons/anthony-box2.gif
+/usr/share/squid/icons/anthony-c.gif
+/usr/share/squid/icons/anthony-compressed.gif
+/usr/share/squid/icons/anthony-dir.gif
+/usr/share/squid/icons/anthony-dirup.gif
+/usr/share/squid/icons/anthony-dvi.gif
+/usr/share/squid/icons/anthony-f.gif
+/usr/share/squid/icons/anthony-image.gif
+/usr/share/squid/icons/anthony-image2.gif
+/usr/share/squid/icons/anthony-layout.gif
+/usr/share/squid/icons/anthony-link.gif
+/usr/share/squid/icons/anthony-movie.gif
+/usr/share/squid/icons/anthony-pdf.gif
+/usr/share/squid/icons/anthony-portal.gif
+/usr/share/squid/icons/anthony-ps.gif
+/usr/share/squid/icons/anthony-quill.gif
+/usr/share/squid/icons/anthony-script.gif
+/usr/share/squid/icons/anthony-sound.gif
+/usr/share/squid/icons/anthony-tar.gif
+/usr/share/squid/icons/anthony-tex.gif
+/usr/share/squid/icons/anthony-text.gif
+/usr/share/squid/icons/anthony-unknown.gif
+/usr/share/squid/icons/anthony-xbm.gif
+/usr/share/squid/icons/anthony-xpm.gif
+/usr/share/squid/mib.txt
+/var/cache/squid/.keep_net-proxy_squid-0
+/var/log/squid/.keep_net-proxy_squid-0

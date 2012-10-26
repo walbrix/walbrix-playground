@@ -24,6 +24,9 @@
 #require components/mecab-python.lst
 #require components/sinatra.lst
 #require components/mysql2.lst
+#require components/squid.lst
+#sed /etc/squid/squid.conf s/^#.\+Example: dns_nameservers .\+$/dns_nameservers 8.8.8.8 8.8.4.4/
+#sed /etc/squid/squid.conf s/^#cache_dir.\+$/cache_dir ufs \/var\/cache\/squid 1024 16 256/
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1groonga-dev\2/
 #sed /etc/mysql/my.cnf s/^bind-address/#bind-address/
 #copy groonga/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include

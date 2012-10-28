@@ -9,6 +9,7 @@ app-portage/gentoolkit
 app-vim/rails
 app-vim/vimpython
 dev-db/couchdb
+dev-db/phpmyadmin
 dev-db/postgresql-server
 dev-java/icedtea-bin
 dev-java/jdbc-postgresql

@@ -1,0 +1,9 @@
+{
+	"id":"wordpress",
+	"title":"Wordpress 3.4.2",
+	"images":[{"url":"http://va.walbrix.net/img/wordpress01.png"}],	
+	"tarball":"wordpress-i686-in.tar.xz",
+	"description":"Wordpress",
+	"minimum_ram":128,
+	"minimum_hd":1
+}

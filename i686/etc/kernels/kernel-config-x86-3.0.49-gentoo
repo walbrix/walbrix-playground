@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Linux/x86 3.0.46-gentoo Kernel Configuration
+# Linux/x86 3.0.49-gentoo Kernel Configuration
 #
 # CONFIG_64BIT is not set
 CONFIG_X86_32=y
@@ -369,6 +369,7 @@ CONFIG_DEFAULT_MMAP_MIN_ADDR=4096
 CONFIG_X86_RESERVE_LOW=64
 # CONFIG_MATH_EMULATION is not set
 # CONFIG_MTRR is not set
+CONFIG_ARCH_RANDOM=y
 # CONFIG_EFI is not set
 # CONFIG_SECCOMP is not set
 # CONFIG_CC_STACKPROTECTOR is not set

@@ -27,4 +27,8 @@ dev-ruby/echoe -ruby_targets_ruby18
 dev-ruby/fastthread -ruby_targets_ruby18
 www-apache/passenger -ruby_targets_ruby18
 dev-ruby/mysql2 -ruby_targets_ruby18
+dev-ruby/nokogiri -ruby_targets_ruby18
+dev-ruby/hoe -ruby_targets_ruby18
+dev-ruby/rake-compiler -ruby_targets_ruby18
+dev-ruby/rexical -ruby_targets_ruby18
 

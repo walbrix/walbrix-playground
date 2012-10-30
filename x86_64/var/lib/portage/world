@@ -16,6 +16,7 @@ dev-python/mecab-python
 dev-python/mysql-python
 dev-ruby/builder
 dev-ruby/mysql2
+dev-ruby/nokogiri
 dev-ruby/pkg-config
 dev-ruby/sinatra
 dev-util/strace

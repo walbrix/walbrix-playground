@@ -24,6 +24,7 @@ dev-vcs/git
 net-analyzer/zabbix
 net-dns/avahi
 net-fs/samba
+net-libs/nodejs
 net-misc/ntp
 net-misc/openvpn
 net-misc/s3cmd

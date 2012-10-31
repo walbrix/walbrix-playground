@@ -31,4 +31,6 @@ dev-ruby/nokogiri -ruby_targets_ruby18
 dev-ruby/hoe -ruby_targets_ruby18
 dev-ruby/rake-compiler -ruby_targets_ruby18
 dev-ruby/rexical -ruby_targets_ruby18
+dev-ruby/ffi ruby_targets_ruby19 -ruby_targets_ruby18
+virtual/ruby-ffi ruby_targets_ruby19 -ruby_targets_ruby18
 

@@ -15,6 +15,7 @@ dev-python/flask
 dev-python/mecab-python
 dev-python/mysql-python
 dev-ruby/builder
+dev-ruby/ffi
 dev-ruby/mysql2
 dev-ruby/nokogiri
 dev-ruby/pkg-config

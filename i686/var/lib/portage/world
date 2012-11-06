@@ -10,8 +10,10 @@ app-vim/rails
 app-vim/vimpython
 dev-db/couchdb
 dev-db/phpmyadmin
+dev-db/phppgadmin
 dev-db/postgresql-server
 dev-java/icedtea-bin
+dev-java/jdbc-mysql
 dev-java/jdbc-postgresql
 dev-lang/php
 dev-lang/python

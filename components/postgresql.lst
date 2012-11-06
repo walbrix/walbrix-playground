@@ -460,3 +460,6 @@
 #extract postgresql/initial-database.tar.gz /
 #symlink /etc/runlevels/default/postgresql-9.1 /etc/init.d/postgresql-9.1
 #chrootexec ln -s /usr/lib/postgresql-9.1/bin/* /usr/bin/
+
+#sed /etc/conf.d/postgresql-9.1 s/^#PGOPTS="-N 512 -B 1024"$/PGOPTS="-i -N 512 -B 1024"/
+

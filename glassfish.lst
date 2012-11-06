@@ -1,0 +1,39 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/postfix.lst
+#require components/java.lst
+#require components/samba.lst
+#require components/sudo.lst
+#require components/phpmyadmin.lst
+#require components/phppgadmin.lst
+#swap /swapfile 256
+#copy domU/fstab-with-swapfile /etc/fstab
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1glassfish\2/
+
+#extract glassfish/glassfish-3.1.2.2-ml.zip /usr/local
+#copy glassfish/domain.xml /usr/local/glassfish3/glassfish/domains/domain1/config/domain.xml
+##copy glassfish/local-password /usr/local/glassfish3/glassfish/domains/domain1/config/local-password
+#copy glassfish/index-$(LANGUAGE).html /usr/local/glassfish3/glassfish/domains/domain1/docroot/index.html
+#chrootexec chown -R apache.apache /var/www /usr/local/glassfish3
+
+# JDBC drivers
+/usr/share/jdbc-postgresql/lib/jdbc-postgresql.jar
+#symlink /usr/local/glassfish3/glassfish/domains/domain1/lib/ext/jdbc-postgresql.jar /usr/share/jdbc-postgresql/lib/jdbc-postgresql.jar
+/usr/share/jdbc-mysql/lib/jdbc-mysql.jar
+#symlink /usr/local/glassfish3/glassfish/domains/domain1/lib/ext/jdbc-mysql.jar /usr/share/jdbc-mysql/lib/jdbc-mysql.jar
+#copy glassfish/h2-1.3.169.jar /usr/local/glassfish3/glassfish/domains/domain1/lib/ext/h2-1.3.169.jar
+
+# Startup
+#copy glassfish/glassfish.start /etc/local.d/glassfish.start
+#copy glassfish/glassfish.stop /etc/local.d/glassfish.stop
+
+# Source code
+#copy glassfish/glassfish-3.1.2.2-src.tar.xz /root/glassfish-3.1.2.2-src.tar.xz
+
+#copy glassfish/smb.conf /etc/samba/smb.conf
+
+#copy glassfish/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
+#copy glassfish/wb-va.xml /etc/wb-va.xml
+

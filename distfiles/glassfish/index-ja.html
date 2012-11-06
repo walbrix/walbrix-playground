@@ -1,0 +1,51 @@
+<html lang="ja">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>GlassFish(オープンソース版)</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/redmond/jquery-ui.css" type="text/css"/>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">google.load("jquery", "1.4.2");</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+	<script type="text/javascript">google.load("jqueryui", "1.8.1");</script>
+	<script language="JavaScript"><!--
+	  $(function(){
+	    $("#tabs").tabs();
+	    $("span.hostname").html(location.hostname);
+            $("a").each(function() {
+              var orig = $(this).attr("href");
+              $(this).attr("href", orig.replace("localhost", location.hostname));
+	    });
+	  });
+	//--></script>
+  </head>
+
+  <h1>GlassFish(オープンソース版)</h1>
+
+  <div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">概要と使い方</a></li>
+		<li><a href="#tabs-2">追加情報</a></li>
+	</ul>
+	<div id="tabs-1">
+	  <h3>GlassFishの管理画面</h3>
+	  <p>
+	  GlassFishの管理画面は <a href="https://localhost:4848/">https://<span class="hostname">HOSTNAME</span>:4848/</a>です。AJPで Apacheと連携しているので、GlassFishにデプロイした Webアプリケーションには 80番ポートでアクセスできます。
+	  </p>
+	  <h3>Webコンテンツの編集</h3>
+	  Windows共有で下記の共有フォルダへアクセスすることが出来ます。
+	  <ul>
+		<li>￥￥<span class="hostname">HOSTNAME</span>￥￥www - Webサーバのコンテンツを配置する場所(このページもここにあります)<br/>システム上の場所は /usr/local/glassfish3/glassfish/domains/domain1/docroot です。</li>
+	  </ul>
+	  <h3>MySQLの管理について</h3>
+	  <a href="/phpmyadmin/">phpMyAdmin</a> を利用可能です。管理ユーザーIDは root, パスワードは空です。MySQLの JDBCドライバは GlassFishのクラスパスに最初から入っています。
+	  <h3>PostgreSQLの管理について</h3>
+	  <a href="/phppgadmin/">phpPgAdmin</a> を利用可能です。管理ユーザーIDは postgres, パスワードは空です。PostgreSQLの JDBCドライバは GlassFishのクラスパスに最初から入っています。
+	  <h3>SSHによるログイン</h3>
+	  sshで<span class="hostname">HOSTNAME</span>へログインすることもできます。rootの初期パスワードは Walbrixのシリアルナンバー（未登録の場合 "WBFREE01"）です。GlassFishのインストール先は /usr/local/glassfish3 です。
+	</div>
+	<div id="tabs-2">
+	  <a href="http://glassfish.java.net/ja/" target="_blank">GlassFish - オープンソースアプリケーションサーバー</a>
+	</div>
+	<div align="right" style="margin-top:1em;"><a href="http://www.walbrix.net/" target="_blank">Walbrix</a></div>
+  </div>
+</html>

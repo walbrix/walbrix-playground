@@ -1,5 +1,6 @@
 #require apache.lst
 #require php53.lst
+#require mysql.lst
 /usr/share/webapps/phpmyadmin/3.5.2.2/config-files
 /usr/share/webapps/phpmyadmin/3.5.2.2/htdocs/ChangeLog
 /usr/share/webapps/phpmyadmin/3.5.2.2/htdocs/Documentation.html
@@ -978,3 +979,6 @@
 /usr/share/webapps/phpmyadmin/3.5.2.2/installed_by_webapp_eclass
 /usr/share/webapps/phpmyadmin/3.5.2.2/postinst-en.txt
 /usr/share/webapps/phpmyadmin/3.5.2.2/server-owned-files
+
+#copy phpmyadmin/config.inc.php /usr/share/webapps/phpmyadmin/3.5.2.2/htdocs/config.inc.php
+

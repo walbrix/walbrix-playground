@@ -9,7 +9,7 @@ function inCIDR($cidr) {
     return $net === $ip_net;
 }
                     
-$private_access = (inCIDR("192.168.0.0/16") or inCIDR("172.16.0.0/14") or inCIDR("10.0.0.0/8"));
+$private_access = (inCIDR("192.168.0.0/16") or inCIDR("172.16.0.0/12") or inCIDR("10.0.0.0/8"));
 if ($private_access) {
     $cfg['Servers'][1]['AllowNoPassword'] = true;
 }

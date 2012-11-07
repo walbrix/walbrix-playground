@@ -94,7 +94,7 @@ function inCIDR($cidr) {
 	// will be denied. Only set this false once you have read the FAQ and
 	// understand how to change PostgreSQL's pg_hba.conf to enable
 	// passworded local connections.
-	$conf['extra_login_security'] = !(inCIDR("192.168.0.0/16") or inCIDR("172.16.0.0/14") or inCIDR("10.0.0.0/8"));
+	$conf['extra_login_security'] = !(inCIDR("192.168.0.0/16") or inCIDR("172.16.0.0/12") or inCIDR("10.0.0.0/8"));
 
 	// Only show owned databases?
 	// Note: This will simply hide other databases in the list - this does

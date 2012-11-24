@@ -1,0 +1,17 @@
+/bin/dnsdomainname
+/bin/domainname
+/bin/hostname
+/bin/ifconfig
+/bin/netstat
+/bin/nisdomainname
+/bin/route
+/bin/ypdomainname
+/sbin/arp
+/sbin/ipmaddr
+/sbin/iptunnel
+/sbin/mii-tool
+/sbin/nameif
+#/sbin/plipconfig
+/sbin/rarp
+#/sbin/slattach
+

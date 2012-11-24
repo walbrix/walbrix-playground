@@ -14,8 +14,10 @@
 #require dev.lst
 #require coreutils.lst
 #require util-linux.lst
+#require net-tools.lst
 #require shadow.lst
 #require openrc.lst
+#sed /etc/rc.conf s/^#rc_sys.\+$/rc_sys="xenU"/
 #require openssh.lst
 #require openssl.lst
 #require openvpn.lst
@@ -38,17 +40,14 @@
 /bin/bzcat
 /bin/bzip2
 /bin/cpio
-/bin/dnsdomainname
 /bin/egrep
 /bin/fgrep
 /bin/fuser
 /bin/gawk
 /bin/gunzip
 /bin/gzip
-/bin/hostname
 /bin/kill
 /bin/lsmod
-/bin/netstat
 /bin/ping
 /bin/ping6
 /bin/ps
@@ -98,16 +97,13 @@
 /sbin/arping
 ./sbin/depmod
 ./sbin/halt
-./sbin/ifconfig
 ./sbin/init
 /sbin/killall5
 ./sbin/ldconfig
 /sbin/modprobe
 /sbin/mount.fuse
-./sbin/nameif
 ./sbin/poweroff
 ./sbin/reboot
-./sbin/route
 /sbin/runlevel
 ./sbin/sulogin
 /sbin/shutdown

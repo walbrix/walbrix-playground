@@ -9,7 +9,6 @@
 #require components/mysql.lst
 #require components/mysql-python.lst
 #require components/phpmyadmin.lst
-#copy phpmyadmin/config.inc.allownopassword.php /usr/share/webapps/phpmyadmin/3.5.2.2/htdocs/config.inc.php
 #require components/beautifulsoup.lst
 #require components/feedparser.lst
 #require components/flask.lst
@@ -26,8 +25,15 @@
 #require components/mysql2.lst
 #require components/squid.lst
 #require components/nodejs.lst
+#require components/ffi.lst
+#require components/tomcat.lst
+#require components/scala.lst
 #sed /etc/squid/squid.conf s/^#.\+Example: dns_nameservers .\+$/dns_nameservers 8.8.8.8 8.8.4.4/
 #sed /etc/squid/squid.conf s/^#cache_dir.\+$/cache_dir ufs \/var\/cache\/squid 1024 16 256/
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1groonga-dev\2/
 #sed /etc/mysql/my.cnf s/^bind-address/#bind-address/
 #copy groonga/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
+
+#copy rubygems/ruby-xz-0.1.1.gem /ruby-xz.gem
+#chrootexec gem install --no-rdoc --no-ri -l /ruby-xz.gem && rm /ruby-xz.gem
+/usr/lib/liblzma.so

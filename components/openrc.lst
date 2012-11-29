@@ -142,6 +142,7 @@
 /lib/rc/sh/rc-functions.sh
 /lib/rc/sh/rc-mount.sh
 /lib/rc/sh/runscript.sh
+/lib/rc/sh/tmpfiles.sh
 /lib/rc/sh/udhcpc-hook.sh
 /lib/rc/tmp/.keep_sys-apps_openrc-0
 /lib/rc/version

@@ -62,17 +62,19 @@
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/functions.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/get_image.js.php
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/gis_data_editor.js
-/usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/highcharts/exporting.js
-/usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/highcharts/highcharts.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/import.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/indexes.js
+/usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jqplot/excanvas.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jqplot/jquery.jqplot.js
+/usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jqplot/plugins/jqplot.barRenderer.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jqplot/plugins/jqplot.canvasAxisLabelRenderer.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jqplot/plugins/jqplot.canvasTextRenderer.js
+/usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jqplot/plugins/jqplot.categoryAxisRenderer.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jqplot/plugins/jqplot.cursor.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jqplot/plugins/jqplot.dateAxisRenderer.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jqplot/plugins/jqplot.highlighter.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jqplot/plugins/jqplot.pieRenderer.js
+/usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jqplot/plugins/jqplot.pointLabels.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jquery/jquery-1.6.2.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jquery/jquery-ui-1.8.16.custom.js
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/js/jquery/jquery.cookie.js
@@ -441,6 +443,7 @@
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/locale/si/LC_MESSAGES/phpmyadmin.mo
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/locale/sk/LC_MESSAGES/phpmyadmin.mo
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/locale/sl/LC_MESSAGES/phpmyadmin.mo
+/usr/share/webapps/phpmyadmin/3.5.3/htdocs/locale/sr@latin/LC_MESSAGES/phpmyadmin.mo
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/locale/sv/LC_MESSAGES/phpmyadmin.mo
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/locale/tr/LC_MESSAGES/phpmyadmin.mo
 /usr/share/webapps/phpmyadmin/3.5.3/htdocs/locale/uk/LC_MESSAGES/phpmyadmin.mo
@@ -979,6 +982,7 @@
 /usr/share/webapps/phpmyadmin/3.5.3/installed_by_webapp_eclass
 /usr/share/webapps/phpmyadmin/3.5.3/postinst-en.txt
 /usr/share/webapps/phpmyadmin/3.5.3/server-owned-files
+/var/db/webapps/phpmyadmin/3.5.3/.keep_dev-db_phpmyadmin-3.5.3
 
 #copy phpmyadmin/config.inc.php /usr/share/webapps/phpmyadmin/3.5.3/htdocs/config.inc.php
 

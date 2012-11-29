@@ -15,3 +15,5 @@
 =dev-ruby/ffi-1.0.11
 
 =net-libs/nodejs-0.9.0-r2
+=dev-lang/scala-2.9.2
+

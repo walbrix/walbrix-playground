@@ -1,0 +1,19 @@
+#require java.lst
+/usr/bin/fsc
+/usr/bin/scala
+/usr/bin/scalac
+/usr/bin/scaladoc
+/usr/bin/scalap
+/usr/share/scala/bin/fsc
+/usr/share/scala/bin/scala
+/usr/share/scala/bin/scalac
+/usr/share/scala/bin/scaladoc
+/usr/share/scala/bin/scalap
+/usr/share/scala/lib/jline.jar
+/usr/share/scala/lib/scala-compiler.jar
+/usr/share/scala/lib/scala-dbc.jar
+/usr/share/scala/lib/scala-library.jar
+/usr/share/scala/lib/scala-partest.jar
+/usr/share/scala/lib/scala-swing.jar
+/usr/share/scala/lib/scalacheck.jar
+/usr/share/scala/lib/scalap.jar

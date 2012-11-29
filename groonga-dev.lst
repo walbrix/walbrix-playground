@@ -22,6 +22,7 @@
 #require components/rroonga.lst
 #require components/mecab-python.lst
 #require components/sinatra.lst
+#require components/nokogiri.lst
 #require components/mysql2.lst
 #require components/squid.lst
 #require components/nodejs.lst

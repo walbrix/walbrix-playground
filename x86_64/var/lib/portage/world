@@ -7,6 +7,7 @@ app-editors/vim
 app-portage/gentoolkit
 dev-db/mysql
 dev-db/phpmyadmin
+dev-java/jdbc-mysql
 dev-lang/php
 dev-lang/ruby
 dev-lang/scala
@@ -33,6 +34,7 @@ net-misc/s3cmd
 net-proxy/squid
 sys-auth/nss-mdns
 sys-auth/nss-myhostname
+sys-devel/gdb
 sys-fs/fuse
 sys-fs/xfsprogs
 sys-kernel/genkernel

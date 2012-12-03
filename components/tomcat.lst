@@ -142,3 +142,7 @@
 #dir /var/tmp/tomcat-7
 #sed /etc/init.d/tomcat-7 s/\(JAVA_HOME=\).\+$/\1\/etc\/java-config-2\/current-system-vm/
 #symlink /etc/runlevels/default/tomcat-7 /etc/init.d/tomcat-7
+
+/usr/share/jdbc-mysql/lib/jdbc-mysql.jar
+#symlink /usr/share/tomcat-7/lib/jdbc-mysql.jar ../../jdbc-mysql/lib/jdbc-mysql.jar
+#copy tomcat/tomcat-dbcp.jar /usr/share/tomcat-7/lib/tomcat-dbcp.jar

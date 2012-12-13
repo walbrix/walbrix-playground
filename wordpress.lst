@@ -11,7 +11,7 @@
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1wordpress\2/
 #copy domU/fstab-with-swapfile /etc/fstab
 #swap /swapfile 128
-#extract wordpress/wordpress-3.4.2-$(LANGUAGE).tar.gz /var/www/localhost
+#extract wordpress/wordpress-3.5.0-$(LANGUAGE).tar.gz /var/www/localhost
 #chrootexec mv /var/www/localhost/wordpress/* /var/www/localhost/htdocs
 #chrootexec rmdir /var/www/localhost/wordpress
 #chrootexec mv /var/www/localhost/htdocs/wp-config-sample.php /var/www/localhost/htdocs/wp-config.php

@@ -1,6 +1,6 @@
 {
 	"id":"wordpress",
-	"title":"Wordpress 3.4.2",
+	"title":"Wordpress 3.5.0",
 	"images":[{"url":"http://va.walbrix.net/img/wordpress01.png"}],	
 	"tarball":"wordpress-i686-in.tar.xz",
 	"description":"Wordpress",

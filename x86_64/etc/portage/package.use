@@ -36,3 +36,5 @@ virtual/ruby-ffi ruby_targets_ruby19 -ruby_targets_ruby18
 
 dev-java/icedtea-bin -X -alsa -cups cjk
 
+net-misc/openvpn passwordsave
+

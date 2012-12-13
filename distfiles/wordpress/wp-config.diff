@@ -1,16 +1,16 @@
-24c24
+19c19
 < define('DB_NAME', 'database_name_here');
 ---
 > define('DB_NAME', 'wordpress');
-27c27
+22c22
 < define('DB_USER', 'username_here');
 ---
 > define('DB_USER', 'wordpress');
-30c30
+25c25
 < define('DB_PASSWORD', 'password_here');
 ---
 > define('DB_PASSWORD', '');
-50,57c50,57
+45,52c45,52
 < define('AUTH_KEY',         'put your unique phrase here');
 < define('SECURE_AUTH_KEY',  'put your unique phrase here');
 < define('LOGGED_IN_KEY',    'put your unique phrase here');
@@ -20,11 +20,11 @@
 < define('LOGGED_IN_SALT',   'put your unique phrase here');
 < define('NONCE_SALT',       'put your unique phrase here');
 ---
-> define('AUTH_KEY',         'JVBERi0xLjcKJeLj');
-> define('SECURE_AUTH_KEY',  '9Iu+7vyIgaWQ9Ilc');
-> define('LOGGED_IN_KEY',    'pL01vZERhdGUoRDo');
-> define('NONCE_KEY',        'MzIgMCBSL1RvVW5p');
-> define('AUTH_SALT',        'M0XSAxODI2MFs4OD');
-> define('SECURE_AUTH_SALT', 'NyAwIG9iago8PC9S');
-> define('LOGGED_IN_SALT',   'IDAgUi9SMTggNDMg');
-> define('NONCE_SALT',       '+WDy4eSDyYeTDyYf');
+> define('AUTH_KEY',         'psTt9lso9Lht45kU');
+> define('SECURE_AUTH_KEY',  '+fIHbdJ5QCJuyTna');
+> define('LOGGED_IN_KEY',    'a3/CdIADuUffGdx6');
+> define('NONCE_KEY',        'LaV48yUYyjGK05bJ');
+> define('AUTH_SALT',        're19Tb07W9K0yee+');
+> define('SECURE_AUTH_SALT', 'Llpjbzyxl2nIO8yb');
+> define('LOGGED_IN_SALT',   '7QSUY391act0u9r/');
+> define('NONCE_SALT',       'UedOPSl03bbd9TuL');

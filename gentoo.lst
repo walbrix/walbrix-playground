@@ -19,6 +19,6 @@
 #chrootexec rc-update add samba default
 #chrootexec rc-update add ntpd default
 #copy domU/smb.conf /etc/samba/smb.conf
-#sed /etc/nsswitch.conf s/^\(hosts:.* \)dns\( *\)/\1mdn_minimal [NOTFOUND=return] dns mdns\2/
+#sed /etc/nsswitch.conf s/^\(hosts:.* \)dns\( *\)/\1mdns_minimal [NOTFOUND=return] dns mdns\2/
 #require components/timezone-$(REGION).lst
 

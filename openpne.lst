@@ -25,6 +25,6 @@
 #sed /etc/apache2/vhosts.d/default_vhost.include s/\(\/var\/www\/localhost\/\htdocs\)/\1\/web/
 #sed /var/www/localhost/htdocs/config/OpenPNE.yml s/http:\/\/example\.com//
 #copy openpne/crontab /var/spool/cron/crontabs/root
-#chrootexec echo 'openpne_user: "| php /var/www/localhost/htdocs/symfony openpne:execute-mail-action"' >> /etc/mail/aliases
+#chrootexec cp -a /etc/mail/aliases /tmp/aliases && echo 'openpne_user: "| php /var/www/localhost/htdocs/symfony openpne:execute-mail-action"' >> /tmp/aliases && mv /tmp/aliases /etc/mail/aliases
 #copy openpne/wb-va.xml /etc/wb-va.xml
 

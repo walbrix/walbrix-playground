@@ -1,0 +1,10 @@
+{
+	"id":"gentoo64",
+	"title":"Gentoo Linux(64bit)",
+	"images":[{"url":"http://va.walbrix.net/img/gentoo01.png"}],	
+	"tarball":"gentoo-x86_64-jp.tar.xz",
+	"description":"Gentoo Linux",
+	"minimum_ram":256,
+	"minimum_hd":4
+}
+

@@ -1,5 +1,5 @@
 #require components/pvkernel.lst
-#extract gentoo/gentoo-i686.tar.bz2 /
+#extract gentoo/gentoo-$(ARCH).tar.bz2 /
 #sed /etc/conf.d/hostname s/^hostname=.*$/hostname="gentoo"/
 #copy domU/resolv.conf /etc/resolv.conf
 #sed /etc/shadow s/^\(root:\)[^:]*\(:.*\)$/\1\2/
@@ -7,6 +7,7 @@
 #swap /swapfile 256
 #copy domU/fstab-with-swapfile /etc/fstab
 #patchsinglefile /etc/inittab gentoo/inittab.patch
+#symlink /etc/init.d/net.eth0 net.lo
 #chrootexec echo "hvc0" >> /etc/securetty
 #copy gentoo/wb-va.xml /etc/wb-va.xml
 #chrootexec wget http://ftp.kddilabs.jp/pub/Linux/distributions/gentoo/snapshots/portage-latest.tar.xz -O- | tar Jxpf - -C /usr

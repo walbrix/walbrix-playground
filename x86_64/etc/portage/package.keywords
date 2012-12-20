@@ -1,5 +1,5 @@
 =sys-libs/glibc-2.15-r3
-=sys-kernel/gentoo-sources-3.0.53
+=sys-kernel/gentoo-sources-3.0.57
 =net-dns/avahi-0.6.30-r3
 =sys-auth/nss-myhostname-0.3
 =dev-python/blinker-1.2

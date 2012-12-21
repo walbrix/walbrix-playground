@@ -5,6 +5,7 @@ app-arch/cpio
 app-arch/zip
 app-editors/emacs
 app-editors/nano
+app-editors/vim
 app-portage/gentoolkit
 app-vim/rails
 app-vim/vimpython
@@ -59,7 +60,6 @@ mail-mta/postfix
 media-fonts/vlgothic
 media-gfx/imagemagick
 media-libs/exiftool
-media-video/ffmpeg
 media-video/gpac
 net-analyzer/zabbix
 net-fs/samba
@@ -76,6 +76,5 @@ www-apache/mod_authnz_external
 www-apache/mod_extract_forwarded
 www-apache/mod_wsgi
 www-apache/passenger
-www-apps/eyeos
 www-apps/websvn
 www-servers/tomcat

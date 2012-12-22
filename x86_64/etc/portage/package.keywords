@@ -12,7 +12,7 @@
 =dev-ruby/daemon_controller-1.0.0
 =dev-ruby/builder-3.0.0-r1
 =dev-ruby/mysql2-0.3.11
-=dev-ruby/ffi-1.0.11
+=dev-ruby/ffi-1.1.5
 
 =net-libs/nodejs-0.8.16
 =dev-lang/scala-2.9.2

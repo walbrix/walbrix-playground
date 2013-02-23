@@ -10,3 +10,6 @@ dev-ruby/shoulda ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/coderay ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/test-unit ruby_targets_ruby19 -ruby_targets_ruby18
 dev-vcs/subversion apache2
+dev-ruby/fastercsv ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/ruby-openid ruby_targets_ruby19 -ruby_targets_ruby18
+

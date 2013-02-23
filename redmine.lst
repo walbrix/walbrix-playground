@@ -17,9 +17,9 @@
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1redmine\2/
 #copy domU/fstab-with-swapfile /etc/fstab
 #swap /swapfile 128
-#extract redmine/redmine-2.1.4.tar.gz /var/www/localhost
+#extract redmine/redmine-2.2.3.tar.gz /var/www/localhost
 #chrootexec rm -rf /var/www/localhost/htdocs
-#chrootexec mv /var/www/localhost/redmine-2.1.4 /var/www/localhost/htdocs
+#chrootexec mv /var/www/localhost/redmine-2.2.3 /var/www/localhost/htdocs
 #copy redmine/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
 #sed /etc/apache2/modules.d/30_mod_passenger.conf s/\(\/usr\/bin\/ruby\)18$/\119/
 #extract redmine/initial-db-and-config.tar.gz /

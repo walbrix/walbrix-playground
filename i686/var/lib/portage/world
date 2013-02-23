@@ -48,6 +48,7 @@ dev-ruby/pg
 dev-ruby/pkg-config
 dev-ruby/rails
 dev-ruby/rmagick
+dev-ruby/ruby-openid
 dev-ruby/shoulda
 dev-ruby/sqlite3
 dev-ruby/test-unit

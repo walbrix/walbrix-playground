@@ -13,13 +13,13 @@
 #chrootexec wget http://ftp.kddilabs.jp/pub/Linux/distributions/gentoo/snapshots/portage-latest.tar.xz -O- | tar Jxpf - -C /usr
 #chrootexec echo "net-fs/samba -cups" >> /etc/portage/package.use
 #chrootexec echo "=sys-auth/nss-mdns-0.10-r1" >> /etc/portage/package.keywords
-#chrootexec emerge -uDN nvi avahi samba nss-mdns ntp world
+#chrootexec emerge -uDN nvi avahi samba nss-mdns nss-myhostname ntp world
 #chrootexec rm -rf /usr/portage/distfiles/*
 #chrootexec rc-update add avahi-daemon default
 #chrootexec rc-update add sshd default
 #chrootexec rc-update add samba default
 #chrootexec rc-update add ntpd default
 #copy domU/smb.conf /etc/samba/smb.conf
-#sed /etc/nsswitch.conf s/^\(hosts:.* \)dns\( *\)/\1mdns_minimal [NOTFOUND=return] dns mdns\2/
+#sed /etc/nsswitch.conf s/^\(hosts:.* \)dns\( *\)/\1myhostname mdns_minimal [NOTFOUND=return] dns mdns\2/
 #require components/timezone-$(REGION).lst
 

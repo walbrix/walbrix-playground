@@ -70,7 +70,7 @@ sys-auth/nss-myhostname
 sys-fs/fuse
 sys-fs/xfsprogs
 sys-kernel/genkernel
-sys-kernel/gentoo-sources
+sys-kernel/vanilla-sources
 sys-process/vixie-cron
 www-apache/mod_authnz_external
 www-apache/mod_extract_forwarded

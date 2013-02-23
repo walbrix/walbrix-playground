@@ -1,7 +1,8 @@
 #require python27.lst
 /etc/env.d/80mercurial
+/etc/mercurial/hgrc.d/cacerts.rc
+/usr/bin/hg
 /usr/bin/hg-2.7
-#symlink /usr/bin/hg hg-2.7
 /usr/bin/hg-ssh
 /usr/bin/hgeditor
 /usr/bin/hgk
@@ -28,6 +29,7 @@
 /usr/lib/python2.7/site-packages/hgext/convert/transport.py
 /usr/lib/python2.7/site-packages/hgext/eol.py
 /usr/lib/python2.7/site-packages/hgext/extdiff.py
+/usr/lib/python2.7/site-packages/hgext/factotum.py
 /usr/lib/python2.7/site-packages/hgext/fetch.py
 /usr/lib/python2.7/site-packages/hgext/gpg.py
 /usr/lib/python2.7/site-packages/hgext/graphlog.py
@@ -35,6 +37,7 @@
 /usr/lib/python2.7/site-packages/hgext/hgk.py
 /usr/lib/python2.7/site-packages/hgext/highlight/__init__.py
 /usr/lib/python2.7/site-packages/hgext/highlight/highlight.py
+/usr/lib/python2.7/site-packages/hgext/histedit.py
 /usr/lib/python2.7/site-packages/hgext/inotify/__init__.py
 /usr/lib/python2.7/site-packages/hgext/inotify/client.py
 /usr/lib/python2.7/site-packages/hgext/inotify/common.py
@@ -72,7 +75,7 @@
 /usr/lib/python2.7/site-packages/hgext/win32text.py
 /usr/lib/python2.7/site-packages/hgext/zeroconf/Zeroconf.py
 /usr/lib/python2.7/site-packages/hgext/zeroconf/__init__.py
-/usr/lib/python2.7/site-packages/mercurial-2.1.1-py2.7.egg-info
+/usr/lib/python2.7/site-packages/mercurial-2.4.2-py2.7.egg-info
 /usr/lib/python2.7/site-packages/mercurial/__init__.py
 /usr/lib/python2.7/site-packages/mercurial/__version__.py
 /usr/lib/python2.7/site-packages/mercurial/ancestor.py
@@ -104,6 +107,7 @@
 /usr/lib/python2.7/site-packages/mercurial/filelog.py
 /usr/lib/python2.7/site-packages/mercurial/filemerge.py
 /usr/lib/python2.7/site-packages/mercurial/fileset.py
+/usr/lib/python2.7/site-packages/mercurial/formatter.py
 /usr/lib/python2.7/site-packages/mercurial/graphmod.py
 /usr/lib/python2.7/site-packages/mercurial/hbisect.py
 /usr/lib/python2.7/site-packages/mercurial/help.py
@@ -138,16 +142,10 @@
 /usr/lib/python2.7/site-packages/mercurial/hgweb/wsgicgi.py
 /usr/lib/python2.7/site-packages/mercurial/hook.py
 /usr/lib/python2.7/site-packages/mercurial/httpclient/__init__.py
+/usr/lib/python2.7/site-packages/mercurial/httpclient/_readers.py
 /usr/lib/python2.7/site-packages/mercurial/httpclient/socketutil.py
-/usr/lib/python2.7/site-packages/mercurial/httpclient/tests/__init__.py
-/usr/lib/python2.7/site-packages/mercurial/httpclient/tests/simple_http_test.py
-/usr/lib/python2.7/site-packages/mercurial/httpclient/tests/test_bogus_responses.py
-/usr/lib/python2.7/site-packages/mercurial/httpclient/tests/test_chunked_transfer.py
-/usr/lib/python2.7/site-packages/mercurial/httpclient/tests/test_proxy_support.py
-/usr/lib/python2.7/site-packages/mercurial/httpclient/tests/test_ssl.py
-/usr/lib/python2.7/site-packages/mercurial/httpclient/tests/util.py
 /usr/lib/python2.7/site-packages/mercurial/httpconnection.py
-/usr/lib/python2.7/site-packages/mercurial/httprepo.py
+/usr/lib/python2.7/site-packages/mercurial/httppeer.py
 /usr/lib/python2.7/site-packages/mercurial/i18n.py
 /usr/lib/python2.7/site-packages/mercurial/ignore.py
 /usr/lib/python2.7/site-packages/mercurial/keepalive.py
@@ -175,23 +173,25 @@
 /usr/lib/python2.7/site-packages/mercurial/minirst.py
 /usr/lib/python2.7/site-packages/mercurial/mpatch.so
 /usr/lib/python2.7/site-packages/mercurial/node.py
+/usr/lib/python2.7/site-packages/mercurial/obsolete.py
 /usr/lib/python2.7/site-packages/mercurial/osutil.so
 /usr/lib/python2.7/site-packages/mercurial/parser.py
 /usr/lib/python2.7/site-packages/mercurial/parsers.so
 /usr/lib/python2.7/site-packages/mercurial/patch.py
+/usr/lib/python2.7/site-packages/mercurial/peer.py
 /usr/lib/python2.7/site-packages/mercurial/phases.py
 /usr/lib/python2.7/site-packages/mercurial/posix.py
 /usr/lib/python2.7/site-packages/mercurial/pushkey.py
+/usr/lib/python2.7/site-packages/mercurial/pvec.py
 /usr/lib/python2.7/site-packages/mercurial/py3kcompat.py
 /usr/lib/python2.7/site-packages/mercurial/repair.py
-/usr/lib/python2.7/site-packages/mercurial/repo.py
 /usr/lib/python2.7/site-packages/mercurial/revlog.py
 /usr/lib/python2.7/site-packages/mercurial/revset.py
 /usr/lib/python2.7/site-packages/mercurial/scmutil.py
 /usr/lib/python2.7/site-packages/mercurial/setdiscovery.py
 /usr/lib/python2.7/site-packages/mercurial/similar.py
 /usr/lib/python2.7/site-packages/mercurial/simplemerge.py
-/usr/lib/python2.7/site-packages/mercurial/sshrepo.py
+/usr/lib/python2.7/site-packages/mercurial/sshpeer.py
 /usr/lib/python2.7/site-packages/mercurial/sshserver.py
 /usr/lib/python2.7/site-packages/mercurial/sslutil.py
 /usr/lib/python2.7/site-packages/mercurial/statichttprepo.py
@@ -221,6 +221,7 @@
 /usr/lib/python2.7/site-packages/mercurial/templates/gitweb/changeset.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/gitweb/error.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/gitweb/fileannotate.tmpl
+/usr/lib/python2.7/site-packages/mercurial/templates/gitweb/filecomparison.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/gitweb/filediff.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/gitweb/filelog.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/gitweb/filerevision.tmpl
@@ -249,6 +250,7 @@
 /usr/lib/python2.7/site-packages/mercurial/templates/monoblue/changeset.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/monoblue/error.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/monoblue/fileannotate.tmpl
+/usr/lib/python2.7/site-packages/mercurial/templates/monoblue/filecomparison.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/monoblue/filediff.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/monoblue/filelog.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/monoblue/filerevision.tmpl
@@ -271,6 +273,7 @@
 /usr/lib/python2.7/site-packages/mercurial/templates/paper/diffstat.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/paper/error.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/paper/fileannotate.tmpl
+/usr/lib/python2.7/site-packages/mercurial/templates/paper/filecomparison.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/paper/filediff.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/paper/filelog.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/paper/filelogentry.tmpl
@@ -292,6 +295,9 @@
 /usr/lib/python2.7/site-packages/mercurial/templates/raw/error.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/raw/fileannotate.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/raw/filediff.tmpl
+/usr/lib/python2.7/site-packages/mercurial/templates/raw/graph.tmpl
+/usr/lib/python2.7/site-packages/mercurial/templates/raw/graphedge.tmpl
+/usr/lib/python2.7/site-packages/mercurial/templates/raw/graphnode.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/raw/index.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/raw/manifest.tmpl
 /usr/lib/python2.7/site-packages/mercurial/templates/raw/map
@@ -340,7 +346,6 @@
 /usr/lib/python2.7/site-packages/mercurial/templates/static/style-monoblue.css
 /usr/lib/python2.7/site-packages/mercurial/templates/static/style-paper.css
 /usr/lib/python2.7/site-packages/mercurial/templates/static/style.css
-/usr/lib/python2.7/site-packages/mercurial/templates/template-vars.txt
 /usr/lib/python2.7/site-packages/mercurial/transaction.py
 /usr/lib/python2.7/site-packages/mercurial/treediscovery.py
 /usr/lib/python2.7/site-packages/mercurial/ui.py
@@ -351,4 +356,5 @@
 /usr/lib/python2.7/site-packages/mercurial/windows.py
 /usr/lib/python2.7/site-packages/mercurial/wireproto.py
 /usr/share/bash-completion/mercurial
+/usr/share/doc/mercurial-2.4.2/hgweb.cgi
 

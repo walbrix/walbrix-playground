@@ -455,8 +455,8 @@
 #chrootexec gem install -l /prototype-rails.gem && rm /prototype-rails.gem
 
 # fastercsv
-#copy redmine/fastercsv-1.5.5.gem /fastercsv.gem
-#chrootexec gem install -l /fastercsv.gem && rm /fastercsv.gem
+##copy redmine/fastercsv-1.5.5.gem /fastercsv.gem
+##chrootexec gem install -l /fastercsv.gem && rm /fastercsv.gem
 
 # net-ldap (couldn't install via emerge)
 #copy redmine/net-ldap-0.3.1.gem /net-ldap.gem

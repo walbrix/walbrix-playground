@@ -20,9 +20,14 @@
 #extract redmine/redmine-2.2.3.tar.gz /var/www/localhost
 #chrootexec rm -rf /var/www/localhost/htdocs
 #chrootexec mv /var/www/localhost/redmine-2.2.3 /var/www/localhost/htdocs
+#sed /var/www/localhost/htdocs/Gemfile s/gem "mocha",.*//
+#sed /var/www/localhost/htdocs/Gemfile s/gem "fastercsv",.*//
+#sed /var/www/localhost/htdocs/Gemfile s/gem "builder", "3\.0/gem "builder", "~> 3\.0/
+#sed /var/www/localhost/htdocs/Gemfile s/gem "ruby-openid", "~> 2\.1/gem "ruby-openid", "> 2.1/
+
 #copy redmine/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
 #sed /etc/apache2/modules.d/30_mod_passenger.conf s/\(\/usr\/bin\/ruby\)18$/\119/
-#extract redmine/initial-db-and-config.tar.gz /
+#copy redmine/database.yml /var/www/localhost/htdocs/config/database.yml
 #copy redmine/configuration.yml /var/www/localhost/htdocs/config/configuration.yml
 #chrootexec chown -R apache.apache /var/www/localhost/htdocs
 
@@ -34,6 +39,9 @@
 #patchsinglefile /usr/share/webapps/websvn/2.3.2/htdocs/include/config.php redmine/config.php.patch
 
 #copy redmine/generate-secret-token /etc/init.d/generate-secret-token
-#sed /etc/init.d/generate-secret-token s/'\''ja'\''/'\''$(LANGUAGE)'\''/
-#sed /etc/init.d/apache2 s/\(need net\)$/\1 generate-secret-token/
+#symlink /etc/runlevels/boot/generate-secret-token /etc/init.d/generate-secret-token
+#copy redmine/setup_initial_database.sh /setup_initial_database.sh
+#sed /setup_initial_database.sh s/'\''ja'\''/'\''$(LANGUAGE)'\''/
+#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh
 #copy redmine/wb-va.xml /etc/wb-va.xml
+

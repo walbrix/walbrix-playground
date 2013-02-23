@@ -36,6 +36,7 @@ dev-python/django
 dev-python/mecab-python
 dev-python/pygame
 dev-python/setuptools
+dev-ruby/builder
 dev-ruby/chronic
 dev-ruby/coderay
 dev-ruby/daemons

@@ -114,6 +114,6 @@
 /etc/logrotate.d/mysql
 #symlink /etc/runlevels/default/mysql /etc/init.d/mysql
 
-#dir /var/lib/mysql
-#chrootexec chown mysql.mysql /var/lib/mysql
-#extract mysql/initial-database.tar.gz /var/lib/mysql
+#copy mysql/setup_mysql.sh /setup_mysql.sh
+#chrootexec sh /setup_mysql.sh && rm /setup_mysql.sh
+

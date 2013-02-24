@@ -1,5 +1,6 @@
+# dev-libs/openssl
+/etc/sandbox.d/10openssl
 /etc/ssl/certs/README.RootCerts
-/etc/ssl/certs/ca-certificates.crt
 /etc/ssl/misc/CA.pl
 /etc/ssl/misc/CA.sh
 /etc/ssl/misc/c_hash
@@ -18,8 +19,12 @@
 /usr/lib/engines/libchil.so
 /usr/lib/engines/libcswift.so
 /usr/lib/engines/libgmp.so
-/usr/lib/engines/libgost.so
+#/usr/lib/engines/libgost.so
 /usr/lib/engines/libnuron.so
 /usr/lib/engines/libpadlock.so
 /usr/lib/engines/libsureware.so
 /usr/lib/engines/libubsec.so
+
+# app-misc/ca-certificates
+/etc/ssl/certs/ca-certificates.crt
+

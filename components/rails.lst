@@ -67,28 +67,28 @@
 /usr/bin/racc
 /usr/bin/racc2y
 /usr/bin/y2racc
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/bin/racc
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/bin/racc2y
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/bin/y2racc
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/compat.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/cparse.so
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/debugflags.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/exception.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/grammar.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/grammarfileparser.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/info.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/iset.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/logfilegenerator.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/parser-text.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/parser.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/parserfilegenerator.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/pre-setup
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/sourcetext.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/state.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/statetransitiontable.rb
-/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.6/lib/racc/static.rb
-/usr/lib/ruby/gems/1.9.1/specifications/racc-1.4.6.gemspec
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/bin/racc
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/bin/racc2y
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/bin/y2racc
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/compat.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/cparse.so
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/debugflags.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/exception.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/grammar.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/grammarfileparser.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/info.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/iset.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/logfilegenerator.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/parser-text.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/parser.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/parserfilegenerator.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/pre-setup
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/sourcetext.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/state.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/statetransitiontable.rb
+/usr/lib/ruby/gems/1.9.1/gems/racc-1.4.8/lib/racc/static.rb
+/usr/lib/ruby/gems/1.9.1/specifications/racc-1.4.8.gemspec
 
 # rdoc
 /usr/bin/rdoc-2
@@ -1144,16 +1144,6 @@
 /usr/lib/ruby/gems/1.9.1/gems/bcrypt-ruby-3.0.1/lib/bcrypt.rb
 /usr/lib/ruby/gems/1.9.1/gems/bcrypt-ruby-3.0.1/lib/bcrypt_engine.rb
 /usr/lib/ruby/gems/1.9.1/gems/bcrypt-ruby-3.0.1/lib/bcrypt_ext.so
-
-# memcache-client
-/usr/bin/memcached_top
-/usr/lib/ruby/gems/1.9.1/gems/memcache-client-1.8.5/bin/memcached_top
-/usr/lib/ruby/gems/1.9.1/gems/memcache-client-1.8.5/lib/continuum_native.rb
-/usr/lib/ruby/gems/1.9.1/gems/memcache-client-1.8.5/lib/memcache.rb
-/usr/lib/ruby/gems/1.9.1/gems/memcache-client-1.8.5/lib/memcache/event_machine.rb
-/usr/lib/ruby/gems/1.9.1/gems/memcache-client-1.8.5/lib/memcache/version.rb
-/usr/lib/ruby/gems/1.9.1/gems/memcache-client-1.8.5/lib/memcache_util.rb
-/usr/lib/ruby/gems/1.9.1/specifications/memcache-client-1.8.5.gemspec
 
 # rack-cache
 /usr/lib/ruby/gems/1.9.1/gems/rack-cache-1.2/lib/rack-cache.rb

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <virtual-appliance uuid="a10f5b25-a10d-4fa7-923e-b013d0091c7f">
-  <version>3.5.0</version>
+  <version>3.5.1</version>
   <instruction>Webブラウザでアクセスするとセットアップが開始されます</instruction>
   <instruction xml:lang="en">Please access using web browser to begin setup</instruction>
 </virtual-appliance>

@@ -11,13 +11,17 @@
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1wordpress\2/
 #copy domU/fstab-with-swapfile /etc/fstab
 #swap /swapfile 128
-#extract wordpress/wordpress-3.5.0-$(LANGUAGE).tar.gz /var/www/localhost
+#extract wordpress/wordpress-3.5.1-$(LANGUAGE).tar.gz /var/www/localhost
 #chrootexec mv /var/www/localhost/wordpress/* /var/www/localhost/htdocs
 #chrootexec rmdir /var/www/localhost/wordpress
 #chrootexec mv /var/www/localhost/htdocs/wp-config-sample.php /var/www/localhost/htdocs/wp-config.php
-#patchsinglefile /var/www/localhost/htdocs/wp-config.php wordpress/wp-config.diff
+#sed /var/www/localhost/htdocs/wp-config.php s/database_name_here/wordpress/
+#sed /var/www/localhost/htdocs/wp-config.php s/username_here/wordpress/
+#sed /var/www/localhost/htdocs/wp-config.php s/password_here//
 #chrootexec chown -R apache.apache /var/www/localhost
-# cd /var/lib/mysql && tar zcvpf initial-database.tar.gz ib_logfile* ibdata1 mysql/db.MY* mysql/user.MY* wordpress
-#extract wordpress/initial-database.tar.gz /var/lib/mysql
+#copy wordpress/setup_initial_database.sh /setup_initial_database.sh
+#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh
+#copy wordpress/generate-secret-token /etc/init.d/generate-secret-token
+#symlink /etc/runlevels/boot/generate-secret-token /etc/init.d/generate-secret-token
 #copy wordpress/wb-va.xml /etc/wb-va.xml
 

@@ -18,6 +18,8 @@
 #sed /var/www/localhost/htdocs/wp-config.php s/database_name_here/wordpress/
 #sed /var/www/localhost/htdocs/wp-config.php s/username_here/wordpress/
 #sed /var/www/localhost/htdocs/wp-config.php s/password_here//
+#copy wordpress/wp-config.add /wp-config.add
+#chrootexec cat /wp-config.add >> /var/www/localhost/htdocs/wp-config.php && rm /wp-config.add
 #chrootexec chown -R apache.apache /var/www/localhost
 #copy wordpress/setup_initial_database.sh /setup_initial_database.sh
 #chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh

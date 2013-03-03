@@ -3,6 +3,7 @@
 /bin/more
 /bin/mount
 /bin/umount
+/bin/wdctl
 /sbin/agetty
 /sbin/blkid
 #/sbin/blockdev
@@ -25,6 +26,7 @@
 /sbin/pivot_root
 #/sbin/raw
 #/sbin/sfdisk
+/sbin/sulogin
 #/sbin/swaplabel
 /sbin/swapoff
 /sbin/swapon
@@ -37,6 +39,7 @@
 #/usr/bin/colrm
 #/usr/bin/column
 #/usr/bin/cytune
+#/usr/bin/eject
 #/usr/bin/fallocate
 /usr/bin/flock
 /usr/bin/getopt
@@ -52,6 +55,7 @@
 /usr/bin/logger
 #/usr/bin/look
 /usr/bin/lscpu
+/usr/bin/lslocks
 #/usr/bin/mcookie
 #/usr/bin/namei
 #/usr/bin/pg
@@ -67,6 +71,7 @@
 /usr/bin/taskset
 #/usr/bin/ul
 #/usr/bin/unshare
+/usr/bin/utmpdump
 /usr/bin/uuidgen
 /usr/bin/whereis
 #/usr/bin/write
@@ -77,6 +82,8 @@
 #/usr/sbin/ldattach
 #/usr/sbin/partx
 #/usr/sbin/readprofile
+/usr/sbin/resizepart
 #/usr/sbin/rtcwake
 #/usr/sbin/tunelp
 #/usr/sbin/uuidd
+

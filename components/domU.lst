@@ -105,7 +105,6 @@
 ./sbin/poweroff
 ./sbin/reboot
 /sbin/runlevel
-./sbin/sulogin
 /sbin/shutdown
 ./sbin/sysctl
 ./usr/bin/ar

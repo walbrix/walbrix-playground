@@ -1,0 +1,24 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php53.lst
+#require components/samba.lst
+#require components/postfix.lst
+#require components/phpmyadmin.lst
+#copy owncloud/smb.conf /etc/samba/smb.conf
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1owncloud\2/
+#copy domU/fstab-with-swapfile /etc/fstab
+#swap /swapfile 128
+#extract owncloud/owncloud-4.5.7.tar.bz2 /var/www/localhost
+#chrootexec mv /var/www/localhost/owncloud/* /var/www/localhost/htdocs/
+#chrootexec mv /var/www/localhost/owncloud/.htaccess /var/www/localhost/htdocs/
+#chrootexec rmdir /var/www/localhost/owncloud
+#copy owncloud/config.php /var/www/localhost/htdocs/config/config.php
+#chrootexec chown -R apache.apache /var/www/localhost
+#copy owncloud/setup_initial_database.sh /setup_initial_database.sh
+#copy owncloud/initial-database.sql /initial-database.sql
+#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh /initial-database.sql
+#copy owncloud/wb-va.xml /etc/wb-va.xml
+

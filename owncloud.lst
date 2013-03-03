@@ -20,5 +20,7 @@
 #copy owncloud/setup_initial_database.sh /setup_initial_database.sh
 #copy owncloud/initial-database.sql /initial-database.sql
 #chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh /initial-database.sql
+#sed /etc/php/apache2-php5.3/php.ini s/^upload_max_filesize.\+$/upload_max_filesize = 512M/
+#sed /etc/php/apache2-php5.3/php.ini s/^post_max_size.\+$/post_max_size = 768M/
 #copy owncloud/wb-va.xml /etc/wb-va.xml
 

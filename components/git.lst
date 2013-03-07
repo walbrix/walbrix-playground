@@ -1,7 +1,10 @@
 #/etc/conf.d/git-daemon
 #/etc/init.d/git-daemon
+/usr/bin/diff-highlight
 /usr/bin/git
 #/usr/bin/git-cvsserver
+/usr/bin/git-diffall
+/usr/bin/git-jump
 /usr/bin/git-receive-pack
 /usr/bin/git-resurrect
 /usr/bin/git-shell
@@ -148,6 +151,7 @@
 /usr/libexec/git-core/git-remote-http
 /usr/libexec/git-core/git-remote-https
 /usr/libexec/git-core/git-remote-testgit
+/usr/libexec/git-core/git-remote-testsvn
 /usr/libexec/git-core/git-repack
 /usr/libexec/git-core/git-replace
 /usr/libexec/git-core/git-repo-config
@@ -174,6 +178,7 @@
 /usr/libexec/git-core/git-status
 /usr/libexec/git-core/git-stripspace
 /usr/libexec/git-core/git-submodule
+/usr/libexec/git-core/git-subtree
 /usr/libexec/git-core/git-symbolic-ref
 /usr/libexec/git-core/git-tag
 /usr/libexec/git-core/git-tar-tree
@@ -192,6 +197,7 @@
 /usr/libexec/git-core/git-write-tree
 /usr/libexec/git-core/mergetools/araxis
 /usr/libexec/git-core/mergetools/bc3
+/usr/libexec/git-core/mergetools/codecompare
 /usr/libexec/git-core/mergetools/defaults
 /usr/libexec/git-core/mergetools/deltawalker
 /usr/libexec/git-core/mergetools/diffuse

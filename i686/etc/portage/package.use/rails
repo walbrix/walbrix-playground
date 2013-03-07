@@ -1,5 +1,6 @@
 dev-ruby/rails ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/builder ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/listen ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/sass ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/thor ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/activesupport ruby_targets_ruby19 -ruby_targets_ruby18
@@ -15,7 +16,7 @@ dev-ruby/rake-compiler ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/bundler ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/i18n ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/activeresource ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/rubygems ruby_targets_ruby19 ruby_targets_ruby18
+dev-ruby/rubygems ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/memcache-client ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/tzinfo ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/erubis ruby_targets_ruby19 -ruby_targets_ruby18

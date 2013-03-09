@@ -20,6 +20,7 @@ dev-lang/php
 dev-lang/python
 dev-libs/iniparser
 dev-perl/Archive-Zip
+dev-perl/Authen-SASL
 dev-perl/Cache
 dev-perl/Cache-Memcached
 dev-perl/Crypt-SSLeay
@@ -27,8 +28,12 @@ dev-perl/DBD-mysql
 dev-perl/Digest-SHA1
 dev-perl/GD
 dev-perl/HTML-Parser
+dev-perl/IO-Socket-SSL
 dev-perl/IPC-Run
 dev-perl/Mail-Sendmail
+dev-perl/Net-SMTP-SSL
+dev-perl/Net-SMTP-TLS
+dev-perl/Net-SSLeay
 dev-perl/XML-Atom
 dev-perl/XML-Parser
 dev-perl/crypt-dsa

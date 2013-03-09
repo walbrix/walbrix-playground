@@ -1,0 +1,9 @@
+{
+	"id":"mtos",
+	"title":"MovableType(OpenSource) 5.2.3",
+	"images":[{"url":"http://va.walbrix.net/img/mt01.png"}],	
+	"tarball":"mtos-i686-jp.tar.xz",
+	"description":"Movable Type (OpenSource)",
+	"minimum_ram":96,
+	"minimum_hd":1
+}

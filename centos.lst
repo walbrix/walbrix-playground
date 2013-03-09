@@ -1,11 +1,12 @@
 #require components/dev.lst
+#extract centos/centos-6.4-$(ARCH).tar.xz /
 #require components/pvkernel.lst
-#extract centos/centos-6.3-$(ARCH).tar.xz /
 #sed /etc/init/start-ttys.conf s/ACTIVE_CONSOLES=\/dev\/.*$/ACTIVE_CONSOLES=\/dev\/hvc0/
+#sed /etc/sysconfig/network-scripts/ifcfg-eth0 s/^ONBOOT=no$/ONBOOT=yes/
+#sed /etc/sysconfig/network-scripts/ifcfg-eth0 s/^\(HWADDR\|UUID\)=.*$//
 #chrootexec echo "hvc0" >> /etc/securetty
 #sed /etc/sysconfig/network s/^HOSTNAME=.*/HOSTNAME=centos/
-#sed /etc/sysconfig/network-scripts/ifcfg-eth0 s/^\(HWADDR\|UUID\)=.*$//
-#swap /swapfile 256
+#swap /swapfile 128
 #sed /etc/shadow s/^\(root:\)[^:]*\(:.*\)$/\1\2/
 #copy domU/resolv.conf /etc/resolv.conf
 #sed /etc/selinux/config s/^SELINUX=enforcing$/SELINUX=disabled/
@@ -15,15 +16,36 @@
 #chrootexec echo "i686-centos-linux" > /etc/rpm/platform
 #chrootexec chkconfig ip6tables off
 #chrootexec chkconfig iptables off
+#chrootexec echo 'exclude=kernel*' >> /etc/yum.conf
 #chrootexec yum update -y
+#chrootexec yum erase -y kernel kernel-firmware
 #chrootexec yum install -y samba avahi ntp lzo
 #chrootexec chkconfig nmb on
 #chrootexec chkconfig ntpd on
 #chrootexec yum clean -y all
-#copy domU/smb.conf /etc/samba/smb.conf
 #chrootexec rm -rf /lib/modules /lib/firmware /etc/ssh/sshd_host_*
 #copy centos/openvpn-2.2.2-1.el6.rf.i686.rpm /openvpn.rpm
 #copy centos/pkcs11-helper-1.08-1.el6.rf.i686.rpm /pkcs11-helper.rpm
 #chrootexec rpm -ivh /openvpn.rpm /pkcs11-helper.rpm
 #chrootexec rm /openvpn.rpm /pkcs11-helper.rpm
 #require components/centos-$(REGION).lst
+
+# LAMP stack
+#chrootexec yum install -y php-mysql mysql-server httpd vsftpd php php-mbstring php-mcrypt php-gd wget xz
+#chrootexec yum clean -y all
+#chrootexec chkconfig smb on
+#chrootexec chkconfig httpd on
+#chrootexec chkconfig mysqld on
+#chrootexec chkconfig vsftpd on
+#chrootexec chkconfig openvpn on
+#copy centos/mod_extract_forwarded.so /usr/lib/httpd/modules/mod_extract_forwarded.so
+#copy centos/extract_forwarded.conf /etc/httpd/conf.d/extract_forwarded.conf
+#patchsinglefile /etc/httpd/conf/httpd.conf centos/httpd.conf.patch
+#copy centos/index.html /var/www/html/index.html
+#extract centos/phpMyAdmin-3.5.7-all-languages.tar.xz /var/www/html
+#chrootexec mv /var/www/html/phpMyAdmin-3.5.7-all-languages /var/www/html/phpmyadmin
+#copy phpmyadmin/config.inc.php /var/www/html/phpmyadmin/config.inc.php
+#chrootexec chown -R apache.apache /var/www /var/log/httpd
+#patchsinglefile /etc/my.cnf centos/my.cnf.patch
+#copy centos/smb.conf /etc/samba/smb.conf
+

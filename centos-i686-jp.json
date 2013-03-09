@@ -1,0 +1,10 @@
+{
+	"id":"centos",
+	"title":"CentOS",
+	"images":[{"url":"http://va.walbrix.net/img/centos01.png"}],	
+	"tarball":"centos-i686-jp.tar.xz",
+	"description":"CentOS",
+	"minimum_ram":128,
+	"minimum_hd":2
+}
+

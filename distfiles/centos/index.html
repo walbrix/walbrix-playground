@@ -1,0 +1,46 @@
+<html lang="ja">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CentOS</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/redmond/jquery-ui.css" type="text/css"/>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">google.load("jquery", "1.4.2");</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+	<script type="text/javascript">google.load("jqueryui", "1.8.1");</script>
+	<script language="JavaScript"><!--
+	  $(function(){
+	    var hostname = location.hostname;
+	    $("#tabs").tabs();
+		$("span.hostname").html(hostname);
+	  });
+	//--></script>
+  </head>
+
+  <h1>CentOS</h1>
+
+  <div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">概要と使い方</a></li>
+		<li><a href="#tabs-2">追加情報</a></li>
+	</ul>
+	<div id="tabs-1">
+	  Apache, MySQL, PHPがインストール済みの CentOSサーバ環境です。
+	  <h3>MySQLについて</h3>
+	  <a href="/phpmyadmin/">phpMyAdmin</a>で MySQLの管理を行うことができます。<br/>
+	  MySQLには管理者 (root) で、パスワードは無しでログインできます。設定により、パスワードなしでログインできるのは LAN内からのアクセスのみですので、必要に応じてパスワードを設定してください。
+	  <h3>Webコンテンツの編集</h3>
+	  Windows共有で下記の共有フォルダへアクセスすることが出来ます。htmlファイル、phpファイル、画像、css、JavaScriptなどをここに保存することで、Webブラウザからアクセス可能になります。
+	  <ul>
+		<li>￥￥<span class="hostname">HOSTNAME</span>￥￥html - Webサーバのコンテンツを配置する場所(このページもここにあります)</li>
+	  </ul>
+	  <h3>PHPについて</h3>
+	  標準で　GDライブラリが組み込まれており、mbstringも有効になっています。
+	  <h3>SSHによるログイン</h3>
+	  sshでログインすることもできます。rootの初期パスワードは Walbrixのシリアルナンバー（未登録の場合 WBFREE01）です。
+	</div>
+	<div id="tabs-2">
+	  <a href="http://www.centos.org/" target="_blank">CentOS オフィシャルサイト</a>
+	</div>
+	<div align="right" style="margin-top:1em;"><a href="http://www.walbrix.net/">Walbrix</a></div>
+  </div>
+</html>

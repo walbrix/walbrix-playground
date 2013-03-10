@@ -25,7 +25,9 @@
 #chrootexec yum clean -y all
 #chrootexec rm -rf /lib/modules /lib/firmware /etc/ssh/sshd_host_*
 #copy centos/openvpn-2.2.2-1.el6.rf.i686.rpm /openvpn.rpm
+#copy centos/openvpn-2.2.2-1.rf.src.rpm /root/openvpn-2.2.2-1.rf.src.rpm
 #copy centos/pkcs11-helper-1.08-1.el6.rf.i686.rpm /pkcs11-helper.rpm
+#copy centos/pkcs11-helper-1.08-1.rf.src.rpm /root/pkcs11-helper-1.08-1.rf.src.rpm
 #chrootexec rpm -ivh /openvpn.rpm /pkcs11-helper.rpm
 #chrootexec rm /openvpn.rpm /pkcs11-helper.rpm
 

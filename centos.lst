@@ -28,7 +28,6 @@
 #copy centos/pkcs11-helper-1.08-1.el6.rf.i686.rpm /pkcs11-helper.rpm
 #chrootexec rpm -ivh /openvpn.rpm /pkcs11-helper.rpm
 #chrootexec rm /openvpn.rpm /pkcs11-helper.rpm
-#require components/centos-$(REGION).lst
 
 # LAMP stack
 #chrootexec yum install -y php-mysql mysql-server httpd vsftpd php php-mbstring php-mcrypt php-gd wget xz
@@ -48,4 +47,6 @@
 #chrootexec chown -R apache.apache /var/www /var/log/httpd
 #patchsinglefile /etc/my.cnf centos/my.cnf.patch
 #copy centos/smb.conf /etc/samba/smb.conf
+
+#require components/centos-$(REGION).lst
 

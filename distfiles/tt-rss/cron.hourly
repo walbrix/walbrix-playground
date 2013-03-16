@@ -1,0 +1,3 @@
+#!/bin/sh
+/usr/bin/wget --quiet --output-document=/dev/null --timeout=600 "http://localhost/backend.php?op=globalUpdateFeeds&daemon=1"
+

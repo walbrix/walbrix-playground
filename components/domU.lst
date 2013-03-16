@@ -282,3 +282,6 @@
 # timezone
 #require timezone-$(REGION).lst
 
+# zram swap
+#patchsinglefile /etc/init.d/swap domU/swap.init.patch
+

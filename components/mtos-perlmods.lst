@@ -694,7 +694,7 @@
 
 /usr/lib/perl5/vendor_perl/5.12.4/Parse/CPAN/Meta.pm
 
-/usr/lib/perl5/vendor_perl/5.12.4/Version/Requirements.pm
+#/usr/lib/perl5/vendor_perl/5.12.4/Version/Requirements.pm
 
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/GD.pm
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/GD/Group.pm

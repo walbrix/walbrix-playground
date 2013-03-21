@@ -18,7 +18,7 @@ fi
 /usr/bin/mysql -u root -e 'create database `tt-rss`' || exit 1
 /usr/bin/mysql -u root -e 'grant all privileges on `tt-rss`.* to '\''tt-rss'\''@localhost' || exit 1
 /usr/bin/mysql -u tt-rss tt-rss < /var/www/localhost/htdocs/schema/ttrss_schema_mysql.sql
-/usr/bin/mysql -u tt-rss tt-rss -e "update ttrss_user_prefs set value='Asia/Tokyo' where pref_name='USER_TIMEZONE'"
+/usr/bin/mysql -u tt-rss tt-rss -e "update ttrss_prefs set def_value='Asia/Tokyo' where pref_name='USER_TIMEZONE'"
 
 kill `cat $PIDFILE`
 rm -f $PIDFILE

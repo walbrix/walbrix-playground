@@ -11,8 +11,7 @@
 #require components/phpmyadmin.lst
 #copy mtos/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1mtos\2/
-#copy domU/fstab-with-swapfile /etc/fstab
-#swap /swapfile 128
+#copy domU/fstab-with-zramswap /etc/fstab
 #extract mtos/MTOS-5.2.3.zip /var/www/localhost/cgi-bin
 #chrootexec mv /var/www/localhost/cgi-bin/MTOS-5.2.3 /var/www/localhost/cgi-bin/mt
 #chrootexec mv /var/www/localhost/cgi-bin/mt/mt-static /var/www/localhost/htdocs/

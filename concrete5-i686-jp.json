@@ -1,0 +1,9 @@
+{
+	"id":"concrete5",
+	"title":"Concrete5 5.6.0.2",
+	"images":[{"url":"http://va.walbrix.net/img/concrete501.png"}],	
+	"tarball":"concrete5-i686-jp.tar.xz",
+	"description":"Concrete5",
+	"minimum_ram":96,
+	"minimum_hd":1
+}

@@ -1,0 +1,23 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php53.lst
+#require components/samba.lst
+#require components/postfix.lst
+#require components/phpmyadmin.lst
+#copy concrete5/smb.conf /etc/samba/smb.conf
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1concrete5\2/
+#copy domU/fstab-with-zramswap /etc/fstab
+#extract concrete5/concrete5.6.0.2.$(LANGUAGE).zip /var/www/localhost
+#chrootexec mv /var/www/localhost/concrete5.6.0.2.$(LANGUAGE)/* /var/www/localhost/htdocs
+#chrootexec rmdir /var/www/localhost/concrete5.6.0.2.$(LANGUAGE)
+#copy concrete5/site.php /var/www/localhost/htdocs/config/site.php
+#extract concrete5/initial_files.tar.gz /var/www/localhost/htdocs
+#chrootexec chown -R apache.apache /var/www/localhost
+#copy concrete5/setup_initial_database.sh /setup_initial_database.sh
+#copy concrete5/initial_database.sql.gz /initial_database.sql.gz
+#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh /initial_database.sql.gz
+#copy concrete5/wb-va.xml /etc/wb-va.xml
+

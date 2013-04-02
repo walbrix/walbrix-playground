@@ -9,6 +9,7 @@
 /lib/udev/mtd_probe
 /lib/udev/rules.d/40-gentoo.rules
 /lib/udev/rules.d/42-usb-hid-pm.rules
+/lib/udev/rules.d/50-firmware.rules
 /lib/udev/rules.d/50-udev-default.rules
 /lib/udev/rules.d/60-cdrom_id.rules
 /lib/udev/rules.d/60-persistent-alsa.rules
@@ -28,30 +29,19 @@
 /lib/udev/rules.d/95-udev-late.rules
 /lib/udev/scsi_id
 /lib/udev/v4l_id
-#/lib/libsystemd-daemon.so.0
-#/lib/libsystemd-daemon.so.0.0.7
 /lib/libudev.so.1
-#/lib/libudev.so.1.2.1
+#/lib/libudev.so.1.3.1
 /sbin/udevadm
-#/sbin/udevd
-/usr/lib/systemd/system/sockets.target.wants/systemd-udevd-control.socket
-/usr/lib/systemd/system/sockets.target.wants/systemd-udevd-kernel.socket
-/usr/lib/systemd/system/sysinit.target.wants/systemd-udev-trigger.service
-/usr/lib/systemd/system/sysinit.target.wants/systemd-udevd.service
-/usr/lib/systemd/system/systemd-udev-settle.service
-/usr/lib/systemd/system/systemd-udev-trigger.service
-#/usr/lib/systemd/system/systemd-udevd-control.socket
-#/usr/lib/systemd/system/systemd-udevd-kernel.socket
-/usr/lib/systemd/system/systemd-udevd.service
-/usr/lib/systemd/systemd-udevd
-/usr/lib/libsystemd-daemon.so
+/sbin/udevd
 /usr/lib/libudev.so
+/usr/share/bash-completion/udevadm
 
 # sys-fs/udev-init-scripts
 
 /etc/conf.d/udev
 /etc/init.d/udev
 /etc/init.d/udev-mount
+/lib/udev/dev-root-link.sh
 /lib/udev/net.sh
 /lib/udev/rules.d/90-network.rules
 

@@ -6,22 +6,21 @@
 #require components/php53.lst
 #require components/samba.lst
 #require components/postfix.lst
+#require components/phpmyadmin.lst
 #copy openpne/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1openpne\2/
-#copy domU/fstab-with-swapfile /etc/fstab
-#swap /swapfile 128
-#extract openpne/OpenPNE-3.6.4.zip /var/www/localhost
-#chrootexec mv /var/www/localhost/openpne-OpenPNE3-b595f32/* /var/www/localhost/htdocs/
-#chrootexec rm -rf /var/www/localhost/openpne-OpenPNE3-b595f32
+#copy domU/fstab-with-zramswap /etc/fstab
+#extract openpne/OpenPNE3-OpenPNE-3.8.5.zip /var/www/localhost
+#chrootexec mv /var/www/localhost/OpenPNE3-OpenPNE-3.8.5/* /var/www/localhost/htdocs/ && rm /var/www/localhost/OpenPNE3-OpenPNE-3.8.5/.gitignore
+#chrootexec rmdir /var/www/localhost/OpenPNE3-OpenPNE-3.8.5
 #chrootexec cp /var/www/localhost/htdocs/config/ProjectConfiguration.class.php.sample /var/www/localhost/htdocs/config/ProjectConfiguration.class.php
 #chrootexec cp /var/www/localhost/htdocs/config/OpenPNE.yml.sample /var/www/localhost/htdocs/config/OpenPNE.yml
-## ./symfony openpne:install
+## cd /var/www/localhost/htdocs && ./symfony openpne:fast-install --dbms=mysql --dbuser=openpne --dbpassword="" --dbhost=localhost --dbname=openpne     
+#copy openpne/setup_initial_database.sh /setup_initial_database.sh
+#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh
 ## diff -rq orig installed
-#extract openpne/initial-components.tar.gz /var/www/localhost/htdocs
-#chrootexec rm /var/www/localhost/htdocs/web/*_dev.php
+#chrootexec cd /var/www/localhost/htdocs && ./symfony project:clear-controllers
 #chrootexec chown -R apache.apache /var/www/localhost
-# cd /var/lib/mysql && tar zcvpf initial-database.tar.gz ib_logfile* ibdata1 mysql/db.MY* mysql/user.MY* openpne
-#extract openpne/initial-database.tar.gz /var/lib/mysql
 #sed /etc/apache2/vhosts.d/default_vhost.include s/\(\/var\/www\/localhost\/\htdocs\)/\1\/web/
 #sed /var/www/localhost/htdocs/config/OpenPNE.yml s/http:\/\/example\.com//
 #copy openpne/crontab /var/spool/cron/crontabs/root

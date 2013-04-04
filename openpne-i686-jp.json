@@ -1,0 +1,9 @@
+{
+	"id":"openpne",
+	"title":"OpenPNE 3.8.5",
+	"images":[{"url":"http://va.walbrix.net/img/openpne01.png"}],	
+	"tarball":"openpne-i686-jp.tar.xz",
+	"description":"OpenPNE",
+	"minimum_ram":128,
+	"minimum_hd":1
+}

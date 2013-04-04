@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <virtual-appliance uuid="a3cecd9e-7352-45ab-8760-d1c53dbc6aec">
-  <version>3.6.4</version>
+  <version>3.8.5</version>
   <instruction>管理画面 /pc_backend.php の初期ユーザー名とパスワードは admin / password です</instruction>
 </virtual-appliance>

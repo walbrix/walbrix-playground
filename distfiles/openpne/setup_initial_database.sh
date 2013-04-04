@@ -17,7 +17,26 @@ if ! [[ -S "$SOCKET" ]]; then
 fi
 /usr/bin/mysql -u root -e "create database openpne" || exit 1
 /usr/bin/mysql -u root -e 'grant all privileges on openpne.* to openpne@localhost' || exit 1
-cd /var/www/localhost/htdocs && ./symfony openpne:fast-install --dbms=mysql --dbuser=openpne --dbpassword="" --dbhost=localhost --dbname=openpne
+cd /var/www/localhost/htdocs || exit 1
+./symfony openpne:fast-install --dbms=mysql --dbuser=openpne --dbpassword="" --dbhost=localhost --dbname=openpne
+./symfony opPlugin:install opAlbumPlugin -r 1.0.0.1
+./symfony openpne:migrate --target=opAlbumPlugin
+./symfony opPlugin:install -r 1.1.1 opAshiatoPlugin
+./symfony openpne:migrate --target=opAshiatoPlugin
+./symfony opPlugin:install -r 1.3.3 opAuthMobileUIDPlugin
+./symfony openpne:migrate --target=opAuthMobileUIDPlugin
+./symfony opPlugin:install -r 1.0.2 opBlogPlugin
+./symfony openpne:migrate --target=opBlogPlugin
+./symfony opPlugin:install opCalendarPlugin -r 0.9.4
+./symfony openpne:migrate --target=opCalendarPlugin
+./symfony opPlugin:install -r 1.1.0 opCommunityTopicPlugin
+./symfony openpne:migrate --target=opCommunityTopicPlugin
+./symfony opPlugin:install opDiaryPlugin -r 1.5.0
+./symfony openpne:migrate --target=opDiaryPlugin
+./symfony opPlugin:install -r 1.0.0 opMessagePlugin
+./symfony openpne:migrate --target=opMessagePlugin
+./symfony opPlugin:install -r 1.0.1 opRankingPlugin
+./symfony cc
 
 kill `cat $PIDFILE`
 rm -f $PIDFILE

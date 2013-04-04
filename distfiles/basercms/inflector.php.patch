@@ -1,0 +1,4 @@
+130c130
+< 			$instance[0] =& new Inflector();
+---
+> 			$instance[0] = new Inflector();

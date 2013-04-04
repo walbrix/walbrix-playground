@@ -1,0 +1,26 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php53.lst
+#require components/samba.lst
+#require components/postfix.lst
+#require components/phpmyadmin.lst
+#copy basercms/smb.conf /etc/samba/smb.conf
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1basercms\2/
+#copy domU/fstab-with-zramswap /etc/fstab
+#extract basercms/basercms-2.0.5.1.zip /var/www/localhost
+#chrootexec mv /var/www/localhost/basercms/* /var/www/localhost/basercms/.htaccess /var/www/localhost/htdocs
+#chrootexec rmdir /var/www/localhost/basercms
+#patchsinglefile /var/www/localhost/htdocs/cake/libs/configure.php basercms/configure.php.patch
+#patchsinglefile /var/www/localhost/htdocs/cake/libs/inflector.php basercms/inflector.php.patch
+#patchsinglefile /var/www/localhost/htdocs/cake/libs/object.php basercms/object.php.patch
+# tar zcvpf initial_files.tar.gz .htaccess app/webroot/.htaccess app/config/database.php app/config/install.php app/db/csv app/db/sqlite app/webroot/themed/demo app/webroot/themed/skelton -C /var/www/localhost/htdocs
+#extract basercms/initial_files.tar.gz /var/www/localhost/htdocs
+#chrootexec chown -R apache.apache /var/www/localhost
+#copy basercms/setup_initial_database.sh /setup_initial_database.sh
+#copy basercms/initial_database.sql.gz /initial_database.sql.gz
+#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh /initial_database.sql.gz
+#copy basercms/wb-va.xml /etc/wb-va.xml
+

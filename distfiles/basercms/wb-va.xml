@@ -1,0 +1,5 @@
+<virtual-appliance uuid="ac416e38-b14e-4090-8821-e27f4c9df57d">
+  <version>2.0.5.1</version>
+  <instruction>管理画面のURIは /admin/ で、初期ユーザー名とパスワードは admin/basercms です</instruction>
+  <instruction xml:lang="en">The admin panel's URI is '/admin/'. Initial user ID and password is admin/basercms</instruction>
+</virtual-appliance>

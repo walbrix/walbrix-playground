@@ -1,9 +1,9 @@
 {
 	"id":"basercms",
-	"title":"baserCMS 2.0.5.1",
+	"title":"baserCMS 2.5.0",
 	"images":[{"url":"http://va.walbrix.net/img/basercms01.png"}],	
 	"tarball":"basercms-i686-jp.tar.xz",
 	"description":"baserCMS",
-	"minimum_ram":96,
+	"minimum_ram":128,
 	"minimum_hd":1
 }

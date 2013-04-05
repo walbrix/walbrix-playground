@@ -10,13 +10,15 @@
 #copy basercms/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1basercms\2/
 #copy domU/fstab-with-zramswap /etc/fstab
-#extract basercms/basercms-2.0.5.1.zip /var/www/localhost
+#extract basercms/basercms-2.1.0.zip /var/www/localhost
 #chrootexec mv /var/www/localhost/basercms/* /var/www/localhost/basercms/.htaccess /var/www/localhost/htdocs
 #chrootexec rmdir /var/www/localhost/basercms
 #patchsinglefile /var/www/localhost/htdocs/cake/libs/configure.php basercms/configure.php.patch
 #patchsinglefile /var/www/localhost/htdocs/cake/libs/inflector.php basercms/inflector.php.patch
 #patchsinglefile /var/www/localhost/htdocs/cake/libs/object.php basercms/object.php.patch
-# tar zcvpf initial_files.tar.gz .htaccess app/webroot/.htaccess app/config/database.php app/config/install.php app/db/csv app/db/sqlite app/webroot/themed/demo app/webroot/themed/skelton -C /var/www/localhost/htdocs
+#extract basercms/baseruploader-2.1.0.zip /var/www/localhost/htdocs/app/plugins
+#extract basercms/basertwitter-2.1.0.zip /var/www/localhost/htdocs/app/plugins
+# tar zcvpf initial_files.tar.gz .htaccess app/webroot/.htaccess app/config/database.php app/config/install.php app/db/csv app/db/sqlite app/webroot/files/editor app/webroot/files/uploads app/webroot/themed/nada-icons app/webroot/themed/skelton -C /var/www/localhost/htdocs
 #extract basercms/initial_files.tar.gz /var/www/localhost/htdocs
 #chrootexec chown -R apache.apache /var/www/localhost
 #copy basercms/setup_initial_database.sh /setup_initial_database.sh

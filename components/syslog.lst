@@ -1,8 +1,10 @@
 /etc/conf.d/sysklogd
-/etc/cron.daily/syslog.cron
+/etc/cron.daily/syslog
+/etc/cron.weekly/syslog
 /etc/init.d/sysklogd
 /etc/syslog.conf
 /usr/sbin/klogd
+/usr/sbin/syslog-facility
 /usr/sbin/syslogd
 /usr/sbin/syslogd-listfiles
 

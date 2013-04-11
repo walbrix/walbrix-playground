@@ -23,4 +23,7 @@ stmt = client.prepare("select hashed_password,salt from users where type='User' 
 stmt.execute(login).each { |hashed_password, salt|
   exit(2) if hashed_password == nil || salt == nil
   exit(1) if Digest::SHA1.hexdigest(salt+Digest::SHA1.hexdigest(password)) != hashed_password
+  exit(0)
 }
+exit(2)
+

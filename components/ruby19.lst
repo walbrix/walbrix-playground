@@ -601,31 +601,31 @@
 /usr/lib/ruby/site_ruby/1.9.1/ubygems.rb
 
 # dev-ruby/json
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/bigdecimal.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/complex.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/core.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/date.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/date_time.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/exception.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/ostruct.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/range.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/rational.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/regexp.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/struct.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/symbol.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/add/time.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/common.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/ext.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/ext/.keep
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/ext/generator.so
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/ext/parser.so
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/light_object.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/pure.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/pure/generator.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/pure/parser.rb
-/usr/lib/ruby/gems/1.9.1/gems/json-1.6.8/lib/json/version.rb
-/usr/lib/ruby/gems/1.9.1/specifications/json-1.6.8.gemspec
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/bigdecimal.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/complex.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/core.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/date.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/date_time.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/exception.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/ostruct.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/range.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/rational.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/regexp.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/struct.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/symbol.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/add/time.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/common.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/ext.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/ext/.keep
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/ext/generator.so
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/ext/parser.so
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/generic_object.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/pure.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/pure/generator.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/pure/parser.rb
+/usr/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/version.rb
+/usr/lib/ruby/gems/1.9.1/specifications/json-1.7.7.gemspec
 
 # libs (for dev)
 /usr/lib/libruby19.so

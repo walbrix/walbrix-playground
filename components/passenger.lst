@@ -1,11 +1,11 @@
 #require ruby19.lst
 
 # daemon_controller
-/usr/lib/ruby/gems/1.9.1/gems/daemon_controller-1.0.0/lib/daemon_controller.rb
-/usr/lib/ruby/gems/1.9.1/gems/daemon_controller-1.0.0/lib/daemon_controller/lock_file.rb
-/usr/lib/ruby/gems/1.9.1/gems/daemon_controller-1.0.0/lib/daemon_controller/spawn.rb
-/usr/lib/ruby/gems/1.9.1/gems/daemon_controller-1.0.0/lib/daemon_controller/version.rb
-/usr/lib/ruby/gems/1.9.1/specifications/daemon_controller-1.0.0.gemspec
+/usr/lib/ruby/gems/1.9.1/gems/daemon_controller-1.1.1/lib/daemon_controller.rb
+/usr/lib/ruby/gems/1.9.1/gems/daemon_controller-1.1.1/lib/daemon_controller/lock_file.rb
+/usr/lib/ruby/gems/1.9.1/gems/daemon_controller-1.1.1/lib/daemon_controller/spawn.rb
+/usr/lib/ruby/gems/1.9.1/gems/daemon_controller-1.1.1/lib/daemon_controller/version.rb
+/usr/lib/ruby/gems/1.9.1/specifications/daemon_controller-1.1.1.gemspec
 
 # passenger
 /etc/apache2/modules.d/30_mod_passenger.conf

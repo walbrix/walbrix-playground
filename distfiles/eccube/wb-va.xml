@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtual-appliance uuid="f6b50f1a-d3b8-4f48-b1d0-bf1928e9c2cf">
+  <version>2.12.3</version>
+  <instruction>管理画面の URIは /admin/ で、初期ユーザー名とパスワードは admin / admin です</instruction>
+  <instruction xml:lang="en">The control panel's URI is /admin/ . Use admin / admin to sign in.</instruction>
+</virtual-appliance>

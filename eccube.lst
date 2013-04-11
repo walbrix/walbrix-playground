@@ -1,0 +1,24 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php53.lst
+#require components/samba.lst
+#require components/postfix.lst
+#require components/phpmyadmin.lst
+#copy eccube/smb.conf /etc/samba/smb.conf
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1ec-cube\2/
+#copy domU/fstab-with-zramswap /etc/fstab
+#extract eccube/eccube-2.12.3.tar.gz /root
+#chrootexec mv /root/eccube-2.12.3/html/* /root/eccube-2.12.3/html/.htaccess /var/www/localhost/htdocs
+#chrootexec mv /root/eccube-2.12.3/data /var/www/localhost/
+#chrootexec rm -rf /var/www/localhost/htdocs/install
+#extract eccube/initial_files.tar.gz /var/www/localhost
+#copy eccube/config.php /var/www/localhost/data/config/config.php
+#chrootexec chown -R apache.apache /var/www/localhost
+#copy eccube/setup_initial_database.sh /setup_initial_database.sh
+#copy eccube/initial_database.sql.gz /initial_database.sql.gz
+#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh
+#copy eccube/wb-va.xml /etc/wb-va.xml
+

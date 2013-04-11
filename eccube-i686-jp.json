@@ -1,0 +1,9 @@
+{
+	"id":"eccube",
+	"title":"EC-CUBE 2.12.3",
+	"images":[{"url":"http://va.walbrix.net/img/eccube01.png"}],	
+	"tarball":"eccube-i686-jp.tar.xz",
+	"description":"EC-CUBE",
+	"minimum_ram":128,
+	"minimum_hd":1
+}

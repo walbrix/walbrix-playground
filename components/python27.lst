@@ -771,6 +771,7 @@
 /usr/lib/python2.7/shlex.py
 /usr/lib/python2.7/shutil.py
 /usr/lib/python2.7/site-packages/README
+/usr/lib/python2.7/site-packages/epython.py
 /usr/lib/python2.7/site.py
 /usr/lib/python2.7/smtpd.py
 /usr/lib/python2.7/smtplib.py

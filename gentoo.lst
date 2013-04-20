@@ -4,6 +4,7 @@
 #copy domU/resolv.conf /etc/resolv.conf
 #sed /etc/shadow s/^\(root:\)[^:]*\(:.*\)$/\1\2/
 #chrootexec mkdir /root/.ssh && chmod 700 /root/.ssh && touch /root/.ssh/authorized_keys
+#patchsinglefile /etc/init.d/swap domU/swap.init.patch
 #copy domU/fstab-with-zramswap /etc/fstab
 #patchsinglefile /etc/inittab gentoo/inittab.patch
 #symlink /etc/init.d/net.eth0 net.lo

@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Linux/x86 3.0.57-gentoo Kernel Configuration
+# Linux/x86 3.0.74 Kernel Configuration
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -744,7 +744,8 @@ CONFIG_AF_RXRPC=y
 # Generic Driver Options
 #
 CONFIG_UEVENT_HELPER_PATH="/sbin/udevadm"
-# CONFIG_DEVTMPFS is not set
+CONFIG_DEVTMPFS=y
+CONFIG_DEVTMPFS_MOUNT=y
 CONFIG_STANDALONE=y
 CONFIG_PREVENT_FIRMWARE_BUILD=y
 # CONFIG_FW_LOADER is not set
@@ -1319,7 +1320,6 @@ CONFIG_DUMMY_CONSOLE=y
 CONFIG_FRAMEBUFFER_CONSOLE=y
 # CONFIG_FRAMEBUFFER_CONSOLE_DETECT_PRIMARY is not set
 # CONFIG_FRAMEBUFFER_CONSOLE_ROTATION is not set
-# CONFIG_FB_CON_DECOR is not set
 # CONFIG_FONTS is not set
 CONFIG_FONT_8x8=y
 CONFIG_FONT_8x16=y

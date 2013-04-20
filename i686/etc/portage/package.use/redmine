@@ -12,4 +12,9 @@ dev-ruby/test-unit ruby_targets_ruby19 -ruby_targets_ruby18
 dev-vcs/subversion apache2
 dev-ruby/fastercsv ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/ruby-openid ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/childprocess ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/selenium-webdriver ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/xpath ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/rubyzip ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/bourne ruby_targets_ruby19 -ruby_targets_ruby18
 

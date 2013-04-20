@@ -41,7 +41,9 @@ dev-python/django
 dev-python/mecab-python
 dev-python/pygame
 dev-python/setuptools
+dev-ruby/bourne
 dev-ruby/builder
+dev-ruby/capybara
 dev-ruby/chronic
 dev-ruby/coderay
 dev-ruby/daemons
@@ -54,6 +56,7 @@ dev-ruby/pg
 dev-ruby/pkg-config
 dev-ruby/rails
 dev-ruby/rmagick
+dev-ruby/ruby-net-ldap
 dev-ruby/ruby-openid
 dev-ruby/shoulda
 dev-ruby/sqlite3

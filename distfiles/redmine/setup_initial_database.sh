@@ -15,9 +15,14 @@ if ! [[ -S "$SOCKET" ]]; then
 	echo "Failed to start mysqld"
 	exit 1
 fi
-/usr/bin/mysql -u root -e "create database redmine" || exit 1
-/usr/bin/mysql -u root -e 'grant all privileges on redmine.* to redmine@localhost' || exit 1
-cd /var/www/localhost/htdocs && rake db:migrate RAILS_ENV=production || exit 1
+
+APPNAME=redmine
+/usr/bin/mysql -u root -e "create database $APPNAME" || exit 1
+/usr/bin/mysql -u root -e "grant all privileges on $APPNAME.* to $APPNAME@localhost" || exit 1
+cd /var/www/localhost/htdocs
+rake generate_secret_token
+rake db:migrate RAILS_ENV=production
+rake redmine:load_default_data RAILS_ENV=production REDMINE_LANG=ja
 /usr/bin/mysql redmine -e "update users set language='ja' where id=1" || exit 1
 /usr/bin/mysql redmine -e "insert into settings(name,value,updated_on) values('default_language','ja',now())" || exit 1
 
@@ -27,3 +32,4 @@ while [[ -S "$SOCKET" ]] ; do
 	echo -n "."
 	sleep 1
 done
+

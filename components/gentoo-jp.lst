@@ -1,0 +1,1 @@
+#chrootexec echo 'LANG="ja_JP.utf8"' > /etc/env.d/02locale

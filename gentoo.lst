@@ -4,8 +4,7 @@
 #copy domU/resolv.conf /etc/resolv.conf
 #sed /etc/shadow s/^\(root:\)[^:]*\(:.*\)$/\1\2/
 #chrootexec mkdir /root/.ssh && chmod 700 /root/.ssh && touch /root/.ssh/authorized_keys
-#swap /swapfile 256
-#copy domU/fstab-with-swapfile /etc/fstab
+#copy domU/fstab-with-zramswap /etc/fstab
 #patchsinglefile /etc/inittab gentoo/inittab.patch
 #symlink /etc/init.d/net.eth0 net.lo
 #chrootexec echo "hvc0" >> /etc/securetty
@@ -22,4 +21,6 @@
 #copy domU/smb.conf /etc/samba/smb.conf
 #sed /etc/nsswitch.conf s/^\(hosts:.* \)dns\( *\)/\1myhostname mdns_minimal [NOTFOUND=return] dns mdns\2/
 #require components/timezone-$(REGION).lst
+#require components/gentoo-$(REGION).lst
+#chrootexec env-update
 

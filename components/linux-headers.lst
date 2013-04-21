@@ -59,6 +59,7 @@
 /usr/include/asm/msr.h
 /usr/include/asm/mtrr.h
 /usr/include/asm/param.h
+/usr/include/asm/perf_regs.h
 /usr/include/asm/poll.h
 /usr/include/asm/posix_types.h
 /usr/include/asm/posix_types_32.h
@@ -80,6 +81,7 @@
 /usr/include/asm/sockios.h
 /usr/include/asm/stat.h
 /usr/include/asm/statfs.h
+/usr/include/asm/svm.h
 /usr/include/asm/swab.h
 /usr/include/asm/termbits.h
 /usr/include/asm/termios.h
@@ -90,6 +92,7 @@
 /usr/include/asm/unistd_64.h
 /usr/include/asm/unistd_x32.h
 /usr/include/asm/vm86.h
+/usr/include/asm/vmx.h
 /usr/include/asm/vsyscall.h
 /usr/include/linux/a.out.h
 /usr/include/linux/acct.h
@@ -128,7 +131,6 @@
 /usr/include/linux/baycom.h
 /usr/include/linux/bfs_fs.h
 /usr/include/linux/binfmts.h
-/usr/include/linux/blk_types.h
 /usr/include/linux/blkpg.h
 /usr/include/linux/blktrace_api.h
 /usr/include/linux/bpqether.h
@@ -147,7 +149,6 @@
 /usr/include/linux/capi.h
 /usr/include/linux/cciss_defs.h
 /usr/include/linux/cciss_ioctl.h
-/usr/include/linux/cdk.h
 /usr/include/linux/cdrom.h
 /usr/include/linux/cgroupstats.h
 /usr/include/linux/chio.h
@@ -156,7 +157,6 @@
 /usr/include/linux/coda.h
 /usr/include/linux/coda_psdev.h
 /usr/include/linux/coff.h
-/usr/include/linux/comstats.h
 /usr/include/linux/connector.h
 /usr/include/linux/const.h
 /usr/include/linux/cramfs_fs.h
@@ -211,7 +211,6 @@
 /usr/include/linux/futex.h
 /usr/include/linux/gameport.h
 /usr/include/linux/gen_stats.h
-/usr/include/linux/generic_serial.h
 /usr/include/linux/genetlink.h
 /usr/include/linux/gfs2_ondisk.h
 /usr/include/linux/gigaset_dev.h
@@ -224,6 +223,7 @@
 /usr/include/linux/hidraw.h
 /usr/include/linux/hpet.h
 /usr/include/linux/hsi/hsi_char.h
+/usr/include/linux/hw_breakpoint.h
 /usr/include/linux/hysdn_if.h
 /usr/include/linux/i2c-dev.h
 /usr/include/linux/i2c.h
@@ -457,6 +457,7 @@
 /usr/include/linux/netfilter_ipv6/ip6_tables.h
 /usr/include/linux/netfilter_ipv6/ip6t_HL.h
 /usr/include/linux/netfilter_ipv6/ip6t_LOG.h
+/usr/include/linux/netfilter_ipv6/ip6t_NPT.h
 /usr/include/linux/netfilter_ipv6/ip6t_REJECT.h
 /usr/include/linux/netfilter_ipv6/ip6t_ah.h
 /usr/include/linux/netfilter_ipv6/ip6t_frag.h
@@ -488,6 +489,7 @@
 /usr/include/linux/omap3isp.h
 /usr/include/linux/omapfb.h
 /usr/include/linux/oom.h
+/usr/include/linux/packet_diag.h
 /usr/include/linux/param.h
 /usr/include/linux/parport.h
 /usr/include/linux/patchkey.h
@@ -579,6 +581,7 @@
 /usr/include/linux/tc_ematch/tc_em_nbyte.h
 /usr/include/linux/tc_ematch/tc_em_text.h
 /usr/include/linux/tcp.h
+/usr/include/linux/tcp_metrics.h
 /usr/include/linux/telephony.h
 /usr/include/linux/termios.h
 /usr/include/linux/time.h
@@ -589,6 +592,7 @@
 /usr/include/linux/tipc_config.h
 /usr/include/linux/toshiba.h
 /usr/include/linux/tty.h
+/usr/include/linux/tty_flags.h
 /usr/include/linux/types.h
 /usr/include/linux/udf_fs_i.h
 /usr/include/linux/udp.h
@@ -615,6 +619,7 @@
 /usr/include/linux/uuid.h
 /usr/include/linux/uvcvideo.h
 /usr/include/linux/v4l2-common.h
+/usr/include/linux/v4l2-controls.h
 /usr/include/linux/v4l2-dv-timings.h
 /usr/include/linux/v4l2-mediabus.h
 /usr/include/linux/v4l2-subdev.h
@@ -659,3 +664,4 @@
 /usr/include/video/uvesafb.h
 /usr/include/xen/evtchn.h
 /usr/include/xen/privcmd.h
+

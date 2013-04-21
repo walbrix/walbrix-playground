@@ -1,8 +1,7 @@
 #require components/domU.lst
 #require components/cron.lst
 #require components/pvkernel.lst
-#copy domU/fstab-with-swapfile /etc/fstab
-#swap /swapfile 256
+#copy domU/fstab-with-zramswap /etc/fstab
 #require components/sudo.lst
 #require components/apache.lst
 #require components/php53.lst
@@ -27,7 +26,7 @@
 #require components/squid.lst
 #require components/nodejs.lst
 #require components/ffi.lst
-#require components/tomcat.lst
+##require components/tomcat.lst
 #require components/scala.lst
 #require components/gdb.lst
 #sed /etc/squid/squid.conf s/^#.\+Example: dns_nameservers .\+$/dns_nameservers 8.8.8.8 8.8.4.4/
@@ -39,3 +38,4 @@
 #copy rubygems/ruby-xz-0.1.1.gem /ruby-xz.gem
 #chrootexec gem install --no-rdoc --no-ri -l /ruby-xz.gem && rm /ruby-xz.gem
 /usr/lib/liblzma.so
+

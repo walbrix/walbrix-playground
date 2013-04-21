@@ -9,5 +9,5 @@
 #chrootexec gem install --no-rdoc --no-ri -l /archive-zip.gem && rm /archive-zip.gem
 
 # rroonga http://rubygems.org/gems/rroonga
-#copy groonga/rroonga-2.0.5.gem /rroonga.gem
+#copy groonga/rroonga-3.0.0.gem /rroonga.gem
 #chrootexec gem install --no-rdoc --no-ri -l /rroonga.gem && rm /rroonga.gem

@@ -599,7 +599,7 @@
 
 # dev-python/jinja
 /usr/lib/python2.7/site-packages/jinja2/__init__.py
-/usr/lib/python2.7/site-packages/jinja2/_debugsupport.so
+#/usr/lib/python2.7/site-packages/jinja2/_debugsupport.so
 /usr/lib/python2.7/site-packages/jinja2/_markupsafe/__init__.py
 /usr/lib/python2.7/site-packages/jinja2/_markupsafe/_bundle.py
 /usr/lib/python2.7/site-packages/jinja2/_markupsafe/_constants.py

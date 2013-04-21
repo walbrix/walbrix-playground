@@ -14,6 +14,7 @@ dev-ruby/pkg-config -ruby_targets_ruby18
 dev-python/jinja vim-syntax i18n
 sys-kernel/gentoo-sources symlink
 net-analyzer/zabbix agent -sqlite
+dev-lang/python sqlite
 
 dev-ruby/rack-protection -ruby_targets_ruby18
 dev-ruby/rack -ruby_targets_ruby18

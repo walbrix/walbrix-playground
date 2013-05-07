@@ -1,4 +1,4 @@
-=sys-kernel/vanilla-sources-3.0.74
+=sys-kernel/vanilla-sources-3.0.76
 =dev-java/jdbc-postgresql-9.1_p902
 =net-libs/nodejs-0.9.3-r1
 =dev-lang/v8-3.11.10.12

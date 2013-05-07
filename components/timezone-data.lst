@@ -273,6 +273,7 @@
 /usr/share/zoneinfo/Asia/Kashgar
 /usr/share/zoneinfo/Asia/Kathmandu
 /usr/share/zoneinfo/Asia/Katmandu
+/usr/share/zoneinfo/Asia/Khandyga
 /usr/share/zoneinfo/Asia/Kolkata
 /usr/share/zoneinfo/Asia/Krasnoyarsk
 /usr/share/zoneinfo/Asia/Kuala_Lumpur
@@ -317,6 +318,7 @@
 /usr/share/zoneinfo/Asia/Ulaanbaatar
 /usr/share/zoneinfo/Asia/Ulan_Bator
 /usr/share/zoneinfo/Asia/Urumqi
+/usr/share/zoneinfo/Asia/Ust-Nera
 /usr/share/zoneinfo/Asia/Vientiane
 /usr/share/zoneinfo/Asia/Vladivostok
 /usr/share/zoneinfo/Asia/Yakutsk
@@ -425,6 +427,7 @@
 /usr/share/zoneinfo/Europe/Brussels
 /usr/share/zoneinfo/Europe/Bucharest
 /usr/share/zoneinfo/Europe/Budapest
+/usr/share/zoneinfo/Europe/Busingen
 /usr/share/zoneinfo/Europe/Chisinau
 /usr/share/zoneinfo/Europe/Copenhagen
 /usr/share/zoneinfo/Europe/Dublin

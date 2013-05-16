@@ -3,7 +3,7 @@ net-fs/samba -cups winbind
 www-apache/mod_extract_forwarded mod_proxy
 www-servers/apache apache2_modules_proxy_connect apache2_modules_proxy apache2_modules_proxy_http apache2_modules_proxy_ajp
 dev-lang/php apache2 cjk gd mysql mysqli xsl zip pdo
-app-editors/emacs -gpm -xpm
+app-editors/emacs -gpm -xpm -gtk3
 dev-ruby/rubygems -ruby_targets_ruby18
 virtual/rubygems -ruby_targets_ruby18
 dev-ruby/rake -ruby_targets_ruby18

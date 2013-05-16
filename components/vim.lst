@@ -432,6 +432,7 @@
 /usr/share/vim/vim73/ftplugin/xsd.vim
 /usr/share/vim/vim73/ftplugin/xslt.vim
 /usr/share/vim/vim73/ftplugin/yaml.vim
+/usr/share/vim/vim73/ftplugin/zimbu.vim
 /usr/share/vim/vim73/ftplugin/zsh.vim
 /usr/share/vim/vim73/ftplugof.vim
 /usr/share/vim/vim73/gvimrc_example.vim
@@ -535,6 +536,8 @@
 /usr/share/vim/vim73/indent/xsd.vim
 /usr/share/vim/vim73/indent/xslt.vim
 /usr/share/vim/vim73/indent/yacc.vim
+/usr/share/vim/vim73/indent/yaml.vim
+/usr/share/vim/vim73/indent/zimbu.vim
 /usr/share/vim/vim73/indent/zsh.vim
 /usr/share/vim/vim73/indoff.vim
 /usr/share/vim/vim73/keymap/.keep_app-editors_vim-core-0
@@ -542,6 +545,7 @@
 /usr/share/vim/vim73/keymap/accents.vim
 /usr/share/vim/vim73/keymap/arabic.vim
 /usr/share/vim/vim73/keymap/arabic_utf-8.vim
+/usr/share/vim/vim73/keymap/belarusian-jcuken.vim
 /usr/share/vim/vim73/keymap/bulgarian-bds.vim
 /usr/share/vim/vim73/keymap/bulgarian-phonetic.vim
 /usr/share/vim/vim73/keymap/canfr-win.vim
@@ -632,6 +636,7 @@
 /usr/share/vim/vim73/lang/menu_chinese_taiwan.950.vim
 /usr/share/vim/vim73/lang/menu_cs.cp1250.vim
 /usr/share/vim/vim73/lang/menu_cs.latin1.vim
+/usr/share/vim/vim73/lang/menu_cs_cz.utf-8.vim
 /usr/share/vim/vim73/lang/menu_cs_cz.cp1250.vim
 /usr/share/vim/vim73/lang/menu_cs_cz.iso_8859-2.vim
 /usr/share/vim/vim73/lang/menu_cs_cz.latin1.vim
@@ -750,6 +755,7 @@
 /usr/share/vim/vim73/lang/menu_zh_tw.cp950.vim
 /usr/share/vim/vim73/lang/menu_zh_tw.utf-8.vim
 /usr/share/vim/vim73/lang/nb/LC_MESSAGES/vim.mo
+/usr/share/vim/vim73/lang/nl/LC_MESSAGES/vim.mo
 /usr/share/vim/vim73/lang/no/LC_MESSAGES/vim.mo
 /usr/share/vim/vim73/lang/pl/LC_MESSAGES/vim.mo
 /usr/share/vim/vim73/lang/pt_BR/LC_MESSAGES/vim.mo
@@ -769,6 +775,7 @@
 /usr/share/vim/vim73/macros/hanoi/hanoi.vim
 /usr/share/vim/vim73/macros/hanoi/poster
 /usr/share/vim/vim73/macros/justify.vim
+/usr/share/vim/vim73/macros/less.bat
 /usr/share/vim/vim73/macros/less.sh
 /usr/share/vim/vim73/macros/less.vim
 /usr/share/vim/vim73/macros/life/click.me
@@ -848,6 +855,7 @@
 /usr/share/vim/vim73/spell/en.utf-8.sug
 /usr/share/vim/vim73/spell/fixdup.vim
 /usr/share/vim/vim73/spell/he.vim
+/usr/share/vim/vim73/spell/spell.vim
 /usr/share/vim/vim73/spell/yi.vim
 /usr/share/vim/vim73/synmenu.vim
 /usr/share/vim/vim73/syntax/2html.vim
@@ -871,6 +879,7 @@
 /usr/share/vim/vim73/syntax/antlr.vim
 /usr/share/vim/vim73/syntax/apache.vim
 /usr/share/vim/vim73/syntax/apachestyle.vim
+/usr/share/vim/vim73/syntax/aptconf.vim
 /usr/share/vim/vim73/syntax/arch.vim
 /usr/share/vim/vim73/syntax/art.vim
 /usr/share/vim/vim73/syntax/asm.vim
@@ -979,6 +988,7 @@
 /usr/share/vim/vim73/syntax/dtd.vim
 /usr/share/vim/vim73/syntax/dtml.vim
 /usr/share/vim/vim73/syntax/dtrace.vim
+/usr/share/vim/vim73/syntax/dts.vim
 /usr/share/vim/vim73/syntax/dylan.vim
 /usr/share/vim/vim73/syntax/dylanintr.vim
 /usr/share/vim/vim73/syntax/dylanlid.vim
@@ -1046,6 +1056,7 @@
 /usr/share/vim/vim73/syntax/help.vim
 /usr/share/vim/vim73/syntax/hercules.vim
 /usr/share/vim/vim73/syntax/hex.vim
+/usr/share/vim/vim73/syntax/hgcommit.vim
 /usr/share/vim/vim73/syntax/hitest.vim
 /usr/share/vim/vim73/syntax/hog.vim
 /usr/share/vim/vim73/syntax/hostconf.vim
@@ -1298,6 +1309,7 @@
 /usr/share/vim/vim73/syntax/sql.vim
 /usr/share/vim/vim73/syntax/sqlanywhere.vim
 /usr/share/vim/vim73/syntax/sqlforms.vim
+/usr/share/vim/vim73/syntax/sqlhana.vim
 /usr/share/vim/vim73/syntax/sqlinformix.vim
 /usr/share/vim/vim73/syntax/sqlj.vim
 /usr/share/vim/vim73/syntax/sqloracle.vim
@@ -1393,6 +1405,7 @@
 /usr/share/vim/vim73/syntax/yacc.vim
 /usr/share/vim/vim73/syntax/yaml.vim
 /usr/share/vim/vim73/syntax/z8a.vim
+/usr/share/vim/vim73/syntax/zimbu.vim
 /usr/share/vim/vim73/syntax/zsh.vim
 /usr/share/vim/vim73/tools/README.txt
 /usr/share/vim/vim73/tools/blink.c
@@ -1473,7 +1486,8 @@
 /usr/share/vim/vim73/tutor/tutor.vim
 /usr/share/vim/vim73/tutor/tutor.zh.big5
 /usr/share/vim/vim73/tutor/tutor.zh.euc
-/usr/share/vim/vim73/tutor/tutor.zh.utf-8
+/usr/share/vim/vim73/tutor/tutor.zh_cn.utf-8
+/usr/share/vim/vim73/tutor/tutor.zh_tw.utf-8
 
 # from vim
 /usr/bin/rview

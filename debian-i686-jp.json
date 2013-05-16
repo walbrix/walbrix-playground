@@ -1,0 +1,9 @@
+{
+	"id":"debian",
+	"title":"Debian GNU/Linux 7.0(Wheezy)",
+	"images":[{"url":"http://va.walbrix.net/img/debian01.png"}],	
+	"tarball":"debian-i686-jp.tar.xz",
+	"description":"Debian",
+	"minimum_ram":96,
+	"minimum_hd":1
+}

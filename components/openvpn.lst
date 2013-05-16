@@ -1,9 +1,9 @@
 #require openssl.lst
 /etc/conf.d/openvpn
-/etc/env.d/65openvpn
 /etc/init.d/openvpn
 /etc/openvpn/down.sh
 /etc/openvpn/up.sh
-/usr/lib/openvpn/openvpn-auth-pam.so
-/usr/lib/openvpn/openvpn-down-root.so
+/usr/lib/openvpn/openvpn-plugin-auth-pam.so
+/usr/lib/systemd/system/openvpn@.service
+/usr/lib/tmpfiles.d/openvpn.conf
 /usr/sbin/openvpn

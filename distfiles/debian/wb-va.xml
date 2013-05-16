@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <virtual-appliance uuid="df476556-d62a-424d-9116-cf8c312acc39">
-  <version>6.0.5</version>
+  <version>7.0.0</version>
   <instruction>SSHを使って root権限でログインしてください。初期パスワードは Walbrixのシリアルナンバー(未設定の場合WBFREE01)です。</instruction>
 </virtual-appliance>

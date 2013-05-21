@@ -117,6 +117,7 @@
 ./usr/bin/free
 /usr/bin/getent
 /usr/bin/iconv
+/usr/bin/install
 ./usr/bin/killall
 ./usr/bin/last
 ./usr/bin/ldd

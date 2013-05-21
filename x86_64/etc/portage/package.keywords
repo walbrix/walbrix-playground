@@ -15,6 +15,6 @@
 =dev-ruby/ffi-1.1.5
 =dev-ruby/builder-3.0.4
 
-=net-libs/nodejs-0.8.16
 =dev-lang/scala-2.9.2
+=net-libs/nodejs-0.10.7
 

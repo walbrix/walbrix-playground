@@ -1,0 +1,10 @@
+{
+	"id":"flask-site",
+	"title":"Flask site",
+	"images":[{"url":"http://va.walbrix.net/img/gentoo01.png"}],	
+	"tarball":"flask-site-x86_64-jp.tar.xz",
+	"description":"Flask site",
+	"minimum_ram":64,
+	"minimum_hd":1
+}
+

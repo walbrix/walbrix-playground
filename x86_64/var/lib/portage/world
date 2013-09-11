@@ -14,6 +14,7 @@ dev-lang/scala
 dev-python/beautifulsoup
 dev-python/feedparser
 dev-python/flask
+dev-python/httplib2
 dev-python/mecab-python
 dev-python/mysql-python
 dev-python/setuptools

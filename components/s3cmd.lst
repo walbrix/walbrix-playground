@@ -1,17 +1,3 @@
 #require python27.lst
-/usr/bin/s3cmd
-/usr/lib/python2.7/site-packages/S3/ACL.py
-/usr/lib/python2.7/site-packages/S3/AccessLog.py
-/usr/lib/python2.7/site-packages/S3/BidirMap.py
-/usr/lib/python2.7/site-packages/S3/CloudFront.py
-/usr/lib/python2.7/site-packages/S3/Config.py
-/usr/lib/python2.7/site-packages/S3/Exceptions.py
-/usr/lib/python2.7/site-packages/S3/PkgInfo.py
-/usr/lib/python2.7/site-packages/S3/Progress.py
-/usr/lib/python2.7/site-packages/S3/S3.py
-/usr/lib/python2.7/site-packages/S3/S3Uri.py
-/usr/lib/python2.7/site-packages/S3/SimpleDB.py
-/usr/lib/python2.7/site-packages/S3/SortedDict.py
-/usr/lib/python2.7/site-packages/S3/Utils.py
-/usr/lib/python2.7/site-packages/S3/__init__.py
+#portage net-misc/s3cmd-1.0.1 ^/usr/lib(64)?/(python3.2/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
 

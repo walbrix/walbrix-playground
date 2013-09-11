@@ -262,12 +262,7 @@
 /lib/security/pam_wheel.so
 /lib/security/pam_xauth.so
 
-# avahi-daemon
-/usr/sbin/avahi-daemon
-/etc/avahi/avahi-daemon.conf
-/etc/init.d/avahi-daemon
-#sed /etc/avahi/avahi-daemon.conf s/^#\(allow-interfaces=eth0\)$/\1/
-#symlink /etc/runlevels/default/avahi-daemon /etc/init.d/avahi-daemon
+#require avahi.lst
 
 # nmbd
 /usr/sbin/nmbd

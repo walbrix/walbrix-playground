@@ -22,3 +22,6 @@ media-video/ffmpeg mp3 faac xvid x264
 
 dev-lang/erlang smp kpoll
 
+sys-libs/talloc python
+app-admin/eselect-php apache2
+

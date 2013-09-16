@@ -16,6 +16,8 @@
 #require util-linux.lst
 #require net-tools.lst
 #require shadow.lst
+#portage sys-apps/attr-2.4.46-r2
+#portage sys-process/procps-3.3.6
 #require openrc.lst
 #sed /etc/rc.conf s/^#rc_sys.\+$/rc_sys="xenU"/
 #require openssh.lst
@@ -106,7 +108,6 @@
 ./sbin/reboot
 /sbin/runlevel
 /sbin/shutdown
-./sbin/sysctl
 ./usr/bin/ar
 ./usr/bin/awk
 ./usr/bin/clear
@@ -114,7 +115,6 @@
 #symlink /usr/bin/diff ../../bin/busybox
 /usr/bin/file
 ./usr/bin/find
-./usr/bin/free
 /usr/bin/getent
 /usr/bin/iconv
 /usr/bin/install
@@ -127,22 +127,15 @@
 /usr/bin/lzma
 /usr/bin/make
 ./usr/bin/mesg
-./usr/bin/pgrep
-./usr/bin/pkill
 ./usr/bin/reset
 ./usr/bin/split
 /usr/bin/strace
 ./usr/bin/strings
-./usr/bin/top
 /usr/bin/tput
 /usr/bin/unlzma
 ./usr/bin/unxz
 /usr/bin/unzip
-./usr/bin/uptime
 #symlink /usr/bin/vi ../../bin/busybox
-/usr/bin/vmstat
-/usr/bin/w
-/usr/bin/watch
 ./usr/bin/wget
 ./usr/bin/which
 ./usr/bin/xargs

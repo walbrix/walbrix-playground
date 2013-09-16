@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Linux/x86 3.0.78 Kernel Configuration
+# Linux/x86 3.0.95 Kernel Configuration
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -1527,8 +1527,9 @@ CONFIG_STAGING=y
 # CONFIG_VME_BUS is not set
 # CONFIG_DX_SEP is not set
 # CONFIG_IIO is not set
-# CONFIG_XVMALLOC is not set
-# CONFIG_ZRAM is not set
+CONFIG_XVMALLOC=y
+CONFIG_ZRAM=y
+# CONFIG_ZRAM_DEBUG is not set
 # CONFIG_FB_SM7XX is not set
 # CONFIG_CRYSTALHD is not set
 # CONFIG_FB_XGI is not set

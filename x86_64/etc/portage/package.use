@@ -1,6 +1,7 @@
 net-dns/avahi -introspection
 net-fs/samba -cups winbind
 www-apache/mod_extract_forwarded mod_proxy
+app-admin/eselect-php apache2
 www-servers/apache apache2_modules_proxy_connect apache2_modules_proxy apache2_modules_proxy_http apache2_modules_proxy_ajp
 dev-lang/php apache2 cjk gd mysql mysqli xsl zip pdo
 app-editors/emacs -gpm -xpm -gtk3
@@ -36,6 +37,7 @@ dev-ruby/ffi ruby_targets_ruby19 -ruby_targets_ruby18
 virtual/ruby-ffi ruby_targets_ruby19 -ruby_targets_ruby18
 
 dev-java/icedtea-bin -X -alsa -cups cjk
+dev-lang/scala binary
 
 net-misc/openvpn passwordsave
-
+sys-libs/talloc python

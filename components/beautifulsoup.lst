@@ -1,20 +1,3 @@
 #require python27.lst
-#/usr/lib/python2.7/site-packages/BeautifulSoup.py
-
-/usr/lib/python2.7/site-packages/bs4/__init__.py
-/usr/lib/python2.7/site-packages/bs4/builder/__init__.py
-/usr/lib/python2.7/site-packages/bs4/builder/_html5lib.py
-/usr/lib/python2.7/site-packages/bs4/builder/_htmlparser.py
-/usr/lib/python2.7/site-packages/bs4/builder/_lxml.py
-/usr/lib/python2.7/site-packages/bs4/dammit.py
-/usr/lib/python2.7/site-packages/bs4/element.py
-/usr/lib/python2.7/site-packages/bs4/testing.py
-/usr/lib/python2.7/site-packages/bs4/tests/__init__.py
-/usr/lib/python2.7/site-packages/bs4/tests/test_builder_registry.py
-/usr/lib/python2.7/site-packages/bs4/tests/test_docs.py
-/usr/lib/python2.7/site-packages/bs4/tests/test_html5lib.py
-/usr/lib/python2.7/site-packages/bs4/tests/test_htmlparser.py
-/usr/lib/python2.7/site-packages/bs4/tests/test_lxml.py
-/usr/lib/python2.7/site-packages/bs4/tests/test_soup.py
-/usr/lib/python2.7/site-packages/bs4/tests/test_tree.py
+#portage dev-python/beautifulsoup-4.1.3-r1 ^/usr/lib(64)?/(python3.2/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
 

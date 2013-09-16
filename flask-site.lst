@@ -1,0 +1,28 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#copy domU/fstab-with-zramswap /etc/fstab
+#require components/sudo.lst
+#require components/flask.lst
+#require components/beautifulsoup.lst
+#require components/feedparser.lst
+#require components/httplib2.lst
+#require components/git.lst
+#require components/emacs.lst
+#require components/vim.lst
+#require components/s3cmd.lst
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1flask-site\2/
+
+#chrootexec useradd -m flask
+#chrootexec mkdir /home/flask/.ssh
+#chrootexec touch /home/flask/.ssh/authorized_keys
+#chrootexec chmod 700 /home/flask/.ssh
+#chrootexec chmod 644 /home/flask/.ssh/authorized_keys
+#chrootexec mkdir /home/flask/example
+#copy flask-site/app.py /home/flask/example/app.py
+#copy flask-site/app.wsgi /home/flask/example/app.wsgi
+#chrootexec chown -R flask.flask /home/flask
+
+#copy flask-site/wsgi.conf /wsgi.conf
+#chrootexec cat /wsgi.conf >> /etc/apache2/vhosts.d/default_vhost.include && rm /wsgi.conf
+

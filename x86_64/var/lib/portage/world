@@ -32,10 +32,8 @@ net-libs/nodejs
 net-misc/ntp
 net-misc/openvpn
 net-misc/s3cmd
-net-proxy/squid
 sys-auth/nss-mdns
 sys-auth/nss-myhostname
-sys-devel/gdb
 sys-fs/fuse
 sys-fs/xfsprogs
 sys-kernel/genkernel

@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Linux/x86 3.0.79 Kernel Configuration
+# Linux/x86 3.0.96 Kernel Configuration
 #
 # CONFIG_64BIT is not set
 CONFIG_X86_32=y

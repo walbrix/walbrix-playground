@@ -6,17 +6,17 @@ dev-ruby/thor ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/activesupport ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/abstract ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/multi_json ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/json ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/json ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/sprockets ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/journey ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/racc ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/racc ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/sass-rails ruby_targets_ruby19 -ruby_targets_ruby18
 virtual/ruby-threads:ruby19 ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/rake-compiler ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/bundler ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/i18n ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/activeresource ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/rubygems ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/rubygems ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/memcache-client ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/tzinfo ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/erubis ruby_targets_ruby19 -ruby_targets_ruby18
@@ -29,7 +29,7 @@ dev-ruby/ffi ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/railties ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/uglifier ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/coffee-script-source ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/rake ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/rake ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/rack ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/rack-ssl ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/actionpack ruby_targets_ruby19 -ruby_targets_ruby18
@@ -48,7 +48,7 @@ dev-ruby/hike ruby_targets_ruby19 -ruby_targets_ruby18
 virtual/ruby-ffi ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/activemodel ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/bcrypt-ruby ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/rdoc ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/rdoc ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 www-apache/passenger ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/daemon_controller ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/rmagick ruby_targets_ruby19 -ruby_targets_ruby18

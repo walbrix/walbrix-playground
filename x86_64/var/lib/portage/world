@@ -10,7 +10,6 @@ dev-db/phpmyadmin
 dev-java/jdbc-mysql
 dev-lang/php
 dev-lang/ruby
-dev-lang/scala
 dev-python/beautifulsoup
 dev-python/feedparser
 dev-python/flask

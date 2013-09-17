@@ -1,0 +1,27 @@
+#require gentoo.lst
+
+#chrootexec echo "=dev-java/icedtea-bin-7.2.3.9" >> /etc/portage/package.keywords
+#chrootexec echo "=virtual/jdk-1.7.0" >> /etc/portage/package.keywords
+#chrootexec echo "=virtual/jre-1.7.0" >> /etc/portage/package.keywords
+#chrootexec echo "=dev-db/mysql-5.5.32" >> /etc/portage/package.keywords
+#chrootexec echo "=virtual/mysql-5.5" >> /etc/portage/package.keywords
+#chrootexec echo "=dev-python/blinker-1.3" >> /etc/portage/package.keywords
+#chrootexec echo "=dev-python/werkzeug-0.9.4" >> /etc/portage/package.keywords
+#chrootexec echo "=dev-python/flask-0.10.1-r1" >> /etc/portage/package.keywords
+#chrootexec echo "=dev-python/itsdangerous-0.22" >> /etc/portage/package.keywords
+
+#chrootexec echo "www-servers/apache threads apache2_modules_proxy apache2_modules_proxy_ajp apache2_mpms_event" >> /etc/portage/package.use
+#chrootexec echo "dev-db/mysql -perl" >> /etc/portage/package.use
+#chrootexec echo "dev-java/icedtea-bin -X -alsa -cups" >> /etc/portage/package.use
+#chrootexec echo "dev-vcs/git -perl" >> /etc/portage/package.use
+#chrootexec echo "app-editors/emacs -gtk3 -xpm" >> /etc/portage/package.use
+#chrootexec echo "app-office/libreoffice-l10n linguas_ja" >> /etc/portage/package.use
+#chrootexec echo "app-office/libreoffice -branding -vba -cups -gtk -webdav" >> /etc/portage/package.use
+#chrootexec echo "x11-libs/cairo X" >> /etc/portage/package.use
+#chrootexec echo "www-client/lynx cjk" >> /etc/portage/package.use
+#chrootexec echo "sys-libs/tdb python" >> /etc/portage/package.use
+#chrootexec echo "app-i18n/nkf python linguas_ja" >> /etc/portage/package.use
+
+#sed /etc/conf.d/hostname s/^hostname=.*$/hostname="oscar-dev"/
+
+#chrootexec emerge app-editors/emacs app-office/unoconv dev-db/mysql dev-java/commons-dbcp dev-java/commons-pool dev-java/jdbc-mysql dev-python/flask dev-python/httplib2 dev-python/mysql-python dev-vcs/git sys-fs/xfsprogs sys-process/vixie-cron www-apache/mod_extract_forwarded www-apache/mod_wsgi www-client/lynx www-servers/tomcat sys-fs/inotify-tools app-admin/sudo app-i18n/nkf

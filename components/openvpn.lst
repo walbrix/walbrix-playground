@@ -1,9 +1,3 @@
 #require openssl.lst
-/etc/conf.d/openvpn
-/etc/init.d/openvpn
-/etc/openvpn/down.sh
-/etc/openvpn/up.sh
-/usr/lib/openvpn/openvpn-plugin-auth-pam.so
-/usr/lib/systemd/system/openvpn@.service
-/usr/lib/tmpfiles.d/openvpn.conf
-/usr/sbin/openvpn
+#portage net-misc/openvpn-2.3.2
+

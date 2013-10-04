@@ -18,7 +18,6 @@ dev-python/mecab-python
 dev-python/mysql-python
 dev-python/setuptools
 dev-ruby/builder
-dev-ruby/ffi
 dev-ruby/mysql2
 dev-ruby/nokogiri
 dev-ruby/pkg-config
@@ -42,6 +41,5 @@ sys-process/vixie-cron
 www-apache/mod_authnz_external
 www-apache/mod_extract_forwarded
 www-apache/mod_wsgi
-www-apache/passenger
 www-servers/apache
 www-servers/tomcat

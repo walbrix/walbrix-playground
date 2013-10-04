@@ -1,0 +1,14 @@
+--- mysql.orig	2013-09-23 12:35:22.587111155 +0900
++++ mysql	2013-09-23 12:37:19.005060867 +0900
+@@ -72,6 +72,10 @@
+ 		return 1
+ 	fi
+ 
++	if [ -f /var/lib/mysql/oscar.mrn ]; then
++		groonga /var/lib/mysql/oscar.mrn clearlock
++	fi
++
+ 	local startup_timeout=${STARTUP_TIMEOUT:-900}
+ 	local startup_early_timeout=${STARTUP_EARLY_TIMEOUT:-1000}
+ 	local tmpnice="${NICE:+"--nicelevel "}${NICE}"
+

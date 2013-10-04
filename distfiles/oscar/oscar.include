@@ -1,0 +1,9 @@
+WSGIDaemonProcess oscar user=oscar group=oscar processes=6 threads=5
+WSGIScriptAlias / /home/oscar/oscar/frontend/app.wsgi
+WSGIScriptReloading On
+<Directory /home/oscar/oscar/frontend>
+	WSGIProcessGroup oscar
+	WSGIPassAuthorization On
+	Order allow,deny
+	Allow from all
+</Directory>

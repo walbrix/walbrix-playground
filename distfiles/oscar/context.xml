@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+  <WatchedResource>WEB-INF/web.xml</WatchedResource>
+  <Resource name="jdbc/oscar" auth="Container" type="javax.sql.DataSource"
+            maxActive="100" maxIdle="30" maxWait="10000"
+            username="oscar" password="" driverClassName="com.mysql.jdbc.Driver"
+            factory="org.apache.commons.dbcp.BasicDataSourceFactory"
+            url="jdbc:mysql://localhost:3306/oscar"
+            testOnBorrow="true" validationQuery="SELECT 1"/>
+</Context>

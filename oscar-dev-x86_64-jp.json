@@ -1,0 +1,10 @@
+{
+	"id":"oscar-dev",
+	"title":"Oscar Dev env",
+	"images":[{"url":"http://va.walbrix.net/img/gentoo01.png"}],	
+	"tarball":"oscar-dev-x86_64-jp.tar.xz",
+	"description":"Oscae Dev env",
+	"minimum_ram":1024,
+	"minimum_hd":16
+}
+

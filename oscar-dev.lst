@@ -1,27 +1,65 @@
 #require gentoo.lst
 
-#chrootexec echo "=dev-java/icedtea-bin-7.2.3.9" >> /etc/portage/package.keywords
-#chrootexec echo "=virtual/jdk-1.7.0" >> /etc/portage/package.keywords
-#chrootexec echo "=virtual/jre-1.7.0" >> /etc/portage/package.keywords
-#chrootexec echo "=dev-db/mysql-5.5.32" >> /etc/portage/package.keywords
-#chrootexec echo "=virtual/mysql-5.5" >> /etc/portage/package.keywords
-#chrootexec echo "=dev-python/blinker-1.3" >> /etc/portage/package.keywords
-#chrootexec echo "=dev-python/werkzeug-0.9.4" >> /etc/portage/package.keywords
-#chrootexec echo "=dev-python/flask-0.10.1-r1" >> /etc/portage/package.keywords
-#chrootexec echo "=dev-python/itsdangerous-0.22" >> /etc/portage/package.keywords
+## emerge necessary components
+#copy oscar/build.sh /build.sh
+#chrootexec sh /build.sh && rm /build.sh
 
-#chrootexec echo "www-servers/apache threads apache2_modules_proxy apache2_modules_proxy_ajp apache2_mpms_event" >> /etc/portage/package.use
-#chrootexec echo "dev-db/mysql -perl" >> /etc/portage/package.use
-#chrootexec echo "dev-java/icedtea-bin -X -alsa -cups" >> /etc/portage/package.use
-#chrootexec echo "dev-vcs/git -perl" >> /etc/portage/package.use
-#chrootexec echo "app-editors/emacs -gtk3 -xpm" >> /etc/portage/package.use
-#chrootexec echo "app-office/libreoffice-l10n linguas_ja" >> /etc/portage/package.use
-#chrootexec echo "app-office/libreoffice -branding -vba -cups -gtk -webdav" >> /etc/portage/package.use
-#chrootexec echo "x11-libs/cairo X" >> /etc/portage/package.use
-#chrootexec echo "www-client/lynx cjk" >> /etc/portage/package.use
-#chrootexec echo "sys-libs/tdb python" >> /etc/portage/package.use
-#chrootexec echo "app-i18n/nkf python linguas_ja" >> /etc/portage/package.use
-
+## system setup
 #sed /etc/conf.d/hostname s/^hostname=.*$/hostname="oscar-dev"/
+#chrootexec useradd -m oscar
+#chrootexec groupmems -g cron -a oscar
+#chrootexec groupmems -g tomcat -a oscar
+#copy oscar/oscar.include /etc/apache2/vhosts.d/oscar.include
+#patchsinglefile /etc/apache2/vhosts.d/00_default_vhost.conf oscar/00_default_vhost.conf.patch
+#symlink /etc/runlevels/default/vixie-cron /etc/init.d/vixie-cron
 
-#chrootexec emerge app-editors/emacs app-office/unoconv dev-db/mysql dev-java/commons-dbcp dev-java/commons-pool dev-java/jdbc-mysql dev-python/flask dev-python/httplib2 dev-python/mysql-python dev-vcs/git sys-fs/xfsprogs sys-process/vixie-cron www-apache/mod_extract_forwarded www-apache/mod_wsgi www-client/lynx www-servers/tomcat sys-fs/inotify-tools app-admin/sudo app-i18n/nkf
+## Samba
+#copy oscar/smb.conf /etc/samba/smb.conf
+#chrootexec chmod g+rwx /var/lib/samba/private
+#chrootexec smbpasswd -an
+#chrootexec chmod g+rw /var/lib/samba/private/passdb.tdb
+#chrootexec chgrp -R oscar /var/lib/samba/private
+
+## Apache
+#sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D WSGI"/
+#symlink /etc/runlevels/default/apache2 /etc/init.d/apache2
+
+## tomcat
+#chrootexec /usr/share/tomcat-7/gentoo/tomcat-instance-manager.bash --create
+#chrootexec chmod g+w /var/lib/tomcat-7/webapps
+#copy oscar/server.xml /etc/tomcat-7/server.xml
+#copy oscar/context.xml /etc/tomcat-7/context.xml
+#sed /etc/conf.d/tomcat-7 s/^#TOMCAT_EXTRA_JARS=""/TOMCAT_EXTRA_JARS="commons-dbcp,commons-pool,jdbc-mysql"/
+#symlink /etc/runlevels/default/tomcat-7 /etc/init.d/tomcat-7
+
+## groonga
+#chrootexec cd /root && wget http://packages.groonga.org/source/groonga/groonga-3.0.7.tar.gz && tar xvzf groonga-*.tar.gz && cd groonga-*/ && ./configure --prefix=/usr --localstatedir=/var --with-zlib && make && make install
+#chrootexec git clone https://github.com/groonga/groonga-normalizer-mysql.git && cd groonga-normalizer-mysql && ./autogen.sh && ./configure && make && make install
+
+## mroonga
+#chrootexec cd /root && tar zxvf /usr/portage/distfiles/mysql-5.5.32.tar.gz && git clone https://github.com/mroonga/mroonga.git && cd mroonga && ./autogen.sh && ./configure --with-mysql-source=/root/mysql-5.5.32 && make && make install
+
+## oscar
+#copy oscar/build-oscar.sh /build-oscar.sh
+#chrootexec sh /build-oscar.sh && rm /build-oscar.sh
+#copy oscar/oscar-watcher.init /etc/init.d/oscar-watcher
+#chrootexec chmod 755 /etc/init.d/oscar-watcher
+#symlink /etc/runlevels/default/oscar-watcher /etc/init.d/oscar-watcher
+#copy oscar/crontab /var/spool/cron/crontabs/oscar
+#chrootexec chown oscar.crontab /var/spool/cron/crontabs/oscar 
+
+## mysql
+#sed /etc/mysql/my.cnf s/^\(max_allowed_packet\s*=\).*/\1 64M/
+#patchsinglefile /etc/init.d/mysql oscar/mysql.init.patch
+#copy mysql/setup_mysql.sh /setup_mysql.sh
+#copy oscar/setup_initial_database.sh /setup_initial_database.sh
+#copy oscar/setup_mroonga.sql /setup_mroonga.sql
+#chrootexec sh /setup_mysql.sh && sh /setup_initial_database.sh && rm /setup_mysql.sh /setup_initial_database.sh /setup_mroonga.sql
+#symlink /etc/runlevels/default/mysql /etc/init.d/mysql
+#chrootexec groonga /var/lib/mysql/oscar.mrn register normalizers/mysql
+
+## clamav
+#chrootexec freshclam --no-warnings
+#sed /etc/conf.d/clamd s/^START_CLAMD=.\+/START_CLAMD=no/
+#symlink /etc/runlevels/default/clamav /etc/init.d/clamav
+

@@ -1,0 +1,7 @@
+RUN_DIR=/run/oscar
+LOG_DIR=/var/log/oscar
+* * * * * cd oscar/frontend && ./file.py -l $LOG_DIR/create_index.log create_index --limit=1000 1>/dev/null 2>/dev/null
+* * * * * cd oscar/frontend && ./file.py -l $LOG_DIR/calcsum.log calcsum 1>/dev/null 2>/dev/null
+* * * * * cd oscar/frontend && ./file.py -l $LOG_DIR/requested_jobs.log process_requested_jobs 1>/dev/null 2>/dev/null
+* */4 * * * touch $RUN_DIR/perform_cleanup
+* */8 * * * touch $RUN_DIR/perform_walk

@@ -1,0 +1,3 @@
+#chrootexec echo "export LANG=en_GB.utf8" >> /etc/profile.env
+
+

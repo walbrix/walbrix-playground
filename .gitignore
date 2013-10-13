@@ -2,6 +2,7 @@
 /*.tmp
 /*.dir
 *~
+.sconsign.dblite
 
 /x86_64/*
 !/x86_64/etc

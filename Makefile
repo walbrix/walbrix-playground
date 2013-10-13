@@ -1,6 +1,6 @@
-%: SConstruct
+%:
 	@scons $@
 
-all: SConstruct
+all:
 	@scons
 

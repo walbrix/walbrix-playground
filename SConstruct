@@ -6,6 +6,7 @@ import re
 import glob
 
 WB="/usr/sbin/wb"
+env = Environment(ENV = os.environ)
 
 def get_deps(lstfile, arch, region):
     lstfile_deps = subprocess.Popen([WB, "find_lstfile_deps", "--arch="+arch, "--region="+region, lstfile], shell=False, stdout=subprocess.PIPE)
@@ -32,7 +33,7 @@ def define_target(target):
     (artifact, arch, region) = re.compile(r'^(.+)-(.+)-(.+)\.tar\.xz$').match(target).groups()
     lstfile = artifact + ".lst"
     deps = get_deps(lstfile, arch, region)
-    Command(target, deps, "%s collect-sysfiles --arch=%s --region=%s -b -J ${TARGET} -r -f /var/db/wb/filedb %s ${TARGET}.tmp %s" % (WB, arch,region,arch,lstfile))
+    env.Command(target, deps, "%s collect-sysfiles --arch=%s --region=%s -b -J ${TARGET} -r -f /var/db/wb/filedb %s ${TARGET}.tmp %s" % (WB, arch,region,arch,lstfile))
 
 if len(COMMAND_LINE_TARGETS) > 0:
     for target in COMMAND_LINE_TARGETS:

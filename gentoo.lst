@@ -11,9 +11,12 @@
 #chrootexec echo "hvc0" >> /etc/securetty
 #copy gentoo/wb-va.xml /etc/wb-va.xml
 #chrootexec wget http://ftp.kddilabs.jp/pub/Linux/distributions/gentoo/snapshots/portage-latest.tar.xz -O- | tar Jxpf - -C /usr
-#chrootexec echo "net-fs/samba -cups" >> /etc/portage/package.use
-#chrootexec echo "=sys-auth/nss-mdns-0.10-r1" >> /etc/portage/package.keywords
-#chrootexec emerge -uDN nvi avahi samba nss-mdns nss-myhostname ntp world
+#chrootexec echo "net-fs/samba -cups ldap kerberos" >> /etc/portage/package.use
+#chrootexec echo "sys-libs/ncurses tinfo" >> /etc/portage/package.use
+#chrootexec echo "sys-libs/talloc python" >> /etc/portage/package.use
+#chrootexec echo "net-dns/avahi -introspection" >> /etc/portage/package.use
+#chrootexec echo "=app-editors/nvi-1.81.6-r4" >> /etc/portage/package.keywords
+#chrootexec emerge -uDN nvi avahi samba nss-mdns nss-myhostname ntp xfsprogs world
 #chrootexec rm -rf /usr/portage/distfiles/*
 #chrootexec rc-update add avahi-daemon default
 #chrootexec rc-update add sshd default
@@ -21,6 +24,7 @@
 #chrootexec rc-update add ntpd default
 #copy domU/smb.conf /etc/samba/smb.conf
 #sed /etc/nsswitch.conf s/^\(hosts:.* \)dns\( *\)/\1myhostname mdns_minimal [NOTFOUND=return] dns mdns\2/
+#sed /etc/avahi/avahi-daemon.conf s/^#disallow-other-stacks=no$/disallow-other-stacks=yes/
 #require components/timezone-$(REGION).lst
 #require components/gentoo-$(REGION).lst
 #chrootexec env-update

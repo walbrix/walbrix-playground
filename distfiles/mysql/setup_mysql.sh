@@ -1,7 +1,7 @@
 #!/bin/sh
 MY_DATADIR=/var/lib/mysql 
 mkdir $MY_DATADIR
-/usr/bin/mysql_install_db --cross-bootstrap
+/usr/share/mysql/scripts/mysql_install_db --basedir=/usr --cross-bootstrap
 chown -R mysql:mysql $MY_DATADIR
 chmod 0750 $MY_DATADIR
 SOCKET=/var/run/mysqld/mysqld.sock

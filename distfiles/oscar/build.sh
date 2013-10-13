@@ -39,6 +39,7 @@ echo "dev-python/markupsafe -python_targets_python3_2" >> /etc/portage/package.u
 echo "dev-java/java-config -python_targets_python3_2" >> /etc/portage/package.use
 echo "sys-apps/portage -python_targets_python3_2" >> /etc/portage/package.use
 echo "dev-python/xlrd -python_targets_python3_2" >> /etc/portage/package.use
+echo "dev-python/pyasn1 -python_targets_python3_2" >> /etc/portage/package.use
 
 echo "fs.inotify.max_queued_events = 65536" >> /etc/sysctl.conf
 echo "fs.inotify.max_user_watches = 16777216" >> /etc/sysctl.conf
@@ -46,7 +47,7 @@ echo "vm.overcommit_memory=1" >> /etc/sysctl.conf
 
 emerge dev-db/mysql www-apache/mod_extract_forwarded www-apache/mod_wsgi
 emerge dev-java/commons-dbcp dev-java/commons-pool dev-java/jdbc-mysql www-servers/tomcat
-emerge dev-python/flask dev-python/httplib2 dev-python/mysql-python dev-python/beautifulsoup dev-python/lxml dev-python/pyinotify dev-python/py-smbpasswd dev-python/pyclamav dev-python/xlrd
+emerge dev-python/flask dev-python/httplib2 dev-python/mysql-python dev-python/beautifulsoup dev-python/lxml dev-python/pyinotify dev-python/py-smbpasswd dev-python/pyclamav dev-python/xlrd dev-python/python-ldap
 emerge app-admin/sudo app-admin/logrotate dev-vcs/git sys-process/vixie-cron
 emerge app-i18n/nkf www-client/elinks app-text/xlhtml app-text/wv www-client/lynx
 emerge app-editors/emacs

@@ -1,5 +1,5 @@
 net-dns/avahi -introspection
-net-fs/samba -cups winbind
+net-fs/samba -cups winbind ldap
 www-apache/mod_extract_forwarded mod_proxy
 app-admin/eselect-php apache2
 www-servers/apache apache2_modules_proxy_connect apache2_modules_proxy apache2_modules_proxy_http apache2_modules_proxy_ajp

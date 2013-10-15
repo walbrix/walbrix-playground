@@ -13,7 +13,12 @@ dev-db/couchdb
 dev-db/phpmyadmin
 dev-db/phppgadmin
 dev-db/postgresql-server
+dev-java/commons-dbcp
+dev-java/commons-logging
+dev-java/commons-pool
+dev-java/glassfish-transaction-api
 dev-java/icedtea-bin
+dev-java/icedtea-bin:6
 dev-java/jdbc-mysql
 dev-java/jdbc-postgresql
 dev-lang/php

@@ -4,6 +4,7 @@
 #portage dev-java/commons-pool-1.5.6
 #portage dev-java/glassfish-transaction-api-1.1.2.2.04
 #portage dev-java/jdbc-mysql-5.1.18
+#portage dev-java/jdbc-postgresql-9.1_p902
 #portage dev-java/commons-dbcp-1.4-r2
 #portage dev-java/tomcat-servlet-api-7.0.42
 #portage dev-java/eclipse-ecj-4.2.1
@@ -13,7 +14,7 @@
 #chrootexec /usr/share/tomcat-7/gentoo/tomcat-instance-manager.bash --create
 
 #chrootexec chmod g+w /var/lib/tomcat-7/webapps
-#sed /etc/conf.d/tomcat-7 s/^#TOMCAT_EXTRA_JARS=""/TOMCAT_EXTRA_JARS="commons-dbcp,commons-pool,jdbc-mysql"/
+#sed /etc/conf.d/tomcat-7 s/^#TOMCAT_EXTRA_JARS=""/TOMCAT_EXTRA_JARS="commons-dbcp,commons-pool,jdbc-mysql,jdbc-postgresql"/
 
 ##sed /etc/init.d/tomcat-7 s/\(JAVA_HOME=\).\+$/\1\/etc\/java-config-2\/current-system-vm/
 #symlink /etc/runlevels/default/tomcat-7 /etc/init.d/tomcat-7

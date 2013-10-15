@@ -5,14 +5,11 @@
 #require components/postgresql.lst
 #require components/tomcat.lst
 #require components/postfix.lst
-#swap /swapfile 256
-#copy domU/fstab-with-swapfile /etc/fstab
-/usr/share/jdbc-postgresql/lib/jdbc-postgresql.jar
-#symlink /usr/share/tomcat-7/lib/jdbc-postgresql.jar /usr/share/jdbc-postgresql/lib/jdbc-postgresql.jar
+#copy domU/fstab-with-zramswap /etc/fstab
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1aipo\2/
-#copy aipo/aipo7010ja_src.zip /root/aipo7010ja_src.zip
-#extract aipo/aipo7010.tar.gz /root
-#chrootexec mv /root/aipo/src/webapps/* /var/lib/tomcat-7/webapps/
+#copy aipo/aipo7020ja_src.zip /root/aipo7010ja_src.zip
+#extract aipo/aipo7020.tar.gz /root
+#chrootexec rm -rf /var/lib/tomcat-7/webapps/ROOT && mv /root/aipo/src/webapps/* /var/lib/tomcat-7/webapps/
 #dir /usr/local/aipo
 #chrootexec mv /root/aipo/license /root/aipo/logs /root/aipo/src/bin /root/aipo/src/tomcat_diff /usr/local/aipo/
 #sed /var/lib/tomcat-7/webapps/aipo/WEB-INF/datasource/dbcp-org001.properties s/cayenne.dbcp.username=postgres/cayenne.dbcp.username=aipo_postgres/g
@@ -21,11 +18,11 @@
 #chrootexec cp -a /root/aipo/src/initdata/psml /var/lib/tomcat-7/webapps/aipo/WEB-INF/
 #chrootexec cp -a /root/aipo/src/initdata/files /var/lib/tomcat-7/webapps/aipo/WEB-INF/
 #chrootexec cp -a /root/aipo/src/initdata/mail /var/lib/tomcat-7/webapps/aipo/WEB-INF/
-#chrootexec dd if=/dev/urandom bs=16 count=1|base64 > /var/lib/tomcat-7/webapps/aipo/WEB-INF/conf/securityTokenKey.txt
-#chrootexec dd if=/dev/urandom bs=16 count=1|base64 > /var/lib/tomcat-7/webapps/ROOT/WEB-INF/classes/aipo/securityTokenKey.txt
+#chrootexec dd if=/dev/urandom bs=16 count=1|base64 > /var/lib/tomcat-7/webapps/aipo/WEB-INF/conf/securityTokenKey.txt && cp /var/lib/tomcat-7/webapps/aipo/WEB-INF/conf/securityTokenKey.txt /var/lib/tomcat-7/webapps/ROOT/WEB-INF/classes/aipo/
 #chrootexec chown -R tomcat.tomcat /var/lib/tomcat-7
-## use initial-database.sh to create initial-database.tar.gz
-#extract aipo/initial-database.tar.gz /var/lib/postgresql/9.1
-#chrootexec rm -rf /root/aipo
+#sed /etc/conf.d/tomcat-7 s/^#JAVA_OPTS=.\+/JAVA_OPTS="-server -Xmx512M -Xms64M -Xss256k -Dsun.nio.cs.map=x-windows-iso2022jp\/ISO-2022-JP"/
+#copy aipo/initial-database.sh /initial-database.sh
+#chrootexec sh /initial-database.sh && rm /initial-database.sh && rm -rf /root/aipo
 #patchsinglefile /etc/apache2/vhosts.d/default_vhost.include aipo/default_vhost.patch
 #copy aipo/wb-va.xml /etc/wb-va.xml
+

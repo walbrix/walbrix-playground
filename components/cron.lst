@@ -1,6 +1,6 @@
 # needs sendmail(like postfix, ssmtp)
 /usr/lib/sendmail
 #require nano.lst
-#portage sys-process/vixie-cron-4.1-r12
+#portage sys-process/vixie-cron-4.1-r13
 #dir /etc/runlevels/default
 #symlink /etc/runlevels/default/vixie-cron /etc/init.d/vixie-cron

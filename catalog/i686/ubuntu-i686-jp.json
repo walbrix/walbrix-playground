@@ -1,0 +1,1 @@
+{"description": "近年人気を集めている Linuxディストリビューションです。デスクトップ環境の充実により、Windowsしか操作経験のない一般の方でも使えるのが特徴です。（GUIの利用には VNCクライアントが必要です）", "title": "Ubuntu Linux 9.10", "minimum_hd": 4, "tarball": "http://dist.walbrix.net/va/ubuntu.tar.lzma", "minimum_ram": 192, "images": [{"url": "http://va.walbrix.net/img/ubuntu01.png"}], "id": "ubuntu"}

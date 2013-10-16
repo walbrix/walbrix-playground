@@ -1,0 +1,1 @@
+{"description": "concrete5は、コンクリートブロックを積み上げるようにサイトを制作して行けるようにというコンセプトの元に開発されたオープンソースのCMSです。", "title": "Concrete5 (5.6.0.2)", "minimum_hd": 1, "tarball": "http://dist.walbrix.net/va/concrete5-5.6.0.2-i686-jp.tar.xz", "minimum_ram": 96, "images": [{"url": "http://va.walbrix.net/img/concrete501.png"}], "id": "concrete5"}

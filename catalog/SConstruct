@@ -1,0 +1,43 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import os
+import json
+import xml.dom.minidom
+
+def build_function(target, source, env):
+    doc = xml.dom.minidom.getDOMImplementation().createDocument(None, "catalog", None)
+    catalog = doc.documentElement
+    for item in json.load(open(str(source[0]))):
+        if "id" not in item: continue
+        item_id = item["id"]
+        if "file" not in item: raise Exception("file attr missing: id=%s" % item_id)
+        item_attrs = json.load(open(item["file"]))
+        item_elem = doc.createElement("item")
+        item_elem.setAttribute("id", item_id)
+        if "arch" in item_attrs: item_elem.setAttribute("arch", item_attrs["arch"])
+        item_elem.setAttribute("tarball", item_attrs["tarball"])
+        item_elem.setAttribute("minimum_ram", str(item_attrs["minimum_ram"]))
+        item_elem.setAttribute("minimum_hd", str(item_attrs["minimum_hd"]))
+        if "title" in item_attrs:
+            title = doc.createElement("title")
+            title.appendChild(doc.createTextNode(item_attrs["title"].encode("utf-8")))
+            item_elem.appendChild(title)
+        if "images" in item_attrs and len(item_attrs["images"]) > 0:
+            image = doc.createElement("image")
+            image.setAttribute("uri", item_attrs["images"][0]["url"])
+            item_elem.appendChild(image)
+        if "description" in item_attrs:
+            description = doc.createElement("description")
+            description.appendChild(doc.createTextNode(item_attrs["description"].encode("utf-8")))
+            item_elem.appendChild(description)
+        catalog.appendChild(item_elem)
+    doc.writexml(open(str(target[0]), "w"), encoding="utf-8", addindent="\t",newl="\n")
+
+def add_deps(target, source, env):
+    for item in json.load(open(str(source[0]))):
+        if "file" in item: source.append(item["file"])
+    return target, source
+
+env = Environment(ENV = os.environ, BUILDERS={"Foo":Builder(action=build_function, emitter=add_deps)})
+
+env.Foo("index.xml", "jp.json")

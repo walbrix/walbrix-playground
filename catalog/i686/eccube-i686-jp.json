@@ -1,0 +1,1 @@
+{"description": "日本発のオープンソースECサイト構築パッケージ「EC-CUBE」。ASPではできなかった独自性の高いECサイトが、 無料で手に入ります。", "title": "EC-CUBE 2.12.3", "minimum_hd": 1, "tarball": "http://dist.walbrix.net/va/eccube-2.12.3-i686-jp.tar.xz", "minimum_ram": 128, "images": [{"url": "http://va.walbrix.net/img/eccube01.png"}], "id": "eccube"}

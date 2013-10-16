@@ -1,0 +1,1 @@
+{"description": "Danbooruは Ruby on Railsで開発されているオープンソースのイラスト投稿SNSです。投稿されたイラストにコメントをつけたり、フォーラムや Wikiなどのコミュニケーション機能も搭載されています。", "title": "Danbooru2 - イラスト投稿SNS", "minimum_hd": 3, "tarball": "http://va.walbrix.net/i686/danbooru-201210-i686-jp.tar.xz", "minimum_ram": 192, "images": [{"url": "http://va.walbrix.net/img/danbooru01.png"}], "id": "danbooru"}

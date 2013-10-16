@@ -1,0 +1,1 @@
+{"description": "baserCMSとは、環境準備の素早さに重点を置いたオープンソースのWEB制作（開発）基本制作支援プロジェクトです。WEBサイトに最低限必要となる新着ブログ、メールフォーム、フィードリーダーや、認証付きの管理画面を最初から装備しています。", "title": "baserCMS 2.1.0", "minimum_hd": 1, "tarball": "http://dist.walbrix.net/va/basercms-2.1.0-i686-jp.tar.xz", "minimum_ram": 128, "images": [{"url": "http://va.walbrix.net/img/basercms01.png"}], "id": "basercms"}

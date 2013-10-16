@@ -1,0 +1,1 @@
+{"description": "eyeOSは、クラウドコンピューティングのコンセプトに従ったWebデスクトップ環境です。Webブラウザの中で仮想的なデスクトップを利用することが出来ます。", "title": "eyeOS 2.5 Webデスクトップ", "minimum_hd": 2, "tarball": "http://va.walbrix.net/i686/eyeos-2.5-i686-jp.tar.xz", "minimum_ram": 128, "images": [{"url": "http://va.walbrix.net/img/eyeos01.png"}], "id": "eyeos"}

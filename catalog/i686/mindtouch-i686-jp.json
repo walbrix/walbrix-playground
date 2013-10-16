@@ -1,0 +1,1 @@
+{"description": "MindTouchはフリーなオープンソースのwikiで、コミュニティやエンタープライズ向けのアプリケーションプラットフォームです。オーサリング、アグリゲート、コンテンツの共有をするのに使いやすく洗練されています。(バージョン 9.08.3)", "title": "MindTouch Core(旧名:deki wiki)", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/mindtouch.tar.lzma", "minimum_ram": 128, "images": [{"url": "http://va.walbrix.net/img/mindtouch01.png"}], "id": "mindtouch"}

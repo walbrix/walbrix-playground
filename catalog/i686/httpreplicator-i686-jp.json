@@ -1,0 +1,1 @@
+{"description": "HTTPレプリケータはキャッシュ型の HTTPプロキシサーバです。ただコンテンツをキャッシュするだけではなく、キャッシュされたファイルに共有フォルダからアクセスできるのが特徴で、一種のダウンローダとして利用できます。", "title": "HTTPレプリケータ", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/httpreplicator.tar.lzma", "minimum_ram": 64, "images": [{"url": "http://va.walbrix.net/img/httpreplicator01.png"}], "id": "httpreplicator"}

@@ -1,0 +1,1 @@
+{"description": "Mediatomb(メディアトゥーム)はウェブインターフェースを持った、オープンソースのUPnPメディアサーバです。Mediatombは、あなたの家のネットワークを通じて、あなたのデジタルメディアをストリームし、UPnPに準拠している様々なデバイスを用いて視聴を可能にしてくれます。", "title": "MediaTomb - DLNAサーバ", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/mediatomb.tar.lzma", "minimum_ram": 96, "images": [{"url": "http://va.walbrix.net/img/mediatomb01.png"}], "id": "mediatomb"}

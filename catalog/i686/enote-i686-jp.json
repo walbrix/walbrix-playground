@@ -1,0 +1,1 @@
+{"description": "オープンソースグループウェア 『eNote for Community』は、グループウェアと営業支援システムを統合した、新しい企業向け業務支援＆コミュニケーションツールです。", "title": "グループウェア eNote for Community", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/enote.tar.lzma", "minimum_ram": 256, "images": [{"url": "http://va.walbrix.net/img/enote01.png"}], "id": "enote"}

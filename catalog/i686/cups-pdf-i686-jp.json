@@ -1,0 +1,1 @@
+{"description": "CUPS-PDFは仮想のネットワークプリンタです。このプリンタで印刷処理を実行することで、PDFファイルが共有フォルダに生成されます。紙資源の節約に役立てて下さい。", "title": "仮想プリンタ CUPS-PDF", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/cups-pdf.tar.lzma", "minimum_ram": 64, "images": [{"url": "http://va.walbrix.net/img/cups-pdf01.png"}], "id": "cups-pdf"}

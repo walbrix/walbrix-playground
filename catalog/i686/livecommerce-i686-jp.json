@@ -1,9 +1,1 @@
-{
-	"id":"XXXX",
-	"title":"XXXX",
-	"images":[{"url":"http://va.walbrix.net/img/XXXX01.png"}],	
-	"tarball":"http://dist.walbrix.net/va/XXXX-X.Y.Z-i686-jp.tar.xz",
-	"description":"XXXX",
-	"minimum_ram":128,
-	"minimum_hd":1
-}
+{"description": "LiveCommerceは PHP+Zend Frameworkで開発された国産のオープンソースECサイト構築ソリューションです。ローカライズの必要がなく、拡張性の高いプラグイン機能を利用して無限にカスタマイズすることができます。", "title": "LiveCommerce", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/livecommerce.tar.lzma", "minimum_ram": 96, "images": [{"url": "http://va.walbrix.net/img/livecommerce01.png"}], "id": "livecommerce"}

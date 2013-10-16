@@ -1,9 +1,1 @@
-{
-	"id":"XXXX",
-	"title":"XXXX",
-	"images":[{"url":"http://va.walbrix.net/img/XXXX01.png"}],	
-	"tarball":"http://dist.walbrix.net/va/XXXX-X.Y.Z-i686-jp.tar.xz",
-	"description":"XXXX",
-	"minimum_ram":128,
-	"minimum_hd":1
-}
+{"description": "【玄人向け】Funtoo LinuxはGentoo Linuxの流れを組むディストリビューションで、Gitベースの新たなPortageツリーを持っているのが特徴です(実はGentoo Linuxの創始者により開発されています)。stage3をベースに、最低限必要なものだけが組み込まれています。SSHでrootログインして利用してください。", "title": "Funtoo Linux(Aug25 2010)", "minimum_hd": 3, "tarball": "http://dist.walbrix.net/va/funtoo-20100825.tar.lzma", "minimum_ram": 64, "images": [{"url": "http://va.walbrix.net/img/funtoo01.png"}], "id": "funtoo"}

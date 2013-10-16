@@ -1,9 +1,1 @@
-{
-	"id":"XXXX",
-	"title":"XXXX",
-	"images":[{"url":"http://va.walbrix.net/img/XXXX01.png"}],	
-	"tarball":"http://dist.walbrix.net/va/XXXX-X.Y.Z-i686-jp.tar.xz",
-	"description":"XXXX",
-	"minimum_ram":128,
-	"minimum_hd":1
-}
+{"description": "PowerDNSはリレーショナルデータベースなど様々なバックエンドを使用可能なDNSサーバです。Walbrix特別仕様として、WebベースのPowerDNS管理ツール\"PowerDNS on Rails\"とMySQLが初期状態で統合されています。旧来のDNSサーバのようにテキストファイルの書き換えでゾーン管理をする必要はもうありません。", "title": "PowerDNS - 多用途DNSサーバ", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/pdns.tar.lzma", "minimum_ram": 192, "images": [{"url": "http://va.walbrix.net/img/pdns01.png"}], "id": "pdns"}

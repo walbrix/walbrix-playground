@@ -1,9 +1,1 @@
-{
-	"id":"XXXX",
-	"title":"XXXX",
-	"images":[{"url":"http://va.walbrix.net/img/XXXX01.png"}],	
-	"tarball":"http://dist.walbrix.net/va/XXXX-X.Y.Z-i686-jp.tar.xz",
-	"description":"XXXX",
-	"minimum_ram":128,
-	"minimum_hd":1
-}
+{"description": "Thunder Surveyはアンケートを簡単に作成・実行できる Ruby on Rails製のオープンソース・ソフトウェアです。", "title": "Thunder survey", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/tsurvey.tar.lzma", "minimum_ram": 128, "images": [{"url": "http://va.walbrix.net/img/tsurvey01.png"}], "id": "tsurvey"}

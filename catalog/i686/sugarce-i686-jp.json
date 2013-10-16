@@ -1,9 +1,1 @@
-{
-	"id":"XXXX",
-	"title":"XXXX",
-	"images":[{"url":"http://va.walbrix.net/img/XXXX01.png"}],	
-	"tarball":"http://dist.walbrix.net/va/XXXX-X.Y.Z-i686-jp.tar.xz",
-	"description":"XXXX",
-	"minimum_ram":128,
-	"minimum_hd":1
-}
+{"description": "Sugar CEは SFA/CRMアプリケーションであるSugarCRMのオープンソースエディションです。顧客管理、予定表、汎用データベース、メール配信など、様々な活用が可能です。", "title": "Sugar Community Edition", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/sugarce.tar.lzma", "minimum_ram": 96, "images": [{"url": "http://va.walbrix.net/img/sugarce01.png"}], "id": "sugarce"}

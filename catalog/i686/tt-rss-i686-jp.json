@@ -1,9 +1,1 @@
-{
-	"id":"XXXX",
-	"title":"XXXX",
-	"images":[{"url":"http://va.walbrix.net/img/XXXX01.png"}],	
-	"tarball":"http://dist.walbrix.net/va/XXXX-X.Y.Z-i686-jp.tar.xz",
-	"description":"XXXX",
-	"minimum_ram":128,
-	"minimum_hd":1
-}
+{"description": "Tiny Tiny RSSは、オープンソースでWebベースのニュースフィード(RSS/Atom)リーダー・アグリゲーターです。", "title": "Tiny Tiny RSS 1.7.4", "minimum_hd": 1, "tarball": "http://dist.walbrix.net/va/tt-rss-1.7.4-i686-jp.tar.xz", "minimum_ram": 96, "images": [{"url": "http://va.walbrix.net/img/tt-rss01.png"}], "id": "tt-rss"}

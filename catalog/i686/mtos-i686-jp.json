@@ -1,9 +1,1 @@
-{
-	"id":"XXXX",
-	"title":"XXXX",
-	"images":[{"url":"http://va.walbrix.net/img/XXXX01.png"}],	
-	"tarball":"http://dist.walbrix.net/va/XXXX-X.Y.Z-i686-jp.tar.xz",
-	"description":"XXXX",
-	"minimum_ram":128,
-	"minimum_hd":1
-}
+{"description": "定番 CMSの MovableTypeには無料ライセンスのオープンソース版があるのをご存じですか。個人利用・商用利用を問わず自由に利用可能です。面倒な MySQLや mt-configの設定、Perlモジュールの導入は済んだ状態でお届け。すぐに始められます！", "title": "Movable Type 5.2.3 オープンソース版", "minimum_hd": 1, "tarball": "http://dist.walbrix.net/va/mtos-5.2.3-i686-jp.tar.xz", "minimum_ram": 64, "images": [{"url": "http://va.walbrix.net/img/mt01.png"}], "id": "mtos"}

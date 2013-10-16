@@ -1,9 +1,1 @@
-{
-	"id":"XXXX",
-	"title":"XXXX",
-	"images":[{"url":"http://va.walbrix.net/img/XXXX01.png"}],	
-	"tarball":"http://dist.walbrix.net/va/XXXX-X.Y.Z-i686-jp.tar.xz",
-	"description":"XXXX",
-	"minimum_ram":128,
-	"minimum_hd":1
-}
+{"description": "レンタルサーバなどでおなじみの CentOSを、定番の Webサイト構築環境 LAMP(Linux+Apache+MySQL+PHP) がすぐに使えるように設定済みで提供しています。", "title": "CentOS 6.4", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/centos-6.4-i686-jp.tar.xz", "minimum_ram": 96, "images": [{"url": "http://va.walbrix.net/img/centos01.png"}], "id": "centos"}

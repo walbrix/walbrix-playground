@@ -1,0 +1,3 @@
+install:
+	s3cmd put -P index.xml s3://va.walbrix.net/
+

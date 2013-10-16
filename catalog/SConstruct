@@ -8,7 +8,9 @@ def build_function(target, source, env):
     doc = xml.dom.minidom.getDOMImplementation().createDocument(None, "catalog", None)
     catalog = doc.documentElement
     for item in json.load(open(str(source[0]))):
+        if "id" not in item: continue
         item_id = item["id"]
+        if "file" not in item: raise Exception("file attr missing: id=%s" % item_id)
         item_attrs = json.load(open(item["file"]))
         item_elem = doc.createElement("item")
         item_elem.setAttribute("id", item_id)
@@ -33,7 +35,7 @@ def build_function(target, source, env):
 
 def add_deps(target, source, env):
     for item in json.load(open(str(source[0]))):
-        source.append(item["file"])
+        if "file" in item: source.append(item["file"])
     return target, source
 
 env = Environment(ENV = os.environ, BUILDERS={"Foo":Builder(action=build_function, emitter=add_deps)})

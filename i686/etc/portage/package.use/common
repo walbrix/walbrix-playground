@@ -28,4 +28,5 @@ sys-libs/talloc python
 app-admin/eselect-php apache2
 
 dev-python/python-exec -python_targets_python3_2
+net-fs/cifs-utils -acl
 

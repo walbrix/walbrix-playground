@@ -9,6 +9,8 @@
 #chrootexec useradd -m oscar
 #chrootexec groupmems -g cron -a oscar
 #chrootexec groupmems -g tomcat -a oscar
+#chrootexec groupmems -g wheel -a oscar
+#sed /etc/sudoers s/^# \(\%wheel ALL=(ALL) NOPASSWD: ALL\)$/\1/
 #copy oscar/oscar.include /etc/apache2/vhosts.d/oscar.include
 #patchsinglefile /etc/apache2/vhosts.d/00_default_vhost.conf oscar/00_default_vhost.conf.patch
 #symlink /etc/runlevels/default/vixie-cron /etc/init.d/vixie-cron

@@ -14,6 +14,8 @@
 #copy oscar/oscar.include /etc/apache2/vhosts.d/oscar.include
 #patchsinglefile /etc/apache2/vhosts.d/00_default_vhost.conf oscar/00_default_vhost.conf.patch
 #symlink /etc/runlevels/default/vixie-cron /etc/init.d/vixie-cron
+#copy oscar/sysctl-groonga.conf /etc/sysctl.d/groonga.conf
+#copy oscar/sysctl-oscar.conf /etc/sysctl.d/oscar.conf
 
 ## Samba
 #copy oscar/smb.conf /etc/samba/smb.conf
@@ -35,7 +37,7 @@
 #symlink /etc/runlevels/default/tomcat-7 /etc/init.d/tomcat-7
 
 ## groonga
-#chrootexec cd /root && wget http://packages.groonga.org/source/groonga/groonga-3.0.8.tar.gz && tar xvzf groonga-*.tar.gz && cd groonga-*/ && ./configure --prefix=/usr --localstatedir=/var --with-zlib && make && make install
+#chrootexec cd /root && wget http://packages.groonga.org/source/groonga/groonga-3.0.9.tar.gz && tar xvzf groonga-*.tar.gz && cd groonga-*/ && ./configure --prefix=/usr --localstatedir=/var && make && make install && cd .. && rm -rf groonga-*/
 #chrootexec git clone https://github.com/groonga/groonga-normalizer-mysql.git && cd groonga-normalizer-mysql && ./autogen.sh && ./configure && make && make install
 
 ## mroonga

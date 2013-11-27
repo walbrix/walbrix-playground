@@ -1,0 +1,11 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/tomcat.lst
+#require components/postfix.lst
+#copy domU/fstab-with-zramswap /etc/fstab
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1gitbucket\2/
+#sed /etc/conf.d/tomcat-7 s/^#JAVA_OPTS=.\+/JAVA_OPTS="-server -Xmx512M -Xms64M -Xss256k"/
+#copy gitbucket/wb-va.xml /etc/wb-va.xml
+

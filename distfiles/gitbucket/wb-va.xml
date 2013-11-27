@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtual-appliance uuid="1464f83f-5bb9-43f0-9bfb-2f500f3957c1">
+  <version>1.7</version>
+  <instruction>デフォルトの管理者ユーザー名とパスワードは root/rootです</instruction>
+  <instruction xml:lang="en">The initial admin ID and password is root/root</instruction>
+</virtual-appliance>

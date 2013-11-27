@@ -1,5 +1,5 @@
 # dev-lang/v8
 /usr/bin/d8
 
-#portage net-libs/nodejs-0.10.18
+#portage net-libs/nodejs-0.10.21
 

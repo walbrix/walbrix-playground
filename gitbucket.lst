@@ -7,5 +7,10 @@
 #copy domU/fstab-with-zramswap /etc/fstab
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1gitbucket\2/
 #sed /etc/conf.d/tomcat-7 s/^#JAVA_OPTS=.\+/JAVA_OPTS="-server -Xmx512M -Xms64M -Xss256k"/
+#chrootexec echo 'export GITBUCKET_HOME="/var/lib/gitbucket"' >> /etc/conf.d/tomcat-7
+#chrootexec mkdir /var/lib/gitbucket
+#chrootexec rm -rf /var/lib/tomcat-7/webapps/ROOT
+#chrootexec wget --no-check-certificate -O /var/lib/tomcat-7/webapps/ROOT.war https://github.com/takezoe/gitbucket/releases/download/1.7/gitbucket.war
+#chrootexec chown -R tomcat.tomcat /var/lib/tomcat-7 /var/lib/gitbucket
 #copy gitbucket/wb-va.xml /etc/wb-va.xml
 

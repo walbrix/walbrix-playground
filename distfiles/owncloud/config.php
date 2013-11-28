@@ -1,6 +1,6 @@
 <?php
 $CONFIG = array (
-  'datadirectory' => '/var/www/localhost/htdocs/data',
+  'datadirectory' => '/var/lib/owncloud/data',
   'dbtype' => 'mysql',
   'dbname' => 'owncloud',
   'dbhost' => 'localhost',

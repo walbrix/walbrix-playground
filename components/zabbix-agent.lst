@@ -1,2 +1,2 @@
-#portage net-analyzer/zabbix-2.0.9_rc1-r2 ^/(usr/share|var/db)/(webapps|zabbix)/
+#portage net-analyzer/zabbix-2.0.9 ^/(usr/share|var/db)/(webapps|zabbix)/
 

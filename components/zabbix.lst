@@ -1,6 +1,6 @@
 #require openipmi.lst
 #require mysql.lst
-#require php53.lst
+#require php54.lst
 
 # dev-java/slf4j-api
 /usr/share/slf4j-api/lib/slf4j-api.jar

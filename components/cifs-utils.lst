@@ -1,0 +1,2 @@
+#require krb5.lst
+#portage net-fs/cifs-utils-6.1-r1

@@ -8,3 +8,4 @@
 =dev-db/mysql-5.5.32
 =virtual/mysql-5.5
 =net-analyzer/zabbix-2.0.9
+=net-fs/cifs-utils-6.1-r1

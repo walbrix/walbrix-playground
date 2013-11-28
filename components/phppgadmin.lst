@@ -1,4 +1,4 @@
-#require php53.lst
+#require php54.lst
 #require postgresql.lst
 /usr/share/webapps/phppgadmin/5.0.4/config-files
 /usr/share/webapps/phppgadmin/5.0.4/htdocs/admin.php

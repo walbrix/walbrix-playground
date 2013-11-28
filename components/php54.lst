@@ -1,0 +1,11 @@
+#require apache.lst
+#portage dev-lang/php-5.4.20 ^/usr/lib(64)?/php[0-9]+\.[0-9]/(man|include|lib)/
+#dir /etc/php/apache2-php5.4/ext
+#dir /etc/php/apache2-php5.4/ext-active
+#dir /etc/php/cli-php5.4/ext
+#dir /etc/php/cli-php5.4/ext-active
+
+#sed /etc/php/apache2-php5.4/php.ini s/^;date\.timezone.*$/date.timezone=Asia\/Tokyo/
+#sed /etc/php/cli-php5.4/php.ini s/^;date\.timezone.*$/date.timezone=Asia\/Tokyo/
+#sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D PHP5"/
+

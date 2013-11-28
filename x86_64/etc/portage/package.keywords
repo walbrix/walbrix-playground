@@ -7,7 +7,7 @@
 
 =virtual/jre-1.7.0
 =virtual/jdk-1.7.0
-=dev-java/icedtea-bin-7.2.4.1
+=dev-java/icedtea-bin-7.2.4.3
 =dev-java/hawtjni-runtime-1.8 
 =www-servers/tomcat-7.0.42
 =dev-java/eclipse-ecj-4.2.1
@@ -25,4 +25,7 @@
 =www-apache/passenger-3.0.17
 
 =net-libs/nodejs-0.10.18
+
+=dev-db/mysql-5.5.32
+=virtual/mysql-5.5
 

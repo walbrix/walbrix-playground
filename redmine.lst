@@ -1,7 +1,7 @@
 #require components/domU.lst
 #require components/pvkernel.lst
 #require components/apache.lst
-#require components/php53.lst
+#require components/php54.lst
 #require components/mysql.lst
 #require components/postfix.lst
 #require components/rails.lst
@@ -16,9 +16,10 @@
 
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1redmine\2/
 #copy domU/fstab-with-zramswap /etc/fstab
-#extract redmine/redmine-2.3.1.tar.gz /var/www/localhost
+#extract redmine/redmine-2.3.4.tar.gz /var/www/localhost
 #chrootexec rm -rf /var/www/localhost/htdocs
-#chrootexec mv /var/www/localhost/redmine-2.3.1 /var/www/localhost/htdocs
+#chrootexec mv /var/www/localhost/redmine-2.3.4 /var/www/localhost/htdocs
+#sed /var/www/localhost/htdocs/Gemfile s/gem "rails", "3\.2\.13/gem "rails", "3.2.15/
 ##sed /var/www/localhost/htdocs/Gemfile s/gem "mocha",.*//
 #sed /var/www/localhost/htdocs/Gemfile s/gem "fastercsv",.*//
 #sed /var/www/localhost/htdocs/Gemfile s/gem "builder", "3\.0/gem "builder", "~> 3\.0/

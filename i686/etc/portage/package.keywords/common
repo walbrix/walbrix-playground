@@ -5,3 +5,6 @@
 =media-gfx/imagemagick-6.7.9.9
 =www-apps/eyeos-2.5
 =dev-perl/Net-SMTP-TLS-0.120.0-r1
+=dev-db/mysql-5.5.32
+=virtual/mysql-5.5
+=net-analyzer/zabbix-2.0.9

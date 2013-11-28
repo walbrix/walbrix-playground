@@ -1,18 +1,2 @@
 #require ruby19.lst
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/RMagick.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/RMagick2.so
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/clippath.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/container.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/deep_equal.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/describable.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/embellishable.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/misc.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/paint.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/pathdata.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/rvg.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/stretchable.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/stylable.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/text.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/transformable.rb
-/usr/lib/ruby/gems/1.9.1/gems/rmagick-2.13.1/lib/rvg/units.rb
-/usr/lib/ruby/gems/1.9.1/specifications/rmagick-2.13.1.gemspec
+#portage dev-ruby/rmagick-2.13.2

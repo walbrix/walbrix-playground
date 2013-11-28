@@ -10,7 +10,7 @@ media-libs/gd png jpeg truetype
 x11-libs/cairo X
 
 # cjk removed because of gd truetype rendering problem
-dev-lang/php apache2 gd mysql mysqli postgres xsl zip pdo truetype xmlwriter bcmath xmlreader sysvipc sockets curl sqlite sharedmem -cjk
+dev-lang/php apache2 gd mysql mysqli postgres xslt zip pdo truetype xmlwriter bcmath xmlreader sysvipc sockets curl sqlite sharedmem -cjk
 app-text/ghostscript-gpl cups linguas_ja
 sys-kernel/vanilla-sources symlink
 # fuckin headress unaware applications still depends on cups

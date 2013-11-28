@@ -3,24 +3,24 @@
 #require components/pvkernel.lst
 #require components/apache.lst
 #require components/mysql.lst
-#require components/php53.lst
+#require components/php54.lst
 #require components/samba.lst
 #require components/postfix.lst
 #require components/phpmyadmin.lst
 #copy owncloud/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1owncloud\2/
-#copy domU/fstab-with-swapfile /etc/fstab
-#swap /swapfile 128
-#extract owncloud/owncloud-4.5.7.tar.bz2 /var/www/localhost
+#copy domU/fstab-with-zramswap /etc/fstab
+#chrootexec wget -O - http://download.owncloud.org/community/owncloud-5.0.13.tar.bz2 | tar jxvf - -C /var/www/localhost
 #chrootexec mv /var/www/localhost/owncloud/* /var/www/localhost/htdocs/
 #chrootexec mv /var/www/localhost/owncloud/.htaccess /var/www/localhost/htdocs/
 #chrootexec rmdir /var/www/localhost/owncloud
 #copy owncloud/config.php /var/www/localhost/htdocs/config/config.php
-#chrootexec chown -R apache.apache /var/www/localhost
+#chrootexec mkdir /var/lib/owncloud
+#chrootexec chown -R apache.apache /var/www/localhost /var/lib/owncloud
 #copy owncloud/setup_initial_database.sh /setup_initial_database.sh
 #copy owncloud/initial-database.sql /initial-database.sql
 #chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh /initial-database.sql
-#sed /etc/php/apache2-php5.3/php.ini s/^upload_max_filesize.\+$/upload_max_filesize = 512M/
-#sed /etc/php/apache2-php5.3/php.ini s/^post_max_size.\+$/post_max_size = 768M/
+#sed /etc/php/apache2-php5.4/php.ini s/^upload_max_filesize.\+$/upload_max_filesize = 512M/
+#sed /etc/php/apache2-php5.4/php.ini s/^post_max_size.\+$/post_max_size = 768M/
 #copy owncloud/wb-va.xml /etc/wb-va.xml
 

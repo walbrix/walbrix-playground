@@ -1,3 +1,6 @@
+#require openldap.lst
+#portage net-fs/cifs-utils-6.1-r1
+
 /etc/conf.d/samba
 /etc/init.d/samba
 /etc/pam.d/samba

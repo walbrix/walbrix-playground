@@ -53,7 +53,7 @@
 =dev-ruby/mime-types-1.19
 
 =app-vim/rails-4.4
-=www-apache/passenger-3.0.17
+=www-apache/passenger-4.0.10
 =dev-ruby/daemon_controller-1.0.0
 =dev-ruby/rmagick-2.13.1
 

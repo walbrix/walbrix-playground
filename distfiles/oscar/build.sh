@@ -40,10 +40,7 @@ echo "dev-java/java-config -python_targets_python3_2" >> /etc/portage/package.us
 echo "sys-apps/portage -python_targets_python3_2" >> /etc/portage/package.use
 echo "dev-python/xlrd -python_targets_python3_2" >> /etc/portage/package.use
 echo "dev-python/pyasn1 -python_targets_python3_2" >> /etc/portage/package.use
-
-echo "fs.inotify.max_queued_events = 65536" >> /etc/sysctl.conf
-echo "fs.inotify.max_user_watches = 16777216" >> /etc/sysctl.conf
-echo "vm.overcommit_memory=1" >> /etc/sysctl.conf
+echo "virtual/python-argparse -python_targets_python3_2" >> /etc/portage/package.use
 
 emerge dev-db/mysql www-apache/mod_extract_forwarded www-apache/mod_wsgi
 emerge dev-java/commons-dbcp dev-java/commons-pool dev-java/jdbc-mysql www-servers/tomcat
@@ -51,6 +48,7 @@ emerge dev-python/flask dev-python/httplib2 dev-python/mysql-python dev-python/b
 emerge app-admin/sudo app-admin/logrotate dev-vcs/git sys-process/vixie-cron
 emerge app-i18n/nkf www-client/elinks app-text/xlhtml app-text/wv www-client/lynx
 emerge app-editors/emacs
+emerge -uDN world
 
 etc-update --automode -5
 

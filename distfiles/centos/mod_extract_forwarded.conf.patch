@@ -1,0 +1,11 @@
+--- mod_extract_forwarded.conf	2013-12-03 01:46:25.355563795 +0900
++++ /etc/httpd/conf.d/mod_extract_forwarded.conf	2013-12-03 01:47:32.874276324 +0900
+@@ -22,7 +22,7 @@
+ # Individual IP numbers mean that those the proxy servers having them are to be 
+ # trusted. This defaults to an empty list of trusted IP numbers.
+ 
+-# MEFaccept 1.2.3.4  1.2.3.5 
++MEFaccept all 
+ 
+ # Normal mode of use is to say:
+ #

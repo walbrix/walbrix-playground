@@ -1,4 +1,4 @@
-#sed /etc/sysconfig/i18n s/^LANG=.*$/LANG="en_US.UTF-8"/
+#echo 'LANG="en_US.UTF-8"' > /etc/sysconfig/i18n
 #sed /etc/php.ini s/^;date\.timezone =.*$/date.timezone = Asia\/Kolkata/
 #require timezone-in.lst
 

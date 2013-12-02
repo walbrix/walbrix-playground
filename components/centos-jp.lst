@@ -1,4 +1,4 @@
-#sed /etc/sysconfig/i18n s/^LANG=.*$/LANG="ja_JP.UTF-8"/
+#echo 'LANG="ja_JP.UTF-8"' > /etc/sysconfig/i18n
 #sed /etc/php.ini s/^;date\.timezone =.*$/date.timezone = Asia\/Tokyo/
 #require timezone-jp.lst
 

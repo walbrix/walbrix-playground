@@ -1,10 +1,10 @@
-#portage dev-db/postgresql-base-9.2.4 ^/usr/share/postgresql-9.2/man/
-#portage dev-db/postgresql-server-9.2.4
+#portage dev-db/postgresql-base-9.3.2 ^/usr/share/postgresql-9.3/man/
+#portage dev-db/postgresql-server-9.3.2
 
-#chrootexec ln -s /usr/lib/postgresql-9.2/bin/* /usr/bin/
+#chrootexec ln -s /usr/lib/postgresql-9.3/bin/* /usr/bin/
 #copy postgresql/setup_postgresql.sh /setup_postgresql.sh
 #chrootexec sh /setup_postgresql.sh && rm /setup_postgresql.sh
-#symlink /etc/runlevels/default/postgresql-9.2 /etc/init.d/postgresql-9.2
+#symlink /etc/runlevels/default/postgresql-9.3 /etc/init.d/postgresql-9.3
 
-#sed /etc/conf.d/postgresql-9.2 s/^#PGOPTS="-N 512 -B 1024"$/PGOPTS="-i -N 512 -B 1024"/
+#sed /etc/conf.d/postgresql-9.3 s/^#PGOPTS="-N 512 -B 1024"$/PGOPTS="-i -N 512 -B 1024"/
 

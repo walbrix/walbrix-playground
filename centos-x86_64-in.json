@@ -1,0 +1,11 @@
+{
+	"id":"centos",
+	"title":"CentOS 64bit",
+	"images":[{"url":"http://va.walbrix.net/img/centos01.png"}],	
+	"tarball":"centos-x86_64-in.tar.xz",
+	"arch":"x86_64",
+	"description":"CentOS",
+	"minimum_ram":128,
+	"minimum_hd":2
+}
+

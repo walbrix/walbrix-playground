@@ -108,6 +108,7 @@
 ./usr/bin/ar
 ./usr/bin/clear
 ./usr/bin/cmp
+/usr/bin/curl
 #symlink /usr/bin/diff ../../bin/busybox
 ./usr/bin/find
 /usr/bin/getent

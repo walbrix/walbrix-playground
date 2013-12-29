@@ -1,9 +1,5 @@
 #detectarch /usr/bin/emacs
-# from emacs-common-gentoo
-#/etc/emacs/site-start.el
-/etc/emacs/.keep_app-emacs_emacs-common-gentoo-0
-/usr/share/emacs/site-lisp/subdirs.el
-
+#portage app-emacs/emacs-common-gentoo-1.4
 #portage app-editors/emacs-24.3-r2
 #symlink /usr/bin/emacs emacs-24
 

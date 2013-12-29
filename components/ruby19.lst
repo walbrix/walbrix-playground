@@ -1,4 +1,4 @@
-#portage dev-lang/ruby-1.9.3_p448
+#portage dev-lang/ruby-1.9.3_p484
 #detectarch /usr/bin/ruby19
 #symlink /usr/bin/erb erb19
 #symlink /usr/bin/irb irb19

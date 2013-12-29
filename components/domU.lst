@@ -17,7 +17,7 @@
 #require net-tools.lst
 #require shadow.lst
 #portage sys-apps/attr-2.4.46-r2
-#portage sys-process/procps-3.3.6
+#portage procps.lst
 #require openrc.lst
 #sed /etc/rc.conf s/^#rc_sys.\+$/rc_sys="xenU"/
 #require openssh.lst
@@ -29,6 +29,8 @@
 #require locales.lst
 #require nss-mdns.lst
 #require syslog.lst
+#require file.lst
+#require awk.lst
 #require zabbix-agent.lst
 #copy domU/fstab /etc/fstab
 /etc/group
@@ -45,7 +47,6 @@
 /bin/egrep
 /bin/fgrep
 /bin/fuser
-/bin/gawk
 /bin/gunzip
 /bin/gzip
 /bin/kill
@@ -65,14 +66,10 @@
 /etc/bash/bashrc
 /etc/fuse.conf
 /etc/host.conf
-/etc/hosts
 /etc/ld.so.conf
 /etc/ld.so.cache
 /etc/ld.so.conf.d/05binutils.conf
-/etc/profile
 /etc/init.d/fuse
-/etc/services
-/etc/shells
 /etc/ssl/certs/ca-certificates.crt
 /etc/runlevels/sysinit/devfs
 /etc/runlevels/sysinit/dmesg
@@ -109,11 +106,10 @@
 /sbin/runlevel
 /sbin/shutdown
 ./usr/bin/ar
-./usr/bin/awk
 ./usr/bin/clear
 ./usr/bin/cmp
+/usr/bin/curl
 #symlink /usr/bin/diff ../../bin/busybox
-/usr/bin/file
 ./usr/bin/find
 /usr/bin/getent
 /usr/bin/iconv
@@ -176,7 +172,6 @@
 ./usr/share/i18n/charmaps/ISO-8859-15.gz
 ./usr/share/i18n/charmaps/ISO-8859-2.gz
 ./usr/share/locale/locale.alias
-/usr/share/misc/magic.mgc
 ./usr/share/tabset/std
 ./usr/share/tabset/stdcrt
 ./usr/share/tabset/vt100
@@ -194,67 +189,7 @@
 ./usr/share/terminfo/x/xterm-color
 ./usr/share/terminfo/x/xterm-new
 ./usr/share/terminfo/x/xterm-vt220
-#pam
-/etc/pam.d/system-auth
-/etc/pam.d/system-remote-login
-/etc/pam.d/system-local-login
-/etc/pam.d/other
-/etc/pam.d/system-login
-/etc/pam.d/system-services
-/etc/environment
-/etc/security/access.conf
-/etc/security/group.conf
-/etc/security/limits.conf
-/etc/security/namespace.conf
-/etc/security/namespace.init
-/etc/security/pam_env.conf
-/etc/security/time.conf
-/lib/libpam.so
-/lib/libpam_misc.so
-/lib/libpamc.so
-/lib/security/pam_access.so
-/lib/security/pam_cracklib.so
-/lib/security/pam_debug.so
-/lib/security/pam_deny.so
-/lib/security/pam_echo.so
-/lib/security/pam_env.so
-/lib/security/pam_exec.so
-/lib/security/pam_faildelay.so
-/lib/security/pam_filter.so
-/lib/security/pam_filter/upperLOWER
-/lib/security/pam_ftp.so
-/lib/security/pam_group.so
-/lib/security/pam_issue.so
-/lib/security/pam_keyinit.so
-/lib/security/pam_lastlog.so
-/lib/security/pam_limits.so
-/lib/security/pam_listfile.so
-/lib/security/pam_localuser.so
-/lib/security/pam_loginuid.so
-/lib/security/pam_mail.so
-/lib/security/pam_mkhomedir.so
-/lib/security/pam_motd.so
-/lib/security/pam_namespace.so
-/lib/security/pam_nologin.so
-/lib/security/pam_permit.so
-/lib/security/pam_pwhistory.so
-/lib/security/pam_rhosts.so
-/lib/security/pam_rootok.so
-/lib/security/pam_securetty.so
-/lib/security/pam_shells.so
-/lib/security/pam_stress.so
-/lib/security/pam_succeed_if.so
-/lib/security/pam_tally.so
-/lib/security/pam_tally2.so
-/lib/security/pam_time.so
-/lib/security/pam_timestamp.so
-/lib/security/pam_umask.so
-/lib/security/pam_unix.so
-/lib/security/pam_userdb.so
-/lib/security/pam_warn.so
-/lib/security/pam_wheel.so
-/lib/security/pam_xauth.so
-
+#require pam.lst
 #require avahi.lst
 
 # nmbd

@@ -736,9 +736,7 @@
 
 /usr/lib/perl5/vendor_perl/5.12.4/File/Listing.pm
 
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Cookies.pm
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Cookies/Microsoft.pm
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Cookies/Netscape.pm
+#portage dev-perl/HTTP-Cookies-6.0.1-r1
 
 /usr/lib/perl5/vendor_perl/5.12.4/HTTP/Daemon.pm
 

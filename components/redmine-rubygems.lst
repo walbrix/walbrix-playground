@@ -538,16 +538,7 @@
 /usr/lib/ruby/gems/1.9.1/gems/test-unit-2.5.3/lib/test/unit/version.rb
 /usr/lib/ruby/gems/1.9.1/specifications/test-unit-2.5.3.gemspec
 
-# dev-ruby/xpath
-/usr/lib/ruby/gems/1.9.1/gems/xpath-1.0.0/lib/xpath.rb
-/usr/lib/ruby/gems/1.9.1/gems/xpath-1.0.0/lib/xpath/dsl.rb
-/usr/lib/ruby/gems/1.9.1/gems/xpath-1.0.0/lib/xpath/expression.rb
-/usr/lib/ruby/gems/1.9.1/gems/xpath-1.0.0/lib/xpath/html.rb
-/usr/lib/ruby/gems/1.9.1/gems/xpath-1.0.0/lib/xpath/literal.rb
-/usr/lib/ruby/gems/1.9.1/gems/xpath-1.0.0/lib/xpath/renderer.rb
-/usr/lib/ruby/gems/1.9.1/gems/xpath-1.0.0/lib/xpath/union.rb
-/usr/lib/ruby/gems/1.9.1/gems/xpath-1.0.0/lib/xpath/version.rb
-/usr/lib/ruby/gems/1.9.1/specifications/xpath-1.0.0.gemspec
+#portage dev-ruby/xpath-2.0.0-r1
 
 # dev-ruby/rubyzip
 /usr/lib/ruby/gems/1.9.1/gems/rubyzip-0.9.9/lib/zip/compressor.rb
@@ -609,13 +600,5 @@
 
 #portage dev-ruby/selenium-webdriver-2.35.1
 
-# dev-ruby/bourne
-/usr/lib/ruby/gems/1.9.1/gems/bourne-1.3.0/lib/bourne.rb
-/usr/lib/ruby/gems/1.9.1/gems/bourne-1.3.0/lib/bourne/api.rb
-/usr/lib/ruby/gems/1.9.1/gems/bourne-1.3.0/lib/bourne/expectation.rb
-/usr/lib/ruby/gems/1.9.1/gems/bourne-1.3.0/lib/bourne/invocation.rb
-/usr/lib/ruby/gems/1.9.1/gems/bourne-1.3.0/lib/bourne/mock.rb
-/usr/lib/ruby/gems/1.9.1/gems/bourne-1.3.0/lib/bourne/mockery.rb
-/usr/lib/ruby/gems/1.9.1/gems/bourne-1.3.0/lib/bourne/version.rb
-/usr/lib/ruby/gems/1.9.1/specifications/bourne-1.3.0.gemspec
+#portage dev-ruby/bourne-1.5.0-r1
 

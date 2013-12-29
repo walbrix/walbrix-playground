@@ -1,3 +1,4 @@
-#portage sys-fs/udev-204
+#portage sys-fs/udev-208
 #portage sys-fs/udev-init-scripts-26
-
+#dir /etc/udev/rules.d
+#chrootexec touch /etc/udev/rules.d/80-net-name-slot.rules

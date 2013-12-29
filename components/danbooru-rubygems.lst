@@ -166,42 +166,7 @@
 /usr/lib/ruby/gems/1.9.1/gems/uglifier-1.3.0/lib/uglify.js
 /usr/lib/ruby/gems/1.9.1/specifications/uglifier-1.3.0.gemspec
 
-# dev-ruby/chronic
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/chronic.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/grabber.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/handler.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/handlers.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/mini_date.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/numerizer.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/ordinal.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/pointer.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeater.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_day.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_day_name.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_day_portion.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_fortnight.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_hour.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_minute.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_month.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_month_name.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_season.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_season_name.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_second.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_time.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_week.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_weekday.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_weekend.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/repeaters/repeater_year.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/scalar.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/season.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/separator.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/span.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/tag.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/time_zone.rb
-/usr/lib/ruby/gems/1.9.1/gems/chronic-0.7.0/lib/chronic/token.rb
-/usr/lib/ruby/gems/1.9.1/specifications/chronic-0.7.0.gemspec
-
+#portage dev-ruby/chronic-0.10.2
 
 # ffaker
 #copy danbooru/ffaker-1.15.0.gem /ffaker.gem

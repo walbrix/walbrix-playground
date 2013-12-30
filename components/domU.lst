@@ -17,8 +17,7 @@
 #require net-tools.lst
 #require shadow.lst
 #portage sys-apps/attr-2.4.46-r2
-#portage procps.lst
-#require openrc.lst
+#require procps.lst
 #sed /etc/rc.conf s/^#rc_sys.\+$/rc_sys="xenU"/
 #require openssh.lst
 #require openssl.lst
@@ -190,6 +189,7 @@
 ./usr/share/terminfo/x/xterm-new
 ./usr/share/terminfo/x/xterm-vt220
 #require pam.lst
+#require openrc.lst
 #require avahi.lst
 
 # nmbd

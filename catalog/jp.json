@@ -1,4 +1,5 @@
 [
+    {"id":"centos","file":"i686/centos-i686-jp.json"},
     {"id":"owncloud","file":"i686/owncloud-i686-jp.json"},
     {"id":"aipo","file":"i686/aipo-i686-jp.json"},
     {"id":"redmine","file":"i686/redmine-i686-jp.json"},
@@ -8,7 +9,6 @@
     {"id":"concrete5","file":"i686/concrete5-i686-jp.json"},
     {"id":"mtos","file":"i686/mtos-i686-jp.json"},
     {"id":"tt-rss","file":"i686/tt-rss-i686-jp.json"},
-    {"id":"centos","file":"i686/centos-i686-jp.json"},
     {"id":"wordpress","file":"i686/wordpress-i686-jp.json"},
     {"id":"danbooru","file":"i686/danbooru-i686-jp.json"},
     {"id":"clipbucket","file":"i686/clipbucket-i686-jp.json"},

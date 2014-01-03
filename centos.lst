@@ -5,7 +5,7 @@
 #chrootexec echo "$(ARCH)-centos-linux" > /etc/rpm/platform
 #sed /etc/sysconfig/init s/^ACTIVE_CONSOLES=.*$/ACTIVE_CONSOLES=\/dev\/hvc0/
 #copy centos/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
-#chrootexec echo "hvc0" >> /etc/securetty
+#chrootexec echo "hvc0" >> /etc/securetty && rm /etc/init/serial.conf
 #copy centos/network /etc/sysconfig/network
 #patchsinglefile /etc/rc.d/rc.sysinit centos/rc.sysinit.zramswap.patch
 #sed /etc/shadow s/^\(root:\)[^:]*\(:.*\)$/\1\2/
@@ -17,7 +17,7 @@
 #chrootexec chkconfig iptables off
 #chrootexec yum clean -y all
 #chrootexec yum update -y
-#chrootexec yum install -y samba avahi ntp lzo dhclient openssh-server
+#chrootexec yum install -y samba4 avahi ntp lzo dhclient openssh-server rsyslog
 #chrootexec chkconfig nmb on
 #chrootexec chkconfig ntpd on
 #chrootexec yum clean -y all
@@ -30,8 +30,8 @@
 #chrootexec chkconfig mysqld on
 #chrootexec chkconfig vsftpd on
 #copy centos/index.html /var/www/html/index.html
-#extract centos/phpMyAdmin-3.5.7-all-languages.tar.xz /var/www/html
-#chrootexec mv /var/www/html/phpMyAdmin-3.5.7-all-languages /var/www/html/phpmyadmin
+##extract centos/phpMyAdmin-3.5.7-all-languages.tar.xz /var/www/html
+#chrootexec wget -O - http://downloads.sourceforge.net/project/phpmyadmin/phpMyAdmin/4.1.3/phpMyAdmin-4.1.3-all-languages.tar.xz | tar Jxvf - -C /var/www/html && mv /var/www/html/phpMyAdmin-* /var/www/html/phpmyadmin
 #copy phpmyadmin/config.inc.php /var/www/html/phpmyadmin/config.inc.php
 #chrootexec chown -R apache.apache /var/www /var/log/httpd
 #patchsinglefile /etc/my.cnf centos/my.cnf.patch

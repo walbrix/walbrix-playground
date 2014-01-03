@@ -1,46 +1,129 @@
-<html lang="ja">
+<!-- hoge -->
+<html lang="ja" ng-app>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>CentOS</title>
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/redmond/jquery-ui.css" type="text/css"/>
-	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-	<script type="text/javascript">google.load("jquery", "1.4.2");</script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
-	<script type="text/javascript">google.load("jqueryui", "1.8.1");</script>
-	<script language="JavaScript"><!--
-	  $(function(){
-	    var hostname = location.hostname;
-	    $("#tabs").tabs();
-		$("span.hostname").html(hostname);
-	  });
-	//--></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CentOS - Walbrix仮想アプライアンス</title>
+    <style type="text/css">
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+    </style>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script language="JavaScript"><!--
+        $(function () {
+            $("span.hostname").text(location.hostname);
+        });
+    //--></script>
   </head>
 
-  <h1>CentOS</h1>
+  <body>
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://www.walbrix.net">Walbrixについて</a></li>
+        </ul>
+        <h3 class="text-muted">Walbrix 仮想アプライアンス</h3>
+      </div>
+      <div class="jumbotron">
+	<h1>CentOS</h1>
+	<p>Apache, MySQL, PHPがインストール済みの CentOSサーバ環境です</p>
+	<p>オフィシャルサイト: <a href="http://www.centos.org">http://www.centos.org</a></p>
+      </div>
+      <h3>MySQLについて</h3>
+      <p><a href="/phpmyadmin/">phpMyAdmin</a>で MySQLの管理を行うことができます。<br/>
+      MySQLには管理者 (root) で、パスワードは無しでログインできます。設定により、パスワードなしでログインできるのは LAN内からのアクセスのみですので、必要に応じてパスワードを設定してください。</p>
+      <h3>Webコンテンツの編集</h3>
+      <p>Windows共有で下記の共有フォルダへアクセスすることが出来ます。htmlファイル、phpファイル、画像、css、JavaScriptなどをここに保存することで、Webブラウザからアクセス可能になります。</p>
+      <ul>
+	<li>¥¥<span class="hostname">HOSTNAME</span>¥html - Webサーバのコンテンツを配置する場所(このページもここにあります)</li>
+      </ul>
+      <h3>PHPについて</h3>
+      <p>標準で　GDライブラリが組み込まれており、mbstringも有効になっています。</p>
+      <h3>SSHによるログイン</h3>
+      <p>sshでログインすることもできます。rootの初期パスワードは Walbrixのシリアルナンバー（未登録の場合 WBFREE01）です。</p>
 
-  <div id="tabs">
-	<ul>
-		<li><a href="#tabs-1">概要と使い方</a></li>
-		<li><a href="#tabs-2">追加情報</a></li>
-	</ul>
-	<div id="tabs-1">
-	  Apache, MySQL, PHPがインストール済みの CentOSサーバ環境です。
-	  <h3>MySQLについて</h3>
-	  <a href="/phpmyadmin/">phpMyAdmin</a>で MySQLの管理を行うことができます。<br/>
-	  MySQLには管理者 (root) で、パスワードは無しでログインできます。設定により、パスワードなしでログインできるのは LAN内からのアクセスのみですので、必要に応じてパスワードを設定してください。
-	  <h3>Webコンテンツの編集</h3>
-	  Windows共有で下記の共有フォルダへアクセスすることが出来ます。htmlファイル、phpファイル、画像、css、JavaScriptなどをここに保存することで、Webブラウザからアクセス可能になります。
-	  <ul>
-		<li>￥￥<span class="hostname">HOSTNAME</span>￥￥html - Webサーバのコンテンツを配置する場所(このページもここにあります)</li>
-	  </ul>
-	  <h3>PHPについて</h3>
-	  標準で　GDライブラリが組み込まれており、mbstringも有効になっています。
-	  <h3>SSHによるログイン</h3>
-	  sshでログインすることもできます。rootの初期パスワードは Walbrixのシリアルナンバー（未登録の場合 WBFREE01）です。
-	</div>
-	<div id="tabs-2">
-	  <a href="http://www.centos.org/" target="_blank">CentOS オフィシャルサイト</a>
-	</div>
-	<div align="right" style="margin-top:1em;"><a href="http://www.walbrix.net/">Walbrix</a></div>
-  </div>
+      <div class="footer">
+	<p>© <a href="http://www.walbrix.com/jp/">Walbrix Corporation</a> 2009-2014</p>
+      </div>
+    </div>
 </html>

@@ -1,2 +1,2 @@
 #portage sys-apps/gawk-4.0.2
-
+#symlink /usr/bin/awk gawk

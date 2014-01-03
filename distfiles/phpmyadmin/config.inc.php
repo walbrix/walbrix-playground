@@ -1,16 +1,15 @@
 <?php
-// from http://labs.unoh.net/2009/03/ip.html
-function inCIDR($cidr) {
-    $ip = $_SERVER['REMOTE_ADDR'];
-    list($network, $mask_bit_len) = explode('/', $cidr);
-    $host = 32 - $mask_bit_len;
-    $net = ip2long($network) >> $host << $host; // 11000000101010000000000000000000
-    $ip_net = ip2long($ip) >> $host << $host; // 11000000101010000000000000000000
-    return $net === $ip_net;
+function isAccessFromPrivateNetwork() {
+    $remote_addr = $_SERVER['REMOTE_ADDR'];
+    if (strpos($remote_addr, "fe80::") === 0) return true;
+    $arr = explode(".", $remote_addr);
+    if (count($arr) !== 4) return false;
+    $first_octet = intval($arr[0]);
+    if ($first_octet === 10) return true;
+    $second_octet = intval($arr[1]);
+    if ($first_octet === 192 && $second_octet === 168) return true;
+    return ($first_octet === 172 && $second_octet >= 16 && $second_octet <= 31);
 }
-                    
-$private_access = (inCIDR("192.168.0.0/16") or inCIDR("172.16.0.0/12") or inCIDR("10.0.0.0/8"));
-if ($private_access) {
-    $cfg['Servers'][1]['AllowNoPassword'] = true;
-}
+
+$cfg['Servers'][1]['AllowNoPassword'] = isAccessFromPrivateNetwork();
 ?>

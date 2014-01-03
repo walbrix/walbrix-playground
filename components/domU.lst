@@ -18,14 +18,12 @@
 #require shadow.lst
 #portage sys-apps/attr-2.4.46-r2
 #require procps.lst
-#sed /etc/rc.conf s/^#rc_sys.\+$/rc_sys="xenU"/
+#dir /etc/runlevels/default
 #require openssh.lst
 #require openssl.lst
 #require openvpn.lst
 #require ntp.lst
-#require udev.lst
 #require timezone-data.lst
-#require locales.lst
 #require nss-mdns.lst
 #require syslog.lst
 #require file.lst
@@ -81,7 +79,7 @@
 /etc/runlevels/boot/mtab
 /etc/runlevels/boot/procfs
 /etc/runlevels/boot/urandom
-/etc/runlevels/boot/net.lo
+#symlink /etc/runlevels/boot/net.lo /etc/init.d/net.lo
 /etc/runlevels/boot/sysctl
 /etc/runlevels/boot/swap
 #symlink /etc/init.d/net.eth0 net.lo
@@ -190,6 +188,9 @@
 ./usr/share/terminfo/x/xterm-vt220
 #require pam.lst
 #require openrc.lst
+#sed /etc/rc.conf s/^#rc_sys.\+$/rc_sys="xenU"/
+#require udev.lst
+#require locales.lst
 #require avahi.lst
 
 # nmbd

@@ -2,5 +2,4 @@
 /usr/lib/sendmail
 #require nano.lst
 #portage sys-process/vixie-cron-4.1-r14
-#dir /etc/runlevels/default
 #symlink /etc/runlevels/default/vixie-cron /etc/init.d/vixie-cron

@@ -10,5 +10,7 @@ $CONFIG = array (
   'installed' => true,
   'instanceid' => '5132f874f3da5',
   'passwordsalt' => '8a4459dd321a496e2f8fb6e3dd7f05',
-  'version' => '4.90.8',
+  'version' => '6.0.0.14',
+  'theme' => '',
+  'maintenance' => false,
 );

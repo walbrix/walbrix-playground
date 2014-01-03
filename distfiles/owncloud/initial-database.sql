@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.67, for pc-linux-gnu (i686)
+-- MySQL dump 10.13  Distrib 5.5.32, for Linux (i686)
 --
 -- Host: localhost    Database: owncloud
 -- ------------------------------------------------------
--- Server version	5.1.67
+-- Server version	5.5.32
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,10 +23,11 @@ DROP TABLE IF EXISTS `oc_appconfig`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `oc_appconfig` (
-  `appid` varchar(32) NOT NULL DEFAULT ' ',
-  `configkey` varchar(64) NOT NULL DEFAULT ' ',
-  `configvalue` longtext NOT NULL,
-  KEY `appconfig_appid_key_index` (`appid`,`configkey`)
+  `appid` varchar(32) NOT NULL DEFAULT '',
+  `configkey` varchar(64) NOT NULL DEFAULT '',
+  `configvalue` longtext,
+  PRIMARY KEY (`appid`,`configkey`),
+  KEY `appconfig_config_key_index` (`configkey`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -36,18 +37,18 @@ CREATE TABLE `oc_appconfig` (
 
 LOCK TABLES `oc_appconfig` WRITE;
 /*!40000 ALTER TABLE `oc_appconfig` DISABLE KEYS */;
-INSERT INTO `oc_appconfig` VALUES ('core','installedat','1362294922.833'),('core','lastupdatedat','1362294922.8397'),('core','remote_core.css','/core/minimizer.php'),('core','remote_core.js','/core/minimizer.php'),('files','installed_version','1.1.6'),('core','remote_files','files/appinfo/remote.php'),('core','remote_webdav','files/appinfo/remote.php'),('core','remote_filesync','files/appinfo/filesync.php'),('files','types','filesystem'),('files','enabled','yes'),('files_imageviewer','installed_version','1.0'),('files_imageviewer','enabled','yes'),('admin_migrate','installed_version','0.1'),('admin_migrate','enabled','yes'),('files_sharing','installed_version','0.3.3'),('core','public_files','files_sharing/public.php'),('core','public_webdav','files_sharing/public.php'),('files_sharing','types','filesystem'),('files_sharing','enabled','yes'),('files_texteditor','installed_version','0.3'),('files_texteditor','enabled','yes'),('media','installed_version','0.4.3'),('core','remote_ampache','media/remote.php'),('media','enabled','yes'),('contacts','installed_version','0.2.4'),('core','remote_contacts','contacts/appinfo/remote.php'),('core','remote_carddav','contacts/appinfo/remote.php'),('contacts','enabled','yes'),('files_versions','installed_version','1.0.2'),('files_versions','types','filesystem'),('files_versions','enabled','yes'),('files_pdfviewer','installed_version','0.1'),('files_pdfviewer','enabled','yes'),('calendar','installed_version','0.6.1'),('core','remote_calendar','calendar/appinfo/remote.php'),('core','remote_caldav','calendar/appinfo/remote.php'),('core','public_calendar','calendar/share.php'),('core','public_caldav','calendar/share.php'),('calendar','enabled','yes'),('files_odfviewer','installed_version','0.1'),('files_odfviewer','enabled','yes'),('gallery','installed_version','0.5.1'),('core','public_gallery','gallery/sharing.php'),('gallery','enabled','yes'),('user_migrate','installed_version','0.1'),('user_migrate','enabled','yes'),('core','backgroundjobs_task',''),('core','global_cache_gc_lastrun','1362294923'),('core','backgroundjobs_step','regular_tasks');
+INSERT INTO `oc_appconfig` VALUES ('core','installedat','1362294922.833'),('core','lastupdatedat','1362294922.8397'),('core','remote_core.css','/core/minimizer.php'),('core','remote_core.js','/core/minimizer.php'),('files','installed_version','1.1.7'),('core','remote_files','files/appinfo/remote.php'),('core','remote_webdav','files/appinfo/remote.php'),('core','remote_filesync','files/appinfo/filesync.php'),('files','types','filesystem'),('files','enabled','yes'),('files_imageviewer','installed_version','1.0'),('files_imageviewer','enabled','no'),('admin_migrate','installed_version','0.1'),('admin_migrate','enabled','no'),('files_sharing','installed_version','0.3.5'),('core','public_files','files_sharing/public.php'),('core','public_webdav','files_sharing/public.php'),('files_sharing','types','filesystem'),('files_sharing','enabled','yes'),('files_texteditor','installed_version','0.3'),('files_texteditor','enabled','yes'),('media','installed_version','0.4.3'),('core','remote_ampache','media/remote.php'),('media','enabled','no'),('contacts','installed_version','0.3'),('core','remote_contacts','contacts/appinfo/remote.php'),('core','remote_carddav','contacts/appinfo/remote.php'),('contacts','enabled','yes'),('files_versions','installed_version','1.0.3'),('files_versions','types','filesystem'),('files_versions','enabled','yes'),('files_pdfviewer','installed_version','0.2'),('files_pdfviewer','enabled','yes'),('calendar','installed_version','0.6.3'),('core','remote_calendar','calendar/appinfo/remote.php'),('core','remote_caldav','calendar/appinfo/remote.php'),('core','public_calendar','calendar/share.php'),('core','public_caldav','calendar/share.php'),('calendar','enabled','yes'),('files_odfviewer','installed_version','0.1'),('files_odfviewer','enabled','no'),('gallery','installed_version','0.5.3'),('core','public_gallery','gallery/public.php'),('gallery','enabled','yes'),('user_migrate','installed_version','0.1'),('user_migrate','enabled','no'),('core','backgroundjobs_task',''),('core','global_cache_gc_lastrun','1388747507'),('core','backgroundjobs_step','regular_tasks'),('contacts','types',''),('files_pdfviewer','types',''),('calendar','types',''),('gallery','types','filesystem'),('backgroundjob','lastjob','1');
 /*!40000 ALTER TABLE `oc_appconfig` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `oc_calendar_calendars`
+-- Table structure for table `oc_clndr_calendars`
 --
 
-DROP TABLE IF EXISTS `oc_calendar_calendars`;
+DROP TABLE IF EXISTS `oc_clndr_calendars`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_calendar_calendars` (
+CREATE TABLE `oc_clndr_calendars` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `userid` varchar(255) DEFAULT NULL,
   `displayname` varchar(100) DEFAULT NULL,
@@ -63,27 +64,27 @@ CREATE TABLE `oc_calendar_calendars` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `oc_calendar_calendars`
+-- Dumping data for table `oc_clndr_calendars`
 --
 
-LOCK TABLES `oc_calendar_calendars` WRITE;
-/*!40000 ALTER TABLE `oc_calendar_calendars` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_calendar_calendars` ENABLE KEYS */;
+LOCK TABLES `oc_clndr_calendars` WRITE;
+/*!40000 ALTER TABLE `oc_clndr_calendars` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oc_clndr_calendars` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `oc_calendar_objects`
+-- Table structure for table `oc_clndr_objects`
 --
 
-DROP TABLE IF EXISTS `oc_calendar_objects`;
+DROP TABLE IF EXISTS `oc_clndr_objects`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_calendar_objects` (
+CREATE TABLE `oc_clndr_objects` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `calendarid` int(10) unsigned NOT NULL DEFAULT '0',
-  `objecttype` varchar(40) NOT NULL DEFAULT ' ',
-  `startdate` datetime DEFAULT '0000-00-00 00:00:00',
-  `enddate` datetime DEFAULT '0000-00-00 00:00:00',
+  `objecttype` varchar(40) NOT NULL DEFAULT '',
+  `startdate` datetime DEFAULT '1970-01-01 00:00:00',
+  `enddate` datetime DEFAULT '1970-01-01 00:00:00',
   `repeating` int(11) DEFAULT NULL,
   `summary` varchar(255) DEFAULT NULL,
   `calendardata` longtext,
@@ -94,89 +95,89 @@ CREATE TABLE `oc_calendar_objects` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `oc_calendar_objects`
+-- Dumping data for table `oc_clndr_objects`
 --
 
-LOCK TABLES `oc_calendar_objects` WRITE;
-/*!40000 ALTER TABLE `oc_calendar_objects` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_calendar_objects` ENABLE KEYS */;
+LOCK TABLES `oc_clndr_objects` WRITE;
+/*!40000 ALTER TABLE `oc_clndr_objects` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oc_clndr_objects` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `oc_calendar_repeat`
+-- Table structure for table `oc_clndr_repeat`
 --
 
-DROP TABLE IF EXISTS `oc_calendar_repeat`;
+DROP TABLE IF EXISTS `oc_clndr_repeat`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_calendar_repeat` (
+CREATE TABLE `oc_clndr_repeat` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `eventid` int(10) unsigned NOT NULL DEFAULT '0',
   `calid` int(10) unsigned NOT NULL DEFAULT '0',
-  `startdate` datetime DEFAULT '0000-00-00 00:00:00',
-  `enddate` datetime DEFAULT '0000-00-00 00:00:00',
+  `startdate` datetime DEFAULT '1970-01-01 00:00:00',
+  `enddate` datetime DEFAULT '1970-01-01 00:00:00',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `oc_calendar_repeat`
+-- Dumping data for table `oc_clndr_repeat`
 --
 
-LOCK TABLES `oc_calendar_repeat` WRITE;
-/*!40000 ALTER TABLE `oc_calendar_repeat` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_calendar_repeat` ENABLE KEYS */;
+LOCK TABLES `oc_clndr_repeat` WRITE;
+/*!40000 ALTER TABLE `oc_clndr_repeat` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oc_clndr_repeat` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `oc_calendar_share_calendar`
+-- Table structure for table `oc_clndr_share_calendar`
 --
 
-DROP TABLE IF EXISTS `oc_calendar_share_calendar`;
+DROP TABLE IF EXISTS `oc_clndr_share_calendar`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_calendar_share_calendar` (
-  `owner` varchar(255) NOT NULL DEFAULT ' ',
-  `share` varchar(255) NOT NULL DEFAULT ' ',
-  `sharetype` varchar(6) NOT NULL DEFAULT ' ',
+CREATE TABLE `oc_clndr_share_calendar` (
+  `owner` varchar(255) NOT NULL,
+  `share` varchar(255) NOT NULL,
+  `sharetype` varchar(6) NOT NULL,
   `calendarid` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `permissions` tinyint(4) NOT NULL DEFAULT '0',
+  `permissions` smallint(6) NOT NULL,
   `active` int(11) NOT NULL DEFAULT '1'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `oc_calendar_share_calendar`
+-- Dumping data for table `oc_clndr_share_calendar`
 --
 
-LOCK TABLES `oc_calendar_share_calendar` WRITE;
-/*!40000 ALTER TABLE `oc_calendar_share_calendar` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_calendar_share_calendar` ENABLE KEYS */;
+LOCK TABLES `oc_clndr_share_calendar` WRITE;
+/*!40000 ALTER TABLE `oc_clndr_share_calendar` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oc_clndr_share_calendar` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `oc_calendar_share_event`
+-- Table structure for table `oc_clndr_share_event`
 --
 
-DROP TABLE IF EXISTS `oc_calendar_share_event`;
+DROP TABLE IF EXISTS `oc_clndr_share_event`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_calendar_share_event` (
-  `owner` varchar(255) NOT NULL DEFAULT ' ',
-  `share` varchar(255) NOT NULL DEFAULT ' ',
-  `sharetype` varchar(6) NOT NULL DEFAULT ' ',
+CREATE TABLE `oc_clndr_share_event` (
+  `owner` varchar(255) NOT NULL,
+  `share` varchar(255) NOT NULL,
+  `sharetype` varchar(6) NOT NULL,
   `eventid` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `permissions` tinyint(4) NOT NULL DEFAULT '0'
+  `permissions` smallint(6) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `oc_calendar_share_event`
+-- Dumping data for table `oc_clndr_share_event`
 --
 
-LOCK TABLES `oc_calendar_share_event` WRITE;
-/*!40000 ALTER TABLE `oc_calendar_share_event` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_calendar_share_event` ENABLE KEYS */;
+LOCK TABLES `oc_clndr_share_event` WRITE;
+/*!40000 ALTER TABLE `oc_clndr_share_event` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oc_clndr_share_event` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -188,7 +189,7 @@ DROP TABLE IF EXISTS `oc_contacts_addressbooks`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `oc_contacts_addressbooks` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `userid` varchar(255) NOT NULL DEFAULT ' ',
+  `userid` varchar(255) NOT NULL DEFAULT '',
   `displayname` varchar(255) DEFAULT NULL,
   `uri` varchar(200) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
@@ -232,6 +233,123 @@ CREATE TABLE `oc_contacts_cards` (
 LOCK TABLES `oc_contacts_cards` WRITE;
 /*!40000 ALTER TABLE `oc_contacts_cards` DISABLE KEYS */;
 /*!40000 ALTER TABLE `oc_contacts_cards` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `oc_contacts_cards_properties`
+--
+
+DROP TABLE IF EXISTS `oc_contacts_cards_properties`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `oc_contacts_cards_properties` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `userid` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `contactid` int(10) unsigned NOT NULL DEFAULT '0',
+  `name` varchar(64) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `preferred` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`),
+  KEY `cp_name_index` (`name`),
+  KEY `cp_value_index` (`value`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oc_contacts_cards_properties`
+--
+
+LOCK TABLES `oc_contacts_cards_properties` WRITE;
+/*!40000 ALTER TABLE `oc_contacts_cards_properties` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oc_contacts_cards_properties` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `oc_file_map`
+--
+
+DROP TABLE IF EXISTS `oc_file_map`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `oc_file_map` (
+  `logic_path` varchar(512) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `logic_path_hash` varchar(32) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `physic_path` varchar(512) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `physic_path_hash` varchar(32) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`logic_path_hash`),
+  UNIQUE KEY `file_map_pp_index` (`physic_path_hash`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oc_file_map`
+--
+
+LOCK TABLES `oc_file_map` WRITE;
+/*!40000 ALTER TABLE `oc_file_map` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oc_file_map` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `oc_filecache`
+--
+
+DROP TABLE IF EXISTS `oc_filecache`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `oc_filecache` (
+  `fileid` int(11) NOT NULL AUTO_INCREMENT,
+  `storage` int(11) NOT NULL DEFAULT '0',
+  `path` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `path_hash` varchar(32) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `parent` int(11) NOT NULL DEFAULT '0',
+  `name` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `mimetype` int(11) NOT NULL DEFAULT '0',
+  `mimepart` int(11) NOT NULL DEFAULT '0',
+  `size` bigint(20) NOT NULL DEFAULT '0',
+  `mtime` int(11) NOT NULL DEFAULT '0',
+  `storage_mtime` int(11) NOT NULL DEFAULT '0',
+  `encrypted` int(11) NOT NULL DEFAULT '0',
+  `unencrypted_size` bigint(20) NOT NULL DEFAULT '0',
+  `etag` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`fileid`),
+  UNIQUE KEY `fs_storage_path_hash` (`storage`,`path_hash`),
+  KEY `fs_parent_name_hash` (`parent`,`name`),
+  KEY `fs_storage_mimetype` (`storage`,`mimetype`),
+  KEY `fs_storage_mimepart` (`storage`,`mimepart`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oc_filecache`
+--
+
+LOCK TABLES `oc_filecache` WRITE;
+/*!40000 ALTER TABLE `oc_filecache` DISABLE KEYS */;
+INSERT INTO `oc_filecache` VALUES (1,1,'files','45b963397aa40d4a0063e0d85e4fe7a1',-1,'files',1,2,0,1362294684,0,0,0,'');
+/*!40000 ALTER TABLE `oc_filecache` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `oc_files_versions`
+--
+
+DROP TABLE IF EXISTS `oc_files_versions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `oc_files_versions` (
+  `user` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `size` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oc_files_versions`
+--
+
+LOCK TABLES `oc_files_versions` WRITE;
+/*!40000 ALTER TABLE `oc_files_versions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oc_files_versions` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -282,9 +400,9 @@ DROP TABLE IF EXISTS `oc_gallery_sharing`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `oc_gallery_sharing` (
-  `token` varchar(64) NOT NULL DEFAULT ' ',
+  `token` varchar(64) NOT NULL,
   `gallery_id` int(11) NOT NULL DEFAULT '0',
-  `recursive` tinyint(4) NOT NULL DEFAULT '0'
+  `recursive` smallint(6) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -305,8 +423,10 @@ DROP TABLE IF EXISTS `oc_group_admin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `oc_group_admin` (
-  `gid` varchar(64) NOT NULL DEFAULT ' ',
-  `uid` varchar(64) NOT NULL DEFAULT ' '
+  `gid` varchar(64) NOT NULL DEFAULT '',
+  `uid` varchar(64) NOT NULL DEFAULT '',
+  PRIMARY KEY (`gid`,`uid`),
+  KEY `group_admin_uid` (`uid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -327,8 +447,9 @@ DROP TABLE IF EXISTS `oc_group_user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `oc_group_user` (
-  `gid` varchar(64) NOT NULL DEFAULT ' ',
-  `uid` varchar(64) NOT NULL DEFAULT ' '
+  `gid` varchar(64) NOT NULL DEFAULT '',
+  `uid` varchar(64) NOT NULL DEFAULT '',
+  PRIMARY KEY (`gid`,`uid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -350,7 +471,7 @@ DROP TABLE IF EXISTS `oc_groups`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `oc_groups` (
-  `gid` varchar(64) NOT NULL DEFAULT ' ',
+  `gid` varchar(64) NOT NULL DEFAULT '',
   PRIMARY KEY (`gid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -366,6 +487,33 @@ INSERT INTO `oc_groups` VALUES ('admin');
 UNLOCK TABLES;
 
 --
+-- Table structure for table `oc_jobs`
+--
+
+DROP TABLE IF EXISTS `oc_jobs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `oc_jobs` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `class` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `argument` varchar(256) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `last_run` int(11) DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `job_class_index` (`class`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oc_jobs`
+--
+
+LOCK TABLES `oc_jobs` WRITE;
+/*!40000 ALTER TABLE `oc_jobs` DISABLE KEYS */;
+INSERT INTO `oc_jobs` VALUES (1,'OC\\Cache\\FileGlobalGC','null',1388747507),(2,'OC\\BackgroundJob\\Legacy\\RegularJob','[\"\\\\OC\\\\Files\\\\Cache\\\\BackgroundWatcher\",\"checkNext\"]',0);
+/*!40000 ALTER TABLE `oc_jobs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `oc_locks`
 --
 
@@ -376,11 +524,11 @@ CREATE TABLE `oc_locks` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `userid` varchar(64) DEFAULT NULL,
   `owner` varchar(100) DEFAULT NULL,
-  `timeout` int(10) unsigned DEFAULT '0',
-  `created` bigint(20) DEFAULT '0',
+  `timeout` int(10) unsigned DEFAULT NULL,
+  `created` bigint(20) DEFAULT NULL,
   `token` varchar(100) DEFAULT NULL,
-  `scope` tinyint(4) DEFAULT '0',
-  `depth` tinyint(4) DEFAULT '0',
+  `scope` smallint(6) DEFAULT NULL,
+  `depth` smallint(6) DEFAULT NULL,
   `uri` longtext,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -529,6 +677,55 @@ LOCK TABLES `oc_media_users` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `oc_mimetypes`
+--
+
+DROP TABLE IF EXISTS `oc_mimetypes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `oc_mimetypes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mimetype` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `mimetype_id_index` (`mimetype`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oc_mimetypes`
+--
+
+LOCK TABLES `oc_mimetypes` WRITE;
+/*!40000 ALTER TABLE `oc_mimetypes` DISABLE KEYS */;
+INSERT INTO `oc_mimetypes` VALUES (2,'httpd'),(1,'httpd/unix-directory');
+/*!40000 ALTER TABLE `oc_mimetypes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `oc_permissions`
+--
+
+DROP TABLE IF EXISTS `oc_permissions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `oc_permissions` (
+  `fileid` int(11) NOT NULL DEFAULT '0',
+  `user` varchar(64) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `permissions` int(11) NOT NULL DEFAULT '0',
+  KEY `id_user_index` (`fileid`,`user`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oc_permissions`
+--
+
+LOCK TABLES `oc_permissions` WRITE;
+/*!40000 ALTER TABLE `oc_permissions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oc_permissions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `oc_pictures_images_cache`
 --
 
@@ -536,10 +733,10 @@ DROP TABLE IF EXISTS `oc_pictures_images_cache`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `oc_pictures_images_cache` (
-  `uid_owner` varchar(64) NOT NULL DEFAULT ' ',
-  `path` varchar(256) NOT NULL DEFAULT ' ',
-  `width` int(11) NOT NULL DEFAULT '0',
-  `height` int(11) NOT NULL DEFAULT '0'
+  `uid_owner` varchar(64) NOT NULL,
+  `path` varchar(256) NOT NULL,
+  `width` int(11) NOT NULL,
+  `height` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -560,11 +757,11 @@ DROP TABLE IF EXISTS `oc_preferences`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `oc_preferences` (
-  `userid` varchar(64) NOT NULL DEFAULT ' ',
-  `appid` varchar(32) NOT NULL DEFAULT ' ',
-  `configkey` varchar(64) NOT NULL DEFAULT ' ',
+  `userid` varchar(64) NOT NULL DEFAULT '',
+  `appid` varchar(32) NOT NULL DEFAULT '',
+  `configkey` varchar(64) NOT NULL DEFAULT '',
   `configvalue` longtext,
-  KEY `pref_userid_appid_key_index` (`userid`,`appid`,`configkey`)
+  PRIMARY KEY (`userid`,`appid`,`configkey`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -574,8 +771,34 @@ CREATE TABLE `oc_preferences` (
 
 LOCK TABLES `oc_preferences` WRITE;
 /*!40000 ALTER TABLE `oc_preferences` DISABLE KEYS */;
-INSERT INTO `oc_preferences` VALUES ('admin','core','lang','ja_JP');
+INSERT INTO `oc_preferences` VALUES ('admin','core','lang','ja_JP'),('admin','files','cache_version','5');
 /*!40000 ALTER TABLE `oc_preferences` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `oc_privatedata`
+--
+
+DROP TABLE IF EXISTS `oc_privatedata`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `oc_privatedata` (
+  `keyid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `app` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `key` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `value` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`keyid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oc_privatedata`
+--
+
+LOCK TABLES `oc_privatedata` WRITE;
+/*!40000 ALTER TABLE `oc_privatedata` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oc_privatedata` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -586,10 +809,13 @@ DROP TABLE IF EXISTS `oc_properties`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `oc_properties` (
-  `userid` varchar(64) NOT NULL DEFAULT ' ',
-  `propertypath` varchar(255) NOT NULL DEFAULT ' ',
-  `propertyname` varchar(255) NOT NULL DEFAULT ' ',
-  `propertyvalue` varchar(255) NOT NULL DEFAULT ' '
+  `userid` varchar(64) NOT NULL DEFAULT '',
+  `propertypath` varchar(255) NOT NULL DEFAULT '',
+  `propertyname` varchar(255) NOT NULL DEFAULT '',
+  `propertyvalue` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`),
+  KEY `property_index` (`userid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -637,22 +863,25 @@ DROP TABLE IF EXISTS `oc_share`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `oc_share` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `share_type` tinyint(4) NOT NULL DEFAULT '0',
+  `share_type` smallint(6) NOT NULL DEFAULT '0',
   `share_with` varchar(255) DEFAULT NULL,
-  `uid_owner` varchar(255) NOT NULL DEFAULT ' ',
-  `parent` int(11) DEFAULT '0',
-  `item_type` varchar(64) NOT NULL DEFAULT ' ',
+  `uid_owner` varchar(255) NOT NULL DEFAULT '',
+  `parent` int(11) DEFAULT NULL,
+  `item_type` varchar(64) NOT NULL DEFAULT '',
   `item_source` varchar(255) DEFAULT NULL,
   `item_target` varchar(255) DEFAULT NULL,
-  `file_source` int(11) DEFAULT '0',
+  `file_source` int(11) DEFAULT NULL,
   `file_target` varchar(512) DEFAULT NULL,
-  `permissions` tinyint(4) NOT NULL DEFAULT '0',
+  `permissions` smallint(6) NOT NULL DEFAULT '0',
   `stime` bigint(20) NOT NULL DEFAULT '0',
-  `accepted` tinyint(4) NOT NULL DEFAULT '0',
+  `accepted` smallint(6) NOT NULL DEFAULT '0',
   `expiration` datetime DEFAULT NULL,
   `token` varchar(32) DEFAULT NULL,
+  `mail_send` smallint(6) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
-  KEY `token_index` (`token`)
+  KEY `token_index` (`token`),
+  KEY `item_share_type_index` (`item_type`,`share_type`),
+  KEY `file_source_index` (`file_source`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -666,6 +895,31 @@ LOCK TABLES `oc_share` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `oc_storages`
+--
+
+DROP TABLE IF EXISTS `oc_storages`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `oc_storages` (
+  `id` varchar(64) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `numeric_id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`numeric_id`),
+  UNIQUE KEY `storages_id_index` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oc_storages`
+--
+
+LOCK TABLES `oc_storages` WRITE;
+/*!40000 ALTER TABLE `oc_storages` DISABLE KEYS */;
+INSERT INTO `oc_storages` VALUES ('home::admin',1);
+/*!40000 ALTER TABLE `oc_storages` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `oc_users`
 --
 
@@ -673,8 +927,9 @@ DROP TABLE IF EXISTS `oc_users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `oc_users` (
-  `uid` varchar(64) NOT NULL DEFAULT ' ',
-  `password` varchar(255) NOT NULL DEFAULT ' ',
+  `uid` varchar(64) NOT NULL DEFAULT '',
+  `password` varchar(255) NOT NULL DEFAULT '',
+  `displayname` varchar(64) DEFAULT NULL,
   PRIMARY KEY (`uid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -685,8 +940,61 @@ CREATE TABLE `oc_users` (
 
 LOCK TABLES `oc_users` WRITE;
 /*!40000 ALTER TABLE `oc_users` DISABLE KEYS */;
-INSERT INTO `oc_users` VALUES ('admin','$2a$08$hxljcaUp19Xg79RbRoo7gu9LuN9CAewae1nnPlP8FNGWq2Pmoge.C');
+INSERT INTO `oc_users` VALUES ('admin','$2a$08$hxljcaUp19Xg79RbRoo7gu9LuN9CAewae1nnPlP8FNGWq2Pmoge.C',NULL);
 /*!40000 ALTER TABLE `oc_users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `oc_vcategory`
+--
+
+DROP TABLE IF EXISTS `oc_vcategory`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `oc_vcategory` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `uid` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `type` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `category` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  KEY `uid_index` (`uid`),
+  KEY `type_index` (`type`),
+  KEY `category_index` (`category`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oc_vcategory`
+--
+
+LOCK TABLES `oc_vcategory` WRITE;
+/*!40000 ALTER TABLE `oc_vcategory` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oc_vcategory` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `oc_vcategory_to_object`
+--
+
+DROP TABLE IF EXISTS `oc_vcategory_to_object`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `oc_vcategory_to_object` (
+  `objid` int(10) unsigned NOT NULL DEFAULT '0',
+  `categoryid` int(10) unsigned NOT NULL DEFAULT '0',
+  `type` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`categoryid`,`objid`,`type`),
+  KEY `vcategory_objectd_index` (`objid`,`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `oc_vcategory_to_object`
+--
+
+LOCK TABLES `oc_vcategory_to_object` WRITE;
+/*!40000 ALTER TABLE `oc_vcategory_to_object` DISABLE KEYS */;
+/*!40000 ALTER TABLE `oc_vcategory_to_object` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -698,4 +1006,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-03-03 16:16:23
+-- Dump completed on 2014-01-03 20:16:25

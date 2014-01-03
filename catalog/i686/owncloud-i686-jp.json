@@ -1,1 +1,9 @@
-{"description": "ownCloudは、ブラウザや WebDAVクライアントからアクセス可能なクラウドストレージを構築するためのオープンソースソフトウェアです。", "title": "ownCloud 4.5.7", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/owncloud-4.5.7-i686-jp.tar.xz", "minimum_ram": 96, "images": [{"url": "http://va.walbrix.net/img/owncloud01.png"}], "id": "owncloud"}
+{
+    "description": "ownCloudは、ブラウザや WebDAVクライアントからアクセス可能なクラウドストレージを構築するためのオープンソースソフトウェアです。",
+    "title": "ownCloud 6.0.0a",
+    "minimum_hd": 2,
+    "tarball": "http://dist.walbrix.net/va/owncloud-6.0.0a-i686-jp.tar.xz",
+    "minimum_ram": 96,
+    "images": [{"url": "http://va.walbrix.net/img/owncloud01.png"}],
+    "id": "owncloud"
+}

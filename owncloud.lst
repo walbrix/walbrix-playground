@@ -10,7 +10,7 @@
 #copy owncloud/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1owncloud\2/
 #copy domU/fstab-with-zramswap /etc/fstab
-#chrootexec wget -O - http://download.owncloud.org/community/owncloud-5.0.13.tar.bz2 | tar jxvf - -C /var/www/localhost
+#chrootexec wget -O - http://download.owncloud.org/community/owncloud-6.0.0a.tar.bz2 | tar jxvf - -C /var/www/localhost
 #chrootexec mv /var/www/localhost/owncloud/* /var/www/localhost/htdocs/
 #chrootexec mv /var/www/localhost/owncloud/.htaccess /var/www/localhost/htdocs/
 #chrootexec rmdir /var/www/localhost/owncloud

@@ -18,10 +18,7 @@
 /usr/share/ffmpeg/libx264-ipod320.ffpreset
 /usr/share/ffmpeg/libx264-ipod640.ffpreset
 
-# media-video/gpac
-/usr/bin/MP4Box
-/usr/bin/MP4Client
-/usr/share/gpac/gpac.mp4
+#portage media-video/gpac-0.5.0-r1
 
 # media-sound/lame
 /usr/bin/lame

@@ -25,13 +25,7 @@
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Sys/Syslog.pm
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Sys/Syslog/Syslog.so
 
-# dev-perl/PlRPC
-/usr/lib/perl5/vendor_perl/5.12.4/Bundle/PlRPC.pm
-/usr/lib/perl5/vendor_perl/5.12.4/RPC/PlClient.pm
-/usr/lib/perl5/vendor_perl/5.12.4/RPC/PlClient/Comm.pm
-/usr/lib/perl5/vendor_perl/5.12.4/RPC/PlServer.pm
-/usr/lib/perl5/vendor_perl/5.12.4/RPC/PlServer/Comm.pm
-/usr/lib/perl5/vendor_perl/5.12.4/RPC/PlServer/Test.pm
+#portage dev-perl/PlRPC-0.202.0-r1
 
 # dev-perl/DBI
 /usr/bin/dbilogstrip

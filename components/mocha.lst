@@ -97,8 +97,5 @@
 /usr/lib/ruby/gems/1.9.1/gems/mocha-0.13.3/lib/mocha_standalone.rb
 /usr/lib/ruby/gems/1.9.1/specifications/mocha-0.13.3.gemspec
 
-# dev-ruby/metaclass
-/usr/lib/ruby/gems/1.9.1/gems/metaclass-0.0.1/lib/metaclass.rb
-/usr/lib/ruby/gems/1.9.1/gems/metaclass-0.0.1/lib/metaclass/object_methods.rb
-/usr/lib/ruby/gems/1.9.1/gems/metaclass-0.0.1/lib/metaclass/version.rb
-/usr/lib/ruby/gems/1.9.1/specifications/metaclass-0.0.1.gemspec
+#portage dev-ruby/metaclass-0.0.1-r1
+

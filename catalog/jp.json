@@ -1,4 +1,5 @@
 [
+    {"id":"gitbucket","file":"i686/gitbucket-i686-jp.json"},
     {"id":"centos","file":"i686/centos-i686-jp.json"},
     {"id":"owncloud","file":"i686/owncloud-i686-jp.json"},
     {"id":"aipo","file":"i686/aipo-i686-jp.json"},

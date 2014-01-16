@@ -6,10 +6,10 @@
 #portage dev-java/jdbc-mysql-5.1.18
 #portage dev-java/jdbc-postgresql-9.1_p902
 #portage dev-java/commons-dbcp-1.4-r2
-#portage dev-java/tomcat-servlet-api-7.0.42
+#portage dev-java/tomcat-servlet-api-7.0.47
 #portage dev-java/eclipse-ecj-4.2.1
 #portage dev-java/ant-eclipse-ecj-4.2.1
-#portage www-servers/tomcat-7.0.42
+#portage www-servers/tomcat-7.0.47
 
 #chrootexec /usr/share/tomcat-7/gentoo/tomcat-instance-manager.bash --create
 

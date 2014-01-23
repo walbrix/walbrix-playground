@@ -1,0 +1,4 @@
+/boot/kernel-genkernel-x86_64-3.10.25-aufs
+#symlink /boot/kernel kernel-genkernel-x86_64-3.10.25-aufs
+#require pvgrub.lst
+#kernel /boot/kernel

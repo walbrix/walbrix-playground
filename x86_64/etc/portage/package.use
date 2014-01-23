@@ -7,6 +7,7 @@ dev-lang/php apache2 cjk gd mysql mysqli xsl zip pdo
 app-editors/emacs -gpm -xpm -gtk3
 dev-python/jinja vim-syntax i18n
 sys-kernel/vanilla-sources symlink
+dev-vcs/git -perl
 net-analyzer/zabbix agent -sqlite
 dev-lang/python sqlite
 dev-java/java-config -python_targets_python3_2

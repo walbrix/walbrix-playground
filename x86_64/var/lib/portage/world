@@ -4,6 +4,7 @@ app-arch/zip
 app-editors/emacs
 app-editors/nano
 app-editors/vim
+app-emulation/docker
 app-portage/gentoolkit
 dev-db/mysql
 dev-db/phpmyadmin
@@ -41,6 +42,7 @@ sys-auth/nss-mdns
 sys-auth/nss-myhostname
 sys-fs/fuse
 sys-fs/xfsprogs
+sys-kernel/aufs-sources
 sys-kernel/genkernel
 sys-kernel/vanilla-sources
 sys-process/vixie-cron

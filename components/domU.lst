@@ -1,16 +1,5 @@
-#dir /proc
-#dir /etc
+#require rootfs.lst
 #require run.lst
-/tmp/.keep
-/root/.keep
-/home/.keep
-/sys/.keep
-/var/tmp/.keep
-/var/log/.keep
-/var/cache/.keep
-/var/lib/.keep
-/var/spool/.keep
-/mnt/.keep
 #require dev.lst
 #require coreutils.lst
 #require util-linux.lst
@@ -18,7 +7,6 @@
 #require shadow.lst
 #portage sys-apps/attr-2.4.46-r2
 #require procps.lst
-#dir /etc/runlevels/default
 #require openssh.lst
 #require openssl.lst
 #require openvpn.lst
@@ -30,43 +18,30 @@
 #require awk.lst
 #require zabbix-agent.lst
 #copy domU/fstab /etc/fstab
-/etc/group
-#copy domU/inittab /etc/inittab
-/etc/passwd
 #copy domU/resolv.conf /etc/resolv.conf
-#copy domU/securetty /etc/securetty
+/etc/group
+/etc/passwd
 /etc/shadow
 #sed /etc/shadow s/^root:\*:/root::/
-/bin/bunzip2
-/bin/bzcat
-/bin/bzip2
-/bin/cpio
-/bin/egrep
-/bin/fgrep
-/bin/fuser
-/bin/gunzip
-/bin/gzip
-/bin/kill
-/bin/lsmod
-/bin/ping
-/bin/ping6
-/bin/ps
-/bin/sed
-/bin/tar
-/bin/uncompress
-/bin/zcat
-/bin/grep
+#portage app-arch/bzip2-1.0.6-r3
+#portage app-arch/cpio-2.11
+#portage sys-apps/grep-2.14
+#portage sys-process/psmisc-22.20
+#portage app-arch/gzip-1.5
+#portage sys-process/procps-3.3.8-r2
+#portage sys-apps/kmod-15-r1
+#portage net-misc/iputils-20121221
+#portage sys-apps/sed-4.2.1-r1
+#portage app-arch/tar-1.26-r1
+#portage app-shells/bash-4.2_p45
 /bin/sh
-/bin/bash
 /bin/busybox
-/bin/pidof
-/etc/bash/bashrc
-/etc/fuse.conf
+#require sysvinit.lst
+#portage sys-fs/fuse-2.9.3
 /etc/host.conf
 /etc/ld.so.conf
 /etc/ld.so.cache
 /etc/ld.so.conf.d/05binutils.conf
-/etc/init.d/fuse
 /etc/ssl/certs/ca-certificates.crt
 /etc/runlevels/sysinit/devfs
 /etc/runlevels/sysinit/dmesg
@@ -90,53 +65,29 @@
 /lib/libnss_compat.so.2 
 /lib/libnss_files.so.2
 /lib/libnss_dns.so.2
-/sbin/arping
-./sbin/depmod
-./sbin/halt
-./sbin/init
-/sbin/killall5
-./sbin/ldconfig
-/sbin/modprobe
-/sbin/mount.fuse
-./sbin/poweroff
-./sbin/reboot
-/sbin/runlevel
-/sbin/shutdown
-./usr/bin/ar
-./usr/bin/clear
-./usr/bin/cmp
+/sbin/ldconfig
+/usr/bin/ar
+#portage sys-libs/ncurses-5.9-r2
 /usr/bin/curl
-#symlink /usr/bin/diff ../../bin/busybox
-./usr/bin/find
+#portage sys-apps/diffutils-3.3
+#portage sys-apps/findutils-4.4.2-r1
 /usr/bin/getent
 /usr/bin/iconv
-/usr/bin/install
-./usr/bin/killall
-./usr/bin/last
+#portage sys-apps/coreutils-8.21
 ./usr/bin/ldd
-/usr/bin/lddlibc4
 #symlink /usr/bin/less ../../bin/busybox
 ./usr/bin/locale
-/usr/bin/lzma
+#portage app-arch/xz-utils-5.0.5-r1
 /usr/bin/make
-./usr/bin/mesg
-./usr/bin/reset
-./usr/bin/split
 /usr/bin/strace
-./usr/bin/strings
-/usr/bin/tput
-/usr/bin/unlzma
-./usr/bin/unxz
+/usr/bin/strings
 /usr/bin/unzip
 #symlink /usr/bin/vi ../../bin/busybox
-./usr/bin/wget
-./usr/bin/which
-./usr/bin/xargs
-./usr/bin/xz
-./usr/bin/xzcat
+/usr/bin/wget
+/usr/bin/which
 /usr/bin/zip
-/usr/lib/cracklib_dict.pwd
-/usr/lib/cracklib_dict.pwi
+#/usr/lib/cracklib_dict.pwd
+#/usr/lib/cracklib_dict.pwi
 /usr/lib/gconv/ANSI_X3.110.so
 /usr/lib/gconv/CP932.so
 /usr/lib/gconv/EUC-JISX0213.so
@@ -163,29 +114,12 @@
 #/usr/sbin/xfs_db
 #/usr/sbin/xfs_freeze
 /usr/sbin/xfs_growfs
-./usr/share/i18n/charmaps/ANSI_X3.110-1983.gz
-./usr/share/i18n/charmaps/ANSI_X3.4-1968.gz
-./usr/share/i18n/charmaps/ISO-8859-1.gz
-./usr/share/i18n/charmaps/ISO-8859-15.gz
-./usr/share/i18n/charmaps/ISO-8859-2.gz
-./usr/share/locale/locale.alias
-./usr/share/tabset/std
-./usr/share/tabset/stdcrt
-./usr/share/tabset/vt100
-./usr/share/tabset/vt300
-./usr/share/terminfo/a/ansi
-./usr/share/terminfo/l/linux
-./usr/share/terminfo/r/rxvt
-./usr/share/terminfo/v/vt100
-./usr/share/terminfo/v/vt102
-./usr/share/terminfo/v/vt102+enq
-./usr/share/terminfo/v/vt102-nsgr
-./usr/share/terminfo/v/vt102-w
-./usr/share/terminfo/x/xterm
-/usr/share/terminfo/x/xterm-256color
-./usr/share/terminfo/x/xterm-color
-./usr/share/terminfo/x/xterm-new
-./usr/share/terminfo/x/xterm-vt220
+/usr/share/i18n/charmaps/ANSI_X3.110-1983.gz
+/usr/share/i18n/charmaps/ANSI_X3.4-1968.gz
+/usr/share/i18n/charmaps/ISO-8859-1.gz
+/usr/share/i18n/charmaps/ISO-8859-15.gz
+/usr/share/i18n/charmaps/ISO-8859-2.gz
+/usr/share/locale/locale.alias
 #require pam.lst
 #require openrc.lst
 #sed /etc/rc.conf s/^#rc_sys.\+$/rc_sys="xenU"/
@@ -212,4 +146,3 @@
 
 # zram swap
 #patchsinglefile /etc/init.d/swap domU/swap.init.patch
-

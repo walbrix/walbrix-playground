@@ -1,0 +1,14 @@
+#dir /proc
+#dir /etc
+/tmp/.keep
+/root/.keep
+/home/.keep
+/sys/.keep
+/var/tmp/.keep
+/var/log/.keep
+/var/cache/.keep
+/var/lib/.keep
+/var/spool/.keep
+/mnt/.keep
+#dir /etc/runlevels/default
+

@@ -1,0 +1,17 @@
+--- i686/usr/share/webapps/phppgadmin/5.1/htdocs/conf/config.inc.php	2013-12-30 12:16:13.958631258 +0900
++++ config.inc.php	2014-01-23 13:51:27.174150767 +0900
+@@ -1,4 +1,5 @@
+ <?php
++	require_once 'private_network.inc.php';
+ 
+ 	/**
+ 	 * Central phpPgAdmin configuration.  As a user you may modify the
+@@ -90,7 +91,7 @@
+ 	// will be denied. Only set this false once you have read the FAQ and
+ 	// understand how to change PostgreSQL's pg_hba.conf to enable
+ 	// passworded local connections.
+-	$conf['extra_login_security'] = true;
++	$conf['extra_login_security'] = !isAccessFromPrivateNetwork();
+ 
+ 	// Only show owned databases?
+ 	// Note: This will simply hide other databases in the list - this does

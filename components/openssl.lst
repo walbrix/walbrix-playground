@@ -1,4 +1,4 @@
-#portage dev-libs/openssl-1.0.1e-r1
+#portage dev-libs/openssl-1.0.1f
 
 # app-misc/ca-certificates
 /etc/ssl/certs/ca-certificates.crt

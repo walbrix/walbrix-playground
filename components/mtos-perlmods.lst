@@ -25,7 +25,7 @@
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Sys/Syslog.pm
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Sys/Syslog/Syslog.so
 
-#portage dev-perl/PlRPC-0.202.0-r1
+#portage dev-perl/PlRPC-0.202.0-r2
 
 # dev-perl/DBI
 /usr/bin/dbilogstrip

@@ -1,6 +1,6 @@
 {
 	"id":"glassfish",
-	"title":"GlassFish 3.1.2.2 b5",
+	"title":"GlassFish 4.0",
 	"images":[{"url":"http://va.walbrix.net/img/glassfish01.png"}],	
 	"tarball":"glassfish-i686-jp.tar.xz",
 	"description":"GlassFish Server Open Source Edition",

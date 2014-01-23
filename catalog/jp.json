@@ -1,4 +1,5 @@
 [
+    {"id":"glassfish","file":"i686/glassfish-i686-jp.json"},
     {"id":"gitbucket","file":"i686/gitbucket-i686-jp.json"},
     {"id":"centos","file":"i686/centos-i686-jp.json"},
     {"id":"owncloud","file":"i686/owncloud-i686-jp.json"},
@@ -30,7 +31,6 @@
     {"id":"funtoo","file":"i686/funtoo-i686-jp.json"},
     {"id":"couchdb","file":"i686/couchdb-i686-jp.json"},
     {"id":"pdns","file":"i686/pdns-i686-jp.json"},
-    {"id":"glassfishv3","file":"i686/glassfishv3-i686-jp.json"},
     {"id":"sugarce","file":"i686/sugarce-i686-jp.json"},
     {"id":"cups-pdf","file":"i686/cups-pdf-i686-jp.json"},
     {"id":"httpreplicator","file":"i686/httpreplicator-i686-jp.json"},

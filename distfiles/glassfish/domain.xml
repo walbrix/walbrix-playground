@@ -1,4 +1,26 @@
-<domain log-root="${com.sun.aas.instanceRoot}/logs" application-root="${com.sun.aas.instanceRoot}/applications" version="5">
+<domain log-root="${com.sun.aas.instanceRoot}/logs" application-root="${com.sun.aas.instanceRoot}/applications" version="89">
+  <security-configurations>
+    <authentication-service default="true" name="adminAuth" use-password-credential="true">
+      <security-provider name="spcrealm" type="LoginModule" provider-name="adminSpc">
+        <login-module-config name="adminSpecialLM" control-flag="sufficient" module-class="com.sun.enterprise.admin.util.AdminLoginModule">
+          <property name="config" value="server-config"></property>
+          <property name="auth-realm" value="admin-realm"></property>
+        </login-module-config>
+      </security-provider>
+      <security-provider name="filerealm" type="LoginModule" provider-name="adminFile">
+        <login-module-config name="adminFileLM" control-flag="sufficient" module-class="com.sun.enterprise.security.auth.login.FileLoginModule">
+          <property name="config" value="server-config"></property>
+          <property name="auth-realm" value="admin-realm"></property>
+        </login-module-config>
+      </security-provider>
+    </authentication-service>
+    <authorization-service default="true" name="authorizationService">
+      <security-provider name="simpleAuthorization" type="Simple" provider-name="simpleAuthorizationProvider">
+        <authorization-provider-config support-policy-deploy="false" name="simpleAuthorizationProviderConfig"></authorization-provider-config>
+      </security-provider>
+    </authorization-service>
+  </security-configurations>
+  <managed-job-config></managed-job-config>
   <system-applications>
     <application context-root="" location="${com.sun.aas.installRootURI}/lib/install/applications/__admingui" name="__admingui" directory-deployed="true" object-type="system-admin">
       <module name="__admingui">
@@ -7,10 +29,9 @@
       </module>
     </application>
   </system-applications>
-  <applications></applications>
   <resources>
     <jdbc-resource pool-name="__TimerPool" jndi-name="jdbc/__TimerPool" object-type="system-admin"></jdbc-resource>
-    <jdbc-resource pool-name="DerbyPool" jndi-name="jdbc/__default"></jdbc-resource>
+    <jdbc-resource pool-name="DerbyPool" jndi-name="jdbc/__default" object-type="system-all"></jdbc-resource>
     <jdbc-connection-pool datasource-classname="org.apache.derby.jdbc.EmbeddedXADataSource" res-type="javax.sql.XADataSource" name="__TimerPool">
       <property name="databaseName" value="${com.sun.aas.instanceRoot}/lib/databases/ejbtimer"></property>
       <property name="connectionAttributes" value=";create=true"></property>
@@ -23,12 +44,23 @@
       <property name="DatabaseName" value="sun-appserv-samples"></property>
       <property name="connectionAttributes" value=";create=true"></property>
     </jdbc-connection-pool>
+    <connector-connection-pool max-pool-size="250" steady-pool-size="1" name="jms/__defaultConnectionFactory-Connection-Pool" resource-adapter-name="jmsra" connection-definition-name="javax.jms.ConnectionFactory"></connector-connection-pool>
+    <connector-resource pool-name="jms/__defaultConnectionFactory-Connection-Pool" jndi-name="jms/__defaultConnectionFactory" object-type="system-all-req"></connector-resource>
+    <managed-scheduled-executor-service jndi-name="concurrent/__defaultManagedScheduledExecutorService" object-type="system-all"></managed-scheduled-executor-service>
+    <managed-executor-service jndi-name="concurrent/__defaultManagedExecutorService" object-type="system-all"></managed-executor-service>
+    <context-service jndi-name="concurrent/__defaultContextService" object-type="system-all"></context-service>
+    <managed-thread-factory jndi-name="concurrent/__defaultManagedThreadFactory" object-type="system-all"></managed-thread-factory>
   </resources>
   <servers>
     <server name="server" config-ref="server-config">
       <application-ref ref="__admingui" virtual-servers="__asadmin"></application-ref>
       <resource-ref ref="jdbc/__TimerPool"></resource-ref>
       <resource-ref ref="jdbc/__default"></resource-ref>
+      <resource-ref ref="jms/__defaultConnectionFactory"></resource-ref>
+      <resource-ref ref="concurrent/__defaultManagedScheduledExecutorService"></resource-ref>
+      <resource-ref ref="concurrent/__defaultManagedExecutorService"></resource-ref>
+      <resource-ref ref="concurrent/__defaultContextService"></resource-ref>
+      <resource-ref ref="concurrent/__defaultManagedThreadFactory"></resource-ref>
     </server>
   </servers>
   <nodes>
@@ -36,9 +68,10 @@
   </nodes>
   <configs>
     <config name="server-config">
+      <system-property description="Port Number that JMS Service will listen for remote clients connection." name="JMS_PROVIDER_PORT" value="7676"></system-property>
       <http-service>
         <access-log></access-log>
-        <virtual-server id="server" network-listeners="http-listener-1,http-listener-2,jk-connector"></virtual-server>
+        <virtual-server id="server" network-listeners="http-listener-1,http-listener-2"></virtual-server>
         <virtual-server id="__asadmin" network-listeners="admin-listener"></virtual-server>
       </http-service>
       <iiop-service>
@@ -59,6 +92,11 @@
         <das-config></das-config>
       </admin-service>
       <connector-service></connector-service>
+      <transaction-service tx-log-dir="${com.sun.aas.instanceRoot}/logs"></transaction-service>
+      <batch-runtime-configuration></batch-runtime-configuration>
+      <jms-service default-jms-host="default_JMS_host" type="EMBEDDED">
+        <jms-host port="${JMS_PROVIDER_PORT}" host="localhost" name="default_JMS_host"></jms-host>
+      </jms-service>
       <web-container>
         <session-config>
           <session-manager>
@@ -68,13 +106,11 @@
           <session-properties></session-properties>
         </session-config>
       </web-container>
-      <ejb-container session-store="${com.sun.aas.instanceRoot}/session-store">
+      <ejb-container>
         <ejb-timer-service></ejb-timer-service>
       </ejb-container>
-      <mdb-container></mdb-container>
-      <jms-service default-jms-host="default_JMS_host">
-        <jms-host host="localhost" name="default_JMS_host"></jms-host>
-      </jms-service>
+      <rest-config></rest-config>
+      <diagnostic-service></diagnostic-service>
       <security-service>
         <auth-realm classname="com.sun.enterprise.security.auth.realm.file.FileRealm" name="admin-realm">
           <property name="file" value="${com.sun.aas.instanceRoot}/config/admin-keyfile"></property>
@@ -89,7 +125,7 @@
           <property name="repository" value="${com.sun.aas.instanceRoot}/generated/policy"></property>
         </jacc-provider>
         <jacc-provider policy-provider="com.sun.enterprise.security.jacc.provider.SimplePolicyProvider" name="simple" policy-configuration-factory-provider="com.sun.enterprise.security.jacc.provider.SimplePolicyConfigurationFactory"></jacc-provider>
-        <audit-module classname="com.sun.enterprise.security.Audit" name="default">
+        <audit-module classname="com.sun.enterprise.security.ee.Audit" name="default">
           <property name="auditOn" value="false"></property>
         </audit-module>
         <message-security-config auth-layer="SOAP">
@@ -130,17 +166,14 @@
           <provider-config provider-type="server" provider-id="GFConsoleAuthModule" class-name="org.glassfish.admingui.common.security.AdminConsoleAuthModule">
             <request-policy auth-source="sender"></request-policy>
             <response-policy></response-policy>
-            <property name="restAuthURL" value="https://localhost:${ADMIN_LISTENER_PORT}/management/sessions"></property>
             <property name="loginPage" value="/login.jsf"></property>
             <property name="loginErrorPage" value="/loginError.jsf"></property>
           </provider-config>
         </message-security-config>
         <property name="default-digest-algorithm" value="SHA-256"></property>
       </security-service>
-      <transaction-service tx-log-dir="${com.sun.aas.instanceRoot}/logs"></transaction-service>
-      <java-config debug-options="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9009" system-classpath="" classpath-suffix="">
+      <java-config debug-options="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=9009" system-classpath="" classpath-suffix="">
         <jvm-options>-XX:MaxPermSize=192m</jvm-options>
-        <jvm-options>-XX:PermSize=64m</jvm-options>
         <jvm-options>-client</jvm-options>
         <jvm-options>-Djava.awt.headless=true</jvm-options>
         <jvm-options>-Djavax.management.builder.initial=com.sun.enterprise.v3.admin.AppServerMBeanServerBuilder</jvm-options>
@@ -156,6 +189,7 @@
         <jvm-options>-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver</jvm-options>
         <jvm-options>-DANTLR_USE_DIRECT_CLASS_LOADING=true</jvm-options>
         <jvm-options>-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory</jvm-options>
+        <jvm-options>-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall</jvm-options>
         <jvm-options>-Dosgi.shell.telnet.port=6666</jvm-options>
         <jvm-options>-Dosgi.shell.telnet.maxconn=1</jvm-options>
         <jvm-options>-Dosgi.shell.telnet.ip=127.0.0.1</jvm-options>
@@ -167,6 +201,7 @@
         <jvm-options>-Dfelix.fileinstall.bundles.startTransient=true</jvm-options>
         <jvm-options>-Dfelix.fileinstall.disableConfigSave=false</jvm-options>
         <jvm-options>-XX:NewRatio=2</jvm-options>
+        <jvm-options>-Dcom.sun.enterprise.tools.admingui.NO_NETWORK=true</jvm-options>
       </java-config>
       <network-config>
         <protocols>
@@ -175,11 +210,11 @@
               <file-cache></file-cache>
             </http>
           </protocol>
-          <protocol security-enabled="true" name="http-listener-2">
+          <protocol name="http-listener-2">
             <http default-virtual-server="server" max-connections="250">
               <file-cache></file-cache>
             </http>
-            <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as"></ssl>
+            <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" ssl3-enabled="false" cert-nickname="s1as"></ssl>
           </protocol>
           <protocol name="admin-listener">
             <http default-virtual-server="__asadmin" max-connections="250" encoded-slash-enabled="true">
@@ -190,23 +225,22 @@
             <http default-virtual-server="__asadmin" encoded-slash-enabled="true">
               <file-cache></file-cache>
             </http>
-            <ssl client-auth="want" classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as"></ssl>
+            <ssl client-auth="want" ssl3-enabled="false" classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as" renegotiate-on-client-auth-want="false"></ssl>
           </protocol>
           <protocol name="admin-http-redirect">
             <http-redirect secure="true"></http-redirect>
           </protocol>
           <protocol name="pu-protocol">
             <port-unification>
-              <protocol-finder protocol="sec-admin-listener" name="http-finder" classname="com.sun.grizzly.config.HttpProtocolFinder"></protocol-finder>
-              <protocol-finder protocol="admin-http-redirect" name="admin-http-redirect" classname="com.sun.grizzly.config.HttpProtocolFinder"></protocol-finder>
+              <protocol-finder protocol="sec-admin-listener" name="http-finder" classname="org.glassfish.grizzly.config.portunif.HttpProtocolFinder"></protocol-finder>
+              <protocol-finder protocol="admin-http-redirect" name="admin-http-redirect" classname="org.glassfish.grizzly.config.portunif.HttpProtocolFinder"></protocol-finder>
             </port-unification>
           </protocol>
         </protocols>
         <network-listeners>
           <network-listener port="8080" protocol="http-listener-1" transport="tcp" name="http-listener-1" thread-pool="http-thread-pool"></network-listener>
-          <network-listener port="8181" protocol="http-listener-2" transport="tcp" name="http-listener-2" thread-pool="http-thread-pool"></network-listener>
+          <network-listener port="8009" protocol="http-listener-2" transport="tcp" name="http-listener-2" jk-enabled="true" thread-pool="http-thread-pool"></network-listener>
           <network-listener port="4848" protocol="pu-protocol" transport="tcp" name="admin-listener" thread-pool="admin-thread-pool"></network-listener>
-          <network-listener port="8009" protocol="http-listener-1" transport="tcp" name="jk-connector" jk-enabled="true" jk-configuration-file="/usr/local/glassfish3/glassfish/domains/domain1/config/glassfish-jk.properties" thread-pool="http-thread-pool"></network-listener>
         </network-listeners>
         <transports>
           <transport name="tcp"></transport>
@@ -223,6 +257,7 @@
       <group-management-service>
         <failure-detection></failure-detection>
       </group-management-service>
+      <availability-service></availability-service>
     </config>
     <config name="default-config">
       <http-service>
@@ -256,11 +291,11 @@
           <session-properties></session-properties>
         </session-config>
       </web-container>
-      <ejb-container session-store="${com.sun.aas.instanceRoot}/session-store">
+      <ejb-container>
         <ejb-timer-service></ejb-timer-service>
       </ejb-container>
       <mdb-container></mdb-container>
-      <jms-service addresslist-behavior="priority" default-jms-host="default_JMS_host">
+      <jms-service addresslist-behavior="priority" default-jms-host="default_JMS_host" type="EMBEDDED">
         <jms-host port="${JMS_PROVIDER_PORT}" host="localhost" name="default_JMS_host"></jms-host>
       </jms-service>
       <log-service log-rotation-limit-in-bytes="2000000" file="${com.sun.aas.instanceRoot}/logs/server.log">
@@ -280,7 +315,7 @@
           <property name="repository" value="${com.sun.aas.instanceRoot}/generated/policy"></property>
         </jacc-provider>
         <jacc-provider policy-provider="com.sun.enterprise.security.jacc.provider.SimplePolicyProvider" name="simple" policy-configuration-factory-provider="com.sun.enterprise.security.jacc.provider.SimplePolicyConfigurationFactory"></jacc-provider>
-        <audit-module classname="com.sun.enterprise.security.Audit" name="default">
+        <audit-module classname="com.sun.enterprise.security.ee.Audit" name="default">
           <property name="auditOn" value="false"></property>
         </audit-module>
         <message-security-config auth-layer="SOAP">
@@ -320,9 +355,8 @@
       </security-service>
       <transaction-service tx-log-dir="${com.sun.aas.instanceRoot}/logs" automatic-recovery="true"></transaction-service>
       <diagnostic-service></diagnostic-service>
-      <java-config debug-options="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=${JAVA_DEBUGGER_PORT}" system-classpath="" classpath-suffix="">
+      <java-config debug-options="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=${JAVA_DEBUGGER_PORT}" system-classpath="" classpath-suffix="">
         <jvm-options>-XX:MaxPermSize=192m</jvm-options>
-        <jvm-options>-XX:PermSize=64m</jvm-options>
         <jvm-options>-server</jvm-options>
         <jvm-options>-Djava.awt.headless=true</jvm-options>
         <jvm-options>-XX:+UnlockDiagnosticVMOptions</jvm-options>
@@ -338,6 +372,7 @@
         <jvm-options>-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory</jvm-options>
         <jvm-options>-XX:NewRatio=2</jvm-options>
         <jvm-options>-Xmx512m</jvm-options>
+        <jvm-options>-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.fileinstall</jvm-options>
         <jvm-options>-Dosgi.shell.telnet.port=${OSGI_SHELL_TELNET_PORT}</jvm-options>
         <jvm-options>-Dosgi.shell.telnet.maxconn=1</jvm-options>
         <jvm-options>-Dosgi.shell.telnet.ip=127.0.0.1</jvm-options>
@@ -365,7 +400,7 @@
             <http default-virtual-server="server">
               <file-cache></file-cache>
             </http>
-            <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as"></ssl>
+            <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" ssl3-enabled="false" cert-nickname="s1as"></ssl>
           </protocol>
           <protocol name="admin-listener">
             <http default-virtual-server="__asadmin" max-connections="250">
@@ -376,15 +411,15 @@
             <http default-virtual-server="__asadmin" encoded-slash-enabled="true">
               <file-cache></file-cache>
             </http>
-            <ssl client-auth="want" classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="glassfish-instance"></ssl>
+            <ssl client-auth="want" ssl3-enabled="false" classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="glassfish-instance" renegotiate-on-client-auth-want="false"></ssl>
           </protocol>
           <protocol name="admin-http-redirect">
             <http-redirect secure="true"></http-redirect>
           </protocol>
           <protocol name="pu-protocol">
             <port-unification>
-              <protocol-finder protocol="sec-admin-listener" name="http-finder" classname="com.sun.grizzly.config.HttpProtocolFinder"></protocol-finder>
-              <protocol-finder protocol="admin-http-redirect" name="admin-http-redirect" classname="com.sun.grizzly.config.HttpProtocolFinder"></protocol-finder>
+              <protocol-finder protocol="sec-admin-listener" name="http-finder" classname="org.glassfish.grizzly.config.portunif.HttpProtocolFinder"></protocol-finder>
+              <protocol-finder protocol="admin-http-redirect" name="admin-http-redirect" classname="org.glassfish.grizzly.config.portunif.HttpProtocolFinder"></protocol-finder>
             </port-unification>
           </protocol>
         </protocols>
@@ -405,11 +440,10 @@
       <group-management-service>
         <failure-detection></failure-detection>
       </group-management-service>
-      <management-rules></management-rules>
+      <system-property description="Port Number that JMS Service will listen for remote clients connection." name="JMS_PROVIDER_PORT" value="27676"></system-property>
       <system-property name="ASADMIN_LISTENER_PORT" value="24848"></system-property>
       <system-property name="HTTP_LISTENER_PORT" value="28080"></system-property>
       <system-property name="HTTP_SSL_LISTENER_PORT" value="28181"></system-property>
-      <system-property name="JMS_PROVIDER_PORT" value="27676"></system-property>
       <system-property name="IIOP_LISTENER_PORT" value="23700"></system-property>
       <system-property name="IIOP_SSL_LISTENER_PORT" value="23820"></system-property>
       <system-property name="IIOP_SSL_MUTUALAUTH_PORT" value="23920"></system-property>
@@ -419,15 +453,13 @@
       <monitoring-service>
         <module-monitoring-levels></module-monitoring-levels>
       </monitoring-service>
-      <connector-service></connector-service>
     </config>
   </configs>
   <property name="administrative.domain.name" value="domain1"></property>
-  <secure-admin enabled="true" special-admin-indicator="a7c47dae-845f-4640-9146-44bfca56c1e8">
+  <secure-admin enabled="true" special-admin-indicator="14464de6-7bf4-4fc9-bf6a-160a91c51b32">
     <secure-admin-principal dn="CN=localhost,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>
     <secure-admin-principal dn="CN=localhost-instance,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>
   </secure-admin>
-  <load-balancers></load-balancers>
-  <lb-configs></lb-configs>
   <clusters></clusters>
+  <applications></applications>
 </domain>

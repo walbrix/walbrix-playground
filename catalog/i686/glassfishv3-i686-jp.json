@@ -1,1 +1,0 @@
-{"description": "GlassFishはオープンソースの Java EEアプリケーションサーバです。", "title": "GlassFish v3", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/glassfishv3.tar.lzma", "minimum_ram": 256, "images": [{"url": "http://va.walbrix.net/img/glassfish01.png"}], "id": "glassfishv3"}

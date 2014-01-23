@@ -1,51 +1,58 @@
-<html lang="ja">
+<html lang="ja" ng-app="MyApp">
   <head>
-    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>GlassFish(オープンソース版)</title>
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/redmond/jquery-ui.css" type="text/css"/>
-	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-	<script type="text/javascript">google.load("jquery", "1.4.2");</script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
-	<script type="text/javascript">google.load("jqueryui", "1.8.1");</script>
-	<script language="JavaScript"><!--
-	  $(function(){
-	    $("#tabs").tabs();
-	    $("span.hostname").html(location.hostname);
-            $("a").each(function() {
-              var orig = $(this).attr("href");
-              $(this).attr("href", orig.replace("localhost", location.hostname));
-	    });
-	  });
-	//--></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-resource.min.js"></script>
+    <title>GlassFish オープンソースエディション</title>
+    <script language="JavaScript">
+      angular.module("MyApp", [])
+        .run(["$rootScope", function($scope) { $scope.HOSTNAME= location.hostname; }]);
+    </script>
   </head>
 
-  <h1>GlassFish(オープンソース版)</h1>
+  <body>
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://www.walbrix.net">Walbrixについて</a></li>
+        </ul>
+        <h3 class="text-muted">Walbrix 仮想アプライアンス</h3>
+      </div>
+      <div class="jumbotron">
+	<h1>GlassFish オープンソースエディション</h1>
+	<p>Java EEアプリケーションサーバのリファレンス実装です</p>
+	<p>オフィシャルサイト: <a href="https://glassfish.java.net">GlassFish Server</a></p>
+      </div>
 
-  <div id="tabs">
-	<ul>
-		<li><a href="#tabs-1">概要と使い方</a></li>
-		<li><a href="#tabs-2">追加情報</a></li>
-	</ul>
-	<div id="tabs-1">
-	  <h3>GlassFishの管理画面</h3>
-	  <p>
-	  GlassFishの管理画面は <a href="https://localhost:4848/">https://<span class="hostname">HOSTNAME</span>:4848/</a>です。AJPで Apacheと連携しているので、GlassFishにデプロイした Webアプリケーションには 80番ポートでアクセスできます。
-	  </p>
-	  <h3>Webコンテンツの編集</h3>
-	  Windows共有で下記の共有フォルダへアクセスすることが出来ます。
-	  <ul>
-		<li>￥￥<span class="hostname">HOSTNAME</span>￥￥www - Webサーバのコンテンツを配置する場所(このページもここにあります)<br/>システム上の場所は /usr/local/glassfish3/glassfish/domains/domain1/docroot です。</li>
-	  </ul>
-	  <h3>MySQLの管理について</h3>
-	  <a href="/phpmyadmin/">phpMyAdmin</a> を利用可能です。管理ユーザーIDは root, パスワードは空です。MySQLの JDBCドライバは GlassFishのクラスパスに最初から入っています。
-	  <h3>PostgreSQLの管理について</h3>
-	  <a href="/phppgadmin/">phpPgAdmin</a> を利用可能です。管理ユーザーIDは postgres, パスワードは空です。PostgreSQLの JDBCドライバは GlassFishのクラスパスに最初から入っています。
-	  <h3>SSHによるログイン</h3>
-	  sshで<span class="hostname">HOSTNAME</span>へログインすることもできます。rootの初期パスワードは Walbrixのシリアルナンバー（未登録の場合 "WBFREE01"）です。GlassFishのインストール先は /usr/local/glassfish3 です。
-	</div>
-	<div id="tabs-2">
-	  <a href="http://glassfish.java.net/ja/" target="_blank">GlassFish - オープンソースアプリケーションサーバー</a>
-	</div>
-	<div align="right" style="margin-top:1em;"><a href="http://www.walbrix.net/" target="_blank">Walbrix</a></div>
-  </div>
+      <h3>GlassFishの管理画面</h3>
+      <p>GlassFishの管理画面は <a href="https://{{HOSTNAME}}:4848/">https://{{HOSTNAME}}:4848/</a>です。</p>
+
+      <div class="alert alert-warning">管理画面は HTTPと HTTPSを同一のポートで提供する Port Unificationでサービスされており、ブラウザの種類によっては利用できないことがあります。</div>
+
+      <p>AJPで Apacheと連携しているので、GlassFishにデプロイした Webアプリケーションには 80番ポートでアクセスできます。</p>
+
+      <h3>Webコンテンツの編集</h3>
+      <p>Windows共有で下記の共有フォルダへアクセスすることが出来ます。</p>
+      <ul>
+	<li><strong>¥¥{{HOSTNAME}}¥htdocs</strong> - 静的コンテンツを配置する場所(このページもここにあります)<br/>システム上の場所は /var/www/localhost/htdocs です。この場所に配置されていないリソースへのアクセスは GlassFishに転送されます。</li>
+	<li><strong>¥¥{{HOSTNAME}}¥domain1</strong> - GlassFishのサーバディレクトリです。<br/>システム上の場所は /usr/local/glassfish4/glassfish/domains/domain1 です。</li>
+      </ul>
+      <h3>データベースについて</h3>
+      <p>この仮想アプライアンスで利用出来るデータベースは MySQLと PostgreSQLです。また、GlassFishのクラスパスには H2 Databaseの jarファイルも配置してあります。</p>
+      <h4>MySQLの管理</h4>
+      <p><a href="/phpmyadmin/">phpMyAdmin</a> を利用可能です。管理ユーザーIDは root, パスワードは空です（パスワードが空の状態ではプライベートネットワークからのみログイン可能）。MySQLの JDBCドライバは GlassFishのクラスパスに最初から入っています。</p>
+      <h4>PostgreSQLの管理</h4>
+      <p><a href="/phppgadmin/">phpPgAdmin</a> を利用可能です。管理ユーザーIDは postgres, パスワードは空です（パスワードが空の状態ではプライベートネットワークからのみログイン可能）。PostgreSQLの JDBCドライバは GlassFishのクラスパスに最初から入っています。</p>
+      <h3>SSHによるログイン</h3>
+      <p>sshで {{HOSTNAME}} へログインすることもできます。rootの初期パスワードは Walbrixのシリアルナンバー（未登録の場合 "WBFREE01"）です。GlassFishのインストール先は /usr/local/glassfish4 です。</p>
+
+      <div class="footer">
+	<hr/>
+	<p>© <a href="http://www.walbrix.com/jp/">Walbrix Corporation</a> 2009-2014</p>
+      </div>
+    </div>
+  </body>
 </html>

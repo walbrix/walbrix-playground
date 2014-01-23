@@ -1,0 +1,18 @@
+#!/sbin/runscript
+
+depend() {
+	need net
+}
+
+start() {
+	ebegin "Starting" ${SVCNAME}
+	sudo -u apache sh -c "/usr/local/glassfish4/bin/asadmin start-domain"
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping" ${SVCNAME}
+	/usr/local/glassfish4/bin/asadmin stop-domain 
+	eend $?
+}
+

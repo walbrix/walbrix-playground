@@ -1,0 +1,9 @@
+{
+	"description": "GlassFish オープンソースエディションは Java EEアプリケーションサーバのリファレンス実装です。",
+	"title": "GlassFish 4.0",
+	"minimum_hd": 2,
+ 	"tarball": "http://dist.walbrix.net/va/glassfish-4.0-i686-jp.tar.xz", 
+	"minimum_ram": 256, 
+	"images": [{"url": "http://va.walbrix.net/img/glassfish01.png"}], 
+	"id": "glassfish"
+}

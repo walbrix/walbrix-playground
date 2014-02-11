@@ -1,0 +1,3 @@
+#portage dev-perl/Crypt-SSLeay-0.640.0
+#require libwww-perl.lst
+

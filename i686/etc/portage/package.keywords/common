@@ -7,5 +7,5 @@
 =dev-perl/Net-SMTP-TLS-0.120.0-r1
 =dev-db/mysql-5.5.32
 =virtual/mysql-5.5
-=net-analyzer/zabbix-2.0.9
+=net-analyzer/zabbix-2.2.0-r4
 =net-fs/cifs-utils-6.1-r1

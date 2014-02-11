@@ -34,4 +34,5 @@
 =dev-lang/go-1.2
 =app-emulation/lxc-0.8.0-r1
 
+=net-analyzer/zabbix-2.2.0-r4
 

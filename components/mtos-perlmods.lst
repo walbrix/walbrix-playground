@@ -1,8 +1,5 @@
-#require perl.lst
-# dev-perl/Net-Daemon
-/usr/lib/perl5/vendor_perl/5.12.4/Net/Daemon.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Net/Daemon/Log.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Net/Daemon/Test.pm
+#require libwww-perl.lst
+#require PlRPC.lst
 
 # perl-core/Storable
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Storable.pm
@@ -735,32 +732,6 @@
 /usr/lib/perl5/vendor_perl/5.12.4/HTTP/Daemon.pm
 
 /usr/lib/perl5/vendor_perl/5.12.4/HTTP/Negotiate.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/LWP.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Authen/Basic.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Authen/Digest.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Authen/Ntlm.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/ConnCache.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Debug.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/DebugFile.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/MemberMixin.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol/GHTTP.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol/cpan.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol/data.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol/file.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol/ftp.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol/gopher.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol/http.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol/loopback.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol/mailto.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol/nntp.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol/nogo.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/RobotUA.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Simple.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/UserAgent.pm
-/usr/lib/perl5/vendor_perl/5.12.4/lwpcook.pod
-/usr/lib/perl5/vendor_perl/5.12.4/lwptut.pod
 
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Crypt/SSLeay.pm
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Crypt/SSLeay/CTX.pm

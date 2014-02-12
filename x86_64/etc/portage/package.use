@@ -45,3 +45,5 @@ dev-lang/scala binary
 net-misc/openvpn passwordsave
 sys-libs/talloc python
 net-fs/cifs-utils -acl
+mail-mta/postfix sasl
+

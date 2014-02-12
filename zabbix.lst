@@ -4,8 +4,7 @@
 #require components/zabbix.lst
 #require components/postfix.lst
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1zabbix\2/
-#copy domU/fstab-with-swapfile /etc/fstab
-#swap /swapfile 128
+#copy domU/fstab-with-zramswap /etc/fstab
 #copy zabbix/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
 #copy zabbix/wb-va.xml /etc/wb-va.xml
 

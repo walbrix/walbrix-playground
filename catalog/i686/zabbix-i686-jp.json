@@ -1,1 +1,9 @@
-{"description": "Zabbixはオープンソースの統合監視ソフトウェアです。サーバー、ネットワーク、アプリケーションを監視し、情報収集、異常検知、障害/復旧通知を行うことが出来ます。", "title": "サーバ監視 Zabbix 2.0.3", "minimum_hd": 2, "tarball": "http://va.walbrix.net/i686/zabbix-2.0.3-i686-jp.tar.xz", "minimum_ram": 128, "images": [{"url": "http://va.walbrix.net/img/zabbix01.png"}], "id": "zabbix"}
+{
+    "description": "Zabbixはオープンソースの統合監視ソフトウェアです。サーバー、ネットワーク、アプリケーションを監視し、情報収集、異常検知、障害/復旧通知を行うことが出来ます。", 
+    "title": "Zabbix 2.2.0",
+    "minimum_hd": 2, "tarball":
+    "http://va.walbrix.net/i686/zabbix-2.2.0-i686-jp.tar.xz",
+    "minimum_ram": 128,
+    "images": [{"url": "http://va.walbrix.net/img/zabbix01.png"}],
+    "id": "zabbix"
+}

@@ -86,8 +86,8 @@
 /usr/bin/wget
 /usr/bin/which
 /usr/bin/zip
-#/usr/lib/cracklib_dict.pwd
-#/usr/lib/cracklib_dict.pwi
+/usr/lib/cracklib_dict.pwd
+/usr/lib/cracklib_dict.pwi
 /usr/lib/gconv/ANSI_X3.110.so
 /usr/lib/gconv/CP932.so
 /usr/lib/gconv/EUC-JISX0213.so

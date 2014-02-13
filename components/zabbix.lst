@@ -20,6 +20,7 @@
 #sed /usr/share/webapps/zabbix/2.2.0-r4/htdocs/include/defines.inc.php s/DejaVuSans/VL-PGothic-Regular/
 
 #symlink /etc/runlevels/default/zabbix-server /etc/init.d/zabbix-server
+#symlink /etc/runlevels/default/zabbix-agentd /etc/init.d/zabbix-agentd
 
 #copy zabbix/setup_initial_database.sh /setup_initial_database.sh
 #copy zabbix/initial-database.sql /initial-database.sql

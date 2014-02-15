@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <virtual-appliance uuid="3a342670-2be3-4458-ae6e-976d040e62b9">
-  <version>1.7.4</version>
+  <version>1.11</version>
   <instruction>デフォルトのユーザー名/パスワードは admin/password です。</instruction>
   <instruction xml:lang="en">The default username/password is admin/password</instruction>
 </virtual-appliance>

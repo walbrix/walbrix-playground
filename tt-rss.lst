@@ -3,24 +3,28 @@
 #require components/pvkernel.lst
 #require components/apache.lst
 #require components/mysql.lst
-#require components/php53.lst
+#require components/php54.lst
 #require components/samba.lst
 #require components/postfix.lst
 #copy tt-rss/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1tt-rss\2/
 #copy domU/fstab-with-zramswap /etc/fstab
-#extract tt-rss/tt-rss-1.7.4.tar.gz /var/www/localhost
-#chrootexec mv /var/www/localhost/Tiny-Tiny-RSS-1.7.4/* /var/www/localhost/htdocs
-#chrootexec rm -r /var/www/localhost/Tiny-Tiny-RSS-1.7.4
+#chrootexec wget -O - --no-check-certificate https://github.com/gothfox/Tiny-Tiny-RSS/archive/1.11.tar.gz | tar zxvf - -C /var/www/localhost
+#chrootexec mv /var/www/localhost/Tiny-Tiny-RSS-1.11/* /var/www/localhost/htdocs
+#chrootexec rm -r /var/www/localhost/Tiny-Tiny-RSS-1.11
 #chrootexec mv /var/www/localhost/htdocs/config.php-dist /var/www/localhost/htdocs/config.php
 #sed /var/www/localhost/htdocs/config.php s/"pgsql"/"mysql"/
 #sed /var/www/localhost/htdocs/config.php s/"fox"/"tt-rss"/
 #sed /var/www/localhost/htdocs/config.php s/"XXXXXX"/""/
 #sed /var/www/localhost/htdocs/config.php s/your\.domain\.dom/example\.com/
-#sed /var/www/localhost/htdocs/config.php s/'\''http:\/\/yourserver\/tt-rss\/'\''/"http:\/\/" . $_SERVER["SERVER_NAME"] . "\/"/
+#sed /var/www/localhost/htdocs/config.php s/'\''http:\/\/example\.org\/tt-rss\/'\''/"http:\/\/" . $_SERVER["SERVER_NAME"] . "\/"/
+#sed /var/www/localhost/htdocs/config.php s/.*FEED_CRYPT_KEY.*/\tdefine\('\''FEED_CRYPT_KEY'\'', '\''YiIEBwKWOXAWJzNWWMmf3vxy'\''\);/
+#sed /var/www/localhost/htdocs/config.php s/.*'\''SMTP_SERVER'\''.*/\tdefine\('\''SMTP_SERVER'\'', '\''localhost'\''\);/
 #chrootexec chown -R apache.apache /var/www/localhost
 #copy tt-rss/setup_initial_database.sh /setup_initial_database.sh
 #chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh
-#copy tt-rss/cron.hourly /etc/cron.hourly/tt-rss
+##copy tt-rss/cron.hourly /etc/cron.hourly/tt-rss
+#copy tt-rss/tt-rss-update.init /etc/init.d/tt-rss-update
+#symlink /etc/runlevels/default/tt-rss-update /etc/init.d/tt-rss-update
 #copy tt-rss/wb-va.xml /etc/wb-va.xml
 

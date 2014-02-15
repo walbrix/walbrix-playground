@@ -20,6 +20,8 @@
 #sed /var/www/localhost/htdocs/config.php s/'\''http:\/\/example\.org\/tt-rss\/'\''/"http:\/\/" . $_SERVER["SERVER_NAME"] . "\/"/
 #sed /var/www/localhost/htdocs/config.php s/.*FEED_CRYPT_KEY.*/\tdefine\('\''FEED_CRYPT_KEY'\'', '\''YiIEBwKWOXAWJzNWWMmf3vxy'\''\);/
 #sed /var/www/localhost/htdocs/config.php s/.*'\''SMTP_SERVER'\''.*/\tdefine\('\''SMTP_SERVER'\'', '\''localhost'\''\);/
+#chrootexec wget -O - --no-check-certificate https://github.com/dasmurphy/tinytinyrss-fever-plugin/archive/1.4.7.tar.gz | tar zxvf - -C /tmp
+#chrootexec mv /tmp/tinytinyrss-fever-plugin-1.4.7/fever /var/www/localhost/htdocs/plugins/ && rm -rf /tmp/tinytinyrss-fever-plugin-1.4.7
 #chrootexec chown -R apache.apache /var/www/localhost
 #copy tt-rss/setup_initial_database.sh /setup_initial_database.sh
 #chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh

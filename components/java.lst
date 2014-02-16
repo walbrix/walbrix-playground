@@ -4,3 +4,5 @@
 #portage dev-java/icedtea-bin-7.2.4.3 ^\/opt\/.+\/man\/
 #chrootexec java-config -S icedtea-bin-7
 
+/etc/fonts/fonts.conf
+/usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf

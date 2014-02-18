@@ -1,6 +1,5 @@
 #require nodejs.lst
 #require ruby19.lst
-#require apache.lst
 #require rack.lst
 #require builder.lst
 #require tilt.lst
@@ -12,10 +11,8 @@
 /usr/bin/ragel
 
 #portage dev-ruby/rake-0.9.6
-#portage dev-ruby/racc-1.4.9
-#portage dev-ruby/rdoc-4.0.1-r1
-#symlink /usr/bin/rdoc rdoc19
-#symlink /usr/bin/ri ri19
+#require racc.lst
+#require rdoc.lst
 
 #portage dev-ruby/i18n-0.6.9
 #portage dev-ruby/multi_json-1.5.0
@@ -92,7 +89,7 @@
 
 #portage dev-ruby/tzinfo-0.3.37
 #portage dev-ruby/arel-3.0.2-r1
-#portage dev-ruby/bcrypt-ruby-3.1.2-r1
+#require bcrypt-ruby.lst
 
 # rack-cache
 /usr/lib/ruby/gems/1.9.1/gems/rack-cache-1.2/lib/rack-cache.rb

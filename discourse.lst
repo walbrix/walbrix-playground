@@ -4,8 +4,15 @@
 #require components/php54.lst
 #require components/postgresql.lst
 #require components/postfix.lst
+
+# base/native requirements for rails
+#require components/nodejs.lst
 #require components/bundler.lst
+#require components/passenger.lst
+#require components/ffi.lst
+#require components/bcrypt-ruby.lst
 #require components/pg.lst
+
 #require components/redis.lst
 #require components/git.lst
 #require components/python27.lst

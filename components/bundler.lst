@@ -1,0 +1,3 @@
+#require ruby19.lst
+#portage dev-ruby/bundler-1.3.5
+

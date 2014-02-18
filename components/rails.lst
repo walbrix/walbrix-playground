@@ -17,54 +17,7 @@
 #symlink /usr/bin/rdoc rdoc19
 #symlink /usr/bin/ri ri19
 
-# dev-ruby/i18n
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/base.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/cache.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/cascade.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/chain.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/fallbacks.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/flatten.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/gettext.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/interpolation_compiler.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/key_value.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/memoize.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/metadata.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/pluralization.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/simple.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/backend/transliterator.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/config.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/core_ext/hash.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/core_ext/kernel/surpress_warnings.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/core_ext/string/interpolate.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/exceptions.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/gettext.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/gettext/helpers.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/gettext/po_parser.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/interpolate/ruby.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/locale.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/locale/fallbacks.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/locale/tag.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/locale/tag/parents.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/locale/tag/rfc4646.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/locale/tag/simple.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests/basics.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests/defaults.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests/interpolation.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests/link.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests/localization.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests/localization/date.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests/localization/date_time.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests/localization/procs.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests/localization/time.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests/lookup.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests/pluralization.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/tests/procs.rb
-/usr/lib/ruby/gems/1.9.1/gems/i18n-0.6.4/lib/i18n/version.rb
-/usr/lib/ruby/gems/1.9.1/specifications/i18n-0.6.4.gemspec
-
+#portage dev-ruby/i18n-0.6.9
 #portage dev-ruby/multi_json-1.5.0
 
 # thor
@@ -102,7 +55,7 @@
 /usr/lib/ruby/gems/1.9.1/gems/thor-0.14.6/lib/thor/version.rb
 /usr/lib/ruby/gems/1.9.1/specifications/thor-0.14.6.gemspec
 
-#portage dev-ruby/bundler-1.3.5
+#require bundler.lst
 
 # dev-ruby/mime-types
 /usr/lib/ruby/gems/1.9.1/gems/mime-types-1.19/lib/mime/types.rb
@@ -138,83 +91,8 @@
 /usr/lib/ruby/gems/1.9.1/specifications/polyglot-0.3.3.gemspec
 
 #portage dev-ruby/tzinfo-0.3.37
-
-# arel
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/alias_predication.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/attributes.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/attributes/attribute.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/compatibility/wheres.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/crud.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/delete_manager.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/deprecated.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/expression.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/expressions.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/factory_methods.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/insert_manager.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/math.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/and.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/ascending.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/binary.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/count.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/delete_statement.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/descending.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/equality.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/false.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/function.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/in.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/infix_operation.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/inner_join.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/insert_statement.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/join_source.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/named_function.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/node.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/ordering.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/outer_join.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/select_core.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/select_statement.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/sql_literal.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/string_join.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/table_alias.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/terminal.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/true.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/unary.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/unqualified_column.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/update_statement.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/values.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/nodes/with.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/order_predications.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/predications.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/relation.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/select_manager.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/sql/engine.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/sql_literal.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/table.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/tree_manager.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/update_manager.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/bind_visitor.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/depth_first.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/dot.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/ibm_db.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/informix.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/join_sql.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/mssql.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/mysql.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/oracle.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/order_clauses.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/postgresql.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/sqlite.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/to_sql.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/visitor.rb
-/usr/lib/ruby/gems/1.9.1/gems/arel-3.0.2/lib/arel/visitors/where_sql.rb
-/usr/lib/ruby/gems/1.9.1/specifications/arel-3.0.2.gemspec
-
-# bcrypt-ruby
-/usr/lib/ruby/gems/1.9.1/gems/bcrypt-ruby-3.0.1/lib/bcrypt.rb
-/usr/lib/ruby/gems/1.9.1/gems/bcrypt-ruby-3.0.1/lib/bcrypt_engine.rb
-/usr/lib/ruby/gems/1.9.1/gems/bcrypt-ruby-3.0.1/lib/bcrypt_ext.so
+#portage dev-ruby/arel-3.0.2-r1
+#portage dev-ruby/bcrypt-ruby-3.1.2-r1
 
 # rack-cache
 /usr/lib/ruby/gems/1.9.1/gems/rack-cache-1.2/lib/rack-cache.rb
@@ -260,35 +138,11 @@
 /usr/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/visualizer/index.html.erb
 /usr/lib/ruby/gems/1.9.1/specifications/journey-1.0.4.gemspec
 
-# rack-test
-/usr/lib/ruby/gems/1.9.1/gems/rack-test-0.6.1/lib/rack/mock_session.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-test-0.6.1/lib/rack/test.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-test-0.6.1/lib/rack/test/cookie_jar.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-test-0.6.1/lib/rack/test/methods.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-test-0.6.1/lib/rack/test/mock_digest_request.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-test-0.6.1/lib/rack/test/uploaded_file.rb
-/usr/lib/ruby/gems/1.9.1/gems/rack-test-0.6.1/lib/rack/test/utils.rb
-/usr/lib/ruby/gems/1.9.1/specifications/rack-test-0.6.1.gemspec
-
-# hike
-/usr/lib/ruby/gems/1.9.1/gems/hike-1.2.1/lib/hike.rb
-/usr/lib/ruby/gems/1.9.1/gems/hike-1.2.1/lib/hike/extensions.rb
-/usr/lib/ruby/gems/1.9.1/gems/hike-1.2.1/lib/hike/index.rb
-/usr/lib/ruby/gems/1.9.1/gems/hike-1.2.1/lib/hike/normalized_array.rb
-/usr/lib/ruby/gems/1.9.1/gems/hike-1.2.1/lib/hike/paths.rb
-/usr/lib/ruby/gems/1.9.1/gems/hike-1.2.1/lib/hike/trail.rb
-/usr/lib/ruby/gems/1.9.1/specifications/hike-1.2.1.gemspec
-
+#portage dev-ruby/rack-test-0.6.2-r1
+#portage dev-ruby/hike-1.2.3-r1
 #portage dev-ruby/abstract-1.0.0-r2
-
-# coffee-script-source
-/usr/lib/ruby/gems/1.9.1/gems/coffee-script-source-1.3.3/lib/coffee_script/coffee-script.js
-/usr/lib/ruby/gems/1.9.1/gems/coffee-script-source-1.3.3/lib/coffee_script/source.rb
-/usr/lib/ruby/gems/1.9.1/specifications/coffee-script-source-1.3.3.gemspec
-
-# rack-ssl
-/usr/lib/ruby/gems/1.9.1/gems/rack-ssl-1.3.2/lib/rack/ssl.rb
-/usr/lib/ruby/gems/1.9.1/specifications/rack-ssl-1.3.2.gemspec
+#portage dev-ruby/coffee-script-source-1.6.3
+#portage dev-ruby/rack-ssl-1.3.3-r1
 
 # rake-compiler
 /usr/bin/rake-compiler
@@ -298,53 +152,8 @@
 /usr/lib/ruby/gems/1.9.1/gems/rake-compiler-0.8.1/lib/rake/extensiontask.rb
 /usr/lib/ruby/gems/1.9.1/gems/rake-compiler-0.8.1/lib/rake/javaextensiontask.rb
 
-#portage dev-ruby/activesupport-3.2.15
-
-# treetop
-/usr/bin/tt
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/bin/tt
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/bootstrap_gen_1_metagrammar.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/grammar_compiler.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/lexical_address_space.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/metagrammar.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/metagrammar.treetop
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/anything_symbol.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/atomic_expression.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/character_class.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/choice.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/declaration_sequence.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/grammar.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/inline_module.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/nonterminal.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/optional.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/parenthesized_expression.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/parsing_expression.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/parsing_rule.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/predicate.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/predicate_block.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/repetition.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/sequence.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/terminal.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/transient_prefix.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/node_classes/treetop_file.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/compiler/ruby_builder.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/polyglot.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/ruby_extensions.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/ruby_extensions/string.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/runtime.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/runtime/compiled_parser.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/runtime/interval_skip_list.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/runtime/interval_skip_list/head_node.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/runtime/interval_skip_list/interval_skip_list.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/runtime/interval_skip_list/node.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/runtime/syntax_node.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/runtime/terminal_parse_failure.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/runtime/terminal_syntax_node.rb
-/usr/lib/ruby/gems/1.9.1/gems/treetop-1.4.10/lib/treetop/version.rb
-/usr/lib/ruby/gems/1.9.1/specifications/treetop-1.4.10.gemspec
+#portage dev-ruby/activesupport-3.2.16
+#portage dev-ruby/treetop-1.4.15
 
 # erubis
 /usr/bin/erubis
@@ -377,7 +186,7 @@
 /usr/lib/ruby/gems/1.9.1/gems/erubis-2.7.0/lib/erubis/util.rb
 /usr/lib/ruby/gems/1.9.1/specifications/erubis-2.7.0.gemspec
 
-#portage dev-ruby/activemodel-3.2.15
+#portage dev-ruby/activemodel-3.2.16
 #portage dev-ruby/mail-2.5.4
 
 # sprockets
@@ -414,47 +223,34 @@
 /usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/version.rb
 /usr/lib/ruby/gems/1.9.1/specifications/sprockets-2.2.2.gemspec
 
-#portage dev-ruby/actionpack-3.2.15
-#portage dev-ruby/activeresource-3.2.15 
-#portage dev-ruby/activerecord-3.2.15
+#portage dev-ruby/actionpack-3.2.16
+#portage dev-ruby/activeresource-3.2.16
+#portage dev-ruby/activerecord-3.2.16
 
 #portage dev-ruby/rb-inotify-0.9.0
-#portage dev-ruby/railties-3.2.15
-#symlink /usr/bin/rails rails-3.2.15
+#portage dev-ruby/railties-3.2.16
+#symlink /usr/bin/rails rails-3.2.16
 
-#portage dev-ruby/actionmailer-3.2.15
+#portage dev-ruby/actionmailer-3.2.16
 
 # fssm
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/backends/fsevents.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/backends/inotify.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/backends/rbfsevent.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/backends/rubycocoa/fsevents.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/monitor.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/path.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/pathname.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/state/file.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/support.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/tree.rb
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/version.rb
-/usr/lib/ruby/gems/1.9.1/specifications/fssm-0.2.8.1.gemspec
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/backends/fsevents.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/backends/inotify.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/backends/rbfsevent.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/backends/rubycocoa/fsevents.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/monitor.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/path.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/pathname.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/state/file.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/support.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/tree.rb
+#/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.8.1/lib/fssm/version.rb
+#/usr/lib/ruby/gems/1.9.1/specifications/fssm-0.2.8.1.gemspec
 
-# jquery-rails
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/lib/generators/jquery/install/install_generator.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/lib/jquery-rails.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/lib/jquery/assert_select.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/lib/jquery/rails.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/lib/jquery/rails/engine.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/lib/jquery/rails/version.rb
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery-ui.js
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery-ui.min.js
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery.js
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery.min.js
-/usr/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2/vendor/assets/javascripts/jquery_ujs.js
-/usr/lib/ruby/gems/1.9.1/specifications/jquery-rails-2.0.2.gemspec
-
+#portage dev-ruby/jquery-rails-3.0.4
 #portage dev-ruby/listen-0.7.3
 #portage dev-ruby/sass-3.2.9
 
@@ -477,27 +273,8 @@
 /usr/lib/ruby/gems/1.9.1/gems/sass-rails-3.2.5/lib/sass/rails/version.rb
 /usr/lib/ruby/gems/1.9.1/specifications/sass-rails-3.2.5.gemspec
 
-# execjs
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs.rb
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/external_runtime.rb
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/johnson_runtime.rb
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/module.rb
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/mustang_runtime.rb
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/ruby_racer_runtime.rb
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/ruby_rhino_runtime.rb
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/runtimes.rb
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/support/jsc_runner.js
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/support/jscript_runner.js
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/support/json2.js
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/support/node_runner.js
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/support/spidermonkey_runner.js
-/usr/lib/ruby/gems/1.9.1/gems/execjs-1.2.13/lib/execjs/version.rb
-/usr/lib/ruby/gems/1.9.1/specifications/execjs-1.2.13.gemspec
-
-# dev-ruby/coffee-script
-/usr/lib/ruby/gems/1.9.1/gems/coffee-script-2.2.0/lib/coffee-script.rb
-/usr/lib/ruby/gems/1.9.1/gems/coffee-script-2.2.0/lib/coffee_script.rb
-/usr/lib/ruby/gems/1.9.1/specifications/coffee-script-2.2.0.gemspec
+#portage dev-ruby/execjs-2.0.2
+#portage dev-ruby/coffee-script-2.2.0-r1
 
 # coffee-rails
 /usr/lib/ruby/gems/1.9.1/gems/coffee-rails-3.2.2/lib/assets/javascripts/coffee-script.js.erb
@@ -509,7 +286,7 @@
 /usr/lib/ruby/gems/1.9.1/gems/coffee-rails-3.2.2/lib/rails/generators/coffee/assets/templates/javascript.js.coffee
 /usr/lib/ruby/gems/1.9.1/specifications/coffee-rails-3.2.2.gemspec
 
-#portage dev-ruby/rails-3.2.15
+#portage dev-ruby/rails-3.2.16
 
 # mysql-ruby
 /usr/lib/ruby/gems/1.9.1/gems/mysql-2.9.1/lib/mysql.rb

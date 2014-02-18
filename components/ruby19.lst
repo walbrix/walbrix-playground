@@ -7,7 +7,7 @@
 #portage dev-ruby/rubygems-2.0.3
 #symlink /usr/bin/gem gem19
 
-#portage dev-ruby/json-1.8.0
+#portage dev-ruby/json-1.8.1
 
 # headers
 /usr/include/ruby-1.9.1/ruby.h

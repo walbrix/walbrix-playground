@@ -1,0 +1,43 @@
+--- discourse_quickstart.conf	2014-02-18 12:00:17.286917592 +0900
++++ discourse.conf	2014-02-18 13:20:20.690911292 +0900
+@@ -5,19 +5,19 @@
+ # All settings apply to production only
+ 
+ # database name running discourse, in INSTALL-ubuntu this is discourse_prod
+-db_name = discourse_prod
++db_name = discourse
+ 
+ # hostname running the forum; i.e the external address of your form.
+ hostname = "discourse.example.com"
+ 
+ # address of smtp server used to send emails. If testing, this can be left empty; but e-mails are a very important part of discourse.
+-smtp_address =
++smtp_address = localhost
+ 
+ # port of smtp server used to send emails. This varies based on your e-mail host.
+ smtp_port = 25
+ 
+ # domain passed to smtp server
+-smtp_domain =
++smtp_domain = example.com
+ 
+ # username for smtp server
+ smtp_user_name =
+@@ -26,7 +26,7 @@
+ smtp_password =
+ 
+ # enable TLS encryption for smtp connections
+-smtp_enable_start_tls = true
++smtp_enable_start_tls = false
+ 
+ # enable MiniProfiler for administrators, by default this is true. This shows response times in the top left for admin users only. Uncomment this line to turn this off.
+ # enable_mini_profiler = false
+@@ -48,7 +48,7 @@
+ # db_port = 5432
+ 
+ # username accessing database, if connecting remotely
+-# db_username = discourse
++db_username = discourse
+ 
+ # password used to access the db, if connecting remotely
+ # db_password =

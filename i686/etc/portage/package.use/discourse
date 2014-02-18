@@ -1,0 +1,6 @@
+dev-ruby/atomic ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/eventmachine ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/fast_xs ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/msgpack ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/redcarpet ruby_targets_ruby19 -ruby_targets_ruby18
+

@@ -1,4 +1,5 @@
 [
+    {"id":"debian","file":"i686/debian-i686-jp.json"},
     {"id":"tt-rss","file":"i686/tt-rss-i686-jp.json"},
     {"id":"zabbix","file":"i686/zabbix-i686-jp.json"},
     {"id":"glassfish","file":"i686/glassfish-i686-jp.json"},
@@ -24,7 +25,6 @@
     {"id":"mediatomb","file":"i686/mediatomb-i686-jp.json"},
     {"id":"handbrake","file":"i686/handbrake-i686-jp.json"},
     {"id":"eyeos","file":"i686/eyeos-i686-jp.json"},
-    {"id":"debian","file":"i686/debian-i686-jp.json"},
     {"id":"ubuntu","file":"i686/ubuntu-i686-jp.json"},
     {"id":"fedora","file":"i686/fedora-i686-jp.json"},
     {"id":"gentoo","file":"i686/gentoo-i686-jp.json"},

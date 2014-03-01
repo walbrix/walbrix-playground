@@ -3,7 +3,7 @@
 =dev-ruby/sass-3.2.6
 =dev-ruby/thor-0.14.6
 =dev-ruby/abstract-1.0.0-r1
-=dev-ruby/ffi-1.1.5
+=dev-ruby/ffi-1.9.3
 =dev-ruby/erubis-2.7.0
 =dev-ruby/activesupport-3.2.16
 =dev-ruby/sprockets-2.2.2

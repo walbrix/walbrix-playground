@@ -1,1 +1,9 @@
-{"description": "1993年発足の老舗 Linuxディストリビューションです。他の多くのディストリビューションの派生元にもなっていることから、その安定性・完成度の高さが伺えます。（サーバ向けのヘッドレス仕様で作成されます。GUIはありません）", "title": "Debian GNU/Linux 6.0(squeeze)", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/debian-20110309.tar.lzma", "minimum_ram": 64, "images": [{"url": "http://va.walbrix.net/img/debian01.png"}], "id": "debian"}
+{
+    "description": "1993年発足の老舗 Linuxディストリビューションです。他の多くのディストリビューションの派生元にもなっていることから、その安定性・完成度の高さが伺えます。（サーバ向けのヘッドレス仕様で作成されます。GUIはありません）", 
+    "title": "Debian GNU/Linux 7.4(wheezy)", 
+    "minimum_hd": 2,
+    "tarball": "http://dist.walbrix.net/va/debian-7.4-i686.tar.xz",
+    "minimum_ram": 96,
+    "images": [{"url": "http://va.walbrix.net/img/debian01.png"}],
+    "id": "debian"
+}

@@ -1,0 +1,5 @@
+#require ruby19.lst
+#portage dev-ruby/rdoc-4.0.1-r1
+#symlink /usr/bin/rdoc rdoc19
+#symlink /usr/bin/ri ri19
+

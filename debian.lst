@@ -10,6 +10,7 @@
 #copy domU/smb.conf /etc/samba/smb.conf
 #chrootexec rm -f /etc/ssh/ssh_host_*
 #patchsinglefile /etc/init.d/ssh debian/ssh.patch
+#patchsinglefile /etc/init.d/checkroot.sh debian/checkroot.sh.patch
 #patchsinglefile /etc/inittab debian/inittab.patch
 #copy debian/interfaces /etc/network/interfaces
 #require components/timezone-$(REGION).lst

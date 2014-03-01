@@ -1,0 +1,20 @@
+ServerAdmin discourse@example.com
+DocumentRoot "/var/www/localhost/htdocs/public"
+<Directory "/var/www/localhost/htdocs">
+	Options Indexes FollowSymLinks
+	AllowOverride All
+	Order allow,deny
+	Allow from all
+</Directory>
+
+<IfModule alias_module>
+	ScriptAlias /cgi-bin/ "/var/www/localhost/cgi-bin/"
+</IfModule>
+
+<Directory "/var/www/localhost/cgi-bin">
+	AllowOverride None
+	Options None
+	Order allow,deny
+	Allow from all
+</Directory>
+

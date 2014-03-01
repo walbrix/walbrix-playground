@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtual-appliance uuid="51c2e7e0-34c8-4195-a9d9-0a6d7b9a5349">
+  <version>0.9.8.5</version>
+  <instruction>discourse</instruction>
+</virtual-appliance>

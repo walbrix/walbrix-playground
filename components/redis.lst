@@ -1,0 +1,3 @@
+#portage dev-db/redis-2.6.15-r1
+#symlink /etc/runlevels/default/redis /etc/init.d/redis
+

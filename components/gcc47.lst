@@ -1,0 +1,6 @@
+#portage sys-devel/gcc-4.7.3-r1
+#symlink /usr/bin/$(ARCH)-pc-linux-gnu-gcc ../$(ARCH)-pc-linux-gnu/gcc-bin/4.7.3/$(ARCH)-pc-linux-gnu-gcc
+#symlink /usr/bin/gcc $(ARCH)-pc-linux-gnu-gcc
+/usr/bin/as
+/usr/bin/ld
+

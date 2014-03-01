@@ -1,4 +1,5 @@
 #require ruby19.lst
+#require apache.lst
 
 # daemon_controller
 /usr/lib/ruby/gems/1.9.1/gems/daemon_controller-1.1.1/lib/daemon_controller.rb

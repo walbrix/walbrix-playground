@@ -1,0 +1,13 @@
+--- checkroot.sh.orig	2014-02-16 19:36:17.959056418 +0900
++++ checkroot.sh	2014-02-16 19:37:24.481559112 +0900
+@@ -67,6 +67,10 @@
+ 	esac
+ 	if [ "$ENABLE_SWAP" = yes ]
+ 	then
++		if [ -d /sys/block/zram0 ] && grep -qs '^/dev/zram0.*swap.*sw' /etc/fstab; then
++			grep MemTotal: /proc/meminfo | awk '{print $2*1024}' > /sys/block/zram0/disksize
++			mkswap /dev/zram0
++		fi
+ 		if [ "$VERBOSE" = no ]
+ 		then
+ 			log_action_begin_msg "Activating swap"

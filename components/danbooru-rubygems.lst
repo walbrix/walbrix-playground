@@ -3,14 +3,7 @@
 #require mocha.lst
 #require rmagick.lst
 
-# dev-ruby/pg-0.14
-/usr/lib/ruby/gems/1.9.1/gems/pg-0.14.0/lib/pg.rb
-/usr/lib/ruby/gems/1.9.1/gems/pg-0.14.0/lib/pg/connection.rb
-/usr/lib/ruby/gems/1.9.1/gems/pg-0.14.0/lib/pg/constants.rb
-/usr/lib/ruby/gems/1.9.1/gems/pg-0.14.0/lib/pg/exceptions.rb
-/usr/lib/ruby/gems/1.9.1/gems/pg-0.14.0/lib/pg/result.rb
-/usr/lib/ruby/gems/1.9.1/gems/pg-0.14.0/lib/pg_ext.so
-/usr/lib/ruby/gems/1.9.1/specifications/pg-0.14.0.gemspec
+#require pg.lst
 
 # dev-ruby/rexical
 /usr/bin/rex

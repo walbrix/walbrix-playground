@@ -1,6 +1,6 @@
 #require components/pvkernel.lst
 #extract debian/debian-$(ARCH).tar.xz /
-#chrootexec echo "debian" >> /etc/hostname
+#chrootexec echo "debian" > /etc/hostname
 #sed /etc/shadow s/^\(root:\)[^:]*\(:.*\)$/\1\2/
 #copy domU/resolv.conf /etc/resolv.conf
 #copy domU/fstab-with-zramswap /etc/fstab

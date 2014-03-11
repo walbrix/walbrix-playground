@@ -1,1 +1,10 @@
-{"description": "【玄人向け】インストーラ無しで Linuxをインストール出来る選ばれしエキスパートのみを対象にした Linuxディストリビューションです。stage3をベースに、最低限必要なものだけが組み込まれています。", "title": "Gentoo Linux(Mar08 2011)", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/gentoo-20110308.tar.lzma", "minimum_ram": 64, "images": [{"url": "http://va.walbrix.net/img/gentoo01.png"}], "id": "gentoo"}
+{
+	"description": "【玄人向け】インストーラ無しで Linuxをインストール出来る選ばれしエキスパートのみを対象にした Linuxディストリビューションです。stage3をベースに、最低限必要なものだけが組み込まれています。",
+	"title": "Gentoo Linux 20140304", 
+	"minimum_hd": 4, 
+	"tarball": "http://dist.walbrix.net/va/gentoo-20140304-i686-jp.tar.xz", 
+	"minimum_ram": 96, 
+	"images": [{"url": "http://va.walbrix.net/img/gentoo01.png"}], 
+	"id": "gentoo"
+}
+

@@ -20,8 +20,8 @@ dev-ruby/racc -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/json -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/rdoc -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/pkg-config -ruby_targets_ruby18
-dev-ruby/rack-protection -ruby_targets_ruby18
-dev-ruby/rack -ruby_targets_ruby18
+dev-ruby/rack-protection -ruby_targets_ruby18 -ruby_targets_ruby20
+dev-ruby/rack -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/builder -ruby_targets_ruby18
 dev-ruby/tilt -ruby_targets_ruby18
 dev-ruby/sinatra -ruby_targets_ruby18
@@ -31,7 +31,7 @@ dev-ruby/rubyforge -ruby_targets_ruby18
 dev-ruby/echoe -ruby_targets_ruby18
 dev-ruby/fastthread -ruby_targets_ruby18
 www-apache/passenger -ruby_targets_ruby18
-dev-ruby/mysql2 -ruby_targets_ruby18
+dev-ruby/mysql2 -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/nokogiri -ruby_targets_ruby18
 dev-ruby/hoe -ruby_targets_ruby18
 dev-ruby/rake-compiler -ruby_targets_ruby18

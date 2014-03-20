@@ -1,5 +1,5 @@
 #require openldap.lst
 #require cifs-utils.lst
 
-#portage net-fs/samba-3.6.22
+#portage net-fs/samba-3.6.23
 

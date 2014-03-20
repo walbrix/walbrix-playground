@@ -23,7 +23,7 @@
 /etc/passwd
 /etc/shadow
 #sed /etc/shadow s/^root:\*:/root::/
-#portage app-arch/bzip2-1.0.6-r3
+#portage app-arch/bzip2-1.0.6-r6
 #portage app-arch/cpio-2.11
 #portage sys-apps/grep-2.14
 #portage sys-process/psmisc-22.20

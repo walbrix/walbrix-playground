@@ -1,7 +1,7 @@
 #require java.lst
 
 #portage dev-java/ant-core-1.9.2
-#portage dev-java/commons-pool-1.5.6
+#portage dev-java/commons-pool-1.6
 #portage dev-java/glassfish-transaction-api-1.1.2.2.04
 #portage dev-java/jdbc-mysql-5.1.18
 #portage dev-java/jdbc-postgresql-9.1_p902

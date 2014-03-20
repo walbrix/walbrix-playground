@@ -37,7 +37,7 @@
 #symlink /etc/runlevels/default/tomcat-7 /etc/init.d/tomcat-7
 
 ## groonga
-#chrootexec cd /root && wget http://packages.groonga.org/source/groonga/groonga-3.0.9.tar.gz && tar xvzf groonga-*.tar.gz && cd groonga-*/ && ./configure --prefix=/usr --localstatedir=/var && make && make install && cd .. && rm -rf groonga-*/
+#chrootexec cd /root && wget http://packages.groonga.org/source/groonga/groonga-4.0.0.tar.gz && tar xvzf groonga-*.tar.gz && cd groonga-*/ && ./configure --prefix=/usr --localstatedir=/var && make && make install && cd .. && rm -rf groonga-*/
 #chrootexec git clone https://github.com/groonga/groonga-normalizer-mysql.git && cd groonga-normalizer-mysql && ./autogen.sh && ./configure && make && make install
 
 ## mroonga

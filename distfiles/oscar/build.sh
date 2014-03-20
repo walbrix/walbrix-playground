@@ -37,7 +37,7 @@ echo "dev-python/setuptools -python_targets_python3_2" >> /etc/portage/package.u
 echo "dev-python/blinker -python_targets_python3_2" >> /etc/portage/package.use
 echo "dev-python/markupsafe -python_targets_python3_2" >> /etc/portage/package.use
 echo "dev-java/java-config -python_targets_python3_2" >> /etc/portage/package.use
-echo "sys-apps/portage -python_targets_python3_2" >> /etc/portage/package.use
+echo "sys-apps/portage -python_targets_python3_2 -python_targets_python3_3" >> /etc/portage/package.use
 echo "dev-python/xlrd -python_targets_python3_2" >> /etc/portage/package.use
 echo "dev-python/pyasn1 -python_targets_python3_2" >> /etc/portage/package.use
 echo "virtual/python-argparse -python_targets_python3_2" >> /etc/portage/package.use

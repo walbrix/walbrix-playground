@@ -1,2 +1,2 @@
-#portage net-misc/openssh-6.4_p1-r1
+#portage net-misc/openssh-6.6_p1-r1
 #symlink /etc/runlevels/default/sshd /etc/init.d/sshd

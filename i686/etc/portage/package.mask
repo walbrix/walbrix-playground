@@ -1,4 +1,4 @@
 >=sys-kernel/vanilla-sources-3.3.0
 >=dev-lang/php-5.5
->=virtual/rubygems-5
->=dev-lang/ruby-2.0
+<dev-lang/ruby-2.0
+

@@ -1,20 +1,20 @@
 dev-ruby/mocha ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/metaclass ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/metaclass ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/ruby-net-ldap ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/pg ruby_targets_ruby19 -ruby_targets_ruby18
 # move dev-ruby/sqlite3-ruby dev-ruby/sqlite3
 dev-ruby/sqlite3 ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/hoe ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/yard ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/shoulda ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/shoulda ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/coderay ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/test-unit ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/test-unit ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-vcs/subversion apache2
 dev-ruby/fastercsv ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/ruby-openid ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/childprocess ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/selenium-webdriver ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/xpath ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/xpath ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/rubyzip ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/bourne ruby_targets_ruby19 -ruby_targets_ruby18
-
+dev-ruby/bourne ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
+dev-ruby/capybara ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20

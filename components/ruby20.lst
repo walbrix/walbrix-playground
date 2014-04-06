@@ -1,0 +1,13 @@
+#portage dev-lang/ruby-2.0.0_p353
+#symlink /usr/bin/erb erb20
+#symlink /usr/bin/irb irb20
+#symlink /usr/bin/ruby ruby20
+
+#portage dev-ruby/rubygems-2.0.3
+#symlink /usr/bin/gem gem20
+
+#portage dev-ruby/rake-0.9.6
+#portage dev-ruby/json-1.8.1
+#portage dev-ruby/racc-1.4.9
+#portage dev-ruby/rdoc-4.0.1-r1
+#portage dev-ruby/bundler-1.3.5-r1

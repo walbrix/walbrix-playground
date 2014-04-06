@@ -2,7 +2,7 @@ dev-ruby/rexical ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/daemons ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/nokogiri ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/mechanize ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/chronic ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/chronic ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/webrobots ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/unf ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/unf_ext ruby_targets_ruby19 -ruby_targets_ruby18

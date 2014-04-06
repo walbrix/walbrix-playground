@@ -1,6 +1,13 @@
-dev-ruby/atomic ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/eventmachine ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/atomic ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
+dev-ruby/eventmachine ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/fast_xs ruby_targets_ruby19 -ruby_targets_ruby18
-dev-ruby/msgpack ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/msgpack ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 dev-ruby/redcarpet ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/rspec ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/rspec-core ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/rspec-mocks ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/diff-lcs ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/rspec-expectations ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/multipart-post ruby_targets_ruby19 -ruby_targets_ruby18
+dev-ruby/redis ruby_targets_ruby19 -ruby_targets_ruby18 -ruby_targets_ruby20
 

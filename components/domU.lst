@@ -5,7 +5,7 @@
 #require util-linux.lst
 #require net-tools.lst
 #require shadow.lst
-#portage sys-apps/attr-2.4.46-r2
+#portage sys-apps/attr-2.4.47-r1
 #require procps.lst
 #require openssh.lst
 #require openssl.lst
@@ -24,15 +24,15 @@
 /etc/shadow
 #sed /etc/shadow s/^root:\*:/root::/
 #portage app-arch/bzip2-1.0.6-r6
-#portage app-arch/cpio-2.11
-#portage sys-apps/grep-2.14
+#portage app-arch/cpio-2.11-r1
+#portage sys-apps/grep-2.16
 #portage sys-process/psmisc-22.20
 #portage app-arch/gzip-1.5
 #portage sys-process/procps-3.3.8-r2
-#portage sys-apps/kmod-15-r1
+#portage sys-apps/kmod-16
 #portage net-misc/iputils-20121221
 #portage sys-apps/sed-4.2.1-r1
-#portage app-arch/tar-1.26-r1
+#portage app-arch/tar-1.27.1-r2 
 #portage app-shells/bash-4.2_p45
 /bin/sh
 /bin/busybox

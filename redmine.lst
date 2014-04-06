@@ -21,7 +21,7 @@
 #chrootexec rm -rf /var/www/localhost/htdocs
 #chrootexec mv /var/www/localhost/redmine-2.5.1 /var/www/localhost/htdocs
 #chrootexec cd /var/www/localhost/htdocs && bundle install
-#chrootexec rm -rf /usr/local/lib/ruby/gems/*/gems/nokogiri-*/ext/nokogiri/tmp
+#chrootexec rm -rf /usr/local/lib/ruby/gems/*/cache /usr/local/lib/ruby/gems/*/gems/nokogiri-*/ext/nokogiri/tmp /usr/local/lib/ruby/gems/*/gems/nokogiri-*/ports/archives
 
 #copy redmine/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
 #copy redmine/database.yml /var/www/localhost/htdocs/config/database.yml

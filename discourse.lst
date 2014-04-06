@@ -1,45 +1,28 @@
 #require components/domU.lst
 #require components/pvkernel.lst
 #require components/apache.lst
-#require components/php54.lst
 #require components/postgresql.lst
 #require components/postfix.lst
-
-# base/native requirements for rails
-#require components/nodejs.lst
-#require components/bundler.lst
 #require components/passenger.lst
-#require components/ffi.lst
-#require components/bcrypt-ruby.lst
-#require components/pg.lst
-
 #require components/redis.lst
-#require components/git.lst
 #require components/python27.lst
-
-#portage dev-ruby/atomic-1.1.14-r1
-#portage dev-ruby/eventmachine-1.0.3-r1
-#portage dev-ruby/fast_xs-0.8.0
-#portage dev-ruby/msgpack-0.5.7
-#portage dev-ruby/redcarpet-2.3.0-r1
-#portage www-servers/thin-1.5.1-r3
-#portage dev-ruby/unf_ext-0.0.6
-
-# waiting for: nokogiri-1.6.1 msgpack-0.5.8 redcarpet-3.1.0 thin-1.6.1 fast_xor hiredis onebox rinku therubyracer v8
+#require components/git.lst
+#require components/imagemagick.lst
 
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1discourse\2/
 #copy domU/fstab-with-zramswap /etc/fstab
 #chrootexec rm -rf /var/www/localhost/htdocs
 #chrootexec GIT_SSL_NO_VERIFY=1 git clone -b latest-release https://github.com/discourse/discourse.git /var/www/localhost/htdocs
-#patchsinglefile /var/www/localhost/htdocs/Gemfile discourse/Gemfile.patch
+##patchsinglefile /var/www/localhost/htdocs/Gemfile discourse/Gemfile.patch
+#chrootexec cd /var/www/localhost/htdocs && bundle install
+#chrootexec rm -rf /usr/local/lib/ruby/gems/*/cache /usr/local/lib/ruby/gems/*/gems/nokogiri-*/ext/nokogiri/tmp /usr/local/lib/ruby/gems/*/gems/nokogiri-*/ports/archives
 #copy discourse/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
-#sed /etc/apache2/modules.d/30_mod_passenger.conf s/\(\/usr\/bin\/ruby\)18$/\119/
-#chrootexec cp /var/www/localhost/htdocs/config/discourse_quickstart.conf /var/www/localhost/htdocs/config/discourse.conf
-#patchsinglefile /var/www/localhost/htdocs/config/discourse.conf discourse/discourse.conf.patch
+#copy discourse/discourse.conf /var/www/localhost/htdocs/config/discourse.conf
 #copy discourse/setup_initial_database.sh /setup_initial_database.sh
 #chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh
-##chrootexec cd /var/www/localhost/htdocs && RUBY_GC_MALLOC_LIMIT=90000000 RAILS_ENV=production bundle exec rake assets:precompile
 #chrootexec chown -R apache.apache /var/www/localhost/htdocs
+#copy discourse/sidekiq.init /etc/init.d/sidekiq
+#symlink /etc/runlevels/default/sidekiq /etc/init.d/sidekiq
 
 #copy discourse/wb-va.xml /etc/wb-va.xml
 

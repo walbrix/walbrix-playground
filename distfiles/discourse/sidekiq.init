@@ -1,0 +1,23 @@
+#!/sbin/runscript
+
+APP_HOME=/var/www/localhost/htdocs
+APP_USER=apache
+PID_FILE=/run/sidekiq.pid
+
+depend() {
+	need postgresql-9.3
+}
+
+start() {
+	ebegin "Starting" ${SVCNAME}
+	export RUBY_GC_MALLOC_LIMIT=90000000
+	export RAILS_ENV=production
+	start-stop-daemon --start --chdir ${APP_HOME} --exec 'bundle' --user ${APP_USER} --name ruby --pidfile ${PID_FILE} -m -b -- exec sidekiq
+	eend $?
+}
+
+end() {
+	ebegin "Stopping" ${SVCNAME}
+	start-stop-daemon --stop --pidfile ${PID_FILE}
+	eend $?
+}

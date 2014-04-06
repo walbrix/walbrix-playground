@@ -15,14 +15,8 @@
 =dev-java/tomcat-servlet-api-7.0.47
 =dev-java/jdbc-postgresql-9.1_p902
 
-=dev-ruby/tilt-1.3.3
-=dev-ruby/rack-protection-1.5.2
-=dev-ruby/sinatra-1.3.3
-=dev-ruby/daemon_controller-1.0.0
-=dev-ruby/builder-3.0.0-r1
 =dev-ruby/mysql2-0.3.14
-=dev-ruby/ffi-1.1.5
-=dev-ruby/builder-3.0.4
+=dev-ruby/bundler-1.3.6
 =www-apache/passenger-3.0.17
 
 =net-libs/nodejs-0.10.18

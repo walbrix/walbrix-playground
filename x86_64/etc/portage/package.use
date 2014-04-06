@@ -13,32 +13,16 @@ dev-lang/python sqlite
 dev-java/java-config -python_targets_python3_2
 dev-python/python-exec -python_targets_python3_2
 
-dev-ruby/rubygems -ruby_targets_ruby18 -ruby_targets_ruby20
+dev-ruby/rubygems -ruby_targets_ruby18 -ruby_targets_ruby19
 virtual/rubygems -ruby_targets_ruby18
-dev-ruby/rake -ruby_targets_ruby18 -ruby_targets_ruby20
-dev-ruby/racc -ruby_targets_ruby18 -ruby_targets_ruby20
-dev-ruby/json -ruby_targets_ruby18 -ruby_targets_ruby20
-dev-ruby/rdoc -ruby_targets_ruby18 -ruby_targets_ruby20
+dev-ruby/rake -ruby_targets_ruby18 -ruby_targets_ruby19
+dev-ruby/racc -ruby_targets_ruby18 -ruby_targets_ruby19
+dev-ruby/json -ruby_targets_ruby18 -ruby_targets_ruby19
+dev-ruby/rdoc -ruby_targets_ruby18 -ruby_targets_ruby19
 dev-ruby/pkg-config -ruby_targets_ruby18
-dev-ruby/rack-protection -ruby_targets_ruby18 -ruby_targets_ruby20
-dev-ruby/rack -ruby_targets_ruby18 -ruby_targets_ruby20
-dev-ruby/builder -ruby_targets_ruby18
-dev-ruby/tilt -ruby_targets_ruby18
-dev-ruby/sinatra -ruby_targets_ruby18
-dev-ruby/daemon_controller -ruby_targets_ruby18
-dev-ruby/highline -ruby_targets_ruby18
-dev-ruby/rubyforge -ruby_targets_ruby18
-dev-ruby/echoe -ruby_targets_ruby18
-dev-ruby/fastthread -ruby_targets_ruby18
-www-apache/passenger -ruby_targets_ruby18
-dev-ruby/mysql2 -ruby_targets_ruby18 -ruby_targets_ruby20
-dev-ruby/nokogiri -ruby_targets_ruby18
-dev-ruby/hoe -ruby_targets_ruby18
-dev-ruby/rake-compiler -ruby_targets_ruby18
-dev-ruby/rexical -ruby_targets_ruby18
-dev-ruby/ffi ruby_targets_ruby19 -ruby_targets_ruby18
-virtual/ruby-ffi ruby_targets_ruby19 -ruby_targets_ruby18
-
+www-apache/passenger -ruby_targets_ruby18 -ruby_targets_ruby18
+dev-ruby/mysql2 -ruby_targets_ruby18 -ruby_targets_ruby19
+dev-ruby/bundler -ruby_targets_ruby19
 dev-java/icedtea-bin -X -alsa -cups cjk
 dev-lang/scala binary
 

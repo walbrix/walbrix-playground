@@ -4,8 +4,7 @@
 #require components/php54.lst
 #require components/mysql.lst
 #require components/postfix.lst
-#require components/rails.lst
-#require components/redmine-rubygems.lst
+#require components/passenger.lst
 #require components/subversion.lst
 #require components/dav_svn.lst
 #require components/websvn.lst
@@ -14,20 +13,17 @@
 # to enable thumbnail
 #require components/imagemagick.lst
 
+#portage dev-ruby/mysql2-0.3.14
+
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1redmine\2/
 #copy domU/fstab-with-zramswap /etc/fstab
-#extract redmine/redmine-2.3.4.tar.gz /var/www/localhost
+#chrootexec wget -O - http://www.redmine.org/releases/redmine-2.5.1.tar.gz | tar zxvf - -C /var/www/localhost
 #chrootexec rm -rf /var/www/localhost/htdocs
-#chrootexec mv /var/www/localhost/redmine-2.3.4 /var/www/localhost/htdocs
-#sed /var/www/localhost/htdocs/Gemfile s/gem "rails", "3\.2\.13/gem "rails", "3.2.15/
-##sed /var/www/localhost/htdocs/Gemfile s/gem "mocha",.*//
-#sed /var/www/localhost/htdocs/Gemfile s/gem "fastercsv",.*//
-#sed /var/www/localhost/htdocs/Gemfile s/gem "builder", "3\.0/gem "builder", "~> 3\.0/
-#sed /var/www/localhost/htdocs/Gemfile s/gem "ruby-openid", "~> 2\.1/gem "ruby-openid", "> 2.1/
-#sed /var/www/localhost/htdocs/Gemfile s/gem "shoulda",.*//
+#chrootexec mv /var/www/localhost/redmine-2.5.1 /var/www/localhost/htdocs
+#chrootexec cd /var/www/localhost/htdocs && bundle install
+#chrootexec rm -rf /usr/local/lib/ruby/gems/*/gems/nokogiri-*/ext/nokogiri/tmp
 
 #copy redmine/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
-#sed /etc/apache2/modules.d/30_mod_passenger.conf s/\(\/usr\/bin\/ruby\)18$/\119/
 #copy redmine/database.yml /var/www/localhost/htdocs/config/database.yml
 #copy redmine/configuration.yml /var/www/localhost/htdocs/config/configuration.yml
 #chrootexec mkdir /var/www/localhost/htdocs/public/plugin_assets

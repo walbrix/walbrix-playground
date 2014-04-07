@@ -4,6 +4,6 @@
 	"description":"discourseは、Twitter, Facebook, GoogleといったソーシャルIDでのログインもできる次世代型のフォーラム（掲示板）構築ソフトウェアです。",
 	"images":[{"url":"http://va.walbrix.net/img/discourse01.png"}],	
 	"tarball":"http://dist.walbrix.net/va/discourse-0.9.9-i686-jp.tar.xz",
-	"minimum_ram":384,
+	"minimum_ram":512,
 	"minimum_hd":2
 }

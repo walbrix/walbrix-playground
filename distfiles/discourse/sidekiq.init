@@ -16,7 +16,7 @@ start() {
 	eend $?
 }
 
-end() {
+stop() {
 	ebegin "Stopping" ${SVCNAME}
 	start-stop-daemon --stop --pidfile ${PID_FILE}
 	eend $?

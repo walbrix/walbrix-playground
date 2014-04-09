@@ -6,6 +6,7 @@
 #copy domU/fstab-with-zramswap /etc/fstab
 #chrootexec mkdir /root/.ssh && chmod 700 /root/.ssh && touch /root/.ssh/authorized_keys
 #copy debian/wb-va.xml /etc/wb-va.xml
+#copy debian/sources-$(REGION).lst /etc/apt/sources.lst
 #chrootexec apt-get update -y && apt-get upgrade -y && apt-get clean
 #copy domU/smb.conf /etc/samba/smb.conf
 #chrootexec rm -f /etc/ssh/ssh_host_*

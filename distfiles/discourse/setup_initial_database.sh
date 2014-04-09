@@ -27,7 +27,7 @@ su - postgres -c "psql -f /tmp/textsearch_ja.sql discourse"
 rm /tmp/textsearch_ja.sql
 cd /
 rm -rf textsearch_ja-9.0.0
-read -n1 -r -p "Press any key to continue..." key
+#read -n1 -r -p "Press any key to continue..." key
 
 cd /var/www/localhost/htdocs
 RUBY_GC_MALLOC_LIMIT=90000000 RAILS_ENV=production bundle exec rake db:migrate

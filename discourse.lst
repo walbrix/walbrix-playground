@@ -1,31 +1,10 @@
 #require components/domU.lst
 #require components/pvkernel.lst
-#require components/apache.lst
-#require components/postgresql.lst
-#require components/postfix.lst
-#require components/passenger.lst
-#require components/redis.lst
-#require components/python27.lst
-#require components/git.lst
-#require components/imagemagick.lst
-
-#portage app-text/mecab-0.996
-#portage app-dicts/mecab-ipadic-2.7.0.20070801
 
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1discourse\2/
 #copy domU/fstab-with-zramswap /etc/fstab
-#chrootexec rm -rf /var/www/localhost/htdocs
-#chrootexec GIT_SSL_NO_VERIFY=1 git clone -b latest-release https://github.com/discourse/discourse.git /var/www/localhost/htdocs
-##patchsinglefile /var/www/localhost/htdocs/Gemfile discourse/Gemfile.patch
-#chrootexec cd /var/www/localhost/htdocs && bundle install
-#chrootexec rm -rf /usr/local/lib/ruby/gems/*/cache /usr/local/lib/ruby/gems/*/gems/nokogiri-*/ext/nokogiri/tmp /usr/local/lib/ruby/gems/*/gems/nokogiri-*/ports/archives
-#copy discourse/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
-#copy discourse/discourse.conf /var/www/localhost/htdocs/config/discourse.conf
-#copy discourse/setup_initial_database.sh /setup_initial_database.sh
-#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh
-#chrootexec chown -R apache.apache /var/www/localhost/htdocs
-#copy discourse/sidekiq.init /etc/init.d/sidekiq
-#symlink /etc/runlevels/default/sidekiq /etc/init.d/sidekiq
+
+#require components/discourse.lst
 
 #copy discourse/wb-va.xml /etc/wb-va.xml
 

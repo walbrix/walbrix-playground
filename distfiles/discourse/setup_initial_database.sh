@@ -18,11 +18,11 @@ sleep 5
 createuser -sDR $USER -U postgres
 createdb $DB -E utf-8 -T template0 -O $USER -U postgres
 
-wget -O - http://pgfoundry.org/frs/download.php/2943/textsearch_ja-9.0.0.tar.gz | tar zxvf - -C /
+wget -O - http://ftp.jaist.ac.jp/pub/postgresql/projects/pgFoundry/textsearch-ja/textsearch_ja/9.0.0/textsearch_ja-9.0.0.tar.gz | tar zxvf - -C /
 cd /textsearch_ja-9.0.0
 make USE_PGXS=1
 make USE_PGXS=1 install
-cp textsearch_ja.sql /tmp/
+sed "s/LANGUAGE 'C'/LANGUAGE 'c'/" textsearch_ja.sql > /tmp/textsearch_ja.sql
 su - postgres -c "psql -f /tmp/textsearch_ja.sql discourse"
 rm /tmp/textsearch_ja.sql
 cd /

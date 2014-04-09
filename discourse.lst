@@ -9,6 +9,9 @@
 #require components/git.lst
 #require components/imagemagick.lst
 
+#portage app-text/mecab-0.996
+#portage app-dicts/mecab-ipadic-2.7.0.20070801
+
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1discourse\2/
 #copy domU/fstab-with-zramswap /etc/fstab
 #chrootexec rm -rf /var/www/localhost/htdocs

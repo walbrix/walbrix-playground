@@ -1,0 +1,11 @@
+--- i686/etc/apache2/modules.d/30_mod_passenger.conf	2014-04-09 21:52:04.633106396 +0900
++++ 30_mod_passenger.conf	2014-04-10 00:31:46.862554817 +0900
+@@ -31,7 +31,7 @@
+ # The maximum number of Ruby on Rails application instances that may be
+ # simultaneously active. A larger number results in higher memory usage, but
+ # improved ability to handle concurrent HTTP clients.
+-PassengerMaxPoolSize 20
++PassengerMaxPoolSize 2
+ 
+ # The maximum number of seconds that a Ruby on Rails application instance may
+ # be idle. That is, if an application instance hasn't done anything after the

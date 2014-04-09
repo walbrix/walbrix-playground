@@ -1,7 +1,11 @@
 #require ruby20.lst
 #require apache.lst
+## perl is for apxs2
+#require perl.lst
 #portage dev-ruby/daemon_controller-1.2.0
 #portage dev-ruby/rack-1.5.2-r2
 #portage www-apache/passenger-4.0.41
 /etc/conf.d/apache2
 #sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D PASSENGER"/
+#patchsinglefile /etc/apache2/modules.d/30_mod_passenger.conf passenger/30_mod_passenger.conf.patch
+

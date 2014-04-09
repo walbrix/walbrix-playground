@@ -2,7 +2,7 @@
 =dev-java/jdbc-postgresql-9.1_p902
 =net-libs/nodejs-0.10.7
 =dev-lang/v8-3.11.10.12
-=media-gfx/imagemagick-6.7.9.9
+=media-gfx/imagemagick-6.8.8.10
 =www-apps/eyeos-2.5
 =dev-perl/Net-SMTP-TLS-0.120.0-r1
 =dev-db/mysql-5.5.32
@@ -11,3 +11,4 @@
 =net-fs/cifs-utils-6.1-r1
 =dev-python/mecab-python-0.996
 =app-arch/tar-1.27.1-r2
+=mail-mta/postfix-2.10.3

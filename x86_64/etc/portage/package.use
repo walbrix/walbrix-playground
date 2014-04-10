@@ -33,3 +33,4 @@ sys-libs/talloc python
 net-fs/cifs-utils -acl
 mail-mta/postfix sasl
 
+media-gfx/imagemagick perl jpeg jpeg2k png truetype webp

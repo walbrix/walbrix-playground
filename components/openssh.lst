@@ -1,2 +1,3 @@
+#require pam.lst
 #portage net-misc/openssh-6.6_p1-r1
 #symlink /etc/runlevels/default/sshd /etc/init.d/sshd

@@ -10,7 +10,7 @@
 # disable SSL / enable PROXY and DAV
 #sed /etc/conf.d/apache2 s/-D SSL//
 #sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D PROXY -D DAV"/
-#require openrc.lst
+#dir /etc/runlevels/default
 #symlink /etc/runlevels/default/apache2 /etc/init.d/apache2
 
 #dir /var/www/localhost/htdocs

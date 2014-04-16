@@ -1,0 +1,9 @@
+{
+    "description": "wallabagは、Pocketクローンのオープンソースな「後で読む」ソフトウェアです。",
+    "title": "wallabag 1.6.1b",
+    "minimum_hd": 1,
+    "tarball": "http://dist.walbrix.net/va/wallabag-1.6.1b-i686-jp.tar.xz",
+    "minimum_ram": 96,
+    "images": [{"url": "http://va.walbrix.net/img/wallabag01.png"}],
+    "id": "wallabag"
+}

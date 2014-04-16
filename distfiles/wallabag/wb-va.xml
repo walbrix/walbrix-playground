@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtual-appliance uuid="771aca93-f2ba-466d-b93b-a825269edcdb">
+  <version>1.6.1b</version>
+  <instruction>デフォルトのユーザー名/パスワードは wallabag/wallabag です。</instruction>
+  <instruction xml:lang="en">The default username/password is wallabag/wallabag</instruction>
+</virtual-appliance>

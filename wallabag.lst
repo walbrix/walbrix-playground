@@ -1,0 +1,24 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php54.lst
+#require components/postfix.lst
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1wallabag\2/
+#copy domU/fstab-with-zramswap /etc/fstab
+
+#chrootexec wget -O - https://github.com/wallabag/wallabag/archive/1.6.1b.tar.gz | tar zxvf - -C /var/www/localhost
+#chrootexec rm -rf /var/www/localhost/htdocs && mv /var/www/localhost/wallabag-* /var/www/localhost/htdocs
+
+#copy wallabag/setup_initial_database.sh /setup_initial_database.sh
+#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh
+
+#chrootexec cp /var/www/localhost/htdocs/inc/poche/config.inc.php.new /var/www/localhost/htdocs/inc/poche/config.inc.php
+#patchsinglefile /var/www/localhost/htdocs/inc/poche/config.inc.php wallabag/config.inc.php.patch
+#chrootexec cd /var/www/localhost/htdocs && wget http://static.wallabag.org/files/vendor.zip && unzip vendor.zip && rm vendor.zip
+#chrootexec rm -rf /var/www/localhost/htdocs/install
+#chrootexec chown -R apache.apache /var/www/localhost/htdocs
+
+#copy wallabag/wb-va.xml /etc/wb-va.xml
+

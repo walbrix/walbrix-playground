@@ -1,0 +1,4 @@
+::sysinit:/etc/init.d/rcS
+::respawn:/sbin/getty 38400 hvc0 linux
+::restart:/sbin/init
+::ctrlaltdel:/sbin/reboot

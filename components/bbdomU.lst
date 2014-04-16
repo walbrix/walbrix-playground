@@ -1,0 +1,49 @@
+#dir /proc
+#dir /sys
+#dir /dev
+#dir /root
+#dir /run
+#symlink /var/run ../run
+/bin/busybox
+#symlink /bin/sh busybox
+#symlink /bin/login busybox
+#symlink /sbin/getty ../bin/busybox
+#symlink /sbin/init ../bin/busybox
+
+#dir /etc/init.d
+#copy bbdomU/rcS /etc/init.d/rcS
+#copy bbdomU/group /etc/group
+#copy bbdomU/host.conf /etc/host.conf
+#copy bbdomU/hosts /etc/hosts
+#copy bbdomU/inittab /etc/inittab
+#copy bbdomU/nsswitch.conf /etc/nsswitch.conf
+#copy bbdomU/passwd /etc/passwd
+#copy bbdomU/shadow /etc/shadow
+#copy bbdomU/shells /etc/shells
+
+#symlink /etc/mtab /proc/mounts
+
+#dir /usr/share/udhcpc
+#copy bbdomU/default.script /usr/share/udhcpc/default.script
+
+/usr/lib/libnss_files.so
+/usr/lib/libnss_dns.so
+
+/etc/avahi/avahi-daemon.conf
+/usr/sbin/avahi-daemon
+#sed /etc/avahi/avahi-daemon.conf s/^#\(allow-interfaces=eth0\)$/\1/
+#sed /etc/avahi/avahi-daemon.conf s/^#disallow-other-stacks=no$/disallow-other-stacks=yes/
+#chrootexec echo "avahi:x:1:1:avahi:/:/nologin" >> /etc/passwd
+#chrootexec echo "avahi:x:1:avahi" >> /etc/group
+
+#dir /etc/samba
+#chrootexec touch /etc/samba/smb.conf
+#dir /var/run/samba
+/usr/sbin/nmbd
+/var/log/samba/.keep_net-fs_samba-0
+/var/cache/samba/.keep_net-fs_samba-0
+
+#require pam.lst
+#portage net-misc/openssh-6.6_p1-r1
+#sed /etc/ssh/sshd_config s/^\(UsePrivilegeSeparation\) sandbox.*/\1 no/
+

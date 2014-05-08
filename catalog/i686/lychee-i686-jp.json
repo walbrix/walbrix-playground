@@ -1,0 +1,8 @@
+{
+	"id":"lychee",
+	"title":"写真管理ツール Lychee 2.1.1",
+	"tarball":"http://dist.walbrix.net/va/lychee-2.1.1-i686-jp.tar.xz",
+	"description":"Lycheeは写真をブラウザ上で整理し、共有することのできるアプリケーションです。",
+	"minimum_ram":96,
+	"minimum_hd":1
+}

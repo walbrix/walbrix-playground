@@ -41,7 +41,7 @@
 /etc/host.conf
 /etc/ld.so.conf
 /etc/ld.so.cache
-/etc/ld.so.conf.d/05binutils.conf
+#/etc/ld.so.conf.d/05binutils.conf
 /etc/ssl/certs/ca-certificates.crt
 /etc/runlevels/sysinit/devfs
 /etc/runlevels/sysinit/dmesg
@@ -132,11 +132,11 @@
 /var/log/samba/.keep_net-fs_samba-0
 /usr/lib/samba/charset/CP437.so
 /usr/lib/samba/charset/CP850.so
-#copy domU/conf_d-samba /etc/conf.d/samba
 #dir /etc/samba
 #copy domU/smb.conf /etc/samba/smb.conf
 /etc/init.d/samba
-#symlink /etc/runlevels/default/samba /etc/init.d/samba
+#symlink /etc/init.d/samba.nmbd samba
+#symlink /etc/runlevels/default/samba.nmbd /etc/init.d/samba.nmbd
 
 # timezone
 #require timezone-$(REGION).lst

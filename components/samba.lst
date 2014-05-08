@@ -3,3 +3,7 @@
 
 #portage net-fs/samba-3.6.23
 
+#symlink /etc/init.d/samba.nmbd samba 
+#symlink /etc/init.d/samba.smbd samba
+#symlink /etc/runlevels/default/samba.nmbd /etc/init.d/samba.nmbd
+#symlink /etc/runlevels/default/samba.smbd /etc/init.d/samba.smbd

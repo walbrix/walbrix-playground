@@ -4,8 +4,8 @@
 #  www-apache/mod_extract_forwarded mod_proxy
 #  www-servers/apache apache2_modules_proxy_connect apache2_modules_proxy apache2_modules_proxy_http apache2_modules_proxy_ajp
 
-#portage www-servers/apache-2.2.25
-#portage app-admin/apache-tools-2.2.25
+#portage www-servers/apache-2.2.27
+#portage app-admin/apache-tools-2.2.27
 
 # disable SSL / enable PROXY and DAV
 #sed /etc/conf.d/apache2 s/-D SSL//

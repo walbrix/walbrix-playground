@@ -5,6 +5,8 @@
 #require components/mysql.lst
 #require components/php54.lst
 #require components/postfix.lst
+#require components/samba.lst
+
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1lychee\2/
 #copy domU/fstab-with-zramswap /etc/fstab
 
@@ -19,6 +21,8 @@
 #chrootexec chown -R apache.apache /var/www/localhost/htdocs
 
 #patchsinglefile /etc/php/apache2-php5.4/php.ini lychee/php.ini.patch
+
+#copy lychee/smb.conf /etc/samba/smb.conf
 
 #copy lychee/wb-va.xml /etc/wb-va.xml
 

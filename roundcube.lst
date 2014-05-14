@@ -1,0 +1,27 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php54.lst
+#require components/postfix.lst
+#require components/samba.lst
+
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1roundcube\2/
+#copy domU/fstab-with-zramswap /etc/fstab
+
+#chrootexec wget -O - http://jaist.dl.sourceforge.net/project/roundcubemail/roundcubemail/1.0.1/roundcubemail-1.0.1.tar.gz | tar zxvf - -C /var/www/localhost
+#chrootexec rm -rf /var/www/localhost/htdocs && mv /var/www/localhost/roundcubemail-* /var/www/localhost/htdocs
+#chrootexec cp /var/www/localhost/htdocs/config/config.inc.php.sample /var/www/localhost/htdocs/config/config.inc.php && rm -rf /var/www/localhost/htdocs/installer
+#patchsinglefile /var/www/localhost/htdocs/config/config.inc.php roundcube/config.inc.php.patch
+
+#copy roundcube/setup_initial_database.sh /setup_initial_database.sh
+#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh
+
+#chrootexec chown -R apache.apache /var/www/localhost/htdocs
+
+#copy roundcube/smb.conf /etc/samba/smb.conf
+#copy roundcube/cleandb /etc/cron.daily/cleandb
+
+#copy roundcube/wb-va.xml /etc/wb-va.xml
+

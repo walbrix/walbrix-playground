@@ -1,0 +1,5 @@
+#!/bin/sh
+LOGFILE=/var/log/cleandb.log
+tty -s || exec >$LOGFILE 2>&1
+exec /var/www/localhost/htdocs/bin/cleandb.sh
+

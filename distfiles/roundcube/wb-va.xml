@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtual-appliance uuid="8320e37a-75dc-4b9e-a51d-d7a121b9f175">
+  <version>1.0.1</version>
+  <instruction>デフォルトのメールサーバは gmailに設定されており、gmailのメールアドレスとパスワードでログインできます。メールサーバを変更するには Windows共有の config フォルダから config.inc.phpを編集してください。</instruction>
+  <instruction xml:lang="en">The default is to use gmail. Edit config.inc.php through "config" Windows network shared folder to change mail server to use.</instruction>
+</virtual-appliance>

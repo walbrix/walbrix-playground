@@ -1,7 +1,7 @@
 #require pam.lst
 #require psmisc.lst
 #require baselayout.lst
-#portage net-misc/netifrc-0.1
+#portage net-misc/netifrc-0.2.2
 #portage sys-apps/openrc-0.12.4
 # change to jp106 and disable windowkeys
 #sed /etc/conf.d/keymaps s/^keymap="us"$/keymap="jp106"/

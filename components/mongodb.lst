@@ -1,22 +1,2 @@
-/etc/conf.d/mongodb
-/etc/conf.d/mongos
-/etc/init.d/mongodb
-/etc/init.d/mongos
-/etc/logrotate.d/mongodb
-/usr/bin/bsondump
-/usr/bin/mongo
-/usr/bin/mongod
-/usr/bin/mongodump
-/usr/bin/mongoexport
-/usr/bin/mongofiles
-/usr/bin/mongoimport
-/usr/bin/mongorestore
-/usr/bin/mongos
-/usr/bin/mongosniff
-/usr/bin/mongostat
-/usr/bin/mongotop
-/usr/lib/libmongoclient.so
-/var/lib/mongodb/.keep_dev-db_mongodb-0
-/var/log/mongodb/.keep_dev-db_mongodb-0
-#/var/run/mongodb/.keep_dev-db_mongodb-0
-
+#portage dev-db/mongodb-2.4.6-r2
+#symlink /etc/runlevels/default/mongodb /etc/init.d/mongodb

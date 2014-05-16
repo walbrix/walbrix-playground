@@ -1,0 +1,24 @@
+#require components/domU.lst
+#require components/pvkernel.lst
+#require components/ruby20.lst
+#require components/apache.lst
+#require components/tomcat.lst
+#require components/mongodb.lst
+
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1fluentd\2/
+#copy domU/fstab-with-zramswap /etc/fstab
+
+#copy fluentd/Gemfile /root/Gemfile
+#chrootexec cd /root && bundle install
+#dir /etc/fluent
+#copy fluentd/fluent.conf /etc/fluent/fluent.conf
+#copy fluentd/fluentd.init /etc/init.d/fluentd
+#symlink /etc/runlevels/default/fluentd /etc/init.d/fluentd
+#copy fluentd/index.html /var/www/localhost/htdocs/index.html
+#copy fluentd/htaccess /var/www/localhost/htdocs/.htaccess
+
+#copy fluentd/mViewer.war /var/lib/tomcat-7/webapps/mViewer.war
+#chrootexec chown -R tomcat.tomcat /var/lib/tomcat-7
+
+#copy fluentd/wb-va.xml /etc/wb-va.xml
+

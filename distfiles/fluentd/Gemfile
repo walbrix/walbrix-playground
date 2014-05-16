@@ -1,0 +1,37 @@
+source 'https://rubygems.org'
+
+#wget -O - http://fluentd.org/plugin/ grep "https://github.com/"|sed 's/^.*https:\/\/github\.com\/.*\/\(.*\)".*$/gem \"\1\"/'|uniq
+
+gem 'bson_ext'
+gem 'fluentd'
+gem 'fluent-plugin-mongo'
+
+gem "fluent-plugin-rewrite-tag-filter"
+gem "fluent-plugin-scribe"
+gem "fluent-plugin-s3"
+gem "fluent-plugin-elasticsearch"
+gem "fluent-plugin-sns"
+gem "fluent-plugin-sqs"
+gem "fluent-plugin-dynamodb"
+gem "fluent-plugin-norikra"
+gem "fluent-plugin-cloudwatch"
+gem "fluent-plugin-cloudstack"
+gem "fluent-plugin-nats"
+gem "fluent-plugin-twitter"
+gem "fluent-plugin-ses"
+gem "fluent-plugin-websocket"
+gem "fluent-plugin-serialport"
+gem "fluent-plugin-access"
+gem "fluent-plugin-redshift-auto"
+gem "fluent-plugin-redshift"
+gem "fluent-plugin-fnordmetric"
+gem "fluent-plugin-ec2-metadata"
+gem "fluent-plugin-sidekiq"
+gem "fluent-plugin-elb-log"
+gem "fluent-plugin-axlsx"
+gem "fluent-plugin-network-probe"
+gem "fluent-plugin-graphite"
+gem "fluent-plugin-swift"
+gem "fluent-plugin-elasticsearch-cluster"
+gem "fluent-plugin-ftp"
+

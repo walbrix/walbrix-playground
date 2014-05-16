@@ -1,0 +1,97 @@
+<html lang="ja" ng-app="MyApp">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fluentd - Walbrix仮想アプライアンス</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.11.0/ui-bootstrap-tpls.min.js"></script>
+    <script language="javascript">
+      angular.module("MyApp", ["ngResource","ui.bootstrap"])
+        .run(["$rootScope", "$resource", function($scope,$resource) {
+          $scope.hostname = location.hostname;
+          $scope.tag = "test.log";
+          $scope.log = '{"foo":"bar"}';
+          $scope.send = function() {
+            var res = $resource("./fluentd/" + $scope.tag);
+            res.save({},angular.fromJson($scope.log),function(){$scope.message="送信しました"},function(){$scope.message="送信失敗"});
+          }
+        }]);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+	<ul class="nav nav-pills pull-right">
+	  <li><a href="http://www.walbrix.net">Walbrixについて</a></li>
+	</ul>
+	<h3 class="text-muted">Walbrix 仮想アプライアンス</h3>
+      </div>
+      <div class="jumbotron">
+	<h1>Fluentd</h1>
+	<p><a href="http://fluentd.org">Fluentd</a>と <a href="http://www.mongodb.org">MongoDB</a>を組み合わせたログ収集・分析用の仮想アプライアンスです。</p>
+      </div>
+      <p>このページが見えているということは、既にこの仮想マシンで fluentdと MongoDBが動作しておりログの送信を待ち受けています。早速、実際にログを送信してみましょう。</p>
+      <h3>fluentdにログを送る方法</h3>
+      <p>ひとつのログは任意のJSONオブジェクトです。JSONオブジェクトの形式になっているデータなら何でもログとして fluentdに送信し、保存させることが出来ます。</p>
+      <h4>方法1: 収集元ホストで fluentdを起動し、このホストにフォワードする</h4>
+      <p>ログの収集元ホストにも fluentdをインストールし、このホストに集めるよう設定します。これが最も一般的な使用方法です。下記は、収集元ホストで Apacheのログを収集してこのホストに送信する fluent.confの例です。</p>
+      <pre>&lt;source>
+  type tail
+  format apache
+  path /var/log/apache/access_log
+  tag apache.access
+&lt;/source>
+&lt;match apache.access>
+  type forward
+  &lt;server>
+    host {{hostname}}
+  &lt;/server>
+&lt;/match></pre>
+      <h4>方法2: fluent-catコマンドでこのホストにログを送信する</h4>
+      <p>fluentdをインストールするとついてくる fluent-catコマンドを使って、単一のログを送信することが出来ます。</p>
+      <pre>echo '{"foo":"bar"}' | fluent-cat -h {{hostname}} log.test</pre>
+      <p>ポートはデフォルトの 24224番です。</p>
+      <h4>方法3: HTTP POSTでこのホストににログを送信する</h4>
+      <p>HTTPのPOSTメソッドを使ってログを記録することもできます。ポート番号は 9880番です。</p>
+      <pre>curl -H "Content-type: application/json" -X POST -d '{"foo":"bar"}' http://{{hostname}}:9880/log.test</pre>
+      <h4>方法4: フォームで送信する(テスト用)</h4>
+      <p>このフォームを使って任意のログを fluentdに送信することができます。</p>
+      <form class="form-horizontal">
+	<div class="form-group">
+	  <label class="col-sm-3 control-label">タグ名</label>
+	  <div class="col-sm-3"><input type="text" class="form-control" ng-model="tag"></div>
+	</div>
+	<div class="form-group">
+	  <label class="col-sm-3 control-label">ログ内容<br>(JSON形式)</label>
+	  <div class="col-sm-5">
+	    <textarea class="form-control" ng-model="log"></textarea>
+	  </div>
+	</div>
+	<div class="form-group">
+	  <div class="col-sm-offset-3 col-sm-6">
+	    <button class="btn btn-primary" ng-click="send()" ng-disabled="!tag">送信</button> {{message}}
+	  </div>
+	</div>
+      </form>
+      <hr>
+      <h3>保存されたログを閲覧する方法</h3>
+      <p><a href="./mViewer/" class="btn btn-primary">MongoDBに接続する</a></p>
+      <p>上のボタンから MongoDBの管理ツールであるmViewerに進み、ログインフォームには何も追加入力せずデフォルトのままでデータベースにログインし、データベース fluentd を閲覧してください。ログに付けられたタグ名ごとにコレクションが作成されています。例えば、先述の例なら apache.access や log.test といったタグ名が MongoDBのコレクション名となります。</p>
+      <p>ログがひとつもまだ格納されていない場合はデータベース fluentdは存在していません。fluentdの他に testという名前のデータベースがありますが、これは MongoDBにデフォルトで存在するデータベースです。</p>
+      <hr>
+      <h3>カスタマイズのための情報</h3>
+      <p>fluentdの設定ファイルは <strong>/etc/fluent/fluent.conf</strong> です。変更したら /etc/init.d/fluentd reload してください。</p>
+      <p>fluentdのプラグインを gemで追加インストールすることも可能ですが、このホストはCコンパイラを持たないため Pure Rubyなプラグインのみに限ります。</p>
+      <p>MongoDBは localhostからのアクセスのみ受け付けるようになっていますが、他のホストからのアクセスも受け付けるようにしたい場合は <strong>/etc/conf.d/mongodb</strong> で設定を変更し、/etc/init.d/mongodb restartしてください。</p>
+      <p>このページは <strong>/var/www/localhost/htdocs</strong> 内にあります。</p>
+ 
+      <div class="footer">
+	<hr>
+	<p>© <a href="http://www.walbrix.com/jp/">Walbrix Corporation</a> 2014</p>
+      </div>
+    </div>
+  </body>
+</html>

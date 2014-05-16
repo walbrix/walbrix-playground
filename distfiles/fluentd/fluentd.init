@@ -1,0 +1,29 @@
+#!/sbin/runscript
+
+PID_FILE=/run/fluentd.pid
+LOG_FILE=/var/log/fluentd.log
+
+extra_started_commands="reload"
+
+depend() {
+	need mongodb
+}
+
+start() {
+	ebegin "Starting" ${SVCNAME}
+	until mongostat -n 1; do sleep 3; done
+	/usr/local/bin/fluentd -o ${LOG_FILE} -d ${PID_FILE}
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping" ${SVCNAME}
+	kill `cat ${PID_FILE}`
+	eend $?
+}
+
+reload() {
+	ebegin "Reloading" ${SVCNAME}
+	kill -HUP `cat ${PID_FILE}`
+	eend $?
+}

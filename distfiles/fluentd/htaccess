@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^mViewer/(.*)$ ajp://localhost:8009/mViewer/$1 [P]
+RewriteRule ^fluentd/(.+)$ http://localhost:9880/$1 [P]
+

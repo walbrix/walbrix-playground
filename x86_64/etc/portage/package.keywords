@@ -26,7 +26,7 @@
 
 =net-libs/nodejs-0.10.18
 
-=dev-db/mysql-5.5.32
+=dev-db/mysql-5.5.37-r1
 =virtual/mysql-5.5
 
 =app-emulation/docker-0.7.6

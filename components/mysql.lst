@@ -1,4 +1,4 @@
-#portage dev-db/mysql-5.5.32 ^/var/run/
+#portage dev-db/mysql-5.5.37-r1 ^/var/run/
 #sed /etc/mysql/my.cnf s/^log-bin$/#log-bin/
 
 /usr/include/mysql/mysql_version.h

@@ -29,7 +29,7 @@
 #portage sys-process/psmisc-22.20
 #portage app-arch/gzip-1.5
 #portage sys-process/procps-3.3.8-r2
-#portage sys-apps/kmod-16
+#portage sys-apps/kmod-17
 #portage net-misc/iputils-20121221
 #portage sys-apps/sed-4.2.1-r1
 #portage app-arch/tar-1.27.1-r2 

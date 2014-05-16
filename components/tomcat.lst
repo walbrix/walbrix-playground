@@ -4,7 +4,7 @@
 #portage dev-java/commons-pool-1.6
 #portage dev-java/glassfish-transaction-api-1.1.2.2.04
 #portage dev-java/jdbc-mysql-5.1.18
-#portage dev-java/jdbc-postgresql-9.1_p902
+#portage dev-java/jdbc-postgresql-9.2_p1003
 #portage dev-java/commons-dbcp-1.4-r2
 #portage dev-java/tomcat-servlet-api-7.0.47
 #portage dev-java/eclipse-ecj-4.2.1

@@ -33,7 +33,9 @@ dev-ruby/bundler
 dev-util/strace
 dev-vcs/git
 mail-mta/postfix
+media-fonts/vlgothic
 media-gfx/imagemagick
+media-libs/fontconfig
 net-analyzer/zabbix
 net-dns/avahi
 net-fs/samba

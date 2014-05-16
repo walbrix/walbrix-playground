@@ -1,4 +1,4 @@
-#portage sys-apps/sysvinit-2.88-r4
+#portage sys-apps/sysvinit-2.88-r7
 #patchsinglefile /etc/inittab domU/inittab.patch
 
 

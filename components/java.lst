@@ -1,5 +1,5 @@
 #require python-exec.lst
-#portage dev-java/java-config-2.1.12-r1
+#portage dev-java/java-config-2.2.0
 #symlink /usr/bin/java-config java-config-2
 #portage dev-java/icedtea-bin-7.2.4.3 ^\/opt\/.+\/man\/
 #chrootexec java-config -S icedtea-bin-7

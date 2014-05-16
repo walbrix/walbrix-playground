@@ -1,0 +1,9 @@
+{
+    "description": "fluentdと MongoDBを組み合わせたログ収集・分析用の仮想アプライアンスです。",
+    "title": "fluentd",
+    "minimum_hd": 5,
+    "tarball": "http://dist.walbrix.net/va/fluentd-0.10.47-x86_64-jp.tar.xz",
+    "minimum_ram": 192, 
+    "images": [{"url": "http://va.walbrix.net/img/fluentd01.png"}],
+    "id": "fluentd"
+}

@@ -64,4 +64,4 @@
 
 # not directly depended
 =dev-ruby/mysql-ruby-2.8.2-r1
-=dev-ruby/mysql2-0.3.14
+=dev-ruby/mysql2-0.3.16

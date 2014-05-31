@@ -1,9 +1,9 @@
 {
     "id": "gitbucket",
     "description": "GitBucketは、オープンソースの Githubクローンです。Github風のソースコード管理サーバを無料で独自に構築することができます。",
-    "title": "GitBucket 1.9",
+    "title": "GitBucket 2.0",
     "minimum_hd": 3,
-    "tarball": "http://dist.walbrix.net/va/gitbucket-1.9-i686-jp.tar.xz",
+    "tarball": "http://dist.walbrix.net/va/gitbucket-2.0-i686-jp.tar.xz",
     "minimum_ram": 192,
     "images": [{"url": "http://va.walbrix.net/img/gitbucket01.png"}]
 }

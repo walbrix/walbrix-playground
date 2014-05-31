@@ -17,7 +17,7 @@
 #chrootexec chkconfig iptables off
 #chrootexec yum clean -y all
 #chrootexec yum update -y
-#chrootexec yum install -y samba4 avahi ntp lzo dhclient openssh-server rsyslog
+#chrootexec yum install -y samba4 avahi ntp lzo dhclient openssh-server openssh-clients rsyslog
 #chrootexec chkconfig nmb on
 #chrootexec chkconfig ntpd on
 #chrootexec yum clean -y all

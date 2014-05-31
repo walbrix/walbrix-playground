@@ -11,6 +11,7 @@ def build_function(target, source, env):
         if "id" not in item: continue
         item_id = item["id"]
         if "file" not in item: raise Exception("file attr missing: id=%s" % item_id)
+        print item["file"]
         item_attrs = json.load(open(item["file"]))
         item_elem = doc.createElement("item")
         item_elem.setAttribute("id", item_id)

@@ -10,7 +10,7 @@
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1lychee\2/
 #copy domU/fstab-with-zramswap /etc/fstab
 
-#chrootexec wget -O - https://github.com/electerious/Lychee/archive/v2.1.1.tar.gz | tar zxvf - -C /var/www/localhost
+#chrootexec wget -O - https://github.com/electerious/Lychee/archive/v2.5.tar.gz | tar zxvf - -C /var/www/localhost
 #chrootexec rm -rf /var/www/localhost/htdocs && mv /var/www/localhost/Lychee-* /var/www/localhost/htdocs
 #copy lychee/config.php /var/www/localhost/htdocs/data/config.php
 

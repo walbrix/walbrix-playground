@@ -1,6 +1,6 @@
 #require erlang.lst
 #require spidermonkey.lst
-#portage dev-db/couchdb-1.4.0
+#portage dev-db/couchdb-1.5.1
 #symlink /etc/runlevels/default/couchdb /etc/init.d/couchdb
 
 #sed /etc/couchdb/local.ini s/^;bind_address.\?=.\+$/bind_address = 0.0.0.0/

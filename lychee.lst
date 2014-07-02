@@ -13,12 +13,14 @@
 #chrootexec wget -O - https://github.com/electerious/Lychee/archive/v2.5.tar.gz | tar zxvf - -C /var/www/localhost
 #chrootexec rm -rf /var/www/localhost/htdocs && mv /var/www/localhost/Lychee-* /var/www/localhost/htdocs
 #copy lychee/config.php /var/www/localhost/htdocs/data/config.php
+#patchsinglefile /var/www/localhost/htdocs/php/modules/Album.php lychee/Album.php.patch
 
 #copy lychee/setup_initial_database.sh /setup_initial_database.sh
 #copy lychee/initial_database.sql /initial_database.sql
 #chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh /initial_database.sql
 
 #chrootexec chown -R apache.apache /var/www/localhost/htdocs
+#chrootexec chmod -R 777 /var/www/localhost/htdocs/uploads /var/www/localhost/htdocs/data
 
 #patchsinglefile /etc/php/apache2-php5.4/php.ini lychee/php.ini.patch
 

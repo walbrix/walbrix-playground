@@ -1,6 +1,7 @@
 #require components/domU.lst
 #copy backup/fstab /etc/fstab
 #require components/samba.lst
+#copy backup/smb.conf /etc/samba/smb.conf
 #require components/cron.lst
 #require components/nfs.lst
 #patchsinglefile /etc/crontab backup/crontab.patch
@@ -11,5 +12,5 @@
 #copy backup/rsyncd.conf /etc/rsyncd.conf
 #symlink /etc/runlevels/default/rsyncd /etc/init.d/rsyncd
 #copy backup/snapshot /etc/cron.daily/snapshot
+#copy backup/export /etc/cron.weekly/export
 #copy backup/setup_head.start /etc/local.d/setup_head.start
-

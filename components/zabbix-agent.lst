@@ -6,4 +6,5 @@
 /usr/bin/zabbix_sender
 /usr/sbin/zabbix_agent
 /usr/sbin/zabbix_agentd
+/var/log/zabbix/.keep_net-analyzer_zabbix-0
 

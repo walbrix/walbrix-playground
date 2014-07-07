@@ -1,7 +1,7 @@
 # from ctags
 /usr/bin/exuberant-ctags
 
-#portage app-editors/vim-core-7.3.762
-#portage app-editors/vim-7.3.762
+#portage app-editors/vim-core-7.4.273
+#portage app-editors/vim-7.4.273
 #symlink /usr/bin/vi vim
 

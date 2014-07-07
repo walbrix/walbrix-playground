@@ -1,0 +1,8 @@
+{
+    "description": "rsync backup appliance",
+    "title": "backup",
+    "minimum_hd": 10,
+    "tarball": "http://dist.walbrix.net/va/backup-0.1-x86_64-jp.tar.xz",
+    "minimum_ram": 192, 
+    "id": "backup"
+}

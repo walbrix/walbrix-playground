@@ -1,0 +1,4 @@
+/dev/xvda1	/	xfs	defaults	0 0
+#/dev/xvdb1	/var/lib/backup	btrfs	compress-force,autodefrag	0 0
+/dev/zram0	none	swap	sw,pri=1	0 0
+

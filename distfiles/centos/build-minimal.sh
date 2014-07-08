@@ -24,7 +24,7 @@ $PREFIX chroot /tmp/centos-$RELEASE-$ARCH rpm --initdb
 $PREFIX chroot /tmp/centos-$RELEASE-$ARCH rpm -ivh $RELEASE_RPM
 $PREFIX chroot /tmp/centos-$RELEASE-$ARCH yum install -y yum
 rm /tmp/centos-$RELEASE-$ARCH/var/cache/yum/base/packages/*
-$PREFIX chroot /tmp/centos-$RELEASE-$ARCH yum install -y vim-minimal less initscripts passwd tar || exit 1
+$PREFIX chroot /tmp/centos-$RELEASE-$ARCH yum install -y vim-minimal less initscripts passwd tar net-tools || exit 1
 tar Jcvpf centos-$RELEASE-$ARCH.tar.xz -C /tmp/centos-$RELEASE-$ARCH . || exit 1
 rm -rf /tmp/centos-$RELEASE-$ARCH
 

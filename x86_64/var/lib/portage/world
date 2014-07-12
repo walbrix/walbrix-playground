@@ -38,6 +38,7 @@ media-gfx/imagemagick
 media-libs/fontconfig
 net-analyzer/zabbix
 net-dns/avahi
+net-fs/nfs-utils
 net-fs/samba
 net-libs/nodejs
 net-misc/ntp
@@ -45,6 +46,7 @@ net-misc/openvpn
 net-misc/s3cmd
 sys-auth/nss-mdns
 sys-auth/nss-myhostname
+sys-fs/btrfs-progs
 sys-fs/fuse
 sys-fs/xfsprogs
 sys-kernel/aufs-sources

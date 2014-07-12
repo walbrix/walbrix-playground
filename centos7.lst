@@ -1,0 +1,52 @@
+#noaufs
+#require components/dev.lst
+#extract centos/centos-7.0-$(ARCH).tar.xz /
+#chrootexec echo 'exclude=kernel,kernel-firmware' >> /etc/yum.conf
+#chrootexec echo "$(ARCH)-centos-linux" > /etc/rpm/platform
+#sed /etc/sysconfig/init s/^ACTIVE_CONSOLES=.*$/ACTIVE_CONSOLES=\/dev\/hvc0/
+#copy centos/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
+#chrootexec echo 'centos' > /etc/hostname
+#copy centos/setup-zram0.service /etc/systemd/system/setup-zram0.service
+#dir /etc/systemd/system/dev-zram0.swap.wants
+#symlink /etc/systemd/system/dev-zram0.swap.wants/setup-zram0.service ../setup-zram0.service
+#sed /etc/shadow s/^\(root:\)[^:]*\(:.*\)$/\1\2/
+#copy domU/resolv.conf /etc/resolv.conf
+#chrootexec echo "SELINUX=disabled" > /etc/selinux/config
+#copy centos/fstab7 /etc/fstab
+#chrootexec mkdir /root/.ssh && chmod 700 /root/.ssh && touch /root/.ssh/authorized_keys
+#copy centos/wb-va.xml /etc/wb-va.xml
+##chrootexec chkconfig iptables off
+#chrootexec yum clean -y all
+#chrootexec yum update -y
+#chrootexec yum install -y samba4 avahi ntp lzo dhclient openssh-server openssh-clients rsyslog xfsprogs NetworkManager
+#sed /etc/avahi/avahi-daemon.conf s/^#disallow-other-stacks=no$/disallow-other-stacks=yes/
+#chrootexec systemctl enable nmb.service
+#chrootexec systemctl enable ntpd.service
+#chrootexec yum clean -y all
+
+# LAMP stack
+#chrootexec yum install -y php-mysql mariadb-server httpd vsftpd php php-mbstring php-mcrypt php-gd wget xz
+#chrootexec yum clean -y all
+#chrootexec systemctl enable smb.service
+#chrootexec systemctl enable httpd.service
+#chrootexec systemctl enable mariadb.service
+#chrootexec systemctl enable vsftpd.service
+#copy centos/remoteip.conf /etc/httpd/conf.d/remoteip.conf
+#patchsinglefile /etc/httpd/conf/httpd.conf centos/httpd.conf.patch
+#copy centos/index.html /var/www/html/index.html
+##extract centos/phpMyAdmin-3.5.7-all-languages.tar.xz /var/www/html
+#chrootexec wget -O - http://downloads.sourceforge.net/project/phpmyadmin/phpMyAdmin/4.2.5/phpMyAdmin-4.2.5-all-languages.tar.xz | tar Jxvf - -C /var/www/html && mv /var/www/html/phpMyAdmin-* /var/www/html/phpmyadmin
+#copy phpmyadmin/config.inc.php /var/www/html/phpmyadmin/config.inc.php
+#chrootexec chown -R apache.apache /var/www /var/log/httpd
+#patchsinglefile /etc/my.cnf centos/my.cnf.patch
+#copy centos/smb.conf /etc/samba/smb.conf
+
+#require components/centos7-$(ARCH).lst
+#require components/centos-$(REGION).lst
+
+##patchsinglefile /etc/httpd/conf.d/mod_extract_forwarded.conf centos/mod_extract_forwarded.conf.patch
+
+##chrootexec chkconfig openvpn on
+
+#symlink /etc/systemd/system/default.target /usr/lib/systemd/system/multi-user.target
+

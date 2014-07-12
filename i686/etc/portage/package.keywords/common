@@ -7,7 +7,7 @@
 =dev-perl/Net-SMTP-TLS-0.120.0-r1
 =dev-db/mysql-5.5.37-r1
 =virtual/mysql-5.5
-=net-analyzer/zabbix-2.2.2-r1
+=net-analyzer/zabbix-2.2.4
 =net-fs/cifs-utils-6.1-r1
 =dev-python/mecab-python-0.996
 =app-arch/tar-1.27.1-r2

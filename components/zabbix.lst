@@ -12,7 +12,7 @@
 /usr/sbin/fping
 /usr/sbin/fping6
 
-#portage net-analyzer/zabbix-2.2.0-r4
+#portage net-analyzer/zabbix-2.2.4
 
 #copy zabbix/zabbix.conf.php /usr/share/webapps/zabbix/2.2.0-r4/htdocs/conf/zabbix.conf.php
 /usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf

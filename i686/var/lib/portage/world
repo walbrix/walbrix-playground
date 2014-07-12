@@ -44,6 +44,7 @@ dev-perl/XML-Atom
 dev-perl/XML-Parser
 dev-perl/crypt-dsa
 dev-php/pear
+dev-php/pecl-imagick
 dev-python/django
 dev-python/mecab-python
 dev-python/pygame

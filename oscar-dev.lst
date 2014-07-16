@@ -21,7 +21,7 @@
 ## Samba
 #copy oscar/smb.conf /etc/samba/smb.conf
 #chrootexec chmod g+rwx /var/lib/samba/private
-#chrootexec smbpasswd -an
+#chrootexec smbpasswd -an adm && smbpasswd -x adm
 #chrootexec chmod g+rw /var/lib/samba/private/passdb.tdb
 #chrootexec chgrp -R oscar /var/lib/samba/private
 
@@ -48,7 +48,7 @@
 #chrootexec chown -R oscar.oscar /var/log/oscar /var/lib/oscar /opt/oscar/etc
 
 ## clamav
-##chrootexec freshclam --no-warnings
+#chrootexec /usr/bin/freshclam --no-warnings
 #sed /etc/conf.d/clamd s/^START_CLAMD=.\+/START_CLAMD=no/
-#symlink /etc/runlevels/default/clamav /etc/init.d/clamav
+#symlink /etc/runlevels/default/clamd /etc/init.d/clamd
 

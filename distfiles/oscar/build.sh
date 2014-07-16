@@ -9,6 +9,7 @@ echo "=dev-python/flask-0.10.1-r1" >> /etc/portage/package.keywords
 echo "=dev-python/itsdangerous-0.22" >> /etc/portage/package.keywords
 echo "=app-text/xlhtml-0.5.1_p6" >> /etc/portage/package.keywords
 echo "=dev-python/pyclamav-0.4.1-r1" >> /etc/portage/package.keywords
+echo "=app-i18n/nkf-2.1.3" >> /etc/portage/package.keywords
 
 echo "www-servers/apache threads apache2_modules_proxy apache2_modules_proxy_ajp apache2_mpms_event" >> /etc/portage/package.use
 echo "dev-vcs/git -perl" >> /etc/portage/package.use

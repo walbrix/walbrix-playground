@@ -7,6 +7,7 @@
 
 ## system setup
 #sed /etc/conf.d/hostname s/^hostname=.*$/hostname="oscar-dev"/
+#sed /etc/nsswitch.conf s/^\(hosts:.*\)$/\1 wins/
 #chrootexec useradd -m oscar
 #chrootexec groupmems -g cron -a oscar
 #chrootexec groupmems -g wheel -a oscar

@@ -9,6 +9,7 @@
 #sed /etc/conf.d/hostname s/^hostname=.*$/hostname="oscar-dev"/
 #sed /etc/nsswitch.conf s/^\(hosts:.*\)$/\1 wins/
 #chrootexec useradd -m oscar
+#chrootexec echo 'export PATH=$PATH:/opt/oscar/bin' >> /home/oscar/.bashrc
 #chrootexec groupmems -g cron -a oscar
 #chrootexec groupmems -g wheel -a oscar
 #sed /etc/sudoers s/^# \(\%wheel ALL=(ALL) NOPASSWD: ALL\)$/\1/
@@ -32,6 +33,7 @@
 ## groonga
 #chrootexec cd /root && wget http://packages.groonga.org/source/groonga/groonga-4.0.3.tar.gz && tar xvzf groonga-*.tar.gz && cd groonga-*/ && ./configure --prefix=/usr --localstatedir=/var && make && make install && cd .. && rm -rf groonga-*/
 #chrootexec cd /root && wget http://packages.groonga.org/source/groonga-gobject/groonga-gobject-1.0.1.tar.gz && tar zxvf groonga-gobject-*.tar.gz && cd groonga-gobject-* && ./configure && make && make install && cd .. && rm -rf groonga-gobject-*/
+#chrootexec /sbin/ldconfig
 
 ## oscar
 #chrootexec cd /root && git clone https://github.com/shimarin/oscar.git && cd oscar && make install && cd .. && rm -rf oscar

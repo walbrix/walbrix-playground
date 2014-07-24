@@ -10,6 +10,7 @@ echo "=dev-python/itsdangerous-0.22" >> /etc/portage/package.keywords
 echo "=app-text/xlhtml-0.5.1_p6" >> /etc/portage/package.keywords
 echo "=dev-python/pyclamav-0.4.1-r1" >> /etc/portage/package.keywords
 echo "=app-i18n/nkf-2.1.3" >> /etc/portage/package.keywords
+echo "=dev-python/jsmin-2.0.9" >> /etc/portage/package.keywords
 
 echo "www-servers/apache threads apache2_modules_proxy apache2_modules_proxy_ajp apache2_mpms_event" >> /etc/portage/package.use
 echo "dev-vcs/git -perl" >> /etc/portage/package.use
@@ -44,7 +45,7 @@ emerge dev-libs/gobject-introspection dev-python/pygobject || exit 1
 emerge dev-python/flask dev-python/beautifulsoup dev-python/lxml dev-python/pyinotify dev-python/pyclamav dev-python/xlrd dev-python/python-ldap dev-python/configobj || exit 1
 emerge app-admin/sudo app-admin/logrotate dev-vcs/git sys-process/vixie-cron
 emerge app-i18n/nkf www-client/elinks app-text/xlhtml app-text/wv www-client/lynx app-text/poppler || exit 1
-emerge app-editors/emacs
+emerge app-editors/emacs dev-python/jsmin
 emerge -uDN world
 
 etc-update --automode -5

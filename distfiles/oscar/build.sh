@@ -42,10 +42,11 @@ echo "virtual/python-argparse -python_targets_python3_3" >> /etc/portage/package
 echo "dev-libs/libxml2 python -python_targets_python3_3" >> /etc/portage/package.use
 echo "dev-python/pygobject -cairo -python_targets_python3_3" >> /etc/portage/package.use
 echo "dev-python/six -python_targets_python3_3" >> /etc/portage/package.use
+echo "dev-python/pytz -python_targets_python3_3" >> /etc/portage/package.use
 
 emerge www-apache/mod_extract_forwarded www-apache/mod_wsgi || exit 1
 emerge dev-libs/gobject-introspection dev-python/pygobject || exit 1
-emerge dev-python/flask dev-python/beautifulsoup dev-python/lxml dev-python/pyinotify dev-python/pyclamav dev-python/xlrd dev-python/python-ldap dev-python/configobj dev-python/six dev-python/futures || exit 1
+emerge dev-python/flask dev-python/beautifulsoup dev-python/lxml dev-python/pyinotify dev-python/pyclamav dev-python/xlrd dev-python/python-ldap dev-python/configobj dev-python/six dev-python/futures dev-python/pytz || exit 1
 emerge app-admin/sudo app-admin/logrotate dev-vcs/git sys-process/vixie-cron
 emerge app-i18n/nkf www-client/elinks app-text/wv www-client/lynx app-text/poppler || exit 1
 emerge app-text/xlhtml || exit 1

@@ -41,6 +41,7 @@ echo "dev-python/pyasn1 -python_targets_python3_3" >> /etc/portage/package.use
 echo "virtual/python-argparse -python_targets_python3_3" >> /etc/portage/package.use
 echo "dev-libs/libxml2 python -python_targets_python3_3" >> /etc/portage/package.use
 echo "dev-python/pygobject -cairo -python_targets_python3_3" >> /etc/portage/package.use
+echo "dev-python/six -python_targets_python3_3" >> /etc/portage/package.use
 
 emerge www-apache/mod_extract_forwarded www-apache/mod_wsgi || exit 1
 emerge dev-libs/gobject-introspection dev-python/pygobject || exit 1

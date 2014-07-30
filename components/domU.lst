@@ -133,8 +133,10 @@
 /usr/lib/samba/charset/CP850.so
 #dir /etc/samba
 #copy domU/smb.conf /etc/samba/smb.conf
+/etc/conf.d/samba
 /etc/init.d/samba
 #symlink /etc/init.d/samba.nmbd samba
+#symlink /etc/conf.d/samba.nmbd samba 
 #symlink /etc/runlevels/default/samba.nmbd /etc/init.d/samba.nmbd
 
 # timezone

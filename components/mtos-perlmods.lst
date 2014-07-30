@@ -8,8 +8,7 @@
 /usr/lib/perl5/vendor_perl/5.12.4/Net/Daemon/Test.pm
 
 # perl-core/Storable
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Storable.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Storable/Storable.so
+#portage perl-core/Storable-2.390.0-r1
 
 # perl-core/File-Spec
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Cwd.pm

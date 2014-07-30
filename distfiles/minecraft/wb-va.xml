@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtual-appliance uuid="8972f9fd-633f-41ba-b19d-f198f6f4e880">
+  <version>1.7.10</version>
+  <instruction>download minecraft-server-x.y.z.jar and exec it</instruction>
+</virtual-appliance>

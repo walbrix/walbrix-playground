@@ -1,0 +1,8 @@
+{
+	"id":"minecraft",
+	"title":"Minimum VM for minecraft server",
+	"tarball":"minecraft-i686-jp.tar.xz",
+	"description":"Minimum VM for minecraft server",
+	"minimum_ram":1024,
+	"minimum_hd":1
+}

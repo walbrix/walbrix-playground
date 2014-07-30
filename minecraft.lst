@@ -1,0 +1,8 @@
+#require components/domU.lst
+#require components/pvkernel.lst
+
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1minecraft\2/
+#copy domU/fstab-with-zramswap /etc/fstab
+
+#require components/java.lst
+#portage app-misc/screen-4.0.3-r6

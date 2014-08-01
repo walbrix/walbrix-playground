@@ -13,4 +13,5 @@
 =app-arch/tar-1.27.1-r2
 =mail-mta/postfix-2.10.3
 =dev-lang/perl-5.18.2-r1
-
+=virtual/perl-Math-BigInt-1.999.100 
+=virtual/perl-Math-BigRat-0.260.400

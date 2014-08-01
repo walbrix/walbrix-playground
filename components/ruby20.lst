@@ -1,4 +1,4 @@
-#portage dev-lang/ruby-2.0.0_p353
+#portage dev-lang/ruby-2.0.0_p481
 #symlink /usr/bin/erb erb20
 #symlink /usr/bin/irb irb20
 #symlink /usr/bin/ruby ruby20

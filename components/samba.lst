@@ -1,7 +1,7 @@
 #require openldap.lst
 #require cifs-utils.lst
 
-#portage net-fs/samba-3.6.23
+#portage net-fs/samba-3.6.23-r1
 
 #symlink /etc/init.d/samba.nmbd samba 
 #symlink /etc/init.d/samba.smbd samba

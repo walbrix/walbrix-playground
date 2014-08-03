@@ -1,4 +1,4 @@
-#portage dev-lang/python-2.7.6 ^/usr/lib(64)?/.+\.py(c|o)$
+#portage dev-lang/python-2.7.7 ^/usr/lib(64)?/.+\.py(c|o)$
 #symlink /usr/bin/python python2.7
 /usr/include/python2.7/pyconfig.h
 

@@ -10,8 +10,8 @@ sys-kernel/vanilla-sources symlink
 dev-vcs/git -perl
 net-analyzer/zabbix agent -sqlite
 dev-lang/python sqlite
-dev-java/java-config -python_targets_python3_2
-dev-python/python-exec -python_targets_python3_2
+dev-java/java-config -python_targets_python3_3
+dev-python/python-exec -python_targets_python3_3
 
 dev-ruby/rubygems -ruby_targets_ruby18 -ruby_targets_ruby19
 virtual/rubygems -ruby_targets_ruby18
@@ -34,3 +34,18 @@ net-fs/cifs-utils -acl
 mail-mta/postfix sasl
 
 media-gfx/imagemagick perl jpeg jpeg2k png truetype webp
+dev-python/pygobject -cairo -python_targets_python3_3
+dev-python/beautifulsoup -python_targets_python3_3
+dev-python/xlrd -python_targets_python3_3
+dev-python/pyasn1 -python_targets_python3_3
+dev-python/six -python_targets_python3_3
+dev-python/lxml -python_targets_python3_3
+dev-python/pyinotify -python_targets_python3_3
+dev-python/pytz -python_targets_python3_3
+dev-python/flask -python_targets_python3_3
+dev-python/jsmin -python_targets_python3_3
+www-client/lynx cjk
+app-text/poppler cjk
+sys-libs/tdb python
+app-i18n/nkf python linguas_ja
+app-text/wv tools

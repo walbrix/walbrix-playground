@@ -1,0 +1,8 @@
+[share]
+force user = oscar
+path = /var/lib/oscar/share
+writable = yes
+veto files = .oscar
+guest ok = yes
+locking = yes
+

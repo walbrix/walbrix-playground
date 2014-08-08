@@ -1,8 +1,8 @@
 diff --git a/php/modules/Album.php b/php/modules/Album.php
-index ab4a545..5978ebc 100644
+index 592501a..f6d4029 100644
 --- a/php/modules/Album.php
 +++ b/php/modules/Album.php
-@@ -323,7 +323,11 @@ class Album extends Module {
+@@ -343,7 +343,11 @@ class Album extends Module {
  
  			# Add to array
  			$files[] = $zipFileName;
@@ -15,7 +15,7 @@ index ab4a545..5978ebc 100644
  			# Add photo to zip
  			$zip->addFile($photo->url, $zipFileName);
  
-@@ -559,4 +563,4 @@ class Album extends Module {
+@@ -582,4 +586,4 @@ class Album extends Module {
  
  }
  

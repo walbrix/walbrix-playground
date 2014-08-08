@@ -39,6 +39,7 @@ dev-python/pygobject
 dev-python/pyinotify
 dev-python/python-ldap
 dev-python/pytz
+dev-python/pyxattr
 dev-python/pyyaml
 dev-python/rsa
 dev-python/setuptools

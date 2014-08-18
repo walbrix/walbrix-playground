@@ -1,4 +1,5 @@
 #require nss-myhostname.lst
+#require logrotate.lst
 
 # mandatory use flags:
 #  www-apache/mod_extract_forwarded mod_proxy

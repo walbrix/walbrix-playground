@@ -1,16 +1,17 @@
 <?php
 $CONFIG = array (
-  'datadirectory' => '/var/lib/owncloud/data',
+  'instanceid' => 'ocb112bd70e4',
+  'passwordsalt' => 'bd2263460e12d3602b02eec29fda87',
+  'trusted_domains' => 
+  array (
+  ),
+  'datadirectory' => '/var/www/localhost/htdocs/data',
   'dbtype' => 'mysql',
+  'version' => '7.0.1.1',
   'dbname' => 'owncloud',
   'dbhost' => 'localhost',
   'dbtableprefix' => 'oc_',
   'dbuser' => 'owncloud',
   'dbpassword' => '',
   'installed' => true,
-  'instanceid' => '5132f874f3da5',
-  'passwordsalt' => '8a4459dd321a496e2f8fb6e3dd7f05',
-  'version' => '6.0.0.14',
-  'theme' => '',
-  'maintenance' => false,
 );

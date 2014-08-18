@@ -1,0 +1,3 @@
+#/var/spool/cron/crontabs/apache
+*/15  *  *  *  * php -f /var/www/localhost/htdocs/cron.php
+

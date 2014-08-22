@@ -55,6 +55,7 @@ sys-kernel/vanilla-sources
 sys-process/vixie-cron
 www-apache/mod_authnz_external
 www-apache/mod_extract_forwarded
+www-apache/mod_proxy_fcgi
 www-apache/mod_wsgi
 www-apache/passenger
 www-servers/apache

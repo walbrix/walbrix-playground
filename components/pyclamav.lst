@@ -1,0 +1,4 @@
+#require python27.lst
+#require clamav.lst
+#portage dev-python/pyclamav-0.4.1-r1
+

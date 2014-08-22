@@ -2,8 +2,8 @@
 #require php54.lst
 #require mysql.lst
 ##require webapp-config.lst
-#portage dev-db/phpmyadmin-4.0.5
-##chrootexec webapp-config -I phpmyadmin 4.0.5
+#portage dev-db/phpmyadmin-4.1.14
+##chrootexec webapp-config -I phpmyadmin 4.1.14
 #copy phpmyadmin/config.inc.php /usr/share/webapps/phpmyadmin/4.0.5/htdocs/config.inc.php
 #chrootexec echo "DirectoryIndex index.php" > /usr/share/webapps/phpmyadmin/4.0.5/htdocs/.htaccess
 #symlink /var/www/localhost/htdocs/phpmyadmin /usr/share/webapps/phpmyadmin/4.0.5/htdocs

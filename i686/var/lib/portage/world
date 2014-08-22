@@ -1,3 +1,4 @@
+app-admin/logrotate
 app-admin/sudo
 app-admin/sysklogd
 app-admin/webapp-config
@@ -46,6 +47,7 @@ dev-perl/XML-Parser
 dev-perl/crypt-dsa
 dev-php/pear
 dev-php/pecl-imagick
+dev-php/xcache
 dev-python/django
 dev-python/mecab-python
 dev-python/pygame
@@ -60,6 +62,7 @@ mail-mta/postfix
 media-fonts/vlgothic
 media-gfx/imagemagick
 media-libs/exiftool
+media-video/ffmpeg
 media-video/gpac
 net-analyzer/zabbix
 net-fs/samba

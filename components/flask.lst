@@ -4,7 +4,7 @@
 #portage dev-python/pytz-2013d ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
 #portage dev-python/simplejson-3.3.0 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
 #portage dev-python/werkzeug-0.9.4 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
-#portage dev-python/jinja-2.7 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
+#portage dev-python/jinja-2.7.3 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
 #portage dev-python/flask-0.10.1-r1 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
-#portage dev-python/itsdangerous-0.22 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
+#portage dev-python/itsdangerous-0.24 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
 

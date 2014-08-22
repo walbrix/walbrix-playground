@@ -11,7 +11,7 @@
 #copy domU/fstab-with-zramswap /etc/fstab
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1glassfish\2/
 
-#extract glassfish/glassfish-4.0-ml.zip /usr/local
+#chrootexec wget -O /glassfish.zip http://dlc.sun.com.edgesuite.net/glassfish/4.0/release/glassfish-4.0-ml.zip && unzip /glassfish.zip -d /usr/local && rm /glassfish.zip
 #copy glassfish/domain.xml /usr/local/glassfish4/glassfish/domains/domain1/config/domain.xml
 ##copy glassfish/local-password /usr/local/glassfish3/glassfish/domains/domain1/config/local-password
 #copy glassfish/index-$(LANGUAGE).html /var/www/localhost/htdocs/index.html
@@ -23,7 +23,7 @@
 #symlink /usr/local/glassfish4/glassfish/domains/domain1/lib/ext/jdbc-postgresql.jar /usr/share/jdbc-postgresql/lib/jdbc-postgresql.jar
 /usr/share/jdbc-mysql/lib/jdbc-mysql.jar
 #symlink /usr/local/glassfish4/glassfish/domains/domain1/lib/ext/jdbc-mysql.jar /usr/share/jdbc-mysql/lib/jdbc-mysql.jar
-#copy glassfish/h2-1.3.175.jar /usr/local/glassfish4/glassfish/domains/domain1/lib/ext/h2-1.3.175.jar
+#chrootexec wget -O /h2.zip http://www.h2database.com/h2-2014-01-18.zip && unzip /h2.zip -d /tmp && mv /tmp/h2/bin/h2-*.jar /usr/local/glassfish4/glassfish/domains/domain1/lib/ext/ && rm -r /tmp/h2 /h2.zip
 
 # Startup
 #copy glassfish/glassfish.init /etc/init.d/glassfish

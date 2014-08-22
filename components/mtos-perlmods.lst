@@ -95,12 +95,7 @@
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/DBI/dbixs_rev.h
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/dbixs_rev.pl
 
-# dev-perl/DBD-mysql
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Bundle/DBD/mysql.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/mysql.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/mysql/GetInfo.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/mysql/INSTALL.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/DBD/mysql/mysql.so
+#portage dev-perl/DBD-mysql-4.20.0-r1
 
 /usr/lib/perl5/vendor_perl/5.12.4/LWP/MediaTypes.pm
 /usr/lib/perl5/vendor_perl/5.12.4/LWP/media.types

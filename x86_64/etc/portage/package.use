@@ -44,6 +44,7 @@ dev-python/pyinotify -python_targets_python3_3
 dev-python/pytz -python_targets_python3_3
 dev-python/flask -python_targets_python3_3
 dev-python/jsmin -python_targets_python3_3
+dev-python/pyxattr -python_targets_python3_3
 www-client/lynx cjk
 app-text/poppler cjk
 sys-libs/tdb python

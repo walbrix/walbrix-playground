@@ -1,5 +1,6 @@
 [
     {"id":"wordpress","file":"i686/wordpress-i686-jp.json"},
+    {"id":"owncloud","file":"i686/owncloud-i686-jp.json"},
     {"id":"gitbucket","file":"i686/gitbucket-i686-jp.json"},
     {"id":"gentoo","file":"i686/gentoo-i686-jp.json"},
     {"id":"debian","file":"i686/debian-i686-jp.json"},
@@ -7,7 +8,6 @@
     {"id":"zabbix","file":"i686/zabbix-i686-jp.json"},
     {"id":"glassfish","file":"i686/glassfish-i686-jp.json"},
     {"id":"centos","file":"i686/centos-i686-jp.json"},
-    {"id":"owncloud","file":"i686/owncloud-i686-jp.json"},
     {"id":"aipo","file":"i686/aipo-i686-jp.json"},
     {"id":"redmine","file":"i686/redmine-i686-jp.json"},
     {"id":"eccube","file":"i686/eccube-i686-jp.json"},

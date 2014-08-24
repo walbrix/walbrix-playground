@@ -10,7 +10,7 @@
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1wordpress\2/
 #copy domU/fstab-with-zramswap /etc/fstab
 #chrootexec wget -O - http://$(LANGUAGE).wordpress.org/release-archive/$(LANGUAGE)/wordpress-3.9.2-$(LANGUAGE).tar.gz | tar zxvf - -C /var/www/localhost
-#chrootexec rm /var/www/localhost/htdocs/index.html
+#chrootexec [ -f /var/www/localhost/htdocs/index.html ] && rm /var/www/localhost/htdocs/index.html || true
 #chrootexec mv /var/www/localhost/wordpress/* /var/www/localhost/htdocs
 #chrootexec rmdir /var/www/localhost/wordpress
 #chrootexec mv /var/www/localhost/htdocs/wp-config-sample.php /var/www/localhost/htdocs/wp-config.php

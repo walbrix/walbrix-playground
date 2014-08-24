@@ -1,9 +1,0 @@
-{
-	"id":"wordpress",
-	"title":"Wordpress 3.5.1",
-	"images":[{"url":"http://va.walbrix.net/img/wordpress01.png"}],	
-	"tarball":"wordpress-i686-jp.tar.xz",
-	"description":"Wordpress",
-	"minimum_ram":128,
-	"minimum_hd":1
-}

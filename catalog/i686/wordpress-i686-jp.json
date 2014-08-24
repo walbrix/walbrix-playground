@@ -1,1 +1,9 @@
-{"description": "WordPress (ワードプレス) は、オープンソースのブログ／CMS プラットフォームです。セマンティック Web、コードやデザインの美しさ、Web 標準、ユーザビリティなどを意識して開発されています。", "title": "WordPress 3.5.1", "minimum_hd": 2, "tarball": "http://dist.walbrix.net/va/wordpress-3.5.1-i686-jp.tar.xz", "minimum_ram": 192, "images": [{"url": "http://va.walbrix.net/img/wordpress01.png"}], "id": "wordpress"}
+{
+    "description": "WordPress (ワードプレス) は、オープンソースのブログ／CMS プラットフォームです。セマンティック Web、コードやデザインの美しさ、Web 標準、ユーザビリティなどを意識して開発されています。", 
+    "title": "WordPress 3.9.2",
+    "minimum_hd": 2,
+    "tarball": "http://dist.walbrix.net/va/wordpress-3.9.2-i686-jp.tar.xz",
+    "minimum_ram": 192,
+    "images": [{"url": "http://va.walbrix.net/img/wordpress01.png"}],
+    "id": "wordpress"
+}

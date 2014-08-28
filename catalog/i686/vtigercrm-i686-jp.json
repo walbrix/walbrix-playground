@@ -1,0 +1,8 @@
+{
+	"id":"vtigercrm",
+	"title":"vtiger CRM 6.0.0-ja-beta",
+	"tarball":"http://dist.walbrix.net/va/vtigercrm-6.0.0.beta-i686-jp.tar.xz",
+	"description":"vtiger CRMは、SugarCRMから派生したオープンソースCRMソフトウェアです。",
+	"minimum_ram":128,
+	"minimum_hd":1
+}

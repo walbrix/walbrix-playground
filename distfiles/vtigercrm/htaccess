@@ -1,0 +1,7 @@
+php_value max_execution_time 600
+php_value error_reporting "E_WARNING & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT"
+php_flag allow_call_time_pass_reference On
+php_flag log_errors Off
+php_flag short_open_tag On
+php_flag allow_call_time_pass_reference On
+

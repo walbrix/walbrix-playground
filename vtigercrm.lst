@@ -1,0 +1,19 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php54.lst
+#require components/samba.lst
+#require components/postfix.lst
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1vtigercrm\2/
+#copy domU/fstab-with-zramswap /etc/fstab
+#extract vtigercrm/vtigercrm.tar.gz /var/www/localhost/htdocs
+#copy vtigercrm/config.inc.php /var/www/localhost/htdocs/config.inc.php
+#copy vtigercrm/htaccess /var/www/localhost/htdocs/.htaccess
+#chrootexec chown -R apache.apache /var/www/localhost
+#copy vtigercrm/setup_initial_database.sh /setup_initial_database.sh
+#copy vtigercrm/initial-database.sql /initial-database.sql
+#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh /initial-database.sql
+#copy vtigercrm/wb-va.xml /etc/wb-va.xml
+

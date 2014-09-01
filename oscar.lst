@@ -59,7 +59,7 @@
 #chrootexec chgrp -R oscar /etc/samba /var/lib/samba/private
 
 ## groonga
-#chrootexec cd /root && wget http://packages.groonga.org/source/groonga/groonga-4.0.4.tar.gz && tar xvzf groonga-*.tar.gz && cd groonga-*/ && ./configure --prefix=/usr --localstatedir=/var && make && make install && cd .. && rm -rf groonga-*/
+#chrootexec cd /root && wget http://packages.groonga.org/source/groonga/groonga-4.0.5.tar.gz && tar xvzf groonga-*.tar.gz && cd groonga-*/ && ./configure --prefix=/usr --localstatedir=/var && make && make install && cd .. && rm -rf groonga-*/
 #chrootexec cd /root && wget http://packages.groonga.org/source/groonga-gobject/groonga-gobject-1.0.1.tar.gz && tar zxvf groonga-gobject-*.tar.gz && cd groonga-gobject-* && ./configure && make && make install && cd .. && rm -rf groonga-gobject-*/
 #chrootexec /sbin/ldconfig
 

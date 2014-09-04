@@ -9,6 +9,7 @@
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1vtigercrm\2/
 #copy domU/fstab-with-zramswap /etc/fstab
 #extract vtigercrm/vtigercrm.tar.gz /var/www/localhost/htdocs
+#chrootexec [ -f /var/www/localhost/htdocs/index.html ] && rm /var/www/localhost/htdocs/index.html
 #copy vtigercrm/config.inc.php /var/www/localhost/htdocs/config.inc.php
 #copy vtigercrm/htaccess /var/www/localhost/htdocs/.htaccess
 #chrootexec chown -R apache.apache /var/www/localhost

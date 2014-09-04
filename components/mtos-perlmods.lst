@@ -137,19 +137,8 @@
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Style/Tree.pm
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/XML/Parser/Expat/Expat.so
 
-/usr/lib/perl5/vendor_perl/5.12.4/Heap.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Heap/Binary.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Heap/Binomial.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Heap/Elem.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Heap/Elem/Num.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Heap/Elem/NumRev.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Heap/Elem/Ref.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Heap/Elem/RefRev.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Heap/Elem/Str.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Heap/Elem/StrRev.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Heap/Fibonacci.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/IO/String.pm
+#portage dev-perl/Heap-0.800.0-r1
+#portage dev-perl/IO-String-1.80.0-r1
 
 /usr/lib/perl5/vendor_perl/5.12.4/Date/Format.pm
 /usr/lib/perl5/vendor_perl/5.12.4/Date/Language.pm
@@ -196,32 +185,18 @@
 /usr/lib/perl5/vendor_perl/5.12.4/Digest/HMAC_MD5.pm
 /usr/lib/perl5/vendor_perl/5.12.4/Digest/HMAC_SHA1.pm
 
-# dev-perl/Authen-SASL
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL.pod
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL/CRAM_MD5.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL/EXTERNAL.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL/Perl.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL/Perl.pod
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL/Perl/ANONYMOUS.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL/Perl/CRAM_MD5.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL/Perl/DIGEST_MD5.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL/Perl/EXTERNAL.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL/Perl/GSSAPI.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL/Perl/LOGIN.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Authen/SASL/Perl/PLAIN.pm
+#portage dev-perl/Authen-SASL-2.160.0-r1
 
 # dev-perl/IO-Socket-SSL
 /usr/lib/perl5/vendor_perl/5.12.4/IO/Socket/SSL.pm
 
-# dev-perl/Net-SMTP-SSL
-/usr/lib/perl5/vendor_perl/5.12.4/Net/SMTP/SSL.pm
+#portage dev-perl/Net-SMTP-SSL-1.10.0-r1
 
-/usr/lib/perl5/vendor_perl/5.12.4/File/NFSLock.pm
+#portage dev-perl/File-NFSLock-1.210.0-r1
 
 /usr/lib/perl5/vendor_perl/5.12.4/HTML/Tagset.pm
 
-/usr/lib/perl5/vendor_perl/5.12.4/Class/Data/Inheritable.pm
+#portage dev-perl/Class-Data-Inheritable-0.80.0-r1
 
 /usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/Base.pm
 /usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/BuildSAXBase.pl
@@ -402,7 +377,7 @@
 
 /usr/lib/perl5/vendor_perl/5.12.4/Attribute/Handlers.pm
 
-/usr/lib/perl5/vendor_perl/5.12.4/Mail/Sendmail.pm
+#portage dev-perl/Mail-Sendmail-0.790.0-r1
 
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Digest/SHA1.pm
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Digest/SHA1/SHA1.so
@@ -513,13 +488,7 @@
 /usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/UnicodeExt.pm
 /usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/XMLDecl.pm
 
-/usr/lib/perl5/vendor_perl/5.12.4/IPC/Run.pm
-/usr/lib/perl5/vendor_perl/5.12.4/IPC/Run/Debug.pm
-/usr/lib/perl5/vendor_perl/5.12.4/IPC/Run/IO.pm
-/usr/lib/perl5/vendor_perl/5.12.4/IPC/Run/Timer.pm
-/usr/lib/perl5/vendor_perl/5.12.4/IPC/Run/Win32Helper.pm
-/usr/lib/perl5/vendor_perl/5.12.4/IPC/Run/Win32IO.pm
-/usr/lib/perl5/vendor_perl/5.12.4/IPC/Run/Win32Pump.pm
+#portage dev-perl/IPC-Run-0.910.0-r1
 
 /usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip.pm
 /usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/Archive.pm
@@ -535,8 +504,7 @@
 /usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/Tree.pm
 /usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/ZipFileMember.pm
 
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/Memcached.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/Memcached/GetParser.pm
+#require perl-cache-memcached.lst
 
 /usr/lib/perl5/vendor_perl/5.12.4/HTTP/Date.pm
 
@@ -545,7 +513,7 @@
 /usr/lib/perl5/vendor_perl/5.12.4/Net/HTTP/NB.pm
 /usr/lib/perl5/vendor_perl/5.12.4/Net/HTTPS.pm
 
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Authen/Wsse.pm
+#portage dev-perl/LWP-Authen-Wsse-0.50.0-r1
 
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML.pm
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML.pod
@@ -613,22 +581,7 @@
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/GD/autosplit.ix
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/qd.pl
 
-/usr/lib/perl5/vendor_perl/5.12.4/Cache.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/Entry.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/File.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/File/Entry.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/File/Handle.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/File/Heap.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/IOString.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/Memory.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/Memory/Entry.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/Memory/HeapElem.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/Null.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/Null/Entry.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/RemovalStrategy.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/RemovalStrategy/FIFO.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/RemovalStrategy/LRU.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Cache/Tester.pm
+#portage dev-perl/Cache-2.40.0-r1
 
 /usr/lib/perl5/vendor_perl/5.12.4/HTTP/Config.pm
 /usr/lib/perl5/vendor_perl/5.12.4/HTTP/Headers.pm
@@ -758,17 +711,5 @@
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Params/Validate/Validate.so
 
 #portage dev-perl/DateTime-1.030.0
+#portage dev-perl/XML-Atom-0.410.0-r1
 
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom/Base.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom/Category.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom/Client.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom/Content.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom/Entry.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom/ErrorHandler.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom/Feed.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom/Link.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom/Person.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom/Server.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom/Thing.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/Atom/Util.pm

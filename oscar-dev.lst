@@ -7,50 +7,5 @@
 
 ## system setup
 #sed /etc/conf.d/hostname s/^hostname=.*$/hostname="oscar-dev"/
-#sed /etc/nsswitch.conf s/^\(hosts:.*\)$/\1 wins/
-#chrootexec useradd -m oscar
-#chrootexec echo 'export PATH=$PATH:/opt/oscar/bin' >> /home/oscar/.bashrc
-#chrootexec groupmems -g cron -a oscar
-#chrootexec groupmems -g wheel -a oscar
-#sed /etc/sudoers s/^# \(\%wheel ALL=(ALL) NOPASSWD: ALL\)$/\1/
-#copy oscar/oscar.include /etc/apache2/vhosts.d/oscar.include
-#patchsinglefile /etc/apache2/vhosts.d/00_default_vhost.conf oscar/00_default_vhost.conf.patch
-#symlink /etc/runlevels/default/vixie-cron /etc/init.d/vixie-cron
-#copy oscar/sysctl-groonga.conf /etc/sysctl.d/groonga.conf
-#copy oscar/sysctl-oscar.conf /etc/sysctl.d/oscar.conf
 
-## Samba
-#copy oscar/smb.conf /etc/samba/smb.conf
-#chrootexec chmod g+rwx /var/lib/samba/private
-#chrootexec smbpasswd -an adm && smbpasswd -x adm
-#chrootexec chmod g+rw /var/lib/samba/private/passdb.tdb
-#chrootexec chgrp -R oscar /var/lib/samba/private
-
-## Apache
-#sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D WSGI"/
-#symlink /etc/runlevels/default/apache2 /etc/init.d/apache2
-
-## groonga
-#chrootexec cd /root && wget http://packages.groonga.org/source/groonga/groonga-4.0.5.tar.gz && tar xvzf groonga-*.tar.gz && cd groonga-*/ && ./configure --prefix=/usr --localstatedir=/var && make && make install && cd .. && rm -rf groonga-*/
-#chrootexec cd /root && wget http://packages.groonga.org/source/groonga-gobject/groonga-gobject-1.0.1.tar.gz && tar zxvf groonga-gobject-*.tar.gz && cd groonga-gobject-* && ./configure && make && make install && cd .. && rm -rf groonga-gobject-*/
-#chrootexec /sbin/ldconfig
-
-## oscar
-#chrootexec cd /root && git clone https://github.com/shimarin/oscar.git && cd oscar && make install && cd .. && rm -rf oscar
-#copy oscar/oscar-watcher.init /etc/init.d/oscar-watcher
-#copy oscar/oscar-sync.init /etc/init.d/oscar-sync
-#chrootexec chmod 755 /etc/init.d/oscar-watcher
-#chrootexec chmod 755 /etc/init.d/oscar-sync
-#symlink /etc/runlevels/default/oscar-watcher /etc/init.d/oscar-watcher
-#symlink /etc/runlevels/default/oscar-sync /etc/init.d/oscar-sync
-#dir /var/log/oscar
-#dir /opt/oscar/etc
-#dir /var/lib/oscar
-#chrootexec touch /opt/oscar/etc/smb.conf
-#chrootexec chown -R oscar.oscar /var/log/oscar /var/lib/oscar /opt/oscar/etc
-
-## clamav
-#chrootexec /usr/bin/freshclam --no-warnings
-#sed /etc/conf.d/clamd s/^START_CLAMD=.\+/START_CLAMD=no/
-#symlink /etc/runlevels/default/clamd /etc/init.d/clamd
-
+#require components/oscar.lst

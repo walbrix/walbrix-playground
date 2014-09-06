@@ -13,6 +13,7 @@ echo "=app-i18n/nkf-2.1.3" >> /etc/portage/package.keywords
 echo "=dev-python/jsmin-2.0.9" >> /etc/portage/package.keywords
 echo "=dev-python/futures-2.1.6" >> /etc/portage/package.keywords
 echo "=dev-python/six-1.7.3" >> /etc/portage/package.keywords
+echo "=sys-auth/nss-mdns-0.10-r2" >> /etc/portage/package.keywords
 
 echo "www-servers/apache threads apache2_modules_proxy apache2_modules_proxy_ajp apache2_mpms_event" >> /etc/portage/package.use
 echo "dev-vcs/git -perl" >> /etc/portage/package.use
@@ -43,10 +44,12 @@ echo "dev-libs/libxml2 python -python_targets_python3_3" >> /etc/portage/package
 echo "dev-python/pygobject -cairo -python_targets_python3_3" >> /etc/portage/package.use
 echo "dev-python/six -python_targets_python3_3" >> /etc/portage/package.use
 echo "dev-python/pytz -python_targets_python3_3" >> /etc/portage/package.use
+echo "dev-python/pyxattr -python_targets_python3_3" >> /etc/portage/package.use
+echo "dev-python/jsmin -python_targets_python3_3" >> /etc/portage/package.use
 
 emerge www-apache/mod_extract_forwarded www-apache/mod_wsgi || exit 1
 emerge dev-libs/gobject-introspection dev-python/pygobject || exit 1
-emerge dev-python/flask dev-python/beautifulsoup dev-python/lxml dev-python/pyinotify dev-python/pyclamav dev-python/xlrd dev-python/python-ldap dev-python/configobj dev-python/six dev-python/futures dev-python/pytz dev-python/pyxattr || exit 1
+emerge dev-python/flask dev-python/beautifulsoup dev-python/lxml dev-python/pyinotify dev-python/pyclamav dev-python/xlrd dev-python/python-ldap dev-python/configobj dev-python/six dev-python/futures dev-python/pytz dev-python/pyxattr dev-python/rsa || exit 1
 emerge app-admin/sudo app-admin/logrotate dev-vcs/git sys-process/vixie-cron net-misc/dropbox-cli || exit 1
 emerge app-i18n/nkf www-client/elinks app-text/wv www-client/lynx app-text/poppler || exit 1
 emerge app-text/xlhtml || exit 1

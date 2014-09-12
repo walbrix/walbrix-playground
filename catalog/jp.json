@@ -1,4 +1,5 @@
 [
+    {"id":"oscar","file":"x86_64/oscar-x86_64-jp.json"},
     {"id":"zabbix","file":"i686/zabbix-i686-jp.json"},
     {"id":"wordpress","file":"i686/wordpress-i686-jp.json"},
     {"id":"owncloud","file":"i686/owncloud-i686-jp.json"},

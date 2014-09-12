@@ -1,9 +1,10 @@
 {
-    "description": "全文検索機能を搭載した簡易NASです。共有フォルダにファイルを保存でき、さらにそれを高速にキーワード検索することができます。 通常のファイル検索と違い、ファイル名だけではなくファイルの内容まで検索の対象になるのが特徴です。",
-    "title": "oscar",
+    "description": "全文検索機能を搭載したNASです。共有フォルダにファイルを保存でき、さらにそれを高速にキーワード検索することができます。 通常のファイル検索と違い、ファイル名だけではなくファイルの内容まで検索の対象になるのが特徴です。",
+    "title": "全文検索NAS 0.9.0",
     "minimum_hd": 10,
-    "tarball": "http://dist.walbrix.net/va/oscar-20140802-x86_64-jp.tar.xz",
+    "tarball": "http://dist.walbrix.net/va/oscar-0.9.0-x86_64-jp.tar.xz",
     "minimum_ram": 1024, 
     "images": [{"url": "http://va.walbrix.net/img/oscar01.png"}],
-    "id": "oscar"
+    "id": "oscar",
+    "arch":"x86_64"
 }

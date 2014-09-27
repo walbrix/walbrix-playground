@@ -316,18 +316,7 @@
 /usr/lib/perl5/vendor_perl/5.12.4/Test/Simple.pm
 /usr/lib/perl5/vendor_perl/5.12.4/Test/Tutorial.pod
 
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/Dir.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/File.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/Handle.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/Pipe.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/Poll.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/Seekable.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/Select.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/Socket.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/Socket/INET.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/Socket/UNIX.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/IO/IO.so
+#portage perl-core/IO-1.25-r1
 
 /usr/lib/perl5/vendor_perl/5.12.4/Time/Local.pm
 
@@ -611,18 +600,11 @@
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Net/SSL.pm
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Crypt/SSLeay/SSLeay.so
 
-/usr/lib/perl5/vendor_perl/5.12.4/Math/BigFloat.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Math/BigInt.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Math/BigInt/Calc.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Math/BigInt/CalcEmu.pm
+#portage perl-core/Math-BigInt-1.999.300
 
 /usr/lib/perl5/vendor_perl/5.12.4/Math/BigRat.pm
 
-/usr/lib/perl5/vendor_perl/5.12.4/Math/BigFloat/Trace.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Math/BigInt/Trace.pm
-/usr/lib/perl5/vendor_perl/5.12.4/bigint.pm
-/usr/lib/perl5/vendor_perl/5.12.4/bignum.pm
-/usr/lib/perl5/vendor_perl/5.12.4/bigrat.pm
+#portage perl-core/bignum-0.300.0-r1
 
 /usr/lib/perl5/vendor_perl/5.12.4/Crypt/DSA.pm
 /usr/lib/perl5/vendor_perl/5.12.4/Crypt/DSA/Key.pm

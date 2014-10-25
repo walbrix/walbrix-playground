@@ -1,4 +1,4 @@
-#portage net-dns/avahi-0.6.31-r2
+#portage net-dns/avahi-0.6.31-r6
 #sed /etc/avahi/avahi-daemon.conf s/^#\(allow-interfaces=eth0\)$/\1/
 #sed /etc/avahi/avahi-daemon.conf s/^#disallow-other-stacks=no$/disallow-other-stacks=yes/
 #symlink /etc/runlevels/default/avahi-daemon /etc/init.d/avahi-daemon

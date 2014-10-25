@@ -1,4 +1,4 @@
-=sys-kernel/vanilla-sources-3.2.62
+=sys-kernel/vanilla-sources-3.2.63
 =dev-java/jdbc-postgresql-9.1_p902
 =net-libs/nodejs-0.10.7
 =dev-lang/v8-3.11.10.12
@@ -15,3 +15,5 @@
 =dev-lang/perl-5.18.2-r1
 =virtual/perl-Math-BigInt-1.999.100 
 =virtual/perl-Math-BigRat-0.260.400
+=dev-perl/Net-SMTP-TLS-0.120.0-r2
+=dev-php/xcache-3.2.0

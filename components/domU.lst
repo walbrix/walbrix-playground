@@ -32,7 +32,7 @@
 #portage net-misc/iputils-20121221
 #portage sys-apps/sed-4.2.1-r1
 #portage app-arch/tar-1.27.1-r2 
-#portage app-shells/bash-4.2_p45
+#portage app-shells/bash-4.2_p53
 /bin/sh
 /bin/busybox
 #require sysvinit.lst

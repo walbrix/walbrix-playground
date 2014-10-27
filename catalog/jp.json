@@ -1,4 +1,5 @@
 [
+    {"id":"redmine","file":"i686/redmine-i686-jp.json"},
     {"id":"oscar","file":"x86_64/oscar-x86_64-jp.json"},
     {"id":"zabbix","file":"i686/zabbix-i686-jp.json"},
     {"id":"wordpress","file":"i686/wordpress-i686-jp.json"},
@@ -10,7 +11,6 @@
     {"id":"glassfish","file":"i686/glassfish-i686-jp.json"},
     {"id":"centos","file":"i686/centos-i686-jp.json"},
     {"id":"aipo","file":"i686/aipo-i686-jp.json"},
-    {"id":"redmine","file":"i686/redmine-i686-jp.json"},
     {"id":"eccube","file":"i686/eccube-i686-jp.json"},
     {"id":"basercms","file":"i686/basercms-i686-jp.json"},
     {"id":"openpne","file":"i686/openpne-i686-jp.json"},

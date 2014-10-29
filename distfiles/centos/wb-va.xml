@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <virtual-appliance uuid="d635b084-6e72-4091-9e86-f7f576d72f46">
-  <version>6.5</version>
+  <version>6.6</version>
   <instruction>Webブラウザでアクセスすると使用法を確認できます。</instruction>
   <instruction xml:lang="en">Please access using web browser to confirm the usage</instruction>
 </virtual-appliance>

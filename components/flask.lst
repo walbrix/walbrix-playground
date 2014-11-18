@@ -1,8 +1,8 @@
 #require wsgi.lst
 #portage dev-python/blinker-1.3 ^/usr/lib(64)?/python3.*/
-#portage dev-python/markupsafe-0.15-r1 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
+#portage dev-python/markupsafe-0.23 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
 #portage dev-python/pytz-2013d ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
-#portage dev-python/simplejson-3.3.0 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
+#portage dev-python/simplejson-3.6.4 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
 #portage dev-python/werkzeug-0.9.4 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
 #portage dev-python/jinja-2.7.3 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
 #portage dev-python/flask-0.10.1-r1 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)

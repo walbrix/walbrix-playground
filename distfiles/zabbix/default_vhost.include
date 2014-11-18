@@ -1,7 +1,7 @@
 ServerAdmin zabbix@example.com
 
-DocumentRoot "/usr/share/webapps/zabbix/2.2.5/htdocs"
-<Directory "/usr/share/webapps/zabbix/2.2.5/htdocs">
+DocumentRoot "/usr/share/webapps/zabbix/2.2.7/htdocs"
+<Directory "/usr/share/webapps/zabbix/2.2.7/htdocs">
 	DirectoryIndex index.php
 	Options Indexes FollowSymLinks
 	AllowOverride All

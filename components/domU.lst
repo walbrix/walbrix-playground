@@ -78,6 +78,7 @@
 ./usr/bin/locale
 #portage app-arch/xz-utils-5.0.5-r1
 /usr/bin/make
+/usr/bin/rsync
 /usr/bin/strace
 /usr/bin/strings
 /usr/bin/unzip

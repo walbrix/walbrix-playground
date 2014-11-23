@@ -40,7 +40,7 @@
 /etc/host.conf
 /etc/ld.so.conf
 /etc/ld.so.cache
-#/etc/ld.so.conf.d/05binutils.conf
+#copytree /etc/ld.so.conf.d /etc/
 /etc/ssl/certs/ca-certificates.crt
 /etc/runlevels/sysinit/devfs
 /etc/runlevels/sysinit/dmesg

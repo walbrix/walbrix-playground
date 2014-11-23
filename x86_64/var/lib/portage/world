@@ -32,6 +32,7 @@ dev-python/futures
 dev-python/httplib2
 dev-python/jsmin
 dev-python/lxml
+dev-python/markdown
 dev-python/mecab-python
 dev-python/mysql-python
 dev-python/pyclamav
@@ -48,6 +49,7 @@ dev-python/xlrd
 dev-ruby/bundler
 dev-util/strace
 dev-vcs/git
+java-virtuals/javamail
 mail-mta/postfix
 media-fonts/vlgothic
 media-gfx/imagemagick

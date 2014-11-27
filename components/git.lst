@@ -1,4 +1,4 @@
-#portage dev-vcs/git-1.8.5.5
+#portage dev-vcs/git-2.0.4
 
 #/usr/libexec/git-core/git-remote-ftps   
 #chrootexec rm /usr/libexec/git-core/git-remote-ftp && ln -s git-remote-ftps /usr/libexec/git-core/git-remote-ftp
@@ -38,9 +38,9 @@
 #chrootexec rm /usr/libexec/git-core/git-show && ln -s git-write-tree /usr/libexec/git-core/git-show
 #chrootexec rm /usr/libexec/git-core/git-grep && ln -s git-write-tree /usr/libexec/git-core/git-grep
 #chrootexec rm /usr/libexec/git-core/git-cherry && ln -s git-write-tree /usr/libexec/git-core/git-cherry
-#chrootexec rm /usr/libexec/git-core/git-repo-config && ln -s git-write-tree /usr/libexec/git-core/git-repo-config
+##chrootexec rm /usr/libexec/git-core/git-repo-config && ln -s git-write-tree /usr/libexec/git-core/git-repo-config
 #chrootexec rm /usr/libexec/git-core/git-gc && ln -s git-write-tree /usr/libexec/git-core/git-gc
-#chrootexec rm /usr/libexec/git-core/git-peek-remote && ln -s git-write-tree /usr/libexec/git-core/git-peek-remote
+##chrootexec rm /usr/libexec/git-core/git-peek-remote && ln -s git-write-tree /usr/libexec/git-core/git-peek-remote
 #chrootexec rm /usr/libexec/git-core/git-pack-redundant && ln -s git-write-tree /usr/libexec/git-core/git-pack-redundant
 #chrootexec rm /usr/libexec/git-core/git && ln -s git-write-tree /usr/libexec/git-core/git
 #chrootexec rm /usr/libexec/git-core/git-merge-subtree && ln -s git-write-tree /usr/libexec/git-core/git-merge-subtree
@@ -62,7 +62,7 @@
 #chrootexec rm /usr/libexec/git-core/git-fmt-merge-msg && ln -s git-write-tree /usr/libexec/git-core/git-fmt-merge-msg
 #chrootexec rm /usr/libexec/git-core/git-unpack-file && ln -s git-write-tree /usr/libexec/git-core/git-unpack-file
 #chrootexec rm /usr/libexec/git-core/git-fetch && ln -s git-write-tree /usr/libexec/git-core/git-fetch
-#chrootexec rm /usr/libexec/git-core/git-tar-tree && ln -s git-write-tree /usr/libexec/git-core/git-tar-tree
+##chrootexec rm /usr/libexec/git-core/git-tar-tree && ln -s git-write-tree /usr/libexec/git-core/git-tar-tree
 #chrootexec rm /usr/libexec/git-core/git-bundle && ln -s git-write-tree /usr/libexec/git-core/git-bundle
 #chrootexec rm /usr/libexec/git-core/git-tag && ln -s git-write-tree /usr/libexec/git-core/git-tag
 #chrootexec rm /usr/libexec/git-core/git-merge && ln -s git-write-tree /usr/libexec/git-core/git-merge

@@ -1,0 +1,9 @@
+{
+    "description": "SugarCRM CEは SFA/CRMアプリケーションであるSugarCRMのオープンソースエディションです。顧客管理、予定表、汎用データベース、メール配信など、様々な活用が可能です。", 
+    "title": "SugarCRM CE 6.5.16", 
+    "minimum_hd": 2, 
+    "tarball": "http://dist.walbrix.net/va/sugarcrm-6.5.16-i686-jp.tar.xz", 
+    "minimum_ram": 192, 
+    "images": [{"url": "http://va.walbrix.net/img/sugarce01.png"}], 
+    "id": "sugarcrm"
+}

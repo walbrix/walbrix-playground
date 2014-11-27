@@ -32,7 +32,7 @@
 #portage net-misc/iputils-20121221
 #portage sys-apps/sed-4.2.1-r1
 #portage app-arch/tar-1.27.1-r2 
-#portage app-shells/bash-4.2_p48-r1
+#portage app-shells/bash-4.2_p53
 /bin/sh
 /bin/busybox
 #require sysvinit.lst
@@ -40,7 +40,7 @@
 /etc/host.conf
 /etc/ld.so.conf
 /etc/ld.so.cache
-#/etc/ld.so.conf.d/05binutils.conf
+#copytree /etc/ld.so.conf.d /etc/
 /etc/ssl/certs/ca-certificates.crt
 /etc/runlevels/sysinit/devfs
 /etc/runlevels/sysinit/dmesg
@@ -78,6 +78,7 @@
 ./usr/bin/locale
 #portage app-arch/xz-utils-5.0.5-r1
 /usr/bin/make
+/usr/bin/rsync
 /usr/bin/strace
 /usr/bin/strings
 /usr/bin/unzip

@@ -1,0 +1,27 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php54.lst
+#require components/postfix.lst
+
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1sugarcrm\2/
+#copy domU/fstab-with-zramswap /etc/fstab
+
+#chrootexec wget -O - https://github.com/sugarcrm/sugarcrm_dev/archive/6.5.16.tar.gz | tar zxvf - -C /var/www/localhost
+#chrootexec rm -rf /var/www/localhost/htdocs && mv /var/www/localhost/sugarcrm_dev-* /var/www/localhost/htdocs
+#copy sugarcrm/config.php /var/www/localhost/htdocs/config.php
+#patchsinglefile /etc/php/apache2-php5.4/php.ini sugarcrm/php.ini.patch
+
+#copy sugarcrm/crontab /var/spool/cron/crontabs/apache
+#chrootexec chmod 600 /var/spool/cron/crontabs/apache && chown apache.crontab /var/spool/cron/crontabs/apache
+
+#copy sugarcrm/setup_initial_database.sh /setup_initial_database.sh
+#copy sugarcrm/initial_database.sql /initial_database.sql
+#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh /initial_database.sql
+
+#chrootexec chown -R apache.apache /var/www/localhost/htdocs
+
+##copy sugarcrm/wb-va.xml /etc/wb-va.xml
+

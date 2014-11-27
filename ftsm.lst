@@ -1,0 +1,23 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#copy domU/fstab-with-zramswap /etc/fstab
+#require components/sudo.lst
+#require components/flask.lst
+#require components/beautifulsoup.lst
+#require components/feedparser.lst
+#require components/httplib2.lst
+#require components/git.lst
+#require components/emacs.lst
+#require components/vim.lst
+#require components/s3cmd.lst
+#require components/tomcat.lst
+#require components/postfix.lst
+#require components/setuptools.lst
+#portage dev-python/feedgenerator-1.7
+#portage dev-python/pyyaml-3.11
+#portage dev-python/markdown-2.3.1
+#portage dev-python/pygments-1.6_p20140324-r1
+
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1ftsm\2/
+

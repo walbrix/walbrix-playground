@@ -12,12 +12,12 @@
 /usr/sbin/fping
 /usr/sbin/fping6
 
-#portage net-analyzer/zabbix-2.2.5
+#portage net-analyzer/zabbix-2.2.7
 
-#copy zabbix/zabbix.conf.php /usr/share/webapps/zabbix/2.2.5/htdocs/conf/zabbix.conf.php
+#copy zabbix/zabbix.conf.php /usr/share/webapps/zabbix/2.2.7/htdocs/conf/zabbix.conf.php
 /usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf
-#symlink /usr/share/webapps/zabbix/2.2.5/htdocs/fonts/VL-PGothic-Regular.ttf ../../../../../fonts/vlgothic/VL-PGothic-Regular.ttf
-#sed /usr/share/webapps/zabbix/2.2.5/htdocs/include/defines.inc.php s/DejaVuSans/VL-PGothic-Regular/
+#symlink /usr/share/webapps/zabbix/2.2.7/htdocs/fonts/VL-PGothic-Regular.ttf ../../../../../fonts/vlgothic/VL-PGothic-Regular.ttf
+#sed /usr/share/webapps/zabbix/2.2.7/htdocs/include/defines.inc.php s/DejaVuSans/VL-PGothic-Regular/
 
 #symlink /etc/runlevels/default/zabbix-server /etc/init.d/zabbix-server
 #symlink /etc/runlevels/default/zabbix-agentd /etc/init.d/zabbix-agentd

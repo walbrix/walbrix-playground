@@ -6,15 +6,16 @@
 #portage dev-java/jdbc-mysql-5.1.26
 #portage dev-java/jdbc-postgresql-9.2_p1003
 #portage dev-java/commons-dbcp-1.4-r2
-#portage dev-java/tomcat-servlet-api-7.0.47
-#portage dev-java/eclipse-ecj-4.2.1
-#portage dev-java/ant-eclipse-ecj-4.2.1
-#portage www-servers/tomcat-7.0.47
+#portage dev-java/tomcat-servlet-api-7.0.56
+#portage dev-java/eclipse-ecj-4.4.1
+#portage dev-java/ant-eclipse-ecj-4.4.1
+#portage dev-java/sun-javamail-1.4.3
+#portage www-servers/tomcat-7.0.56
 
 #chrootexec /usr/share/tomcat-7/gentoo/tomcat-instance-manager.bash --create
 
 #chrootexec chmod g+w /var/lib/tomcat-7/webapps
-#sed /etc/conf.d/tomcat-7 s/^#TOMCAT_EXTRA_JARS=""/TOMCAT_EXTRA_JARS="commons-dbcp,commons-pool,jdbc-mysql,jdbc-postgresql"/
+#sed /etc/conf.d/tomcat-7 s/^#TOMCAT_EXTRA_JARS=""/TOMCAT_EXTRA_JARS="commons-dbcp,commons-pool,jdbc-mysql,jdbc-postgresql,sun-javamail"/
 
 ##sed /etc/init.d/tomcat-7 s/\(JAVA_HOME=\).\+$/\1\/etc\/java-config-2\/current-system-vm/
 #symlink /etc/runlevels/default/tomcat-7 /etc/init.d/tomcat-7

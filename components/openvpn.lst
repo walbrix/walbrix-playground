@@ -1,3 +1,3 @@
 #require openssl.lst
-#portage net-misc/openvpn-2.3.3
+#portage net-misc/openvpn-2.3.4-r1
 

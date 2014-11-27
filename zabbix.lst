@@ -3,6 +3,7 @@
 #require components/pvkernel.lst
 #require components/zabbix.lst
 #require components/postfix.lst
+#require components/java.lst
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1zabbix\2/
 #copy domU/fstab-with-zramswap /etc/fstab
 #copy zabbix/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include

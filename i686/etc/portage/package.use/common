@@ -13,7 +13,7 @@ x11-libs/cairo X
 dev-lang/php apache2 gd mysql mysqli postgres xslt zip pdo truetype xmlwriter bcmath xmlreader pcntl sysvipc sockets curl sqlite sharedmem tidy exif -cjk intl ldap ftp gmp imap
 dev-php/pecl-apc php_targets_php5-4
 dev-php/pecl-apcu php_targets_php5-4 -php_targets_php5-5
-dev-php/xcache php_targets_php5-4
+dev-php/xcache php_targets_php5-4 -php_targets_php5-5
 dev-php/pecl-imagick php_targets_php5-4 -php_targets_php5-5
 app-text/ghostscript-gpl cups linguas_ja
 sys-kernel/vanilla-sources symlink

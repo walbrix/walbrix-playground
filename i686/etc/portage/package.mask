@@ -2,3 +2,4 @@
 >=dev-lang/php-5.5
 <dev-lang/ruby-2.0
 =virtual/perl-bignum-0.330.0
+>net-analyzer/fping-2.4

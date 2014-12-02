@@ -18,3 +18,4 @@
 =dev-perl/Net-SMTP-TLS-0.120.0-r2
 =dev-php/xcache-3.2.0
 =net-misc/openvpn-2.3.4-r1
+=sys-devel/automake-1.14.1

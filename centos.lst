@@ -16,26 +16,27 @@
 #chrootexec mkdir /root/.ssh && chmod 700 /root/.ssh && touch /root/.ssh/authorized_keys
 #copy centos/wb-va.xml /etc/wb-va.xml
 #chrootexec chkconfig iptables off
-#chrootexec yum clean -y all
-#chrootexec yum update -y
 #chrootexec yum install -y samba4 avahi ntp lzo dhclient openssh-server openssh-clients rsyslog
+#sed /etc/avahi/avahi-daemon.conf s/^#disallow-other-stacks=no$/disallow-other-stacks=yes/
 #chrootexec chkconfig nmb on
 #chrootexec chkconfig ntpd on
-#chrootexec yum clean -y all
 
 # LAMP stack
 #chrootexec yum install -y php-mysql mysql-server httpd vsftpd php php-mbstring php-mcrypt php-gd wget xz
-#chrootexec yum clean -y all
 #chrootexec chkconfig smb on
 #chrootexec chkconfig httpd on
 #chrootexec chkconfig mysqld on
 #chrootexec chkconfig vsftpd on
 #copy centos/index.html /var/www/html/index.html
-#chrootexec wget -O - http://jaist.dl.sourceforge.net/project/phpmyadmin/phpMyAdmin/4.1.14.6/phpMyAdmin-4.1.14.6-all-languages.tar.xz | tar Jxvf - -C /var/www/html && mv /var/www/html/phpMyAdmin-* /var/www/html/phpmyadmin
+#chrootexec wget -O - http://jaist.dl.sourceforge.net/project/phpmyadmin/phpMyAdmin/4.1.14.7/phpMyAdmin-4.1.14.7-all-languages.tar.xz | tar Jxvf - -C /var/www/html && mv /var/www/html/phpMyAdmin-* /var/www/html/phpmyadmin
 #copy phpmyadmin/config.inc.php /var/www/html/phpmyadmin/config.inc.php
 #chrootexec chown -R apache.apache /var/www /var/log/httpd
 #patchsinglefile /etc/my.cnf centos/my.cnf.patch
 #copy centos/smb.conf /etc/samba/smb.conf
+
+# update and cleanup
+#chrootexec yum update -y
+#chrootexec yum clean -y all
 
 #require components/centos-$(ARCH).lst
 #require components/centos-$(REGION).lst

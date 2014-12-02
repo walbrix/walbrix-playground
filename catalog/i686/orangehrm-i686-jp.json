@@ -1,0 +1,8 @@
+{
+    "id": "orangehrm",
+    "description": "OrangeHRMは、オープンソースなHRMソフトウェアです。",
+    "title": "OrangeHRM 3.2.1",
+    "minimum_hd": 1,
+    "tarball": "http://dist.walbrix.net/va/orangehrm-3.2.1-i686-jp.tar.xz",
+    "minimum_ram": 192
+}

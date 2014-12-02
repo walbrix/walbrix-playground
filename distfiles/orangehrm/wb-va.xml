@@ -1,3 +1,5 @@
 <virtual-appliance uuid="e851f9d5-fa59-4453-a8cf-75c558e41adc">
-<version>2.7</version>
+  <version>3.2.1</version>
+  <instruction>デフォルトのID/パスワードは Admin/admin です。</instruction>
+  <instruction xml:lang="en">The default ID/Password is Admin/admin.</instruction>
 </virtual-appliance>

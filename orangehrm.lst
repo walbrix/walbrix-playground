@@ -2,14 +2,22 @@
 #require components/pvkernel.lst
 #require components/apache.lst
 #require components/mysql.lst
-#require components/php53.lst
+#require components/php54.lst
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1orangehrm\2/
-#copy domU/fstab-with-swapfile /etc/fstab
-#swap /swapfile 96
-#extract orangehrm/orangehrm-2.7.tar.gz /var/www/localhost
-#chrootexec rm -rf /var/www/localhost/htdocs
-#chrootexec mv /var/www/localhost/orangehrm-2.7 /var/www/localhost/htdocs
+#copy domU/fstab-with-zramswap /etc/fstab
+#chrootexec wget -O /tmp/orangehrm.zip http://ftp.jaist.ac.jp/pub/sourceforge/o/or/orangehrm/stable/3.2.1/orangehrm-3.2.1.zip
+#chrootexec cd /var/www/localhost && unzip /tmp/orangehrm.zip
+#chrootexec rm -rf /var/www/localhost/htdocs /var/www/localhost/orangehrm-quick-start-guide.html
+#chrootexec mv /var/www/localhost/orangehrm-* /var/www/localhost/htdocs
+#dir /var/www/localhost/htdocs/lib/confs
+#dir /var/www/localhost/htdocs/symfony/config
+#copy orangehrm/Conf.php /var/www/localhost/htdocs/lib/confs/Conf.php
+#copy orangehrm/databases.yml /var/www/localhost/htdocs/symfony/config/databases.yml
 #chrootexec chown -R apache.apache /var/www/localhost/htdocs
-#patchsinglefile /var/www/localhost/htdocs/symfony/apps/orangehrm/modules/auth/templates/loginSuccess.php orangehrm/default-idpass.patch
-#extract orangehrm/initial-db-and-config.tar.gz /
+#copy orangehrm/setup_initial_database.sh /tmp/setup_initial_database.sh
+#copy orangehrm/initial_database.sql /tmp/initial_database.sql
+#chrootexec sh /tmp/setup_initial_database.sh
+#chrootexec rm -rf /tmp/*
+
+##extract orangehrm/initial-db-and-config.tar.gz /
 #copy orangehrm/wb-va.xml /etc/wb-va.xml

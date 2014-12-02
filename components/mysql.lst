@@ -4,7 +4,7 @@
 /usr/include/mysql/mysql_version.h
 /usr/include/mysql/my_config.h
 
-#portage dev-db/mysql-init-scripts-2.0_pre1-r6
+#portage dev-db/mysql-init-scripts-2.0-r1
 #symlink /etc/runlevels/default/mysql /etc/init.d/mysql
 
 #copy mysql/setup_mysql.sh /setup_mysql.sh

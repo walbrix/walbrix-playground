@@ -64,14 +64,11 @@ media-gfx/imagemagick
 media-libs/exiftool
 media-video/ffmpeg
 media-video/gpac
+net-analyzer/traceroute
 net-analyzer/zabbix
 net-fs/samba
 net-misc/ntp
 net-misc/openvpn
-perl-core/Attribute-Handlers
-perl-core/Encode
-perl-core/IO
-perl-core/Storable
 perl-core/bignum
 sys-auth/nss-mdns
 sys-auth/nss-myhostname

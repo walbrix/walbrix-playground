@@ -54,6 +54,7 @@ mail-mta/postfix
 media-fonts/vlgothic
 media-gfx/imagemagick
 media-libs/fontconfig
+net-analyzer/traceroute
 net-analyzer/zabbix
 net-dns/avahi
 net-fs/nfs-utils

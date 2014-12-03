@@ -1,0 +1,26 @@
+#noaufs
+#require components/pvkernel.lst
+#extract openmediavault/openmediavault-$(ARCH).tar.xz /
+#chrootexec echo "openmediavault" > /etc/hostname
+#sed /etc/shadow s/^\(root:\)[^:]*\(:.*\)$/\1\2/
+#dir /run/resolvconf
+#copy domU/resolv.conf /run/resolvconf/resolv.conf
+#copy domU/fstab-with-zramswap /etc/fstab
+#chrootexec touch /root/.ssh/authorized_keys
+#copy openmediavault/wb-va.xml /etc/wb-va.xml
+##copy openmediavault/sources-$(REGION).lst /etc/apt/sources.lst
+#copy openmediavault/policy-rc.d /usr/sbin/policy-rc.d
+#chrootexec apt-get remove -y grub-common grub-pc grub-pc-bin grub2-common
+#chrootexec apt-get remove -y linux-image-3.2.0-4
+#chrootexec apt-get install apt-transport-https libcurl3-gnutls librtmp0 libssh2-1 openvpn
+#chrootexec wget -O /tmp/omvextras.deb http://omv-extras.org/openmediavault-omvextrasorg_latest_all.deb && dpkg -i /tmp/omvextras.deb && rm /tmp/omvextras.deb
+#chrootexec apt-get update -y && apt-get upgrade -y && apt-get clean
+#chrootexec rm -f /usr/sbin/policy-rc.d
+##chrootexec rm -f /etc/ssh/ssh_host_*
+#chrootexec update-rc.d samba enable
+##patchsinglefile /etc/init.d/ssh openmediavault/ssh.patch
+#patchsinglefile /etc/init.d/checkroot.sh openmediavault/checkroot.sh.patch
+#patchsinglefile /etc/inittab openmediavault/inittab.patch
+##copy openmediavault/interfaces /etc/network/interfaces
+#require components/timezone-$(REGION).lst
+

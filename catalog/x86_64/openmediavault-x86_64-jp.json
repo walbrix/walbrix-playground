@@ -1,0 +1,8 @@
+{
+    "description": "Linux ver of FreeNAS", 
+    "title": "OpenMediaVault", 
+    "minimum_hd": 2,
+    "tarball": "http://dist.walbrix.net/va/openmediavault-1.4-x86_64-jp.tar.xz",
+    "minimum_ram": 1024,
+    "id": "openmediavault"
+}

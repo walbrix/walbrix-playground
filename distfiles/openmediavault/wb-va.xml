@@ -1,0 +1,5 @@
+<virtual-appliance uuid="e0699b43-1d8b-4808-b87e-3248ce199277">
+  <version>1.4</version>
+  <instruction>デフォルトのID/パスワードは admin/openmediavault です。</instruction>
+  <instruction xml:lang="en">The default ID/Password is admin/openmediavault.</instruction>
+</virtual-appliance>

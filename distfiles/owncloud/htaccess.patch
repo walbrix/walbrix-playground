@@ -1,0 +1,10 @@
+--- .htaccess.orig	2014-08-18 14:26:49.873856686 +0900
++++ .htaccess	2014-08-18 14:27:16.534071973 +0900
+@@ -25,6 +25,7 @@
+ RewriteRule ^apps/calendar/caldav\.php remote.php/caldav/ [QSA,L]
+ RewriteRule ^apps/contacts/carddav\.php remote.php/carddav/ [QSA,L]
+ RewriteRule ^remote/(.*) remote.php [QSA,L]
++RewriteRule ^index.php/(.*) $1 [L]
+ </IfModule>
+ <IfModule mod_mime.c>
+ AddType image/svg+xml svg svgz

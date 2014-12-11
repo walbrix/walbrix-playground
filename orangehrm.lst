@@ -13,11 +13,12 @@
 #dir /var/www/localhost/htdocs/symfony/config
 #copy orangehrm/Conf.php /var/www/localhost/htdocs/lib/confs/Conf.php
 #copy orangehrm/databases.yml /var/www/localhost/htdocs/symfony/config/databases.yml
+#sed /var/www/localhost/htdocs/symfony/plugins/orangehrmPimPlugin/modules/pim/templates/viewPersonalDetailsSuccess.php s/^})$//
 #chrootexec chown -R apache.apache /var/www/localhost/htdocs
 #copy orangehrm/setup_initial_database.sh /tmp/setup_initial_database.sh
 #copy orangehrm/initial_database.sql /tmp/initial_database.sql
 #chrootexec sh /tmp/setup_initial_database.sh
 #chrootexec rm -rf /tmp/*
 
-##extract orangehrm/initial-db-and-config.tar.gz /
 #copy orangehrm/wb-va.xml /etc/wb-va.xml
+

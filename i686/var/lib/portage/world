@@ -69,7 +69,6 @@ net-analyzer/zabbix
 net-fs/samba
 net-misc/ntp
 net-misc/openvpn
-perl-core/bignum
 sys-auth/nss-mdns
 sys-auth/nss-myhostname
 sys-fs/fuse

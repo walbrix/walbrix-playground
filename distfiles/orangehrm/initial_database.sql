@@ -3999,3 +3999,20 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2014-11-29 19:51:36
+DELIMITER ;;
+CREATE DEFINER=`orangehrm`@`localhost` FUNCTION `dashboard_get_subunit_parent_id`(
+                  id INT
+                ) RETURNS int(11)
+    READS SQL DATA
+    DETERMINISTIC
+BEGIN
+                SELECT (SELECT t2.id 
+                               FROM ohrm_subunit t2 
+                               WHERE t2.lft < t1.lft AND t2.rgt > t1.rgt    
+                               ORDER BY t2.rgt-t1.rgt ASC LIMIT 1) INTO @parent
+                FROM ohrm_subunit t1 WHERE t1.id = id;
+
+                RETURN @parent;
+
+                END ;;
+DELIMITER ;

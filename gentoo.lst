@@ -16,7 +16,7 @@
 #chrootexec echo "sys-libs/talloc python" >> /etc/portage/package.use
 #chrootexec echo "net-dns/avahi -introspection" >> /etc/portage/package.use
 #chrootexec echo "=app-editors/nvi-1.81.6-r4" >> /etc/portage/package.keywords
-#chrootexec emerge -uDN nvi avahi samba nss-mdns nss-myhostname ntp xfsprogs world
+#chrootexec_shm emerge -uDN nvi avahi samba nss-mdns nss-myhostname ntp xfsprogs world
 #chrootexec rm -rf /usr/portage/distfiles/*
 #chrootexec rc-update add avahi-daemon default
 #chrootexec rc-update add sshd default

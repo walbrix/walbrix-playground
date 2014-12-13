@@ -6,7 +6,7 @@
 #require components/nfs.lst
 #patchsinglefile /etc/crontab backup/crontab.patch
 #require components/python27.lst
-#portage sys-fs/btrfs-progs-3.12-r1
+#portage sys-fs/btrfs-progs-3.14.2
 #portage net-misc/rsync-3.0.9-r3
 #dir /var/lib/backup
 #copy backup/rsyncd.conf /etc/rsyncd.conf

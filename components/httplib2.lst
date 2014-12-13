@@ -1,2 +1,2 @@
 #require python27.lst
-#portage dev-python/httplib2-0.7.6 ^/usr/lib(64)?/(python3.2/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
+#portage dev-python/httplib2-0.8 ^/usr/lib(64)?/(python3.2/|.*\.egg-info(\/|$)|.+\.py(c|o)$)

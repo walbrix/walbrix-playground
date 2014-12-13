@@ -6,7 +6,7 @@
 #chrootexec java-config -S icedtea-bin-7
 
 #portage media-libs/jpeg-6b-r12
-#portage media-libs/libpng-1.6.12
+#portage media-libs/libpng-1.6.15
 #portage media-libs/giflib-4.1.6-r3
 
 /etc/fonts/fonts.conf

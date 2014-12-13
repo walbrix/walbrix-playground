@@ -1,8 +1,8 @@
 {
     "description": "ownCloudは、ブラウザや WebDAVクライアントからアクセス可能なクラウドストレージを構築するためのオープンソースソフトウェアです。",
-    "title": "ownCloud 7.0.3",
+    "title": "ownCloud 7.0.4",
     "minimum_hd": 2,
-    "tarball": "http://dist.walbrix.net/va/owncloud-7.0.3-i686-jp.tar.xz",
+    "tarball": "http://dist.walbrix.net/va/owncloud-7.0.4-i686-jp.tar.xz",
     "minimum_ram": 96,
     "images": [{"url": "http://va.walbrix.net/img/owncloud01.png"}],
     "id": "owncloud"

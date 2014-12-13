@@ -13,7 +13,7 @@
 #copy owncloud/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1owncloud\2/
 #copy domU/fstab-with-zramswap /etc/fstab
-#chrootexec wget -O - https://download.owncloud.org/community/owncloud-7.0.3.tar.bz2 | tar jxvf - -C /var/www/localhost
+#chrootexec wget -O - https://download.owncloud.org/community/owncloud-7.0.4.tar.bz2 | tar jxvf - -C /var/www/localhost
 #chrootexec mv /var/www/localhost/owncloud/* /var/www/localhost/htdocs/
 #chrootexec mv /var/www/localhost/owncloud/.htaccess /var/www/localhost/htdocs/
 ##patchsinglefile /var/www/localhost/htdocs/.htaccess owncloud/htaccess.patch
@@ -22,9 +22,9 @@
 #extract owncloud/data.tar.gz /var/www/localhost/htdocs
 #chrootexec mkdir /var/lib/owncloud
 #chrootexec chown -R apache.apache /var/www/localhost /var/lib/owncloud
-#copy owncloud/setup_initial_database.sh /setup_initial_database.sh
-#copy owncloud/initial-database.sql /initial-database.sql
-#chrootexec sh /setup_initial_database.sh && rm /setup_initial_database.sh /initial-database.sql
+#copy owncloud/setup_initial_database.sh /tmp/setup_initial_database.sh
+#copy owncloud/initial-database.sql /tmp/initial-database.sql
+#chrootexec sh /tmp/setup_initial_database.sh && rm -rf /tmp/*
 #sed /etc/php/apache2-php5.4/php.ini s/^upload_max_filesize.\+$/upload_max_filesize = 512M/
 #sed /etc/php/apache2-php5.4/php.ini s/^post_max_size.\+$/post_max_size = 768M/
 #copy owncloud/crontab /var/spool/cron/crontabs/apache

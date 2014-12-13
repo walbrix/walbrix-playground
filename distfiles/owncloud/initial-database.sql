@@ -107,7 +107,7 @@ CREATE TABLE `oc_appconfig` (
 
 LOCK TABLES `oc_appconfig` WRITE;
 /*!40000 ALTER TABLE `oc_appconfig` DISABLE KEYS */;
-INSERT INTO `oc_appconfig` VALUES ('activity','enabled','yes'),('activity','installed_version','1.1.23'),('activity','ocsid','166038'),('activity','types','filesystem'),('backgroundjob','lastjob','2'),('calendar','enabled','yes'),('calendar','installed_version','0.6.4'),('calendar','ocsid','166043'),('calendar','types',''),('contacts','enabled','yes'),('contacts','installed_version','0.3.0.18'),('contacts','ocsid','166044'),('contacts','types',''),('core','global_cache_gc_lastrun','1408345619'),('core','installedat','1408345612.5657'),('core','lastcron','1417742296'),('core','lastupdatedat','0'),('core','public_caldav','calendar/share.php'),('core','public_calendar','calendar/share.php'),('core','public_documents','documents/public.php'),('core','public_files','files_sharing/public.php'),('core','public_gallery','gallery/public.php'),('core','public_webdav','files_sharing/publicwebdav.php'),('core','remote_caldav','calendar/appinfo/remote.php'),('core','remote_calendar','calendar/appinfo/remote.php'),('core','remote_carddav','contacts/appinfo/remote.php'),('core','remote_contacts','contacts/appinfo/remote.php'),('core','remote_files','files/appinfo/remote.php'),('core','remote_filesync','files/appinfo/filesync.php'),('core','remote_webdav','files/appinfo/remote.php'),('documents','enabled','yes'),('documents','installed_version','0.8.2'),('documents','ocsid','166045'),('documents','types',''),('files','enabled','yes'),('files','installed_version','1.1.9'),('files','types','filesystem'),('files_pdfviewer','enabled','yes'),('files_pdfviewer','installed_version','0.5'),('files_pdfviewer','ocsid','166049'),('files_pdfviewer','types',''),('files_sharing','enabled','yes'),('files_sharing','installed_version','0.5.3'),('files_sharing','ocsid','166050'),('files_sharing','types','filesystem'),('files_texteditor','enabled','yes'),('files_texteditor','installed_version','0.4'),('files_texteditor','ocsid','166051'),('files_texteditor','types',''),('files_trashbin','enabled','yes'),('files_trashbin','installed_version','0.6.2'),('files_trashbin','ocsid','166052'),('files_trashbin','types','filesystem'),('files_versions','enabled','yes'),('files_versions','installed_version','1.0.5'),('files_versions','ocsid','166053'),('files_versions','types','filesystem'),('files_videoviewer','enabled','yes'),('files_videoviewer','installed_version','0.1.3'),('files_videoviewer','ocsid','166054'),('files_videoviewer','types',''),('firstrunwizard','enabled','yes'),('firstrunwizard','installed_version','1.1'),('firstrunwizard','ocsid','166055'),('firstrunwizard','types',''),('gallery','enabled','yes'),('gallery','installed_version','0.5.4'),('gallery','ocsid','166056'),('gallery','types','filesystem'),('search_lucene','enabled','yes'),('search_lucene','installed_version','0.5.3'),('search_lucene','ocsid','166057'),('search_lucene','types','filesystem'),('templateeditor','enabled','yes'),('templateeditor','installed_version','0.1'),('templateeditor','types',''),('updater','enabled','yes'),('updater','installed_version','0.4'),('updater','ocsid','166059'),('updater','types','');
+INSERT INTO `oc_appconfig` VALUES ('activity','enabled','yes'),('activity','installed_version','1.1.23'),('activity','ocsid','166038'),('activity','types','filesystem'),('backgroundjob','lastjob','1'),('calendar','enabled','yes'),('calendar','installed_version','0.6.4'),('calendar','ocsid','166043'),('calendar','types',''),('contacts','enabled','yes'),('contacts','installed_version','0.3.0.18'),('contacts','ocsid','166044'),('contacts','types',''),('core','global_cache_gc_lastrun','1418436561'),('core','installedat','1418436556.3994'),('core','lastcron','1418436561'),('core','lastupdatedat','1418436556.416'),('core','public_caldav','calendar/share.php'),('core','public_calendar','calendar/share.php'),('core','public_documents','documents/public.php'),('core','public_files','files_sharing/public.php'),('core','public_gallery','gallery/public.php'),('core','public_webdav','files_sharing/publicwebdav.php'),('core','remote_caldav','calendar/appinfo/remote.php'),('core','remote_calendar','calendar/appinfo/remote.php'),('core','remote_carddav','contacts/appinfo/remote.php'),('core','remote_contacts','contacts/appinfo/remote.php'),('core','remote_files','files/appinfo/remote.php'),('core','remote_filesync','files/appinfo/filesync.php'),('core','remote_webdav','files/appinfo/remote.php'),('documents','enabled','yes'),('documents','installed_version','0.8.2'),('documents','ocsid','166045'),('documents','types',''),('files','enabled','yes'),('files','installed_version','1.1.9'),('files','types','filesystem'),('files_pdfviewer','enabled','yes'),('files_pdfviewer','installed_version','0.5'),('files_pdfviewer','ocsid','166049'),('files_pdfviewer','types',''),('files_sharing','enabled','yes'),('files_sharing','installed_version','0.5.3'),('files_sharing','ocsid','166050'),('files_sharing','types','filesystem'),('files_texteditor','enabled','yes'),('files_texteditor','installed_version','0.4'),('files_texteditor','ocsid','166051'),('files_texteditor','types',''),('files_trashbin','enabled','yes'),('files_trashbin','installed_version','0.6.2'),('files_trashbin','ocsid','166052'),('files_trashbin','types','filesystem'),('files_versions','enabled','yes'),('files_versions','installed_version','1.0.5'),('files_versions','ocsid','166053'),('files_versions','types','filesystem'),('files_videoviewer','enabled','yes'),('files_videoviewer','installed_version','0.1.3'),('files_videoviewer','ocsid','166054'),('files_videoviewer','types',''),('firstrunwizard','enabled','yes'),('firstrunwizard','installed_version','1.1'),('firstrunwizard','ocsid','166055'),('firstrunwizard','types',''),('gallery','enabled','yes'),('gallery','installed_version','0.5.4'),('gallery','ocsid','166056'),('gallery','types','filesystem'),('search_lucene','enabled','yes'),('search_lucene','installed_version','0.5.3'),('search_lucene','ocsid','166057'),('search_lucene','types','filesystem'),('templateeditor','enabled','yes'),('templateeditor','installed_version','0.1'),('templateeditor','types',''),('updater','enabled','yes'),('updater','installed_version','0.4'),('updater','ocsid','166059'),('updater','types','');
 /*!40000 ALTER TABLE `oc_appconfig` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -276,7 +276,7 @@ CREATE TABLE `oc_contacts_addressbooks` (
 
 LOCK TABLES `oc_contacts_addressbooks` WRITE;
 /*!40000 ALTER TABLE `oc_contacts_addressbooks` DISABLE KEYS */;
-INSERT INTO `oc_contacts_addressbooks` VALUES (1,'admin','コンタクト','コンタクト','',1408345617,1);
+INSERT INTO `oc_contacts_addressbooks` VALUES (1,'admin','コンタクト','コンタクト','',1418436560,1);
 /*!40000 ALTER TABLE `oc_contacts_addressbooks` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -524,7 +524,7 @@ CREATE TABLE `oc_filecache` (
   KEY `fs_storage_mimetype` (`storage`,`mimetype`),
   KEY `fs_storage_mimepart` (`storage`,`mimepart`),
   KEY `fs_storage_size` (`storage`,`size`,`fileid`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -533,7 +533,7 @@ CREATE TABLE `oc_filecache` (
 
 LOCK TABLES `oc_filecache` WRITE;
 /*!40000 ALTER TABLE `oc_filecache` DISABLE KEYS */;
-INSERT INTO `oc_filecache` VALUES (1,1,'','d41d8cd98f00b204e9800998ecf8427e',-1,'',2,1,6717336,1408345620,1408345617,0,0,'53f1a614678a4',31),(2,1,'files','45b963397aa40d4a0063e0d85e4fe7a1',1,'files',2,1,6717336,1408345620,1408345617,0,0,'53f1a6146c68a',31),(3,1,'files/documents','2d30f25cef1a92db784bc537e8bf128d',2,'documents',2,1,23383,1408345620,1408345617,0,0,'53f1a614789f0',31),(4,1,'files/ownCloudUserManual.pdf','c8edba2d1b8eb651c107b43532c34445',2,'ownCloudUserManual.pdf',4,3,2250593,1408345617,1408345617,0,0,'53f1a612280c7',27),(5,1,'files/music','1f8cfec283cd675038bb95b599fdc75a',2,'music',2,1,3764804,1408345620,1408345617,0,0,'53f1a61473bcb',31),(6,1,'files/photos','923e51351db3e8726f22ba0fa1c04d5a',2,'photos',2,1,678556,1408345620,1408345617,0,0,'53f1a6146ed95',31),(7,1,'files/photos/san francisco.jpg','e86e87a4ecd557753734e1d34fbeecec',6,'san francisco.jpg',6,5,216071,1408345617,1408345617,0,0,'53f1a613ce0e1',27),(8,1,'files/photos/paris.jpg','65154b90b985bff20d4923f224ca1c33',6,'paris.jpg',6,5,228761,1408345617,1408345617,0,0,'53f1a613d07f2',27),(9,1,'files/photos/squirrel.jpg','e462c24fc17cb1a3fa3bca86d7f89593',6,'squirrel.jpg',6,5,233724,1408345617,1408345617,0,0,'53f1a613d2f02',27),(10,1,'files/music/projekteva-letitrain.mp3','da7d05a957a2bbbf0e74b12c1b5fcfee',5,'projekteva-letitrain.mp3',8,7,3764804,1408345617,1408345617,0,0,'53f1a613df2b8',27),(11,1,'files/documents/example.odt','f51311bd6910ec7356d79286dcb24dec',3,'example.odt',9,3,23383,1408345617,1408345617,0,0,'53f1a613f0a68',27),(12,1,'cache','0fea6a13c52b4d4725368f24b045ca84',1,'cache',2,1,0,1408345617,1408345617,0,0,'53f1a6142cecc',31),(13,2,'','d41d8cd98f00b204e9800998ecf8427e',-1,'',2,1,-1,1408345617,1408345617,0,0,'548107d04833d',31),(14,2,'index.html','eacf331f0ffc35d4b482f1d15a887d3b',13,'index.html',11,10,0,1408345616,1408345616,0,0,'548107d0594b8',27),(15,2,'owncloud.log','9703bd00121351aafcb85ff51784acc5',13,'owncloud.log',12,3,2764,1417742288,1417742288,0,0,'548107d05bbcd',27),(16,2,'.ocdata','a840ac417b1f143f29a22c7261756dad',13,'.ocdata',12,3,0,1417742288,1417742288,0,0,'548107d05e2e5',27),(17,2,'admin','21232f297a57a5a743894a0e4a801fc3',13,'admin',2,1,-1,1408345617,1408345617,0,0,'548107d0609eb',31);
+INSERT INTO `oc_filecache` VALUES (1,1,'','d41d8cd98f00b204e9800998ecf8427e',-1,'',2,1,6228214,1418436553,1418436553,0,0,'548b9fcc1f159',31),(2,1,'cache','0fea6a13c52b4d4725368f24b045ca84',1,'cache',2,1,0,1418436553,1418436553,0,0,'548b9fcc23f7c',31),(3,1,'files','45b963397aa40d4a0063e0d85e4fe7a1',1,'files',2,1,6228214,1418436554,1418436554,0,0,'548b9fcc2668a',31),(4,1,'files/documents','2d30f25cef1a92db784bc537e8bf128d',3,'documents',2,1,23383,1418436553,1418436553,0,0,'548b9fcc302ca',31),(5,1,'files/documents/example.odt','f51311bd6910ec7356d79286dcb24dec',4,'example.odt',4,3,23383,1418436554,1418436554,0,0,'548b9fcc3c61b',27),(6,1,'files/ownCloudUserManual.pdf','c8edba2d1b8eb651c107b43532c34445',3,'ownCloudUserManual.pdf',5,3,1761471,1418436554,1418436554,0,0,'548b9fcc329dc',27),(7,1,'files/music','1f8cfec283cd675038bb95b599fdc75a',3,'music',2,1,3764804,1418436554,1418436554,0,0,'548b9fcc350ee',31),(8,1,'files/music/projekteva-letitrain.mp3','da7d05a957a2bbbf0e74b12c1b5fcfee',7,'projekteva-letitrain.mp3',7,6,3764804,1418436554,1418436554,0,0,'548b9fcc4625b',27),(9,1,'files/photos','923e51351db3e8726f22ba0fa1c04d5a',3,'photos',2,1,678556,1418436555,1418436555,0,0,'548b9fcc377e3',31),(10,1,'files/photos/san francisco.jpg','e86e87a4ecd557753734e1d34fbeecec',9,'san francisco.jpg',9,8,216071,1418436555,1418436555,0,0,'548b9fcc4d78a',27),(11,1,'files/photos/paris.jpg','65154b90b985bff20d4923f224ca1c33',9,'paris.jpg',9,8,228761,1418436555,1418436555,0,0,'548b9fcc4fe80',27),(12,1,'files/photos/squirrel.jpg','e462c24fc17cb1a3fa3bca86d7f89593',9,'squirrel.jpg',9,8,233724,1418436556,1418436556,0,0,'548b9fcc525ae',27);
 /*!40000 ALTER TABLE `oc_filecache` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -685,7 +685,7 @@ CREATE TABLE `oc_jobs` (
 
 LOCK TABLES `oc_jobs` WRITE;
 /*!40000 ALTER TABLE `oc_jobs` DISABLE KEYS */;
-INSERT INTO `oc_jobs` VALUES (1,'OC\\Cache\\FileGlobalGC','null',1408345619),(2,'OCA\\Activity\\BackgroundJob\\EmailNotification','null',1417742296);
+INSERT INTO `oc_jobs` VALUES (1,'OC\\Cache\\FileGlobalGC','null',1418436561),(2,'OCA\\Activity\\BackgroundJob\\EmailNotification','null',0);
 /*!40000 ALTER TABLE `oc_jobs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -755,7 +755,7 @@ CREATE TABLE `oc_mimetypes` (
   `mimetype` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `mimetype_id_index` (`mimetype`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -764,7 +764,7 @@ CREATE TABLE `oc_mimetypes` (
 
 LOCK TABLES `oc_mimetypes` WRITE;
 /*!40000 ALTER TABLE `oc_mimetypes` DISABLE KEYS */;
-INSERT INTO `oc_mimetypes` VALUES (3,'application'),(12,'application/octet-stream'),(4,'application/pdf'),(9,'application/vnd.oasis.opendocument.text'),(15,'application/vnd.openxmlformats-officedocument.presentationml.presentation'),(14,'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'),(13,'application/vnd.openxmlformats-officedocument.wordprocessingml.document'),(7,'audio'),(8,'audio/mpeg'),(1,'httpd'),(2,'httpd/unix-directory'),(5,'image'),(6,'image/jpeg'),(10,'text'),(11,'text/html');
+INSERT INTO `oc_mimetypes` VALUES (3,'application'),(5,'application/pdf'),(4,'application/vnd.oasis.opendocument.text'),(6,'audio'),(7,'audio/mpeg'),(1,'httpd'),(2,'httpd/unix-directory'),(8,'image'),(9,'image/jpeg');
 /*!40000 ALTER TABLE `oc_mimetypes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -814,7 +814,7 @@ CREATE TABLE `oc_preferences` (
 
 LOCK TABLES `oc_preferences` WRITE;
 /*!40000 ALTER TABLE `oc_preferences` DISABLE KEYS */;
-INSERT INTO `oc_preferences` VALUES ('admin','firstrunwizard','show','0'),('admin','login','lastLogin','1408345612');
+INSERT INTO `oc_preferences` VALUES ('admin','firstrunwizard','show','0'),('admin','login','lastLogin','1418436556');
 /*!40000 ALTER TABLE `oc_preferences` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -922,7 +922,7 @@ CREATE TABLE `oc_share_external` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `remote` varchar(512) COLLATE utf8_bin NOT NULL COMMENT 'Url of the remove owncloud instance',
   `share_token` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Public share token',
-  `password` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Optional password for the public share',
+  `password` varchar(64) COLLATE utf8_bin DEFAULT NULL COMMENT 'Optional password for the public share',
   `name` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Original name on the remote server',
   `owner` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'User that owns the public share on the remote server',
   `user` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Local user which added the external share',
@@ -989,7 +989,7 @@ CREATE TABLE `oc_users` (
 
 LOCK TABLES `oc_users` WRITE;
 /*!40000 ALTER TABLE `oc_users` DISABLE KEYS */;
-INSERT INTO `oc_users` VALUES ('admin',NULL,'$2a$08$mX.LZw0lmGYUTHLlSQO7EOyhgYECpnfsS6DPknFFq/F.xBgq8UPYu');
+INSERT INTO `oc_users` VALUES ('admin',NULL,'$2a$08$6vMYoPlprFjFFDoSjbESLOashbJ7FhCcX..w3DHiJuU25UhxPCtkm');
 /*!40000 ALTER TABLE `oc_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1055,4 +1055,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-12-05 10:18:27
+-- Dump completed on 2014-12-13 11:09:47

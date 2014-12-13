@@ -17,7 +17,9 @@ if ! [[ -S "$SOCKET" ]]; then
 fi
 /usr/bin/mysql -u root -e "create database owncloud" || exit 1
 /usr/bin/mysql -u root -e 'grant all privileges on owncloud.* to owncloud@localhost' || exit 1
-/usr/bin/mysql -u owncloud owncloud < initial-database.sql
+if [ -f /tmp/initial-database.sql ]; then
+	/usr/bin/mysql -u owncloud owncloud < /tmp/initial-database.sql
+fi
 
 kill `cat $PIDFILE`
 rm -f $PIDFILE

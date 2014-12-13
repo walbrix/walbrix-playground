@@ -12,7 +12,7 @@
 #require components/beautifulsoup.lst
 #require components/pygobject.lst
 #require components/setuptools.lst
-#portage dev-python/xlrd-0.9.2
+#portage dev-python/xlrd-0.9.3
 #portage dev-python/configobj-4.7.2-r2
 #portage dev-python/six-1.7.3
 #portage dev-python/pyasn1-0.1.7
@@ -27,7 +27,7 @@
 #require components/git.lst
 #require components/dropbox.lst
 
-#portage app-text/poppler-data-0.4.6
+#portage app-text/poppler-data-0.4.7
 #portage app-text/ps2pkm-1.5_p20120701 
 #portage sys-apps/ed-1.6 
 #portage www-client/lynx-2.8.8_rc1

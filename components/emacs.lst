@@ -1,5 +1,5 @@
 #detectarch /usr/bin/emacs
 #portage app-emacs/emacs-common-gentoo-1.4-r1
-#portage app-editors/emacs-24.3-r6
+#portage app-editors/emacs-24.4-r1
 #symlink /usr/bin/emacs emacs-24
 

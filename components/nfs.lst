@@ -16,7 +16,7 @@
 /sbin/rpcbind
 /sbin/rpcinfo
 
-#portage sys-apps/keyutils-1.5.5
+#portage sys-apps/keyutils-1.5.9-r1
 #portage net-fs/nfs-utils-1.2.9-r3
 
 #chrootexec rm -rf /var/lib/nfs && cp -av /usr/lib/nfs /var/lib/

@@ -20,7 +20,7 @@
 #portage dev-python/pyinotify-0.9.4-r1
 #portage dev-python/pyxattr-0.5.2
 #portage dev-python/futures-2.1.6
-#portage dev-python/python-ldap-2.4.10
+#portage dev-python/python-ldap-2.4.15
 #portage dev-python/rsa-3.1.1
 #require components/logrotate.lst
 #require components/sudo.lst
@@ -30,14 +30,16 @@
 #portage app-text/poppler-data-0.4.7
 #portage app-text/ps2pkm-1.5_p20120701 
 #portage sys-apps/ed-1.6 
-#portage www-client/lynx-2.8.8_rc1
+#portage www-client/lynx-2.8.8_p2
 #portage www-client/elinks-0.12_pre6
 #portage app-i18n/nkf-2.1.3
-#portage app-text/poppler-0.24.5
+#portage app-text/poppler-0.26.5
 #portage app-text/wv-1.2.9-r1
 #portage app-text/xlhtml-0.5.1_p6
 #portage dev-python/jsmin-2.0.9
 #require components/emacs.lst
+
+#portage app-text/groonga-4.0.7-r1
 
 #require components/oscar.lst
 

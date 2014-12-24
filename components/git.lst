@@ -1,4 +1,4 @@
-#portage dev-vcs/git-2.0.4
+#portage dev-vcs/git-2.0.5
 
 #/usr/libexec/git-core/git-remote-ftps   
 #chrootexec rm /usr/libexec/git-core/git-remote-ftp && ln -s git-remote-ftps /usr/libexec/git-core/git-remote-ftp

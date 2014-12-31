@@ -1,0 +1,3 @@
+#require pillow.lst
+#portage dev-python/reportlab-3.1.8-r1
+

@@ -5,7 +5,7 @@
 #portage app-admin/eselect-java-0.1.0
 #chrootexec java-config -S icedtea-bin-7
 
-#portage media-libs/jpeg-6b-r12
+#portage media-libs/libjpeg-turbo-1.3.1
 #portage media-libs/libpng-1.6.16
 #portage media-libs/giflib-4.1.6-r3
 

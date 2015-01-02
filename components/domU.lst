@@ -77,7 +77,7 @@
 ./usr/bin/ldd
 #symlink /usr/bin/less ../../bin/busybox
 ./usr/bin/locale
-#portage app-arch/xz-utils-5.0.5-r1
+#portage app-arch/xz-utils-5.0.8
 /usr/bin/make
 /usr/bin/rsync
 /usr/bin/strace

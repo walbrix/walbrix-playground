@@ -1,5 +1,5 @@
 #!/bin/sh
-PGSQL_VERSION=9.2
+PGSQL_VERSION=9.3
 source /etc/conf.d/postgresql-$PGSQL_VERSION
 PGDATA=/etc/postgresql-$PGSQL_VERSION/
 DATA_DIR=/var/lib/postgresql/$PGSQL_VERSION/data

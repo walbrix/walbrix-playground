@@ -7,8 +7,8 @@
 #require components/postfix.lst
 #copy domU/fstab-with-zramswap /etc/fstab
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1aipo\2/
-#copy aipo/aipo7020ja_src.zip /root/aipo7010ja_src.zip
-#extract aipo/aipo7020.tar.gz /root
+#chrootexec wget -O - https://aipo.googlecode.com/files/aipo7020ja_linux64.tar.gz | tar zxvf - -C /tmp && tar zxvf /tmp/aipo7020ja_linux/aipo7020.tar.gz -C /root && rm -rf /tmp/aipo7020ja_linux
+#chrootexec cd /root && wget http://iij.dl.sourceforge.jp/aipo/60038/aipo7020ja_src.zip
 #chrootexec rm -rf /var/lib/tomcat-7/webapps/ROOT && mv /root/aipo/src/webapps/* /var/lib/tomcat-7/webapps/
 #dir /usr/local/aipo
 #chrootexec mv /root/aipo/license /root/aipo/logs /root/aipo/src/bin /root/aipo/src/tomcat_diff /usr/local/aipo/

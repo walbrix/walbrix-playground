@@ -18,7 +18,7 @@
 #portage dev-python/pyasn1-0.1.7
 #portage dev-python/lxml-3.3.5
 #portage dev-python/pyinotify-0.9.4-r1
-#portage dev-python/pyxattr-0.5.2
+#portage dev-python/pyxattr-0.5.3
 #portage dev-python/futures-2.1.6
 #portage dev-python/python-ldap-2.4.15
 #portage dev-python/rsa-3.1.1

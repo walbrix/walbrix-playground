@@ -14,7 +14,6 @@ app-text/xlhtml
 dev-db/mongodb
 dev-db/mysql
 dev-db/phpmyadmin
-dev-db/postgresql-server
 dev-db/redis
 dev-java/commons-dbcp
 dev-java/commons-logging

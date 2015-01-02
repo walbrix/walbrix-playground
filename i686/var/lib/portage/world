@@ -14,7 +14,6 @@ app-vim/vimpython
 dev-db/couchdb
 dev-db/phpmyadmin
 dev-db/phppgadmin
-dev-db/postgresql-server
 dev-db/redis
 dev-java/commons-dbcp
 dev-java/commons-logging
@@ -24,6 +23,7 @@ dev-java/icedtea-bin
 dev-java/icedtea-bin:6
 dev-java/jdbc-mysql
 dev-java/jdbc-postgresql
+dev-java/sun-javamail
 dev-lang/php
 dev-lang/python
 dev-libs/iniparser

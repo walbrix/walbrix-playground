@@ -1,3 +1,4 @@
 #require pillow.lst
+#portage media-fonts/dejavu-2.34
 #portage dev-python/reportlab-3.1.8-r1
 

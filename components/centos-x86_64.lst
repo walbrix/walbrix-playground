@@ -1,2 +1,2 @@
-#chrootexec rpm -ivh http://ftp-srv2.kddilabs.jp/Linux/distributions/fedora/epel/6/x86_64/mod_extract_forwarded-2.0.2-8.el6.x86_64.rpm http://ftp-srv2.kddilabs.jp/Linux/distributions/fedora/epel/6/x86_64/openvpn-2.3.2-2.el6.x86_64.rpm http://ftp-srv2.kddilabs.jp/Linux/distributions/fedora/epel/6/x86_64/pkcs11-helper-1.07-5.el6.x86_64.rpm
+#chrootexec rpm -ivh http://ftp.iij.ad.jp/pub/linux/fedora/epel/6/x86_64/mod_extract_forwarded-2.0.2-8.el6.x86_64.rpm http://ftp.iij.ad.jp/pub/linux/fedora/epel/6/x86_64/openvpn-2.3.6-1.el6.x86_64.rpm http://ftp.iij.ad.jp/pub/linux/fedora/epel/6/x86_64/pkcs11-helper-1.11-3.el6.x86_64.rpm
 

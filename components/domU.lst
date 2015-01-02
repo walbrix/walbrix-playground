@@ -26,7 +26,6 @@
 #portage app-arch/bzip2-1.0.6-r6
 #portage app-arch/cpio-2.11-r1
 #portage sys-apps/grep-2.16
-#portage sys-process/psmisc-22.20
 #portage app-arch/gzip-1.5
 #portage sys-apps/kmod-18-r1
 #portage net-misc/iputils-20121221-r1

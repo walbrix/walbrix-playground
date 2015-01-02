@@ -1,2 +1,2 @@
 #require python27.lst
-#portage dev-vcs/mercurial-2.8.2
+#portage dev-vcs/mercurial-3.2.3

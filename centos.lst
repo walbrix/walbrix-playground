@@ -16,13 +16,13 @@
 #chrootexec mkdir /root/.ssh && chmod 700 /root/.ssh && touch /root/.ssh/authorized_keys
 #copy centos/wb-va.xml /etc/wb-va.xml
 #chrootexec chkconfig iptables off
-#chrootexec yum install -y samba4 avahi ntp lzo dhclient openssh-server openssh-clients rsyslog
+#chrootexec yum install -y samba4 avahi ntp lzo dhclient openssh-server openssh-clients rsyslog telnet
 #sed /etc/avahi/avahi-daemon.conf s/^#disallow-other-stacks=no$/disallow-other-stacks=yes/
 #chrootexec chkconfig nmb on
 #chrootexec chkconfig ntpd on
 
 # LAMP stack
-#chrootexec yum install -y php-mysql mysql-server httpd vsftpd php php-mbstring php-mcrypt php-gd wget xz
+#chrootexec yum install -y php-mysql mysql-server httpd vsftpd php php-mbstring php-mcrypt php-gd wget xz postfix
 #chrootexec chkconfig smb on
 #chrootexec chkconfig httpd on
 #chrootexec chkconfig mysqld on

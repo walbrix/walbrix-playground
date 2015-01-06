@@ -2,7 +2,6 @@
 #require components/cron.lst
 #require components/pvkernel.lst
 #copy domU/fstab-with-zramswap /etc/fstab
-#require components/sudo.lst
 #require components/flask.lst
 #require components/beautifulsoup.lst
 #require components/feedparser.lst

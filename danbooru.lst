@@ -1,6 +1,5 @@
 #require components/domU.lst
 #require components/pvkernel.lst
-#require components/sudo.lst
 #require components/apache.lst
 #require components/php53.lst
 #require components/postgresql.lst

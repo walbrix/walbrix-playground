@@ -5,7 +5,6 @@
 #require components/postfix.lst
 #require components/java.lst
 #require components/samba.lst
-#require components/sudo.lst
 #require components/phpmyadmin.lst
 #require components/phppgadmin.lst
 #copy domU/fstab-with-zramswap /etc/fstab

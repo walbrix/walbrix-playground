@@ -11,6 +11,7 @@
 #require openssl.lst
 #require openvpn.lst
 #require ntp.lst
+#require sudo.lst
 #require timezone-data.lst
 #require nss-mdns.lst
 #require syslog.lst

@@ -6,8 +6,7 @@
 #require components/php54.lst
 #require components/postfix.lst
 #require components/samba.lst
-
-#portage dev-php/pecl-imagick-3.1.0_rc2 
+#require components/pecl-imagick.lst
 
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1lychee\2/
 #copy domU/fstab-with-zramswap /etc/fstab

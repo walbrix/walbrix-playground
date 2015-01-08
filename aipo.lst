@@ -19,6 +19,7 @@
 #chrootexec cp -a /root/aipo/src/initdata/files /var/lib/tomcat-7/webapps/aipo/WEB-INF/
 #chrootexec cp -a /root/aipo/src/initdata/mail /var/lib/tomcat-7/webapps/aipo/WEB-INF/
 #chrootexec dd if=/dev/urandom bs=16 count=1|base64 > /var/lib/tomcat-7/webapps/aipo/WEB-INF/conf/securityTokenKey.txt && cp /var/lib/tomcat-7/webapps/aipo/WEB-INF/conf/securityTokenKey.txt /var/lib/tomcat-7/webapps/ROOT/WEB-INF/classes/aipo/
+#chrootexec wget -O /var/lib/tomcat-7/webapps/aipo/WEB-INF/conf/holidays_default.properties 'http://sourceforge.jp/frs/redir.php?m=jaist&f=%2Faipo%2F60038%2Fholidays_default.properties'
 #chrootexec chown -R tomcat.tomcat /var/lib/tomcat-7
 #sed /etc/conf.d/tomcat-7 s/^#JAVA_OPTS=.\+/JAVA_OPTS="-server -Xmx512M -Xms64M -Xss256k -Dsun.nio.cs.map=x-windows-iso2022jp\/ISO-2022-JP"/
 #copy aipo/initial-database.sh /initial-database.sh

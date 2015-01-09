@@ -12,9 +12,8 @@
 #require components/beautifulsoup.lst
 #require components/pygobject.lst
 #require components/setuptools.lst
+#require components/configobj.lst
 #portage dev-python/xlrd-0.9.3
-#portage dev-python/configobj-4.7.2-r2
-#portage dev-python/six-1.7.3
 #portage dev-python/pyasn1-0.1.7
 #portage dev-python/lxml-3.3.5
 #portage dev-python/pyinotify-0.9.4-r1

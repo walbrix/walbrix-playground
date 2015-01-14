@@ -25,9 +25,9 @@
 /etc/shadow
 #sed /etc/shadow s/^root:\*:/root::/
 #portage app-arch/bzip2-1.0.6-r6
-#portage app-arch/cpio-2.11-r1
+#portage app-arch/cpio-2.11-r3
 #portage sys-apps/grep-2.16
-#portage app-arch/gzip-1.5
+#portage app-arch/gzip-1.6
 #portage sys-apps/kmod-18-r1
 #portage net-misc/iputils-20121221-r1
 #portage net-analyzer/traceroute-2.0.20

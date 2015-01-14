@@ -23,6 +23,7 @@ dev-java/icedtea-bin
 dev-java/jdbc-mysql
 dev-java/jdbc-postgresql
 dev-lang/php
+dev-python/APScheduler
 dev-python/beautifulsoup
 dev-python/configobj
 dev-python/feedgenerator

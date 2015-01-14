@@ -1,4 +1,5 @@
 =sys-kernel/vanilla-sources-3.2.66
+=sys-process/procps-3.3.9-r2
 =dev-java/jdbc-postgresql-9.1_p902
 =net-libs/nodejs-0.10.7
 =dev-lang/v8-3.11.10.12

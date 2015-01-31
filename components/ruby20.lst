@@ -3,11 +3,11 @@
 #symlink /usr/bin/irb irb20
 #symlink /usr/bin/ruby ruby20
 
-#portage dev-ruby/rubygems-2.0.14
+#portage dev-ruby/rubygems-2.2.2
 #symlink /usr/bin/gem gem20
 
 #portage dev-ruby/rake-0.9.6
-#portage dev-ruby/json-1.8.1
+#portage dev-ruby/json-1.8.2-r1
 #portage dev-ruby/racc-1.4.9
 #portage dev-ruby/rdoc-4.0.1-r1
 #portage dev-ruby/bundler-1.7.4

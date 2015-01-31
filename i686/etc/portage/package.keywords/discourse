@@ -2,7 +2,6 @@
 =dev-ruby/redis-3.0.6 **
 =dev-ruby/atomic-1.1.14-r1
 =dev-ruby/eventmachine-1.0.3-r1
-=dev-ruby/json-1.8.1
 =dev-ruby/msgpack-0.5.7
 =dev-ruby/multipart-post-2.0.0
 

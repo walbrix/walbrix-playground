@@ -28,7 +28,7 @@
 #portage app-arch/cpio-2.11-r3
 #portage sys-apps/grep-2.16
 #portage app-arch/gzip-1.6
-#portage sys-apps/kmod-18-r1
+#portage sys-apps/kmod-19
 #portage net-misc/iputils-20121221-r1
 #portage net-analyzer/traceroute-2.0.20
 #portage sys-apps/sed-4.2.1-r1

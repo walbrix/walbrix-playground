@@ -7,6 +7,7 @@
             maxActive="100" maxIdle="30" maxWait="10000"
             username="EXAMPLE" password="SECRET"
             driverClassName="com.mysql.jdbc.Driver"
+            factory="org.apache.commons.dbcp.BasicDataSourceFactory"
             url="jdbc:mysql://localhost:3306/EXAMPLE?autoReconnect=true"/>
   -->
 
@@ -15,6 +16,7 @@
   <Resource name="jdbc/EXAMPLE" auth="Container"
             type="javax.sql.DataSource"
             driverClassName="org.h2.Driver"
+            factory="org.apache.commons.dbcp.BasicDataSourceFactory"
             url="jdbc:h2:/var/lib/tomcat7/db/EXAMPLE;MVCC=true"
             username="sa" password=""
             maxActive="5" maxIdle="2" maxWait="1000" />

@@ -20,7 +20,7 @@
 #portage dev-python/pyinotify-0.9.4-r1
 #portage dev-python/pyxattr-0.5.3
 #portage dev-python/python-ldap-2.4.15
-#portage dev-python/rsa-3.1.1
+#portage dev-python/rsa-3.1.4-r1
 #require components/logrotate.lst
 #require components/git.lst
 #require components/dropbox.lst

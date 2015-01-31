@@ -11,6 +11,8 @@
 #require components/vim.lst
 #require components/s3cmd.lst
 #require components/tomcat.lst
+#require components/mysql.lst
+#require components/php54.lst
 #require components/postfix.lst
 #require components/setuptools.lst
 #portage dev-python/feedgenerator-1.7

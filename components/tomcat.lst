@@ -14,6 +14,7 @@
 
 #chrootexec /usr/share/tomcat-7/gentoo/tomcat-instance-manager.bash --create
 
+#copy tomcat/context.xml /etc/tomcat-7/context.xml
 #chrootexec chmod g+w /var/lib/tomcat-7/webapps
 #sed /etc/conf.d/tomcat-7 s/^#TOMCAT_EXTRA_JARS=""/TOMCAT_EXTRA_JARS="commons-dbcp,commons-pool,jdbc-mysql,jdbc-postgresql,sun-javamail"/
 

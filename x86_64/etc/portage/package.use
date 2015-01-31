@@ -30,6 +30,8 @@ dev-ruby/daemon_controller -ruby_targets_ruby19
 dev-java/icedtea-bin -X -alsa cups cjk
 app-text/ghostscript-gpl cups linguas_ja
 dev-lang/scala binary
+virtual/ruby-ssl -ruby_targets_ruby19
+virtual/rubygems -ruby_targets_ruby19
 
 net-misc/openvpn passwordsave
 sys-libs/talloc python
@@ -40,7 +42,6 @@ media-gfx/imagemagick perl jpeg jpeg2k png truetype webp
 dev-python/pygobject -cairo -python_targets_python3_3
 dev-python/beautifulsoup -python_targets_python3_3
 dev-python/xlrd -python_targets_python3_3
-dev-python/pyasn1 -python_targets_python3_3
 dev-python/six -python_targets_python3_3
 dev-python/lxml -python_targets_python3_3
 dev-python/pyinotify -python_targets_python3_3

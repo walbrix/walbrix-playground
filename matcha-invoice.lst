@@ -1,0 +1,19 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php54.lst
+#require components/postfix.lst
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1matcha-invoice\2/
+#copy domU/fstab-with-zramswap /etc/fstab
+#chrootexec wget -O /tmp/dist.zip http://oss.icz.co.jp/invoice/download.php && cd /var/www/localhost && unzip /tmp/dist.zip && rm /tmp/dist.zip
+#chrootexec rm -rf /var/www/localhost/htdocs && mv /var/www/localhost/matcha-invoice-* /var/www/localhost/htdocs
+#copy matcha-invoice/installed.php /var/www/localhost/htdocs/app/config/installed.php
+#chrootexec touch /var/www/localhost/htdocs/app/config/finish
+#chrootexec chown -R apache.apache /var/www/localhost
+#copy matcha-invoice/setup_initial_database.sh /tmp/setup_initial_database.sh
+#copy matcha-invoice/initial-database.sql /tmp/initial-database.sql
+#chrootexec sh /tmp/setup_initial_database.sh && rm -rf /tmp/*
+#copy matcha-invoice/wb-va.xml /etc/wb-va.xml
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtual-appliance uuid="cfa41177-43a8-463b-8ee3-bcbd0bbf6d37">
+  <version>2.5.5</version>
+  <instruction xml:lang="ja">初期ユーザー名とパスワードは admin/adminです</instruction>
+</virtual-appliance>

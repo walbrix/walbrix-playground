@@ -187,10 +187,8 @@
 
 #portage dev-perl/Authen-SASL-2.160.0-r1
 
-# dev-perl/IO-Socket-SSL
-/usr/lib/perl5/vendor_perl/5.12.4/IO/Socket/SSL.pm
-
-#portage dev-perl/Net-SMTP-SSL-1.10.0-r1
+#require io-socket-ssl.lst
+#require net-smtp-ssl.lst
 
 #portage dev-perl/File-NFSLock-1.210.0-r1
 
@@ -203,9 +201,6 @@
 /usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/Exception.pm
 
 /usr/lib/perl5/vendor_perl/5.12.4/Class/Singleton.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/List/MoreUtils.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/List/MoreUtils/MoreUtils.so
 
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/String/CRC32.pm
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/String/CRC32.pod
@@ -477,21 +472,9 @@
 /usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/UnicodeExt.pm
 /usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/XMLDecl.pm
 
-#portage dev-perl/IPC-Run-0.910.0-r1
+#require ipc-run.lst
 
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/Archive.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/BufferedFileHandle.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/DirectoryMember.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/FAQ.pod
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/FileMember.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/Member.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/MemberRead.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/MockFileHandle.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/NewFileMember.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/StringMember.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/Tree.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Archive/Zip/ZipFileMember.pm
+#portage dev-perl/Archive-Zip-1.370.0
 
 #require perl-cache-memcached.lst
 
@@ -692,6 +675,5 @@
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Params/ValidateXS.pm
 /usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Params/Validate/Validate.so
 
-#portage dev-perl/DateTime-1.030.0
-#portage dev-perl/XML-Atom-0.410.0-r1
+#require xml-atom.lst
 

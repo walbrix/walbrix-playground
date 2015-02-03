@@ -4,6 +4,8 @@
 #require components/apache.lst
 #require components/mysql.lst
 #require components/php54.lst
+#sed /etc/php/apache2-php5.4/php.ini s/^upload_max_filesize.\+$/upload_max_filesize = 64M/
+#sed /etc/php/apache2-php5.4/php.ini s/^post_max_size.\+$/post_max_size = 96M/
 #require components/postfix.lst
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1matcha-invoice\2/
 #copy domU/fstab-with-zramswap /etc/fstab

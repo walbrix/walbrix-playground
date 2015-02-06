@@ -9,9 +9,9 @@
 #copy tt-rss/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1tt-rss\2/
 #copy domU/fstab-with-zramswap /etc/fstab
-#chrootexec wget -O - --no-check-certificate https://github.com/gothfox/Tiny-Tiny-RSS/archive/1.11.tar.gz | tar zxvf - -C /var/www/localhost
-#chrootexec mv /var/www/localhost/Tiny-Tiny-RSS-1.11/* /var/www/localhost/htdocs
-#chrootexec rm -r /var/www/localhost/Tiny-Tiny-RSS-1.11
+#chrootexec wget -O - --no-check-certificate https://github.com/gothfox/Tiny-Tiny-RSS/archive/1.15.3.tar.gz | tar zxvf - -C /var/www/localhost
+#chrootexec mv /var/www/localhost/Tiny-Tiny-RSS-*/* /var/www/localhost/htdocs
+#chrootexec rm -r /var/www/localhost/Tiny-Tiny-RSS-*
 #chrootexec mv /var/www/localhost/htdocs/config.php-dist /var/www/localhost/htdocs/config.php
 #sed /var/www/localhost/htdocs/config.php s/"pgsql"/"mysql"/
 #sed /var/www/localhost/htdocs/config.php s/"fox"/"tt-rss"/

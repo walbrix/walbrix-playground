@@ -37,4 +37,10 @@ net-fs/cifs-utils -acl
 dev-python/pillow -python_targets_python3_2
 virtual/python-imaging -python_targets_python3_2
 mail-mta/postfix sasl
+media-libs/harfbuzz icu
+app-office/libreoffice -branding -cups -gtk -vba -webdav
+app-office/libreoffice-l10n linguas_en linguas_ja
+x11-base/xorg-server -xorg -udev xvfb minimal
+
+
 

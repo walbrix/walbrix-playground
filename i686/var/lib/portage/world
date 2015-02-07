@@ -8,6 +8,7 @@ app-editors/emacs
 app-editors/nano
 app-editors/vim
 app-misc/screen
+app-office/libreoffice
 app-portage/gentoolkit
 app-vim/rails
 app-vim/vimpython
@@ -82,3 +83,4 @@ www-apache/mod_wsgi
 www-apache/passenger
 www-apps/websvn
 www-servers/tomcat
+x11-base/xorg-server

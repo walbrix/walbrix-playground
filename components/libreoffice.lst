@@ -1,0 +1,7 @@
+#portage x11-apps/xkbcomp-1.2.4
+#portage x11-misc/xkeyboard-config-2.11
+#portage media-libs/fontconfig-2.11.1-r2
+/usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf
+#portage x11-base/xorg-server-1.15.2-r1
+#portage app-office/libreoffice-4.2.8.2 ^/usr/share/icons/
+

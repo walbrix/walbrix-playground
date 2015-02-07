@@ -3,9 +3,10 @@
 APP_HOME=/var/www/localhost/htdocs
 APP_USER=apache
 PID_FILE=/run/sidekiq.pid
+PGSQL_VERSION=`basename /etc/postgresql-* | sed 's/^postgresql-//'`
 
 depend() {
-	need postgresql-9.3
+	need postgresql-${PGSQL_VERSION}
 }
 
 start() {

@@ -20,6 +20,9 @@ fi
 if [ -f /tmp/initial-database.sql ]; then
 	/usr/bin/mysql -u owncloud owncloud < /tmp/initial-database.sql
 fi
+if [ -x /usr/bin/libreoffice ]; then
+    /usr/bin/mysql -u owncloud owncloud -e "replace into oc_appconfig(appid,configkey,configvalue) values('documents','converter','local')"
+fi
 
 kill `cat $PIDFILE`
 rm -f $PIDFILE

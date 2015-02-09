@@ -6,7 +6,7 @@
 #require components/php54.lst
 #require components/samba.lst
 #require components/postfix.lst
-##require components/phpmyadmin.lst
+#require components/libreoffice.lst
 #require components/pecl-imagick.lst
 #portage dev-php/xcache-3.2.0
 #portage media-video/ffmpeg-1.2.6-r1
@@ -19,6 +19,9 @@
 ##patchsinglefile /var/www/localhost/htdocs/.htaccess owncloud/htaccess.patch
 #chrootexec rmdir /var/www/localhost/owncloud
 #copy owncloud/config.php /var/www/localhost/htdocs/config/config.php
+#chrootexec mv /var/www/localhost/htdocs/core/fonts/OpenSans-Regular.ttf /var/www/localhost/htdocs/core/fonts/OpenSans-Regular.ttf.orig
+/usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf
+#symlink /var/www/localhost/htdocs/core/fonts/OpenSans-Regular.ttf /usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf
 #extract owncloud/data.tar.gz /var/www/localhost/htdocs
 #chrootexec mkdir /var/lib/owncloud
 #chrootexec chown -R apache.apache /var/www/localhost /var/lib/owncloud

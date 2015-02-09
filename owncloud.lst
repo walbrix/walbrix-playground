@@ -13,16 +13,16 @@
 #copy owncloud/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1owncloud\2/
 #copy domU/fstab-with-zramswap /etc/fstab
-#chrootexec wget -O - https://download.owncloud.org/community/owncloud-7.0.4.tar.bz2 | tar jxvf - -C /var/www/localhost
-#chrootexec mv /var/www/localhost/owncloud/* /var/www/localhost/htdocs/
-#chrootexec mv /var/www/localhost/owncloud/.htaccess /var/www/localhost/htdocs/
+#chrootexec wget -O - https://download.owncloud.org/community/owncloud-8.0.0.tar.bz2 | tar jxvf - -C /var/www/localhost
+#chrootexec rm -rf /var/www/localhost/htdocs && mv /var/www/localhost/owncloud /var/www/localhost/htdocs
 ##patchsinglefile /var/www/localhost/htdocs/.htaccess owncloud/htaccess.patch
-#chrootexec rmdir /var/www/localhost/owncloud
 #copy owncloud/config.php /var/www/localhost/htdocs/config/config.php
 #chrootexec mv /var/www/localhost/htdocs/core/fonts/OpenSans-Regular.ttf /var/www/localhost/htdocs/core/fonts/OpenSans-Regular.ttf.orig
 /usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf
 #symlink /var/www/localhost/htdocs/core/fonts/OpenSans-Regular.ttf /usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf
-#extract owncloud/data.tar.gz /var/www/localhost/htdocs
+#chrootexec mkdir -p /var/www/localhost/htdocs/data/admin/cache && touch /var/www/localhost/htdocs/data/index.html /var/www/localhost/htdocs/data/.ocdata
+#copy owncloud/data-htaccess /var/www/localhost/htdocs/data/.htaccess
+#chrootexec cp -a /var/www/localhost/htdocs/core/skeleton /var/www/localhost/htdocs/data/admin/files
 #chrootexec mkdir /var/lib/owncloud
 #chrootexec chown -R apache.apache /var/www/localhost /var/lib/owncloud
 #copy owncloud/setup_initial_database.sh /tmp/setup_initial_database.sh
@@ -30,6 +30,10 @@
 #chrootexec sh /tmp/setup_initial_database.sh && rm -rf /tmp/*
 #sed /etc/php/apache2-php5.4/php.ini s/^upload_max_filesize.\+$/upload_max_filesize = 512M/
 #sed /etc/php/apache2-php5.4/php.ini s/^post_max_size.\+$/post_max_size = 768M/
+#sed /etc/php/apache2-php5.4/php.ini s/^memory_limit.\+$/memory_limit=512M/
+#sed /etc/php/apache2-php5.4/php.ini s/^;mbstring.func_overload.\+$/mbstring.func_overload=0/
+#sed /etc/php/apache2-php5.4/php.ini s/^;always_populate_raw_post_data.\+$/always_populate_raw_post_data=-1/
+#sed /etc/php/apache2-php5.4/php.ini s/^;default_charset.\+$/default_charset="UTF-8"/
 #copy owncloud/crontab /var/spool/cron/crontabs/apache
 #copy owncloud/wb-va.xml /etc/wb-va.xml
 

@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.40, for Linux (i686)
+-- MySQL dump 10.13  Distrib 5.6.22, for Linux (i686)
 --
 -- Host: localhost    Database: owncloud
 -- ------------------------------------------------------
--- Server version	5.5.40
+-- Server version	5.6.22
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -107,366 +107,8 @@ CREATE TABLE `oc_appconfig` (
 
 LOCK TABLES `oc_appconfig` WRITE;
 /*!40000 ALTER TABLE `oc_appconfig` DISABLE KEYS */;
-INSERT INTO `oc_appconfig` VALUES ('activity','enabled','yes'),('activity','installed_version','1.1.23'),('activity','ocsid','166038'),('activity','types','filesystem'),('backgroundjob','lastjob','1'),('calendar','enabled','yes'),('calendar','installed_version','0.6.4'),('calendar','ocsid','166043'),('calendar','types',''),('contacts','enabled','yes'),('contacts','installed_version','0.3.0.18'),('contacts','ocsid','166044'),('contacts','types',''),('core','global_cache_gc_lastrun','1418436561'),('core','installedat','1418436556.3994'),('core','lastcron','1418436561'),('core','lastupdatedat','1418436556.416'),('core','public_caldav','calendar/share.php'),('core','public_calendar','calendar/share.php'),('core','public_documents','documents/public.php'),('core','public_files','files_sharing/public.php'),('core','public_gallery','gallery/public.php'),('core','public_webdav','files_sharing/publicwebdav.php'),('core','remote_caldav','calendar/appinfo/remote.php'),('core','remote_calendar','calendar/appinfo/remote.php'),('core','remote_carddav','contacts/appinfo/remote.php'),('core','remote_contacts','contacts/appinfo/remote.php'),('core','remote_files','files/appinfo/remote.php'),('core','remote_filesync','files/appinfo/filesync.php'),('core','remote_webdav','files/appinfo/remote.php'),('documents','enabled','yes'),('documents','installed_version','0.8.2'),('documents','ocsid','166045'),('documents','types',''),('files','enabled','yes'),('files','installed_version','1.1.9'),('files','types','filesystem'),('files_pdfviewer','enabled','yes'),('files_pdfviewer','installed_version','0.5'),('files_pdfviewer','ocsid','166049'),('files_pdfviewer','types',''),('files_sharing','enabled','yes'),('files_sharing','installed_version','0.5.3'),('files_sharing','ocsid','166050'),('files_sharing','types','filesystem'),('files_texteditor','enabled','yes'),('files_texteditor','installed_version','0.4'),('files_texteditor','ocsid','166051'),('files_texteditor','types',''),('files_trashbin','enabled','yes'),('files_trashbin','installed_version','0.6.2'),('files_trashbin','ocsid','166052'),('files_trashbin','types','filesystem'),('files_versions','enabled','yes'),('files_versions','installed_version','1.0.5'),('files_versions','ocsid','166053'),('files_versions','types','filesystem'),('files_videoviewer','enabled','yes'),('files_videoviewer','installed_version','0.1.3'),('files_videoviewer','ocsid','166054'),('files_videoviewer','types',''),('firstrunwizard','enabled','yes'),('firstrunwizard','installed_version','1.1'),('firstrunwizard','ocsid','166055'),('firstrunwizard','types',''),('gallery','enabled','yes'),('gallery','installed_version','0.5.4'),('gallery','ocsid','166056'),('gallery','types','filesystem'),('search_lucene','enabled','yes'),('search_lucene','installed_version','0.5.3'),('search_lucene','ocsid','166057'),('search_lucene','types','filesystem'),('templateeditor','enabled','yes'),('templateeditor','installed_version','0.1'),('templateeditor','types',''),('updater','enabled','yes'),('updater','installed_version','0.4'),('updater','ocsid','166059'),('updater','types','');
+INSERT INTO `oc_appconfig` VALUES ('activity','enabled','yes'),('activity','installed_version','1.2.0'),('activity','ocsid','166038'),('activity','types','filesystem'),('backgroundjob','lastjob','1'),('core','global_cache_gc_lastrun','1423488898'),('core','installedat','1423488894.6672'),('core','lastcron','1423488898'),('core','lastupdatedat','1423488894.6838'),('core','public_files','files_sharing/public.php'),('core','public_gallery','gallery/public.php'),('core','public_webdav','files_sharing/publicwebdav.php'),('core','remote_files','files/appinfo/remote.php'),('core','remote_webdav','files/appinfo/remote.php'),('files','enabled','yes'),('files','installed_version','1.1.9'),('files','types','filesystem'),('files_locking','enabled','yes'),('files_locking','installed_version',''),('files_locking','types','filesystem'),('files_pdfviewer','enabled','yes'),('files_pdfviewer','installed_version','0.7'),('files_pdfviewer','ocsid','166049'),('files_pdfviewer','types',''),('files_sharing','enabled','yes'),('files_sharing','installed_version','0.6.0'),('files_sharing','ocsid','166050'),('files_sharing','types','filesystem'),('files_texteditor','enabled','yes'),('files_texteditor','installed_version','0.4'),('files_texteditor','ocsid','166051'),('files_texteditor','types',''),('files_trashbin','enabled','yes'),('files_trashbin','installed_version','0.6.2'),('files_trashbin','ocsid','166052'),('files_trashbin','types','filesystem'),('files_versions','enabled','yes'),('files_versions','installed_version','1.0.5'),('files_versions','ocsid','166053'),('files_versions','types','filesystem'),('files_videoviewer','enabled','yes'),('files_videoviewer','installed_version','0.1.3'),('files_videoviewer','ocsid','166054'),('files_videoviewer','types',''),('firstrunwizard','enabled','yes'),('firstrunwizard','installed_version','1.1'),('firstrunwizard','ocsid','166055'),('firstrunwizard','types',''),('gallery','enabled','yes'),('gallery','installed_version','0.6.0'),('gallery','ocsid','166056'),('gallery','types',''),('provisioning_api','enabled','yes'),('provisioning_api','installed_version','0.2'),('provisioning_api','types','filesystem'),('templateeditor','enabled','yes'),('templateeditor','installed_version','0.1'),('templateeditor','types',''),('updater','enabled','yes'),('updater','installed_version','0.4'),('updater','ocsid','166059'),('updater','types','');
 /*!40000 ALTER TABLE `oc_appconfig` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_clndr_calendars`
---
-
-DROP TABLE IF EXISTS `oc_clndr_calendars`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_clndr_calendars` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `userid` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `displayname` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  `uri` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `active` int(11) NOT NULL DEFAULT '1',
-  `ctag` int(10) unsigned NOT NULL DEFAULT '0',
-  `calendarorder` int(10) unsigned NOT NULL DEFAULT '0',
-  `calendarcolor` varchar(10) COLLATE utf8_bin DEFAULT NULL,
-  `timezone` longtext COLLATE utf8_bin,
-  `components` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_clndr_calendars`
---
-
-LOCK TABLES `oc_clndr_calendars` WRITE;
-/*!40000 ALTER TABLE `oc_clndr_calendars` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_clndr_calendars` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_clndr_objects`
---
-
-DROP TABLE IF EXISTS `oc_clndr_objects`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_clndr_objects` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `calendarid` int(10) unsigned NOT NULL DEFAULT '0',
-  `objecttype` varchar(40) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `startdate` datetime DEFAULT '1970-01-01 00:00:00',
-  `enddate` datetime DEFAULT '1970-01-01 00:00:00',
-  `repeating` int(11) DEFAULT '0',
-  `summary` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `calendardata` longtext COLLATE utf8_bin,
-  `uri` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `lastmodified` int(11) DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_clndr_objects`
---
-
-LOCK TABLES `oc_clndr_objects` WRITE;
-/*!40000 ALTER TABLE `oc_clndr_objects` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_clndr_objects` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_clndr_repeat`
---
-
-DROP TABLE IF EXISTS `oc_clndr_repeat`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_clndr_repeat` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `eventid` int(10) unsigned NOT NULL DEFAULT '0',
-  `calid` int(10) unsigned NOT NULL DEFAULT '0',
-  `startdate` datetime DEFAULT '1970-01-01 00:00:00',
-  `enddate` datetime DEFAULT '1970-01-01 00:00:00',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_clndr_repeat`
---
-
-LOCK TABLES `oc_clndr_repeat` WRITE;
-/*!40000 ALTER TABLE `oc_clndr_repeat` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_clndr_repeat` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_clndr_share_calendar`
---
-
-DROP TABLE IF EXISTS `oc_clndr_share_calendar`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_clndr_share_calendar` (
-  `owner` varchar(255) COLLATE utf8_bin NOT NULL,
-  `share` varchar(255) COLLATE utf8_bin NOT NULL,
-  `sharetype` varchar(6) COLLATE utf8_bin NOT NULL,
-  `calendarid` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `permissions` smallint(6) NOT NULL,
-  `active` int(11) NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_clndr_share_calendar`
---
-
-LOCK TABLES `oc_clndr_share_calendar` WRITE;
-/*!40000 ALTER TABLE `oc_clndr_share_calendar` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_clndr_share_calendar` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_clndr_share_event`
---
-
-DROP TABLE IF EXISTS `oc_clndr_share_event`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_clndr_share_event` (
-  `owner` varchar(255) COLLATE utf8_bin NOT NULL,
-  `share` varchar(255) COLLATE utf8_bin NOT NULL,
-  `sharetype` varchar(6) COLLATE utf8_bin NOT NULL,
-  `eventid` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `permissions` smallint(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_clndr_share_event`
---
-
-LOCK TABLES `oc_clndr_share_event` WRITE;
-/*!40000 ALTER TABLE `oc_clndr_share_event` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_clndr_share_event` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_contacts_addressbooks`
---
-
-DROP TABLE IF EXISTS `oc_contacts_addressbooks`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_contacts_addressbooks` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `userid` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `displayname` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `uri` varchar(200) COLLATE utf8_bin DEFAULT NULL,
-  `description` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `ctag` int(10) unsigned NOT NULL DEFAULT '1',
-  `active` int(11) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`),
-  KEY `c_addressbook_userid_index` (`userid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_contacts_addressbooks`
---
-
-LOCK TABLES `oc_contacts_addressbooks` WRITE;
-/*!40000 ALTER TABLE `oc_contacts_addressbooks` DISABLE KEYS */;
-INSERT INTO `oc_contacts_addressbooks` VALUES (1,'admin','コンタクト','コンタクト','',1418436560,1);
-/*!40000 ALTER TABLE `oc_contacts_addressbooks` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_contacts_cards`
---
-
-DROP TABLE IF EXISTS `oc_contacts_cards`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_contacts_cards` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `addressbookid` int(10) unsigned NOT NULL DEFAULT '0',
-  `fullname` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `carddata` longtext COLLATE utf8_bin,
-  `uri` varchar(200) COLLATE utf8_bin DEFAULT NULL,
-  `lastmodified` int(10) unsigned DEFAULT '0',
-  PRIMARY KEY (`id`),
-  KEY `c_addressbookid_index` (`addressbookid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_contacts_cards`
---
-
-LOCK TABLES `oc_contacts_cards` WRITE;
-/*!40000 ALTER TABLE `oc_contacts_cards` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_contacts_cards` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_contacts_cards_properties`
---
-
-DROP TABLE IF EXISTS `oc_contacts_cards_properties`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_contacts_cards_properties` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `userid` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `contactid` int(10) unsigned NOT NULL DEFAULT '0',
-  `name` varchar(64) COLLATE utf8_bin DEFAULT NULL,
-  `value` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `preferred` int(11) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`),
-  KEY `cp_contactid_index` (`contactid`),
-  KEY `cp_name_index` (`name`),
-  KEY `cp_value_index` (`value`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_contacts_cards_properties`
---
-
-LOCK TABLES `oc_contacts_cards_properties` WRITE;
-/*!40000 ALTER TABLE `oc_contacts_cards_properties` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_contacts_cards_properties` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_documents_invite`
---
-
-DROP TABLE IF EXISTS `oc_documents_invite`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_documents_invite` (
-  `es_id` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Related editing session id',
-  `uid` varchar(64) COLLATE utf8_bin DEFAULT NULL,
-  `status` smallint(6) DEFAULT '0',
-  `sent_on` int(10) unsigned DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_documents_invite`
---
-
-LOCK TABLES `oc_documents_invite` WRITE;
-/*!40000 ALTER TABLE `oc_documents_invite` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_documents_invite` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_documents_member`
---
-
-DROP TABLE IF EXISTS `oc_documents_member`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_documents_member` (
-  `member_id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Unique per user and session',
-  `es_id` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Related editing session id',
-  `uid` varchar(64) COLLATE utf8_bin DEFAULT NULL,
-  `color` varchar(32) COLLATE utf8_bin DEFAULT NULL,
-  `last_activity` int(10) unsigned DEFAULT NULL,
-  `is_guest` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `token` varchar(32) COLLATE utf8_bin DEFAULT NULL,
-  `status` smallint(5) unsigned NOT NULL DEFAULT '1',
-  PRIMARY KEY (`member_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_documents_member`
---
-
-LOCK TABLES `oc_documents_member` WRITE;
-/*!40000 ALTER TABLE `oc_documents_member` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_documents_member` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_documents_op`
---
-
-DROP TABLE IF EXISTS `oc_documents_op`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_documents_op` (
-  `seq` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Sequence number',
-  `es_id` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Editing session id',
-  `member` int(10) unsigned NOT NULL DEFAULT '1' COMMENT 'User and time specific',
-  `opspec` longtext COLLATE utf8_bin COMMENT 'json-string',
-  PRIMARY KEY (`seq`),
-  UNIQUE KEY `documents_op_eis_idx` (`es_id`,`seq`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_documents_op`
---
-
-LOCK TABLES `oc_documents_op` WRITE;
-/*!40000 ALTER TABLE `oc_documents_op` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_documents_op` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_documents_revisions`
---
-
-DROP TABLE IF EXISTS `oc_documents_revisions`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_documents_revisions` (
-  `es_id` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Related editing session id',
-  `seq_head` int(10) unsigned NOT NULL COMMENT 'Sequence head number',
-  `member_id` int(10) unsigned NOT NULL COMMENT 'the member that saved the revision',
-  `file_id` varchar(512) COLLATE utf8_bin DEFAULT NULL COMMENT 'Relative to storage e.g. /welcome.odt',
-  `save_hash` varchar(128) COLLATE utf8_bin NOT NULL COMMENT 'used to lookup revision in documents folder of member, eg hash.odt',
-  UNIQUE KEY `documents_rev_eis_idx` (`es_id`,`seq_head`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_documents_revisions`
---
-
-LOCK TABLES `oc_documents_revisions` WRITE;
-/*!40000 ALTER TABLE `oc_documents_revisions` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_documents_revisions` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_documents_session`
---
-
-DROP TABLE IF EXISTS `oc_documents_session`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_documents_session` (
-  `es_id` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Editing session id',
-  `genesis_url` varchar(512) COLLATE utf8_bin DEFAULT NULL COMMENT 'Relative to owner documents storage /welcome.odt',
-  `genesis_hash` varchar(128) COLLATE utf8_bin NOT NULL COMMENT 'To be sure the genesis did not change',
-  `file_id` varchar(512) COLLATE utf8_bin DEFAULT NULL COMMENT 'Relative to storage e.g. /welcome.odt',
-  `owner` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'oC user who created the session',
-  PRIMARY KEY (`es_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_documents_session`
---
-
-LOCK TABLES `oc_documents_session` WRITE;
-/*!40000 ALTER TABLE `oc_documents_session` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_documents_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -533,7 +175,7 @@ CREATE TABLE `oc_filecache` (
 
 LOCK TABLES `oc_filecache` WRITE;
 /*!40000 ALTER TABLE `oc_filecache` DISABLE KEYS */;
-INSERT INTO `oc_filecache` VALUES (1,1,'','d41d8cd98f00b204e9800998ecf8427e',-1,'',2,1,6228214,1418436553,1418436553,0,0,'548b9fcc1f159',31),(2,1,'cache','0fea6a13c52b4d4725368f24b045ca84',1,'cache',2,1,0,1418436553,1418436553,0,0,'548b9fcc23f7c',31),(3,1,'files','45b963397aa40d4a0063e0d85e4fe7a1',1,'files',2,1,6228214,1418436554,1418436554,0,0,'548b9fcc2668a',31),(4,1,'files/documents','2d30f25cef1a92db784bc537e8bf128d',3,'documents',2,1,23383,1418436553,1418436553,0,0,'548b9fcc302ca',31),(5,1,'files/documents/example.odt','f51311bd6910ec7356d79286dcb24dec',4,'example.odt',4,3,23383,1418436554,1418436554,0,0,'548b9fcc3c61b',27),(6,1,'files/ownCloudUserManual.pdf','c8edba2d1b8eb651c107b43532c34445',3,'ownCloudUserManual.pdf',5,3,1761471,1418436554,1418436554,0,0,'548b9fcc329dc',27),(7,1,'files/music','1f8cfec283cd675038bb95b599fdc75a',3,'music',2,1,3764804,1418436554,1418436554,0,0,'548b9fcc350ee',31),(8,1,'files/music/projekteva-letitrain.mp3','da7d05a957a2bbbf0e74b12c1b5fcfee',7,'projekteva-letitrain.mp3',7,6,3764804,1418436554,1418436554,0,0,'548b9fcc4625b',27),(9,1,'files/photos','923e51351db3e8726f22ba0fa1c04d5a',3,'photos',2,1,678556,1418436555,1418436555,0,0,'548b9fcc377e3',31),(10,1,'files/photos/san francisco.jpg','e86e87a4ecd557753734e1d34fbeecec',9,'san francisco.jpg',9,8,216071,1418436555,1418436555,0,0,'548b9fcc4d78a',27),(11,1,'files/photos/paris.jpg','65154b90b985bff20d4923f224ca1c33',9,'paris.jpg',9,8,228761,1418436555,1418436555,0,0,'548b9fcc4fe80',27),(12,1,'files/photos/squirrel.jpg','e462c24fc17cb1a3fa3bca86d7f89593',9,'squirrel.jpg',9,8,233724,1418436556,1418436556,0,0,'548b9fcc525ae',27);
+INSERT INTO `oc_filecache` VALUES (1,1,'','d41d8cd98f00b204e9800998ecf8427e',-1,'',2,1,6228214,1423488899,1418436553,0,0,'54d8b783cd523',23),(2,1,'files','45b963397aa40d4a0063e0d85e4fe7a1',1,'files',2,1,6228214,1423488899,1418436554,0,0,'54d8b783d716d',31),(3,1,'files/documents','2d30f25cef1a92db784bc537e8bf128d',2,'documents',2,1,23383,1423488899,1418436553,0,0,'54d8b783eaa21',31),(4,1,'files/ownCloudUserManual.pdf','c8edba2d1b8eb651c107b43532c34445',2,'ownCloudUserManual.pdf',4,3,1761471,1418436554,1418436554,0,0,'47667710a0851988a3e6936e929eeedf',27),(5,1,'files/music','1f8cfec283cd675038bb95b599fdc75a',2,'music',2,1,3764804,1423488899,1418436554,0,0,'54d8b783e5bdd',31),(6,1,'files/photos','923e51351db3e8726f22ba0fa1c04d5a',2,'photos',2,1,678556,1423488899,1418436555,0,0,'54d8b783de6a1',31),(7,1,'files/photos/san francisco.jpg','e86e87a4ecd557753734e1d34fbeecec',6,'san francisco.jpg',6,5,216071,1418436555,1418436555,0,0,'e35619dded057d28f03c2ea6e6d96f98',27),(8,1,'files/photos/paris.jpg','65154b90b985bff20d4923f224ca1c33',6,'paris.jpg',6,5,228761,1418436555,1418436555,0,0,'c4c2bdc4b62d577f820a0339b931cce0',27),(9,1,'files/photos/squirrel.jpg','e462c24fc17cb1a3fa3bca86d7f89593',6,'squirrel.jpg',6,5,233724,1418436556,1418436556,0,0,'4d74640e2c109c697e0a72d9e6016e7a',27),(10,1,'files/music/projekteva-letitrain.mp3','da7d05a957a2bbbf0e74b12c1b5fcfee',5,'projekteva-letitrain.mp3',8,7,3764804,1418436554,1418436554,0,0,'4cb588beda6412f3ae6c78a9ada7a7ca',27),(11,1,'files/documents/example.odt','f51311bd6910ec7356d79286dcb24dec',3,'example.odt',9,3,23383,1418436554,1418436554,0,0,'ad39e5883ae3b52195352cbb64b05568',27),(12,1,'cache','0fea6a13c52b4d4725368f24b045ca84',1,'cache',2,1,0,1418436553,1418436553,0,0,'54d8b7837f352',31);
 /*!40000 ALTER TABLE `oc_filecache` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -566,29 +208,6 @@ CREATE TABLE `oc_files_trash` (
 LOCK TABLES `oc_files_trash` WRITE;
 /*!40000 ALTER TABLE `oc_files_trash` DISABLE KEYS */;
 /*!40000 ALTER TABLE `oc_files_trash` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_gallery_sharing`
---
-
-DROP TABLE IF EXISTS `oc_gallery_sharing`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_gallery_sharing` (
-  `token` varchar(64) COLLATE utf8_bin NOT NULL,
-  `gallery_id` int(11) NOT NULL DEFAULT '0',
-  `recursive` smallint(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_gallery_sharing`
---
-
-LOCK TABLES `oc_gallery_sharing` WRITE;
-/*!40000 ALTER TABLE `oc_gallery_sharing` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_gallery_sharing` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -676,7 +295,7 @@ CREATE TABLE `oc_jobs` (
   `last_run` int(11) DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `job_class_index` (`class`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -685,7 +304,7 @@ CREATE TABLE `oc_jobs` (
 
 LOCK TABLES `oc_jobs` WRITE;
 /*!40000 ALTER TABLE `oc_jobs` DISABLE KEYS */;
-INSERT INTO `oc_jobs` VALUES (1,'OC\\Cache\\FileGlobalGC','null',1418436561),(2,'OCA\\Activity\\BackgroundJob\\EmailNotification','null',0);
+INSERT INTO `oc_jobs` VALUES (1,'OC\\Cache\\FileGlobalGC','null',1423488898),(2,'OCA\\Activity\\BackgroundJob\\EmailNotification','null',0),(3,'OCA\\Activity\\BackgroundJob\\ExpireActivities','null',0);
 /*!40000 ALTER TABLE `oc_jobs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -720,30 +339,6 @@ LOCK TABLES `oc_locks` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `oc_lucene_status`
---
-
-DROP TABLE IF EXISTS `oc_lucene_status`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_lucene_status` (
-  `fileid` int(11) NOT NULL DEFAULT '0',
-  `status` varchar(1) COLLATE utf8_bin DEFAULT NULL,
-  PRIMARY KEY (`fileid`),
-  KEY `status_index` (`status`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_lucene_status`
---
-
-LOCK TABLES `oc_lucene_status` WRITE;
-/*!40000 ALTER TABLE `oc_lucene_status` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_lucene_status` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `oc_mimetypes`
 --
 
@@ -764,32 +359,8 @@ CREATE TABLE `oc_mimetypes` (
 
 LOCK TABLES `oc_mimetypes` WRITE;
 /*!40000 ALTER TABLE `oc_mimetypes` DISABLE KEYS */;
-INSERT INTO `oc_mimetypes` VALUES (3,'application'),(5,'application/pdf'),(4,'application/vnd.oasis.opendocument.text'),(6,'audio'),(7,'audio/mpeg'),(1,'httpd'),(2,'httpd/unix-directory'),(8,'image'),(9,'image/jpeg');
+INSERT INTO `oc_mimetypes` VALUES (3,'application'),(4,'application/pdf'),(9,'application/vnd.oasis.opendocument.text'),(7,'audio'),(8,'audio/mpeg'),(1,'httpd'),(2,'httpd/unix-directory'),(5,'image'),(6,'image/jpeg');
 /*!40000 ALTER TABLE `oc_mimetypes` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `oc_pictures_images_cache`
---
-
-DROP TABLE IF EXISTS `oc_pictures_images_cache`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `oc_pictures_images_cache` (
-  `uid_owner` varchar(64) COLLATE utf8_bin NOT NULL,
-  `path` varchar(256) COLLATE utf8_bin NOT NULL,
-  `width` int(11) NOT NULL,
-  `height` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `oc_pictures_images_cache`
---
-
-LOCK TABLES `oc_pictures_images_cache` WRITE;
-/*!40000 ALTER TABLE `oc_pictures_images_cache` DISABLE KEYS */;
-/*!40000 ALTER TABLE `oc_pictures_images_cache` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -814,7 +385,7 @@ CREATE TABLE `oc_preferences` (
 
 LOCK TABLES `oc_preferences` WRITE;
 /*!40000 ALTER TABLE `oc_preferences` DISABLE KEYS */;
-INSERT INTO `oc_preferences` VALUES ('admin','firstrunwizard','show','0'),('admin','login','lastLogin','1418436556');
+INSERT INTO `oc_preferences` VALUES ('admin','firstrunwizard','show','0'),('admin','login','lastLogin','1423488894');
 /*!40000 ALTER TABLE `oc_preferences` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -921,6 +492,7 @@ DROP TABLE IF EXISTS `oc_share_external`;
 CREATE TABLE `oc_share_external` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `remote` varchar(512) COLLATE utf8_bin NOT NULL COMMENT 'Url of the remove owncloud instance',
+  `remote_id` int(11) NOT NULL,
   `share_token` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Public share token',
   `password` varchar(64) COLLATE utf8_bin DEFAULT NULL COMMENT 'Optional password for the public share',
   `name` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Original name on the remote server',
@@ -928,6 +500,7 @@ CREATE TABLE `oc_share_external` (
   `user` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Local user which added the external share',
   `mountpoint` varchar(4000) COLLATE utf8_bin NOT NULL COMMENT 'Full path where the share is mounted',
   `mountpoint_hash` varchar(32) COLLATE utf8_bin NOT NULL COMMENT 'md5 hash of the mountpoint',
+  `accepted` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `sh_external_mp` (`user`,`mountpoint_hash`),
   KEY `sh_external_user` (`user`)
@@ -989,7 +562,7 @@ CREATE TABLE `oc_users` (
 
 LOCK TABLES `oc_users` WRITE;
 /*!40000 ALTER TABLE `oc_users` DISABLE KEYS */;
-INSERT INTO `oc_users` VALUES ('admin',NULL,'$2a$08$6vMYoPlprFjFFDoSjbESLOashbJ7FhCcX..w3DHiJuU25UhxPCtkm');
+INSERT INTO `oc_users` VALUES ('admin',NULL,'1|$2y$10$rVMfVLDdT1IVx.jB0EDpJu8wU8SL4NgNhirsNYN7JNXHk0MItzt1a');
 /*!40000 ALTER TABLE `oc_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1055,4 +628,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-12-13 11:09:47
+-- Dump completed on 2015-02-09 22:42:44

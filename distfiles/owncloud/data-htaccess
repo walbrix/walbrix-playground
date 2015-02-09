@@ -1,0 +1,9 @@
+<ifModule mod_authz_core>
+Require all denied
+</ifModule>
+
+<ifModule !mod_authz_core>
+deny from all
+</ifModule>
+
+IndexIgnore *

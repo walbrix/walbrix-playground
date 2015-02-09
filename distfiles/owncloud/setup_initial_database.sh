@@ -19,9 +19,9 @@ fi
 /usr/bin/mysql -u root -e 'grant all privileges on owncloud.* to owncloud@localhost' || exit 1
 if [ -f /tmp/initial-database.sql ]; then
 	/usr/bin/mysql -u owncloud owncloud < /tmp/initial-database.sql
-fi
-if [ -x /usr/bin/libreoffice ]; then
-    /usr/bin/mysql -u owncloud owncloud -e "replace into oc_appconfig(appid,configkey,configvalue) values('documents','converter','local')"
+        if [ -x /usr/bin/libreoffice ]; then
+            /usr/bin/mysql -u owncloud owncloud -e "replace into oc_appconfig(appid,configkey,configvalue) values('documents','converter','local')"
+        fi
 fi
 
 kill `cat $PIDFILE`

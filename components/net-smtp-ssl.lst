@@ -1,4 +1,5 @@
 #portage dev-perl/Net-SSLeay-1.650.0
 #portage dev-perl/IO-Socket-SSL-1.967.0
 #portage dev-perl/Net-SMTP-SSL-1.10.0-r1
+#portage perl-core/libnet-1.270.0
 

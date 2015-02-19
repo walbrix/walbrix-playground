@@ -55,3 +55,6 @@ dev-ruby/rmagick ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/mysql-ruby ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/mysql2 -ruby_targets_ruby19 -ruby_targets_ruby18
 dev-ruby/pkg-config ruby_targets_ruby19 -ruby_targets_ruby18
+virtual/rubygems -ruby_targets_ruby19
+virtual/ruby-ssl -ruby_targets_ruby19
+

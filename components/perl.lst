@@ -1,3 +1,3 @@
-#portage dev-lang/perl-5.18.2-r2
-#portage perl-core/File-Temp-0.230.0
+#portage dev-lang/perl-5.20.1-r4
+#portage perl-core/File-Temp-0.230.400-r1
 #detectarch /usr/bin/perl

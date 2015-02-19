@@ -20,6 +20,7 @@
 #require zabbix-agent.lst
 #copy domU/fstab /etc/fstab
 #copy domU/resolv.conf /etc/resolv.conf
+#copy domU/net.eth0 /etc/conf.d/net.eth0
 /etc/group
 /etc/passwd
 /etc/shadow

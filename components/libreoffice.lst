@@ -1,3 +1,19 @@
 #portage app-office/libreoffice-4.3.5.2 ^/usr/share/icons/
 #portage app-office/libreoffice-l10n-4.3.5.2
+##portage dev-libs/librevenge-0.0.2
+##portage dev-libs/libixion-0.7.0
+##portage dev-libs/liborcus-0.7.0
+##portage app-text/libwpd-0.10.0-r1
+##portage app-text/libwps-0.3.1
+##portage app-text/libwpg-0.3.0
+##portage app-text/libebook-0.1.2
+##portage media-libs/libvisio-0.1.1
+##portage app-text/libmwaw-0.3.4
+##portage net-libs/neon-0.30.1
+##portage app-text/libodfgen-0.1.3
+##portage app-text/libetonyek-0.1.1
+##portage app-text/libmspub-0.1.2
+##portage media-libs/libcdr-0.1.1
+##portage media-libs/libfreehand-0.1.0
+##portage app-text/libabw-0.1.1
 

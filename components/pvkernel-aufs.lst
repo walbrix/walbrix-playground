@@ -1,4 +1,4 @@
-/boot/kernel-genkernel-x86_64-3.14.32-aufs
-#symlink /boot/kernel kernel-genkernel-x86_64-3.14.32-aufs
+/boot/kernel-genkernel-x86_64-3.14.33-aufs
+#symlink /boot/kernel kernel-genkernel-x86_64-3.14.33-aufs
 #require pvgrub.lst
 #kernel /boot/kernel

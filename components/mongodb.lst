@@ -1,2 +1,5 @@
-#portage dev-db/mongodb-2.4.6-r2
+#portage dev-db/mongodb-2.6.7
 #symlink /etc/runlevels/default/mongodb /etc/init.d/mongodb
+##portage dev-libs/snowball-stemmer-0.20140325
+##portage dev-cpp/yaml-cpp-0.5.1
+

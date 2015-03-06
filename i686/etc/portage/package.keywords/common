@@ -19,3 +19,4 @@
 =net-misc/openvpn-2.3.4-r1
 =sys-devel/automake-1.14.1
 =net-analyzer/traceroute-2.0.20
+=dev-lang/php-5.4.38

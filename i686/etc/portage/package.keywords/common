@@ -1,4 +1,4 @@
-=sys-kernel/vanilla-sources-3.2.67
+=sys-kernel/vanilla-sources-3.2.68
 =sys-process/procps-3.3.9-r2
 =dev-java/jdbc-postgresql-9.1_p902
 =net-libs/nodejs-0.10.7
@@ -20,3 +20,4 @@
 =sys-devel/automake-1.14.1
 =net-analyzer/traceroute-2.0.20
 =dev-lang/php-5.4.38
+=dev-python/setuptools-12.0.1

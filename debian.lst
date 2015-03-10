@@ -1,3 +1,4 @@
+#noaufs
 #require components/pvkernel.lst
 #extract debian/debian-$(ARCH).tar.xz /
 #chrootexec echo "debian" > /etc/hostname

@@ -1,0 +1,31 @@
+#!/bin/sh 
+if [ "$#" -ne 1 ]; then
+	echo "Usage: $0 tarball"
+	exit 1
+fi
+TARBALL=$1
+if [ ! -f "$TARBALL" ]; then
+	echo "$TARBALL does not exist."
+	exit 2
+fi
+VA_NAME=`basename "$TARBALL" | sed 's/^\(.\+\)-[a-z0-9_]\+.\+-[a-z]\+\.tar\.xz$/\1/'`
+if [ -z "$VA_NAME" ]; then
+	echo "`basename $TARBALL` is not an appropriate image file name."
+	exit 3
+fi
+echo "Importing $TARBALL as $VA_NAME..."
+IMAGE_ID=`docker import - < $TARBALL` || exit
+echo "http://"`hostname`":5000"
+echo "ssh -p 5022 "`hostname`
+echo "docker kill $VA_NAME to terminate the container"
+mkdir -p /tmp/__ssh
+cp /etc/ssh/moduli /tmp/__ssh/
+[ -f /etc/ssh/ssh_host_key ] && cp /etc/ssh/ssh_host_* /tmp/__ssh/
+touch /tmp/__ak
+[ -f ~/.ssh/id_rsa.pub ] && cat ~/.ssh/id_rsa.pub >> /tmp/__ak
+echo "" >> /tmp/__ak
+[ -f ~/.ssh/authorized_keys ] && cat ~/.ssh/authorized_keys >> /tmp/__ak
+docker run --rm --name=$VA_NAME -v /tmp:/mnt -p 5000:80 -p 5022:22 $IMAGE_ID sh -c "mv /mnt/__ssh/* /etc/ssh/ && rmdir /mnt/__ssh && mkdir -p /root/.ssh && chmod 700 /root/.ssh && mv /mnt/__ak /root/.ssh/authorized_keys && exec /sbin/init"
+echo "Container terminated. deleting the image..."
+docker rmi $IMAGE_ID
+

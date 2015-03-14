@@ -1,4 +1,4 @@
-#portage dev-db/redis-2.6.17-r1
+#portage dev-db/redis-2.8.17-r1
 #portage dev-lang/lua-5.1.5-r3
 #symlink /etc/runlevels/default/redis /etc/init.d/redis
 

@@ -21,3 +21,4 @@
 =net-analyzer/traceroute-2.0.20
 =dev-lang/php-5.4.38
 =dev-python/setuptools-12.0.1
+=sys-apps/util-linux-2.25.2-r2

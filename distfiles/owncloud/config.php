@@ -5,11 +5,16 @@ $CONFIG = array (
   'secret' => '/bmPJe7dVSVQXL0vbv21hlK4PbvDrj/Wq4bXOYmVfYAAFqir',
   'datadirectory' => '/var/www/localhost/htdocs/data',
   'dbtype' => 'mysql',
-  'version' => '8.0.0.7',
+  'version' => '8.0.2.0',
   'dbname' => 'owncloud',
   'dbhost' => 'localhost',
   'dbtableprefix' => 'oc_',
   'dbuser' => 'owncloud',
   'dbpassword' => '',
   'installed' => true,
+  'theme' => '',
+  'maintenance' => false,
+  'trusted_domains' => 
+  array (
+  ),
 );

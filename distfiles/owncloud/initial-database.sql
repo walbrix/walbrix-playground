@@ -107,7 +107,7 @@ CREATE TABLE `oc_appconfig` (
 
 LOCK TABLES `oc_appconfig` WRITE;
 /*!40000 ALTER TABLE `oc_appconfig` DISABLE KEYS */;
-INSERT INTO `oc_appconfig` VALUES ('activity','enabled','yes'),('activity','installed_version','1.2.0'),('activity','ocsid','166038'),('activity','types','filesystem'),('backgroundjob','lastjob','1'),('core','global_cache_gc_lastrun','1423488898'),('core','installedat','1423488894.6672'),('core','lastcron','1423488898'),('core','lastupdatedat','1423488894.6838'),('core','public_files','files_sharing/public.php'),('core','public_gallery','gallery/public.php'),('core','public_webdav','files_sharing/publicwebdav.php'),('core','remote_files','files/appinfo/remote.php'),('core','remote_webdav','files/appinfo/remote.php'),('files','enabled','yes'),('files','installed_version','1.1.9'),('files','types','filesystem'),('files_locking','enabled','yes'),('files_locking','installed_version',''),('files_locking','types','filesystem'),('files_pdfviewer','enabled','yes'),('files_pdfviewer','installed_version','0.7'),('files_pdfviewer','ocsid','166049'),('files_pdfviewer','types',''),('files_sharing','enabled','yes'),('files_sharing','installed_version','0.6.0'),('files_sharing','ocsid','166050'),('files_sharing','types','filesystem'),('files_texteditor','enabled','yes'),('files_texteditor','installed_version','0.4'),('files_texteditor','ocsid','166051'),('files_texteditor','types',''),('files_trashbin','enabled','yes'),('files_trashbin','installed_version','0.6.2'),('files_trashbin','ocsid','166052'),('files_trashbin','types','filesystem'),('files_versions','enabled','yes'),('files_versions','installed_version','1.0.5'),('files_versions','ocsid','166053'),('files_versions','types','filesystem'),('files_videoviewer','enabled','yes'),('files_videoviewer','installed_version','0.1.3'),('files_videoviewer','ocsid','166054'),('files_videoviewer','types',''),('firstrunwizard','enabled','yes'),('firstrunwizard','installed_version','1.1'),('firstrunwizard','ocsid','166055'),('firstrunwizard','types',''),('gallery','enabled','yes'),('gallery','installed_version','0.6.0'),('gallery','ocsid','166056'),('gallery','types',''),('provisioning_api','enabled','yes'),('provisioning_api','installed_version','0.2'),('provisioning_api','types','filesystem'),('templateeditor','enabled','yes'),('templateeditor','installed_version','0.1'),('templateeditor','types',''),('updater','enabled','yes'),('updater','installed_version','0.4'),('updater','ocsid','166059'),('updater','types','');
+INSERT INTO `oc_appconfig` VALUES ('activity','enabled','yes'),('activity','installed_version','1.2.0'),('activity','ocsid','166038'),('activity','types','filesystem'),('backgroundjob','lastjob','2'),('core','global_cache_gc_lastrun','1423488898'),('core','installedat','1423488894.6672'),('core','lastcron','1426669243'),('core','lastupdatedat','0'),('core','public_files','files_sharing/public.php'),('core','public_gallery','gallery/public.php'),('core','public_webdav','files_sharing/publicwebdav.php'),('core','remote_files','files/appinfo/remote.php'),('core','remote_webdav','files/appinfo/remote.php'),('core','repairlegacystoragesdone','yes'),('documents','converter','local'),('files','enabled','yes'),('files','installed_version','1.1.9'),('files','types','filesystem'),('files_locking','enabled','yes'),('files_locking','installed_version',''),('files_locking','types','filesystem'),('files_pdfviewer','enabled','yes'),('files_pdfviewer','installed_version','0.7'),('files_pdfviewer','ocsid','166049'),('files_pdfviewer','types',''),('files_sharing','enabled','yes'),('files_sharing','installed_version','0.6.1'),('files_sharing','ocsid','166050'),('files_sharing','types','filesystem'),('files_texteditor','enabled','yes'),('files_texteditor','installed_version','0.4'),('files_texteditor','ocsid','166051'),('files_texteditor','types',''),('files_trashbin','enabled','yes'),('files_trashbin','installed_version','0.6.2'),('files_trashbin','ocsid','166052'),('files_trashbin','types','filesystem'),('files_versions','enabled','yes'),('files_versions','installed_version','1.0.5'),('files_versions','ocsid','166053'),('files_versions','types','filesystem'),('files_videoviewer','enabled','yes'),('files_videoviewer','installed_version','0.1.3'),('files_videoviewer','ocsid','166054'),('files_videoviewer','types',''),('firstrunwizard','enabled','yes'),('firstrunwizard','installed_version','1.1'),('firstrunwizard','ocsid','166055'),('firstrunwizard','types',''),('gallery','enabled','yes'),('gallery','installed_version','0.6.0'),('gallery','ocsid','166056'),('gallery','types',''),('provisioning_api','enabled','yes'),('provisioning_api','installed_version','0.2'),('provisioning_api','types','filesystem'),('templateeditor','enabled','yes'),('templateeditor','installed_version','0.1'),('templateeditor','types',''),('updater','enabled','yes'),('updater','installed_version','0.4'),('updater','ocsid','166059'),('updater','types','');
 /*!40000 ALTER TABLE `oc_appconfig` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -304,7 +304,7 @@ CREATE TABLE `oc_jobs` (
 
 LOCK TABLES `oc_jobs` WRITE;
 /*!40000 ALTER TABLE `oc_jobs` DISABLE KEYS */;
-INSERT INTO `oc_jobs` VALUES (1,'OC\\Cache\\FileGlobalGC','null',1423488898),(2,'OCA\\Activity\\BackgroundJob\\EmailNotification','null',0),(3,'OCA\\Activity\\BackgroundJob\\ExpireActivities','null',0);
+INSERT INTO `oc_jobs` VALUES (1,'OC\\Cache\\FileGlobalGC','null',1423488898),(2,'OCA\\Activity\\BackgroundJob\\EmailNotification','null',1426669243),(3,'OCA\\Activity\\BackgroundJob\\ExpireActivities','null',0);
 /*!40000 ALTER TABLE `oc_jobs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -350,7 +350,7 @@ CREATE TABLE `oc_mimetypes` (
   `mimetype` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `mimetype_id_index` (`mimetype`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -359,7 +359,7 @@ CREATE TABLE `oc_mimetypes` (
 
 LOCK TABLES `oc_mimetypes` WRITE;
 /*!40000 ALTER TABLE `oc_mimetypes` DISABLE KEYS */;
-INSERT INTO `oc_mimetypes` VALUES (3,'application'),(4,'application/pdf'),(9,'application/vnd.oasis.opendocument.text'),(7,'audio'),(8,'audio/mpeg'),(1,'httpd'),(2,'httpd/unix-directory'),(5,'image'),(6,'image/jpeg');
+INSERT INTO `oc_mimetypes` VALUES (3,'application'),(4,'application/pdf'),(13,'application/vnd.android.package-archive'),(9,'application/vnd.oasis.opendocument.text'),(12,'application/vnd.openxmlformats-officedocument.presentationml.presentation'),(11,'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'),(10,'application/vnd.openxmlformats-officedocument.wordprocessingml.document'),(7,'audio'),(8,'audio/mpeg'),(1,'httpd'),(2,'httpd/unix-directory'),(5,'image'),(6,'image/jpeg');
 /*!40000 ALTER TABLE `oc_mimetypes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -492,7 +492,7 @@ DROP TABLE IF EXISTS `oc_share_external`;
 CREATE TABLE `oc_share_external` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `remote` varchar(512) COLLATE utf8_bin NOT NULL COMMENT 'Url of the remove owncloud instance',
-  `remote_id` int(11) NOT NULL,
+  `remote_id` int(11) NOT NULL DEFAULT '-1',
   `share_token` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Public share token',
   `password` varchar(64) COLLATE utf8_bin DEFAULT NULL COMMENT 'Optional password for the public share',
   `name` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Original name on the remote server',
@@ -628,4 +628,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-02-09 22:42:44
+-- Dump completed on 2015-03-18 18:01:09

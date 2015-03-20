@@ -1,2 +1,3 @@
-config_eth0="noop dhcp"
+config_eth0="noop
+dhcp"
 

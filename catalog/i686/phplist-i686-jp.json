@@ -1,0 +1,8 @@
+{
+    "description": "phpListは、電子メールのメーリングリストを管理するオープンソースソフトウェアです。",
+    "title": "phpList 3.0.12",
+    "minimum_hd": 2,
+    "tarball": "http://dist.walbrix.net/va/phplist-3.0.12-i686-jp.tar.xz",
+    "minimum_ram": 128,
+    "id": "phplist"
+}

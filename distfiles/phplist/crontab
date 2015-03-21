@@ -1,0 +1,3 @@
+#/var/spool/cron/crontabs/apache
+*/15  *  *  *  * /usr/sbin/phplist -pprocessqueue >/dev/null 2>/dev/null
+

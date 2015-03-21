@@ -1,0 +1,28 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/mysql.lst
+#require components/php54.lst
+#require components/postfix.lst
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1phplist\2/
+#copy domU/fstab-with-zramswap /etc/fstab
+#chrootexec wget -O - http://jaist.dl.sourceforge.net/project/phplist/phplist/3.0.12/phplist-3.0.12.tgz | tar zxvf - -C /tmp
+#chrootexec cp -av /tmp/phplist-*/public_html/lists/. /var/www/localhost/htdocs/
+#chrootexec mv /tmp/phplist-*/bin/phplist /usr/sbin/
+#sed /usr/sbin/phplist s/\/home\/website\/public_html\/lists/\/var\/www\/localhost\/htdocs/g
+#copy phplist/config.php /var/www/localhost/htdocs/config/config.php
+#chrootexec chown -R apache.apache /var/www/localhost
+#copy phplist/crontab /var/spool/cron/crontabs/apache
+#copy phplist/setup_initial_database.sh /tmp/setup_initial_database.sh
+##copy phplist/initial-database.sql /tmp/initial-database.sql
+#chrootexec sh /tmp/setup_initial_database.sh
+#chrootexec rm -rf /tmp/*
+#sed /etc/php/apache2-php5.4/php.ini s/^upload_max_filesize.\+$/upload_max_filesize = 512M/
+#sed /etc/php/apache2-php5.4/php.ini s/^post_max_size.\+$/post_max_size = 768M/
+#sed /etc/php/apache2-php5.4/php.ini s/^memory_limit.\+$/memory_limit=512M/
+#sed /etc/php/apache2-php5.4/php.ini s/^;mbstring.func_overload.\+$/mbstring.func_overload=0/
+#sed /etc/php/apache2-php5.4/php.ini s/^;always_populate_raw_post_data.\+$/always_populate_raw_post_data=-1/
+#sed /etc/php/apache2-php5.4/php.ini s/^;default_charset.\+$/default_charset="UTF-8"/
+#copy phplist/wb-va.xml /etc/wb-va.xml
+

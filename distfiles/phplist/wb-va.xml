@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtual-appliance uuid="204bfc06-b441-436a-bfb2-b929a7d42de8">
+  <version>3.0.12</version>
+  <instruction xml:lang="ja">最初に /admin/ にアクセスして初期セットアップを行ってください</instruction>
+</virtual-appliance>

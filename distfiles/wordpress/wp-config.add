@@ -1,2 +1,19 @@
-define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME']);
-define('WP_HOME', 'http://' . $_SERVER['SERVER_NAME']);   
+
+function __generate_url__()
+{
+    $scheme = "http";
+    $default_port = 80;
+    if (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"]) {
+        $scheme = "https";
+        $default_port = 443;
+    }
+
+    $host = $_SERVER["SERVER_NAME"];
+    $port = $_SERVER["SERVER_PORT"];
+    if ($port != $default_port) $host .= sprintf(":%d", $port);
+
+    return sprintf("%s://%s", $scheme, $host);
+}
+
+define('WP_SITEURL', __generate_url__());
+define('WP_HOME', __generate_url__());   

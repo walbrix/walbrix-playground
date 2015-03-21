@@ -1,0 +1,27 @@
+--- config.inc.php-dist	2013-04-15 07:59:58.000000000 +0900
++++ config.inc.php	2015-03-21 17:37:11.756441400 +0900
+@@ -1,4 +1,15 @@
+ <?php
++function isAccessFromPrivateNetwork() {
++    $remote_addr = $_SERVER['REMOTE_ADDR'];
++    if (strpos($remote_addr, "fe80::") === 0) return true;
++    $arr = explode(".", $remote_addr);
++    if (count($arr) !== 4) return false;
++    $first_octet = intval($arr[0]);
++    if ($first_octet === 10) return true;
++    $second_octet = intval($arr[1]);
++    if ($first_octet === 192 && $second_octet === 168) return true;
++    return ($first_octet === 172 && $second_octet >= 16 && $second_octet <= 31);
++}
+ 
+ 	/**
+ 	 * Central phpPgAdmin configuration.  As a user you may modify the
+@@ -90,7 +101,7 @@
+ 	// will be denied. Only set this false once you have read the FAQ and
+ 	// understand how to change PostgreSQL's pg_hba.conf to enable
+ 	// passworded local connections.
+-	$conf['extra_login_security'] = true;
++	$conf['extra_login_security'] = !isAccessFromPrivateNetwork();
+ 
+ 	// Only show owned databases?
+ 	// Note: This will simply hide other databases in the list - this does

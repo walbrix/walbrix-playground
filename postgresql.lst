@@ -1,0 +1,16 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/php54.lst
+#require components/postgresql.lst
+#require components/postfix.lst
+#copy domU/fstab-with-zramswap /etc/fstab
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1postgresql\2/
+#chrootexec wget -O - http://heanet.dl.sourceforge.net/project/phppgadmin/phpPgAdmin%20%5Bstable%5D/phpPgAdmin-5.1/phpPgAdmin-5.1.tar.bz2 | tar jxvf - -C /tmp
+#chrootexec rm -rf /var/www/localhost/htdocs
+#chrootexec mv /tmp/phpPgAdmin-* /var/www/localhost/htdocs
+#patchsinglefile /etc/postgresql-9.4/pg_hba.conf postgresql/pg_hba.conf.patch
+#patchsinglefile /var/www/localhost/htdocs/conf/config.inc.php postgresql/config.inc.php.patch
+#chrootexec chown -R apache.apache /var/www/localhost
+#copy postgresql/wb-va.xml /etc/wb-va.xml
+

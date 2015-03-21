@@ -1,0 +1,8 @@
+{
+    "description": "PostgreSQLデータベースとWeb管理ツール phpPgAdminをセットにした仮想アプライアンスです",
+    "title": "PostgreSQL 9.4.1",
+    "minimum_hd": 2,
+    "tarball": "http://dist.walbrix.net/va/postgresql-9.4.1-i686-jp.tar.xz",
+    "minimum_ram": 384,
+    "id": "postgresql"
+}

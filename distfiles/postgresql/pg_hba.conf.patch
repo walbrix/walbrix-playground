@@ -1,0 +1,11 @@
+--- pg_hba.conf.orig	2015-03-21 17:42:13.016441400 +0900
++++ pg_hba.conf	2015-03-21 17:44:10.356441400 +0900
+@@ -91,3 +91,8 @@
+ #local   replication     postgres                                trust
+ #host    replication     postgres        127.0.0.1/32            trust
+ #host    replication     postgres        ::1/128                 trust
++
++host	all	all	10.0.0.0/8	password
++host	all	all	172.16.0.0/12	password
++host	all	all	192.168.0.0/16	password
++

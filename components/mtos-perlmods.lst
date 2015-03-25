@@ -2,188 +2,24 @@
 #require PlRPC.lst
 #require Crypt-SSLeay.lst
 
-# dev-perl/Net-Daemon
-/usr/lib/perl5/vendor_perl/5.12.4/Net/Daemon.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Net/Daemon/Log.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Net/Daemon/Test.pm
+#portage dev-perl/Net-Daemon-0.480.0-r1
 
-# perl-core/Storable
-#portage perl-core/Storable-2.390.0-r1
+# perl-core/Storable is included in perl?
+# perl-core/File-Spec is included in perl
+# perl-core/Sys-Syslog is a part of perl
 
-# perl-core/File-Spec
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Cwd.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/File/Spec.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/File/Spec/Cygwin.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/File/Spec/Epoc.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/File/Spec/Functions.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/File/Spec/Mac.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/File/Spec/OS2.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/File/Spec/Unix.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/File/Spec/VMS.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/File/Spec/Win32.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Cwd/Cwd.so
-
-# perl-core/Sys-Syslog
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Sys/Syslog.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Sys/Syslog/Syslog.so
-
-# dev-perl/DBI
-/usr/bin/dbilogstrip
-/usr/bin/dbiprof
-/usr/bin/dbiproxy
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Bundle/DBI.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/DBM.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/ExampleP.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/File.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/File/Developers.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/File/HowTo.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/File/Roadmap.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/Gofer.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/Gofer/Policy/Base.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/Gofer/Policy/classic.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/Gofer/Policy/pedantic.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/Gofer/Policy/rush.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/Gofer/Transport/Base.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/Gofer/Transport/corostream.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/Gofer/Transport/null.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/Gofer/Transport/pipeone.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/Gofer/Transport/stream.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/NullP.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/Proxy.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBD/Sponge.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Changes.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Const/GetInfo/ANSI.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Const/GetInfo/ODBC.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Const/GetInfoReturn.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Const/GetInfoType.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/DBD.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/DBD/Metadata.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/DBD/SqlEngine.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/DBD/SqlEngine/Developers.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/DBD/SqlEngine/HowTo.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/FAQ.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Gofer/Execute.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Gofer/Request.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Gofer/Response.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Gofer/Serializer/Base.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Gofer/Serializer/DataDumper.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Gofer/Serializer/Storable.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Gofer/Transport/Base.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Gofer/Transport/pipeone.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Gofer/Transport/stream.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Profile.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/ProfileData.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/ProfileDumper.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/ProfileDumper/Apache.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/ProfileSubs.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/ProxyServer.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/PurePerl.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/SQL/Nano.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Util/CacheMemory.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/Util/_accessor.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/DBI/W32ODBC.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Win32/DBIODBC.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/DBI/DBI.so
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/DBI/DBIXS.h
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/DBI/Driver.xst
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/DBI/Driver_xst.h
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/DBI/dbd_xsh.h
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/DBI/dbi_sql.h
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/DBI/dbipport.h
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/DBI/dbivport.h
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/DBI/dbixs_rev.h
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/dbixs_rev.pl
-
+#portage dev-perl/DBI-1.628.0
 #portage dev-perl/DBD-mysql-4.20.0-r1
-
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/MediaTypes.pm
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/media.types
-
-/usr/lib/perl5/vendor_perl/5.12.4/XML/NamespaceSupport.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/Encode/Locale.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/Japanese_Encodings.msg
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/README
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/big5.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/euc-kr.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/ibm866.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/iso-8859-2.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/iso-8859-3.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/iso-8859-4.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/iso-8859-5.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/iso-8859-7.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/iso-8859-8.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/iso-8859-9.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/koi8-r.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/windows-1250.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/windows-1251.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/windows-1252.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/windows-1255.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/x-euc-jp-jisx0221.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/x-euc-jp-unicode.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/x-sjis-cp932.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/x-sjis-jdk117.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/x-sjis-jisx0221.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Encodings/x-sjis-unicode.enc
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Expat.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/LWPExternEnt.pl
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Style/Debug.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Style/Objects.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Style/Stream.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Style/Subs.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/Parser/Style/Tree.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/XML/Parser/Expat/Expat.so
-
+#portage dev-perl/LWP-MediaTypes-6.20.0-r1
+#portage dev-perl/XML-NamespaceSupport-1.110.0-r1
+#portage dev-perl/Encode-Locale-1.30.0-r1
+#portage dev-perl/XML-Parser-2.410.0-r2
 #portage dev-perl/Heap-0.800.0-r1
 #portage dev-perl/IO-String-1.80.0-r1
+#portage dev-perl/TimeDate-2.300.0
 
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Format.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Afar.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Amharic.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Austrian.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Brazilian.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Chinese.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Chinese_GB.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Czech.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Danish.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Dutch.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/English.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Finnish.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/French.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Gedeo.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/German.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Greek.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Hungarian.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Icelandic.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Italian.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Norwegian.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Oromo.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Romanian.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Russian.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Russian_cp1251.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Russian_koi8r.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Sidama.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Somali.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Spanish.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Swedish.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Tigrinya.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/TigrinyaEritrean.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/TigrinyaEthiopian.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Language/Turkish.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Date/Parse.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Time/Zone.pm
-
-# dev-perl/Net-SMTP-TLS
-/usr/lib/perl5/vendor_perl/5.12.4/Net/SMTP/TLS.pm
-
-# dev-perl/Digest-HMAC (needed by Net-SMTP-TLS)
-/usr/lib/perl5/vendor_perl/5.12.4/Digest/HMAC.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Digest/HMAC_MD5.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Digest/HMAC_SHA1.pm
+#portage dev-perl/Net-SMTP-TLS-0.120.0-r2
+#portage dev-perl/Digest-HMAC-1.30.0-r1
 
 #portage dev-perl/Authen-SASL-2.160.0-r1
 
@@ -191,286 +27,22 @@
 #require net-smtp-ssl.lst
 
 #portage dev-perl/File-NFSLock-1.210.0-r1
-
-/usr/lib/perl5/vendor_perl/5.12.4/HTML/Tagset.pm
-
+#portage dev-perl/HTML-Tagset-3.200.0-r1
 #portage dev-perl/Class-Data-Inheritable-0.80.0-r1
-
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/Base.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/BuildSAXBase.pl
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/Exception.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/Class/Singleton.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/String/CRC32.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/String/CRC32.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/String/CRC32/CRC32.so
-
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/Pty.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/Tty.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/IO/Tty/Constant.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/IO/Tty/Tty.so
-
-/usr/lib/perl5/vendor_perl/5.12.4/Data/Buffer.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/File/Which.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/version/vxs/vxs.so
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/version.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/version.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/version/Internals.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/version/vxs.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/App/Prove.pm
-/usr/lib/perl5/vendor_perl/5.12.4/App/Prove/State.pm
-/usr/lib/perl5/vendor_perl/5.12.4/App/Prove/State/Result.pm
-/usr/lib/perl5/vendor_perl/5.12.4/App/Prove/State/Result/Test.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Base.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Formatter/Base.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Formatter/Color.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Formatter/Console.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Formatter/Console/ParallelSession.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Formatter/Console/Session.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Formatter/File.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Formatter/File/Session.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Formatter/Session.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Harness.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Harness/Beyond.pod
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Object.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Aggregator.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Grammar.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Iterator.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Iterator/Array.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Iterator/Process.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Iterator/Stream.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/IteratorFactory.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Multiplexer.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Result.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Result/Bailout.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Result/Comment.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Result/Plan.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Result/Pragma.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Result/Test.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Result/Unknown.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Result/Version.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Result/YAML.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/ResultFactory.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Scheduler.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Scheduler/Job.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Scheduler/Spinner.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Source.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/SourceHandler.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/SourceHandler/Executable.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/SourceHandler/File.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/SourceHandler/Handle.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/SourceHandler/Perl.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/SourceHandler/RawTAP.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/Utils.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/YAMLish/Reader.pm
-/usr/lib/perl5/vendor_perl/5.12.4/TAP/Parser/YAMLish/Writer.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Test/HACKING.pod
-/usr/lib/perl5/vendor_perl/5.12.4/Test/Harness.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder/Base.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder/Platform/Unix.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder/Platform/VMS.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder/Platform/Windows.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder/Platform/Windows/BCC.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder/Platform/Windows/GCC.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder/Platform/Windows/MSVC.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder/Platform/aix.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder/Platform/cygwin.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder/Platform/darwin.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder/Platform/dec_osf.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/CBuilder/Platform/os2.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/Perl/OSType.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/JSON/PP.pm
-/usr/lib/perl5/vendor_perl/5.12.4/JSON/PP/Boolean.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/CPAN/Meta/YAML.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MANIFEST.SKIP
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/Manifest.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/Install.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/Installed.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/Packlist.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/Command.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/Test/Builder.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Test/Builder/IO/Scalar.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Test/Builder/Module.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Test/Builder/Tester.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Test/Builder/Tester/Color.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Test/More.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Test/Simple.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Test/Tutorial.pod
-
-#portage perl-core/IO-1.25-r1
-
-/usr/lib/perl5/vendor_perl/5.12.4/Time/Local.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/Alias.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/Byte.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/CJKConstants.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/CN.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/CN/HZ.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/Changes.e2x
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/Config.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/ConfigLocal_PM.e2x
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/EBCDIC.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/Encoder.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/Encoding.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/GSM0338.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/Guess.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/JP.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/JP/H2Z.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/JP/JIS7.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/KR.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/KR/2022_KR.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/MIME/Header.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/MIME/Header/ISO_2022_JP.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/MIME/Name.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/Makefile_PL.e2x
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/PerlIO.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/README.e2x
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/Supported.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/Symbol.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/TW.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/Unicode.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/Unicode/UTF7.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/_PM.e2x
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/_T.e2x
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Encode/encode.h
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Encode/Byte/Byte.so
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Encode/CN/CN.so
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Encode/EBCDIC/EBCDIC.so
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Encode/Encode.so
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Encode/JP/JP.so
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Encode/KR/KR.so
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Encode/Symbol/Symbol.so
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Encode/TW/TW.so
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Encode/Unicode/Unicode.so
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/encoding.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/Attribute/Handlers.pm
-
+#portage dev-perl/XML-SAX-Base-1.80.0-r1
+#portage dev-perl/Class-Singleton-1.400.0-r1
+#portage dev-perl/string-crc32-1.400.0-r1
+#portage dev-perl/IO-Tty-1.120.0
+#portage dev-perl/data-buffer-0.40.0-r1
+#portage dev-perl/File-Which-1.90.0-r1
+##portage perl-core/IO-1.25-r1 is included in perl itself?
 #portage dev-perl/Mail-Sendmail-0.790.0-r1
 
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Digest/SHA1.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Digest/SHA1/SHA1.so
-
-/usr/lib/perl5/vendor_perl/5.12.4/URI.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/Escape.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/Heuristic.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/IRI.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/QueryParam.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/Split.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/URL.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/WithBase.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/_foreign.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/_generic.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/_idna.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/_ldap.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/_login.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/_punycode.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/_query.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/_segment.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/_server.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/_userpass.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/data.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/file.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/file/Base.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/file/FAT.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/file/Mac.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/file/OS2.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/file/QNX.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/file/Unix.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/file/Win32.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/ftp.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/gopher.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/http.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/https.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/ldap.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/ldapi.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/ldaps.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/mailto.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/mms.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/news.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/nntp.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/pop.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/rlogin.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/rsync.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/rtsp.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/rtspu.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/sip.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/sips.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/snews.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/ssh.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/telnet.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/tn3270.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/urn.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/urn/isbn.pm
-/usr/lib/perl5/vendor_perl/5.12.4/URI/urn/oid.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/HTML/Entities.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/HTML/Filter.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/HTML/HeadParser.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/HTML/LinkExtor.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/HTML/Parser.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/HTML/PullParser.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/HTML/TokeParser.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/HTML/Parser/Parser.so
-
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Boolean.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Builder.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Expr.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Function.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Literal.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/LocationPath.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Node.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Node/Attribute.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Node/Comment.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Node/Element.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Node/Namespace.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Node/PI.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Node/Text.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/NodeSet.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Number.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Parser.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/PerlSAX.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Root.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Step.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/Variable.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/XPath/XMLParser.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/DocumentLocator.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/Intro.pod
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/ParserFactory.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/DTDDecls.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/DebugHandler.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/DocType.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/EncodingDetect.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/Exception.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/NoUnicodeExt.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/Productions.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/Reader.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/Reader/NoUnicodeExt.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/Reader/Stream.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/Reader/String.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/Reader/URI.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/Reader/UnicodeExt.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/UnicodeExt.pm
-/usr/lib/perl5/vendor_perl/5.12.4/XML/SAX/PurePerl/XMLDecl.pm
+#portage dev-perl/Digest-SHA1-2.130.0-r1
+#portage dev-perl/URI-1.600.0-r1
+#portage dev-perl/HTML-Parser-3.710.0-r1
+#portage dev-perl/XML-SAX-0.990.0-r1
+#portage dev-perl/XML-SAX-0.990.0-r1
 
 #require ipc-run.lst
 
@@ -478,171 +50,25 @@
 
 #require perl-cache-memcached.lst
 
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Date.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/Net/HTTP.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Net/HTTP/Methods.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Net/HTTP/NB.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Net/HTTPS.pm
-
+#portage dev-perl/HTTP-Date-6.20.0-r1
+#portage dev-perl/Net-HTTP-6.60.0
 #portage dev-perl/LWP-Authen-Wsse-0.50.0-r1
-
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Attr.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Boolean.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/CDATASection.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Comment.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Common.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Common.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/DOM.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Devel.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Document.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/DocumentFragment.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Dtd.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Element.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/ErrNo.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/ErrNo.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Error.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Error.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/InputCallback.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Literal.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Namespace.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Node.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/NodeList.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Number.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/PI.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Parser.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Pattern.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Reader.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Reader.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/RegExp.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/RelaxNG.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/SAX.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/SAX.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/SAX/Builder.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/SAX/Builder.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/SAX/Generator.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/SAX/Parser.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Schema.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/Text.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/XPathContext.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/XPathContext.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/XML/LibXML/XPathExpression.pod
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/XML/LibXML/LibXML.so
-
-/usr/lib/perl5/vendor_perl/5.12.4/WWW/RobotRules.pm
-/usr/lib/perl5/vendor_perl/5.12.4/WWW/RobotRules/AnyDBM_File.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/ParseXS.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/xsubpp
-
-/usr/lib/perl5/vendor_perl/5.12.4/Module/Metadata.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/Parse/CPAN/Meta.pm
-
-#/usr/lib/perl5/vendor_perl/5.12.4/Version/Requirements.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/GD.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/GD/Group.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/GD/Image.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/GD/Polygon.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/GD/Polyline.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/GD/Simple.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/GD/GD.so
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/GD/autosplit.ix
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/qd.pl
-
+#portage dev-perl/XML-LibXML-2.1.400-r1
+#portage dev-perl/WWW-RobotRules-6.20.0
+#portage dev-perl/GD-2.460.0-r1
 #portage dev-perl/Cache-2.40.0-r1
-
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Config.pm
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Headers.pm
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Headers/Auth.pm
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Headers/ETag.pm
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Headers/Util.pm
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Message.pm
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Request.pm
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Request/Common.pm
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Response.pm
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Status.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/File/Listing.pm
-
+#portage dev-perl/HTTP-Message-6.30.0-r1
+#portage dev-perl/File-Listing-6.40.0-r1
 #portage dev-perl/HTTP-Cookies-6.0.1-r1
-
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Daemon.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/HTTP/Negotiate.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Crypt/SSLeay.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Crypt/SSLeay/CTX.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Crypt/SSLeay/Conn.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Crypt/SSLeay/Err.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Crypt/SSLeay/MainContext.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Crypt/SSLeay/X509.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Net/SSL.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Crypt/SSLeay/SSLeay.so
-
+#portage dev-perl/HTTP-Daemon-6.10.0-r1
+#portage dev-perl/HTTP-Negotiate-6.0.1-r1
+#portage dev-perl/Crypt-SSLeay-0.640.0
 #portage perl-core/Math-BigInt-1.999.300
-
-/usr/lib/perl5/vendor_perl/5.12.4/Math/BigRat.pm
-
-#portage perl-core/bignum-0.300.0-r1
-
-/usr/lib/perl5/vendor_perl/5.12.4/Crypt/DSA.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Crypt/DSA/Key.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Crypt/DSA/Key/PEM.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Crypt/DSA/Key/SSH2.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Crypt/DSA/KeyChain.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Crypt/DSA/Signature.pm
-/usr/lib/perl5/vendor_perl/5.12.4/Crypt/DSA/Util.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/Command/MM.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/Liblist.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/Liblist/Kid.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_AIX.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_Any.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_BeOS.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_Cygwin.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_DOS.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_Darwin.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_MacOS.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_NW5.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_OS2.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_QNX.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_UWIN.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_Unix.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_VMS.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_VOS.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_Win32.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MM_Win95.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MY.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MakeMaker.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MakeMaker/Config.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MakeMaker/FAQ.pod
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/MakeMaker/Tutorial.pod
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/Mkbootstrap.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/Mksymlists.pm
-/usr/lib/perl5/vendor_perl/5.12.4/ExtUtils/testlib.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/LWP/Protocol/https.pm
-
-/usr/lib/perl5/vendor_perl/5.12.4/CPAN/Meta.pm
-/usr/lib/perl5/vendor_perl/5.12.4/CPAN/Meta/Converter.pm
-/usr/lib/perl5/vendor_perl/5.12.4/CPAN/Meta/Feature.pm
-/usr/lib/perl5/vendor_perl/5.12.4/CPAN/Meta/History.pm
-/usr/lib/perl5/vendor_perl/5.12.4/CPAN/Meta/Prereqs.pm
-/usr/lib/perl5/vendor_perl/5.12.4/CPAN/Meta/Spec.pm
-/usr/lib/perl5/vendor_perl/5.12.4/CPAN/Meta/Validator.pm
-
+##portage perl-core/bignum-0.300.0-r1 is included
+#portage dev-perl/crypt-dsa-1.170.0
+#portage dev-perl/LWP-Protocol-https-6.30.0-r1
 #portage perl-core/Module-Build-0.420.500
-
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Attribute/Params/Validate.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Params/Validate.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Params/ValidatePP.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/Params/ValidateXS.pm
-/usr/lib/perl5/vendor_perl/5.12.4/$(ARCH)-linux/auto/Params/Validate/Validate.so
+#portage dev-perl/Params-Validate-1.70.0-r1
 
 #require xml-atom.lst
 

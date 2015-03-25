@@ -1,19 +1,18 @@
 #require components/domU.lst
 #require components/cron.lst
 #require components/pvkernel.lst
-#require components/apache.lst
 #require components/mysql.lst
-#require components/php53.lst
+#require components/php54.lst
 #require components/imagemagick.lst
 #require components/mtos-perlmods.lst
 #require components/samba.lst
 #require components/postfix.lst
-#require components/phpmyadmin.lst
+##require components/phpmyadmin.lst
 #copy mtos/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1mtos\2/
 #copy domU/fstab-with-zramswap /etc/fstab
-#extract mtos/MTOS-5.2.3.zip /var/www/localhost/cgi-bin
-#chrootexec mv /var/www/localhost/cgi-bin/MTOS-5.2.3 /var/www/localhost/cgi-bin/mt
+#chrootexec wget -O - http://www.movabletype.jp/downloads/stable/MTOS-5.2.12.tar.gz | tar zxvf - -C /var/www/localhost/cgi-bin
+#chrootexec mv /var/www/localhost/cgi-bin/MTOS-* /var/www/localhost/cgi-bin/mt
 #chrootexec mv /var/www/localhost/cgi-bin/mt/mt-static /var/www/localhost/htdocs/
 #copy mtos/index.html /var/www/localhost/htdocs/index.html
 #chrootexec chown -R apache.apache /var/www/localhost

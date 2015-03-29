@@ -16,7 +16,7 @@
 
 #copy tomcat/context.xml /etc/tomcat-7/context.xml
 #chrootexec chmod g+w /var/lib/tomcat-7/webapps
-#sed /etc/conf.d/tomcat-7 s/^#TOMCAT_EXTRA_JARS=""/TOMCAT_EXTRA_JARS="commons-dbcp,commons-pool,jdbc-mysql,jdbc-postgresql,sun-javamail"/
+#sed /etc/conf.d/tomcat-7 s/^#TOMCAT_EXTRA_JARS=""/TOMCAT_EXTRA_JARS="commons-dbcp,commons-pool-2,jdbc-mysql,jdbc-postgresql,sun-javamail"/
 
 ##sed /etc/init.d/tomcat-7 s/\(JAVA_HOME=\).\+$/\1\/etc\/java-config-2\/current-system-vm/
 #symlink /etc/runlevels/default/tomcat-7 /etc/init.d/tomcat-7

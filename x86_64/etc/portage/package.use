@@ -47,6 +47,7 @@ dev-python/lxml -python_targets_python3_3
 dev-python/pyinotify -python_targets_python3_3
 dev-python/pytz -python_targets_python3_3
 dev-python/flask -python_targets_python3_3
+dev-python/flask-sqlalchemy -python_targets_python3_3
 dev-python/jsmin -python_targets_python3_3
 dev-python/pyxattr -python_targets_python3_3
 dev-python/markdown pygments -python_targets_python3_3

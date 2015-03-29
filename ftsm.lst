@@ -2,7 +2,7 @@
 #require components/cron.lst
 #require components/pvkernel.lst
 #copy domU/fstab-with-zramswap /etc/fstab
-#require components/flask.lst
+#require components/flask-sqlalchemy.lst
 #require components/beautifulsoup.lst
 #require components/feedparser.lst
 #require components/httplib2.lst
@@ -11,7 +11,7 @@
 #require components/vim.lst
 #require components/s3cmd.lst
 #require components/tomcat.lst
-#require components/mysql.lst
+#require components/mysql-python.lst
 #require components/php54.lst
 #require components/postfix.lst
 #require components/setuptools.lst

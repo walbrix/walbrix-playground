@@ -1,0 +1,5 @@
+#require flask.lst
+#portage dev-python/sqlalchemy-0.9.8 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
+#portage dev-python/flask-sqlalchemy-2.0 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
+
+

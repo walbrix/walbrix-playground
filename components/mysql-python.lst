@@ -1,17 +1,4 @@
 #require python27.lst
 #require mysql.lst
-/usr/lib/python2.7/site-packages/MySQLdb/__init__.py
-/usr/lib/python2.7/site-packages/MySQLdb/connections.py
-/usr/lib/python2.7/site-packages/MySQLdb/constants/CLIENT.py
-/usr/lib/python2.7/site-packages/MySQLdb/constants/CR.py
-/usr/lib/python2.7/site-packages/MySQLdb/constants/ER.py
-/usr/lib/python2.7/site-packages/MySQLdb/constants/FIELD_TYPE.py
-/usr/lib/python2.7/site-packages/MySQLdb/constants/FLAG.py
-/usr/lib/python2.7/site-packages/MySQLdb/constants/REFRESH.py
-/usr/lib/python2.7/site-packages/MySQLdb/constants/__init__.py
-/usr/lib/python2.7/site-packages/MySQLdb/converters.py
-/usr/lib/python2.7/site-packages/MySQLdb/cursors.py
-/usr/lib/python2.7/site-packages/MySQLdb/release.py
-/usr/lib/python2.7/site-packages/MySQLdb/times.py
-/usr/lib/python2.7/site-packages/_mysql.so
-/usr/lib/python2.7/site-packages/_mysql_exceptions.py
+#portage dev-python/mysql-python-1.2.5
+

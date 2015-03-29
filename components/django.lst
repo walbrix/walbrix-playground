@@ -1,11 +1,9 @@
-#require python27.lst
-#require mysql.lst
+#require mysql-python.lst
 #require apache.lst
 #require wsgi.lst
 
 #require pillow.lst
 
 #portage app-admin/webapp-config-1.52-r1
-#portage dev-python/mysql-python-1.2.3-r1
 #portage dev-python/django-1.6.11
 #chrootexec mv /usr/bin/django-admin.py-python2.7 /usr/bin/django-admin.py

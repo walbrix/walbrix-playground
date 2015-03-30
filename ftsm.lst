@@ -18,6 +18,7 @@
 #portage dev-python/feedgenerator-1.7
 #portage dev-python/pyyaml-3.11
 #require components/markdown.lst
+#require components/mroonga.lst
 
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1ftsm\2/
 

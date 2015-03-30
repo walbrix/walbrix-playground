@@ -56,3 +56,5 @@ app-text/poppler cjk
 sys-libs/tdb python
 app-i18n/nkf python linguas_ja
 app-text/wv tools
+app-text/groonga mecab
+

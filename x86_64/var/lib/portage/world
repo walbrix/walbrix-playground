@@ -8,7 +8,7 @@ app-editors/vim
 app-emulation/docker
 app-i18n/nkf
 app-portage/gentoolkit
-app-text/groonga
+app-text/groonga-normalizer-mysql
 app-text/wv
 app-text/xlhtml
 dev-db/mongodb

@@ -49,4 +49,5 @@
 =www-apache/mod_proxy_fcgi-0_p816361
 
 =app-text/groonga-4.0.7-r1
+=app-text/groonga-normalizer-mysql-1.0.6
 

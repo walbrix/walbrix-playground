@@ -3,3 +3,4 @@
 #sed /etc/conf.d/ntp-client s/0\.gentoo\.pool\.ntp\.org 1\.gentoo.pool\.ntp.org \\//
 #sed /etc/conf.d/ntp-client s/2\.gentoo\.pool\.ntp\.org 3\.gentoo.pool\.ntp.org"$/ntp1.jst.mfeed.ad.jp ntp2.jst.mfeed.ad.jp ntp3.jst.mfeed.ad.jp"/
 
+#symlink /etc/runlevels/default/ntpd /etc/init.d/ntpd

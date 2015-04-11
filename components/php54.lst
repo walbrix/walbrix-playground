@@ -11,4 +11,4 @@
 #sed /etc/php/cli-php5.4/php.ini s/^;date\.timezone.*$/date.timezone=Asia\/Tokyo/
 #sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D PHP5"/
 
-#portage app-admin/eselect-php-0.7.1-r3
+#portage app-eselect/eselect-php-0.7.1-r3

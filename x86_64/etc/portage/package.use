@@ -1,12 +1,12 @@
 net-dns/avahi -introspection
 net-fs/samba -cups winbind ldap
 www-apache/mod_extract_forwarded mod_proxy
-app-admin/eselect-php apache2
+app-eselect/eselect-php apache2
 www-servers/apache apache2_modules_proxy_connect apache2_modules_proxy apache2_modules_proxy_http apache2_modules_proxy_ajp
 dev-lang/php apache2 cjk gd mysql mysqli xsl zip pdo
 app-editors/emacs -gpm -xpm -gtk3
 dev-python/jinja vim-syntax i18n
-sys-kernel/vanilla-sources symlink
+sys-kernel/aufs-sources symlink
 dev-vcs/git -perl
 net-analyzer/zabbix agent -sqlite
 dev-lang/python sqlite
@@ -58,3 +58,4 @@ app-i18n/nkf python linguas_ja
 app-text/wv tools
 app-text/groonga mecab
 
+app-emulation/docker aufs vim-syntax

@@ -1,4 +1,4 @@
-#require pvkernel-aufs.lst
+#require pvkernel.lst
 #chrootexec rpm -ivh http://ftp-srv2.kddilabs.jp/Linux/distributions/fedora/epel/beta/7/x86_64/openvpn-2.3.2-4.el7.x86_64.rpm http://ftp-srv2.kddilabs.jp/Linux/distributions/fedora/epel/beta/7/x86_64/pkcs11-helper-1.10-1.el7.x86_64.rpm
 
 

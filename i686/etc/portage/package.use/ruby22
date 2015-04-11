@@ -1,0 +1,15 @@
+dev-ruby/racc ruby_targets_ruby22 -ruby_targets_ruby19
+dev-ruby/power_assert ruby_targets_ruby22
+dev-ruby/rake ruby_targets_ruby22 -ruby_targets_ruby19
+dev-ruby/rdoc ruby_targets_ruby22 -ruby_targets_ruby19
+dev-ruby/rubygems ruby_targets_ruby22 -ruby_targets_ruby19
+dev-ruby/json ruby_targets_ruby22 -ruby_targets_ruby19
+dev-ruby/minitest ruby_targets_ruby22 -ruby_targets_ruby19
+virtual/rubygems ruby_targets_ruby22 -ruby_targets_ruby19
+dev-ruby/test-unit ruby_targets_ruby22 -ruby_targets_ruby19
+dev-ruby/bundler ruby_targets_ruby22
+www-apache/passenger ruby_targets_ruby22 -ruby_targets_ruby19
+dev-ruby/daemon_controller ruby_targets_ruby22 -ruby_targets_ruby19
+dev-ruby/rack ruby_targets_ruby22 -ruby_targets_ruby19
+virtual/ruby-ssl ruby_targets_ruby22 -ruby_targets_ruby19
+

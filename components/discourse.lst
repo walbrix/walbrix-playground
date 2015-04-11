@@ -1,5 +1,6 @@
 #require postgresql.lst
 #require postfix.lst
+#require ruby22.lst
 #require passenger.lst
 #require redis.lst
 #require python27.lst

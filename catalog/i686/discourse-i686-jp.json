@@ -1,9 +1,9 @@
 {
 	"id":"discourse",
-	"title":"フォーラム構築システムdiscourse 0.9.9.1",
+	"title":"フォーラム構築システムdiscourse 1.3.0.beta4",
 	"description":"discourseは、Twitter, Facebook, GoogleといったソーシャルIDでのログインもできる次世代型のフォーラム（掲示板）構築ソフトウェアです。",
 	"images":[{"url":"http://va.walbrix.net/img/discourse01.png"}],	
-	"tarball":"http://dist.walbrix.net/va/discourse-0.9.9.1-i686-jp.tar.xz",
+	"tarball":"http://dist.walbrix.net/va/discourse-1.3.0.beta4-i686-jp.tar.xz",
 	"minimum_ram":512,
 	"minimum_hd":2
 }

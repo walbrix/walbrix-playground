@@ -1,5 +1,5 @@
-#portage app-office/libreoffice-4.3.5.2 ^/usr/share/icons/
-#portage app-office/libreoffice-l10n-4.3.5.2
+#portage app-office/libreoffice-4.4.1.2 ^/usr/share/icons/
+#portage app-office/libreoffice-l10n-4.4.1.2
 #portage media-fonts/liberation-fonts-2.00.1-r1
 ##portage dev-libs/librevenge-0.0.2
 ##portage dev-libs/libixion-0.7.0

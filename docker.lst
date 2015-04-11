@@ -3,10 +3,9 @@
 #require components/iproute2.lst
 #require components/git.lst
 #require components/gnupg.lst
-#portage dev-lang/go-1.3
+#portage dev-lang/go-1.4.2
 #portage sys-fs/aufs-util-3.12_p20140114
-#require components/mercurial.lst
-#portage sys-block/thin-provisioning-tools-0.2.8-r1
-#portage sys-fs/lvm2-2.02.103
-#portage app-emulation/docker-0.7.6
+#portage sys-block/thin-provisioning-tools-0.3.2-r1
+#portage sys-fs/lvm2-2.02.109
+#portage app-emulation/docker-1.5.0
 

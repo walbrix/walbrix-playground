@@ -4,6 +4,7 @@
 #require components/php54.lst
 #require components/mysql.lst
 #require components/postfix.lst
+#require components/ruby20.lst
 #require components/passenger.lst
 #require components/mysql2.lst
 #require components/subversion.lst
@@ -16,16 +17,16 @@
 
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1redmine\2/
 #copy domU/fstab-with-zramswap /etc/fstab
-#chrootexec wget -O - http://www.redmine.org/releases/redmine-2.6.0.tar.gz | tar zxvf - -C /var/www/localhost
+#chrootexec wget -O - http://www.redmine.org/releases/redmine-3.0.1.tar.gz | tar zxvf - -C /var/www/localhost
 #chrootexec rm -rf /var/www/localhost/htdocs
-#chrootexec mv /var/www/localhost/redmine-2.6.0 /var/www/localhost/htdocs
+#chrootexec mv /var/www/localhost/redmine-* /var/www/localhost/htdocs
 #copy redmine/database.yml /var/www/localhost/htdocs/config/database.yml
 #chrootexec cd /var/www/localhost/htdocs && bundle install
 #chrootexec rm -rf /usr/local/lib/ruby/gems/*/cache /usr/local/lib/ruby/gems/*/gems/nokogiri-*/ext/nokogiri/tmp /usr/local/lib/ruby/gems/*/gems/nokogiri-*/ports/archives
 
 #copy redmine/default_vhost.include /etc/apache2/vhosts.d/default_vhost.include
 #copy redmine/configuration.yml /var/www/localhost/htdocs/config/configuration.yml
-#chrootexec mkdir /var/www/localhost/htdocs/public/plugin_assets
+##chrootexec mkdir /var/www/localhost/htdocs/public/plugin_assets
 #chrootexec chown -R apache.apache /var/www/localhost/htdocs
 
 #chrootexec svnadmin create /var/svn

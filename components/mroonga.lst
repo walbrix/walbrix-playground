@@ -1,10 +1,10 @@
 #needaufs
 #require groonga.lst
 #require mysql.lst
-#chrootexec wget -O - http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.22.tar.gz | tar zxvf - -C /root
-#chrootexec cd /root/mysql-5.6.22 && cmake . && cd libservices && make && mv libmysqlservices.a /usr/lib/
+#chrootexec wget -O - http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.24.tar.gz | tar zxvf - -C /root
+#chrootexec cd /root/mysql-* && cmake . && cd libservices && make && mv libmysqlservices.a /usr/lib/
 #chrootexec wget -O - http://packages.groonga.org/source/mroonga/mroonga-4.10.tar.gz | tar zxvf - -C /root
-#chrootexec cd /root/mroonga-* && ./configure --with-mysql-source=/root/mysql-5.6.22 && make && make install
+#chrootexec cd /root/mroonga-* && ./configure --with-mysql-source=/root/mysql-5.6.24 && make && make install
 #copy groonga/setup_initial_database.sh /setup_initial_database.sh
 #chrootexec /setup_initial_database.sh
 #chrootexec rm -rf /root/mroonga-* /root/mysql-* /setup_initial_database.sh

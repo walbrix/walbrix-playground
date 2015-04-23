@@ -17,8 +17,8 @@
 #copy fluentd/index.html /var/www/localhost/htdocs/index.html
 #copy fluentd/htaccess /var/www/localhost/htdocs/.htaccess
 
-#copy fluentd/mViewer.war /var/lib/tomcat-7/webapps/mViewer.war
-#chrootexec chown -R tomcat.tomcat /var/lib/tomcat-7
+#copy fluentd/mViewer.war /var/lib/tomcat-8/webapps/mViewer.war
+#chrootexec chown -R tomcat.tomcat /var/lib/tomcat-8
 
 #copy fluentd/wb-va.xml /etc/wb-va.xml
 

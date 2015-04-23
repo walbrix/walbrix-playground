@@ -6,11 +6,11 @@
 #require components/postfix.lst
 #copy domU/fstab-with-zramswap /etc/fstab
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1gitbucket\2/
-#sed /etc/conf.d/tomcat-7 s/^#JAVA_OPTS=.\+/JAVA_OPTS="-server -Xmx512M -Xms64M -Xss256k"/
-#chrootexec echo 'export GITBUCKET_HOME="/var/lib/gitbucket"' >> /etc/conf.d/tomcat-7
+#sed /etc/conf.d/tomcat-8 s/^#JAVA_OPTS=.\+/JAVA_OPTS="-server -Xmx512M -Xms64M -Xss256k"/
+#chrootexec echo 'export GITBUCKET_HOME="/var/lib/gitbucket"' >> /etc/conf.d/tomcat-8
 #chrootexec mkdir /var/lib/gitbucket
-#chrootexec rm -rf /var/lib/tomcat-7/webapps/ROOT
-#chrootexec wget --no-check-certificate -O /var/lib/tomcat-7/webapps/ROOT.war https://github.com/takezoe/gitbucket/releases/download/2.0/gitbucket.war
-#chrootexec chown -R tomcat.tomcat /var/lib/tomcat-7 /var/lib/gitbucket
+#chrootexec rm -rf /var/lib/tomcat-8/webapps/ROOT
+#chrootexec wget --no-check-certificate -O /var/lib/tomcat-8/webapps/ROOT.war https://github.com/takezoe/gitbucket/releases/download/2.0/gitbucket.war
+#chrootexec chown -R tomcat.tomcat /var/lib/tomcat-8 /var/lib/gitbucket
 #chrootexec echo 'UmV3cml0ZUVuZ2luZSBvbgpSZXdyaXRlUnVsZSAoLiopIGFqcDovL2xvY2FsaG9zdDo4MDA5LyQxIFtQXQo='| base64 -d > /var/www/localhost/htdocs/.htaccess
 #copy gitbucket/wb-va.xml /etc/wb-va.xml

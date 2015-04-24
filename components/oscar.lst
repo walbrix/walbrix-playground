@@ -8,7 +8,7 @@
 #sed /etc/sudoers s/^# \(\%wheel ALL=(ALL) NOPASSWD: ALL\)$/\1/
 #copy oscar/oscar.include /etc/apache2/vhosts.d/oscar.include
 #patchsinglefile /etc/apache2/vhosts.d/00_default_vhost.conf oscar/00_default_vhost.conf.patch
-#copy oscar/sysctl-groonga.conf /etc/sysctl.d/groonga.conf
+#copy groonga/sysctl-groonga.conf /etc/sysctl.d/groonga.conf
 #copy oscar/sysctl-oscar.conf /etc/sysctl.d/oscar.conf
 
 ## Samba

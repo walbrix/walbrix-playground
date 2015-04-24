@@ -1,5 +1,6 @@
 #portage app-text/groonga-4.0.7-r1
 #portage app-text/groonga-normalizer-mysql-1.0.6
+#copy groonga/sysctl-groonga.conf /etc/sysctl.d/groonga.conf
 
 # from mecab
 /etc/mecabrc

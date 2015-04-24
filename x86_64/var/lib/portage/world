@@ -7,6 +7,8 @@ app-editors/nano
 app-editors/vim
 app-emulation/docker
 app-i18n/nkf
+app-misc/screen
+app-misc/tmux
 app-portage/gentoolkit
 app-text/groonga-normalizer-mysql
 app-text/wv
@@ -32,6 +34,7 @@ dev-python/flask
 dev-python/flask-sqlalchemy
 dev-python/futures
 dev-python/httplib2
+dev-python/imaging
 dev-python/jsmin
 dev-python/lxml
 dev-python/markdown

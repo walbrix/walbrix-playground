@@ -17,8 +17,11 @@
 #require components/setuptools.lst
 #portage dev-python/feedgenerator-1.7
 #portage dev-python/pyyaml-3.11
+#portage dev-python/imaging-1.1.7-r5
 #require components/markdown.lst
 #require components/mroonga.lst
+#portage app-misc/screen-4.0.3-r6
+#portage app-misc/tmux-1.9a
 
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1ftsm\2/
 

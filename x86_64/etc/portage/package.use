@@ -14,6 +14,7 @@ dev-java/java-config -python_targets_python3_3
 dev-python/python-exec -python_targets_python3_3
 dev-python/configobj -python_targets_python3_3
 dev-python/APScheduler -python_targets_python3_3
+dev-python/imaging jpeg tiff truetype
 
 dev-ruby/rubygems -ruby_targets_ruby18 -ruby_targets_ruby19
 virtual/rubygems -ruby_targets_ruby18

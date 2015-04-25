@@ -1,9 +1,0 @@
-{
-	"id":"clipbucket",
-	"title":"ClipBucket 2.6",
-	"images":[{"url":"http://va.walbrix.net/img/clipbucket01.png"}],	
-	"tarball":"clipbucket-i686-jp.tar.xz",
-	"description":"ClipBucketは、YouTubeライクかつソーシャルネットワーク型の動画共有サイトを実現するオープンソース・ソフトウェアです。",
-	"minimum_ram":128,
-	"minimum_hd":5
-}

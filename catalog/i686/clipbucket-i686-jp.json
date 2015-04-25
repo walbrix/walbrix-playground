@@ -1,1 +1,9 @@
-{"description": "ClipBucketは、YouTubeライクかつソーシャルネットワーク型の動画共有サイトを実現するオープンソース・ソフトウェアです。", "title": "動画共有 ClipBucket 2.6", "minimum_hd": 5, "tarball": "http://va.walbrix.net/i686/clipbucket-2.6-i686-jp.tar.xz", "minimum_ram": 128, "images": [{"url": "http://va.walbrix.net/img/clipbucket01.png"}], "id": "clipbucket"}
+{
+    "description": "ClipBucketは、YouTubeライクかつソーシャルネットワーク型の動画共有サイトを実現するオープンソース・ソフトウェアです。",
+    "title": "動画共有 ClipBucket 2.7.1",
+    "minimum_hd": 5,
+    "tarball":"http://dist.walbrix.net/va/clipbucket-2.7.1-i686-jp.tar.xz",
+    "minimum_ram": 192,
+    "images": [{"url": "http://va.walbrix.net/img/clipbucket01.png"}],
+    "id": "clipbucket"
+}

@@ -1,4 +1,5 @@
 #require xvfb.lst
+#portage dev-qt/qtgui-4.8.6-r2
 /usr/bin/wkhtmltoimage
 /usr/bin/wkhtmltopdf
 

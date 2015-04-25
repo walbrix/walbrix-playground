@@ -3,3 +3,5 @@
 <dev-lang/ruby-2.0
 =virtual/perl-bignum-0.370.0
 >net-analyzer/fping-2.4
+>=dev-java/commons-pool-2
+

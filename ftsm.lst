@@ -23,6 +23,7 @@
 #portage app-misc/screen-4.0.3-r6
 #portage app-misc/tmux-1.9a
 #require components/wkhtmltopdf.lst
+#require components/py-gfm.lst
 
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1ftsm\2/
 

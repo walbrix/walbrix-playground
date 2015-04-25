@@ -50,6 +50,7 @@ dev-python/pyyaml
 dev-python/rsa
 dev-python/setuptools
 dev-python/six
+dev-python/unittest2
 dev-python/xlrd
 dev-ruby/bundler
 dev-util/strace

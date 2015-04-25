@@ -58,6 +58,7 @@ java-virtuals/javamail
 mail-mta/postfix
 media-fonts/vlgothic
 media-gfx/imagemagick
+media-gfx/wkhtmltopdf
 media-libs/fontconfig
 net-analyzer/traceroute
 net-analyzer/zabbix
@@ -86,3 +87,4 @@ www-client/elinks
 www-client/lynx
 www-servers/apache
 www-servers/tomcat
+x11-base/xorg-server

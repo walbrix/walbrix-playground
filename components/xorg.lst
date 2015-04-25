@@ -1,0 +1,9 @@
+#portage x11-apps/xkbcomp-1.3.0
+#portage x11-misc/xkeyboard-config-2.14
+#portage media-libs/fontconfig-2.11.1-r2
+/usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf
+#portage x11-base/xorg-server-1.16.4
+#portage x11-drivers/xf86-video-fbdev-0.4.4
+#portage x11-drivers/xf86-input-mouse-1.9.1
+#portage x11-drivers/xf86-input-evdev-2.9.1
+#portage x11-drivers/xf86-video-dummy-0.3.7

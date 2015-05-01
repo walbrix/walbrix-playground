@@ -24,6 +24,7 @@ dev-java/icedtea-bin
 dev-java/icedtea-bin:6
 dev-java/jdbc-mysql
 dev-java/jdbc-postgresql
+dev-java/oracle-jre-bin
 dev-java/sun-javamail
 dev-lang/php
 dev-lang/python

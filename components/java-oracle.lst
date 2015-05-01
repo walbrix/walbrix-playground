@@ -1,0 +1,4 @@
+#require java.lst
+#portage dev-java/oracle-jre-bin-1.8.0.45
+#chrootexec java-config -S oracle-jre-bin-1.8
+

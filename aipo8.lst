@@ -15,4 +15,4 @@
 #sed /etc/conf.d/tomcat-8 s/^#JAVA_OPTS=.\+/JAVA_OPTS="-server -Xmx512M -Xms64M -Xss256k -Dsun.nio.cs.map=x-windows-iso2022jp\/ISO-2022-JP"/
 #copy aipo/htaccess /var/www/localhost/htdocs/.htaccess
 #copy aipo/wb-va.xml /etc/wb-va.xml
-
+#sed /etc/wb-va.xml s/7.0.2.0/8.0.0/

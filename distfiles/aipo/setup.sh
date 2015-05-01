@@ -13,10 +13,10 @@ mkdir -p $TOMCAT_HOME/webapps/container && unzip -o $DIST_DIR/container.war -d $
 
 mkdir -p $AIPO_HOME/backup/xreg
 cp -rf $TOMCAT_HOME/webapps/ROOT/WEB-INF/conf/*.xreg /usr/local/aipo/backup/xreg
-mkdir -p $TOMCAT_HOME/datasource
-cp -rf $TOMCAT_HOME/webapps/ROOT/WEB-INF/datasource/dbcp-org001.properties $TOMCAT_HOME/datasource/
+mkdir -p /usr/share/tomcat-8/datasource
+cp -rf $TOMCAT_HOME/webapps/ROOT/WEB-INF/datasource/dbcp-org001.properties /usr/share/tomcat-8/datasource/
 
-mkdir -p $TOMCAT_HOME/data
+mkdir -p /usr/share/tomcat-8/data && chown tomcat.tomcat /usr/share/tomcat-8/data
 mkdir -p $AIPO_HOME/bin
 cp -rf $DIST_DIR/bin/* $AIPO_HOME/bin/ && chmod +x $AIPO_HOME/bin/*.sh
 cp -rf $DIST_DIR/license $AIPO_HOME/

@@ -11,6 +11,7 @@
 #require components/vim.lst
 #require components/s3cmd.lst
 #require components/tomcat.lst
+#require components/java-oracle.lst
 #require components/mysql-python.lst
 #require components/php54.lst
 #require components/postfix.lst

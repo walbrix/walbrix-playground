@@ -1,0 +1,18 @@
+#require components/domU.lst
+#require components/cron.lst
+#require components/pvkernel.lst
+#require components/apache.lst
+#require components/postgresql.lst
+#require components/tomcat.lst
+#require components/java-oracle.lst
+#require components/postfix.lst
+#copy domU/fstab-with-zramswap /etc/fstab
+#sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1aipo\2/
+#copy aipo/setup.sh /tmp/setup.sh
+
+#chrootexec /tmp/setup.sh && rm /tmp/setup.sh
+
+#sed /etc/conf.d/tomcat-8 s/^#JAVA_OPTS=.\+/JAVA_OPTS="-server -Xmx512M -Xms64M -Xss256k -Dsun.nio.cs.map=x-windows-iso2022jp\/ISO-2022-JP"/
+#copy aipo/htaccess /var/www/localhost/htdocs/.htaccess
+#copy aipo/wb-va.xml /etc/wb-va.xml
+

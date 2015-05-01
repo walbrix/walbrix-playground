@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule (.*) ajp://localhost:8009/$1 [P]

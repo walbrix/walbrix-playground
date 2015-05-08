@@ -1,6 +1,6 @@
 #noaufs
 #require components/dev.lst
-#extract centos/centos-7.0-$(ARCH).tar.xz /
+#extract centos/centos-7.1-$(ARCH).tar.xz /
 #chrootexec echo 'exclude=kernel,kernel-firmware' >> /etc/yum.conf
 #chrootexec echo "$(ARCH)-centos-linux" > /etc/rpm/platform
 #sed /etc/sysconfig/init s/^ACTIVE_CONSOLES=.*$/ACTIVE_CONSOLES=\/dev\/hvc0/
@@ -14,7 +14,6 @@
 #chrootexec echo "SELINUX=disabled" > /etc/selinux/config
 #copy centos/fstab7 /etc/fstab
 #chrootexec mkdir /root/.ssh && chmod 700 /root/.ssh && touch /root/.ssh/authorized_keys
-#copy centos/wb-va.xml /etc/wb-va.xml
 ##chrootexec chkconfig iptables off
 #chrootexec yum clean -y all
 #chrootexec yum update -y
@@ -41,7 +40,7 @@
 #patchsinglefile /etc/my.cnf centos/my.cnf.patch
 #copy centos/smb.conf /etc/samba/smb.conf
 
-#require components/centos7-$(ARCH).lst
+#chrootexec rpm -ivh http://ftp-srv2.kddilabs.jp/Linux/distributions/fedora/epel/7/x86_64/o/openvpn-2.3.6-1.el7.x86_64.rpm http://ftp-srv2.kddilabs.jp/Linux/distributions/fedora/epel/7/x86_64/p/pkcs11-helper-1.11-3.el7.x86_64.rpm
 #require components/centos-$(REGION).lst
 
 ##patchsinglefile /etc/httpd/conf.d/mod_extract_forwarded.conf centos/mod_extract_forwarded.conf.patch
@@ -49,4 +48,7 @@
 ##chrootexec chkconfig openvpn on
 
 #symlink /etc/systemd/system/default.target /usr/lib/systemd/system/multi-user.target
+
+#copy centos/wb-va.xml /etc/wb-va.xml
+#sed /etc/wb-va.xml s/6.6/7.1.1503/
 

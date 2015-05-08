@@ -1,8 +1,8 @@
 {
     "description": "レンタルサーバなどでおなじみの CentOSを、定番の Webサイト構築環境 LAMP(Linux+Apache+MySQL+PHP) がすぐに使えるように設定済みで提供しています。",
-    "title": "CentOS 7.0 (64bit)",
+    "title": "CentOS 7.1 (64bit)",
     "minimum_hd": 2,
-    "tarball": "http://dist.walbrix.net/va/centos-7.0.1406-x86_64-jp.tar.xz",
+    "tarball": "http://dist.walbrix.net/va/centos-7.1.1503-x86_64-jp.tar.xz",
     "minimum_ram": 256, 
     "images": [{"url": "http://va.walbrix.net/img/centos01.png"}],
     "id": "centos"

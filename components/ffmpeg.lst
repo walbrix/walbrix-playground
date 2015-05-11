@@ -1,23 +1,4 @@
-# media-video/ffmpeg
-/usr/bin/aviocat
-/usr/bin/cws2fws
-/usr/bin/ffeval
-/usr/bin/ffmpeg
-/usr/bin/ffprobe
-/usr/bin/graph2dot
-/usr/bin/ismindex
-/usr/bin/pktdumper
-/usr/bin/qt-faststart
-/usr/bin/trasher
-/usr/share/ffmpeg/ffprobe.xsd
-/usr/share/ffmpeg/libvpx-1080p.ffpreset
-/usr/share/ffmpeg/libvpx-1080p50_60.ffpreset
-/usr/share/ffmpeg/libvpx-360p.ffpreset
-/usr/share/ffmpeg/libvpx-720p.ffpreset
-/usr/share/ffmpeg/libvpx-720p50_60.ffpreset
-/usr/share/ffmpeg/libx264-ipod320.ffpreset
-/usr/share/ffmpeg/libx264-ipod640.ffpreset
-
+#portage media-video/ffmpeg-2.2.14
 #portage media-video/gpac-0.5.0-r1
 
 # media-sound/lame

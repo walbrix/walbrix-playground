@@ -25,6 +25,7 @@
 #portage app-misc/tmux-1.9a
 #require components/wkhtmltopdf.lst
 #require components/py-gfm.lst
+#portage sys-apps/dstat-0.7.2-r1
 
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1ftsm\2/
 

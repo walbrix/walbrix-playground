@@ -71,6 +71,7 @@ net-analyzer/zabbix
 net-fs/samba
 net-misc/ntp
 net-misc/openvpn
+sys-apps/dstat
 sys-auth/nss-mdns
 sys-auth/nss-myhostname
 sys-fs/fuse

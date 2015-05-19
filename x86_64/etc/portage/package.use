@@ -53,6 +53,9 @@ dev-python/flask-sqlalchemy -python_targets_python3_3
 dev-python/jsmin -python_targets_python3_3
 dev-python/pyxattr -python_targets_python3_3
 dev-python/markdown pygments -python_targets_python3_3
+dev-python/chardet -python_targets_python3_3
+dev-python/requests -python_targets_python3_3
+
 www-client/lynx cjk
 app-text/poppler cjk
 sys-libs/tdb python

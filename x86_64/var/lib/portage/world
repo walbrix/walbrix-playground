@@ -48,6 +48,7 @@ dev-python/python-ldap
 dev-python/pytz
 dev-python/pyxattr
 dev-python/pyyaml
+dev-python/requests
 dev-python/rsa
 dev-python/setuptools
 dev-python/six

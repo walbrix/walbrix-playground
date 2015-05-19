@@ -1,1 +1,2 @@
-media-video/ffmpeg faac
+media-video/ffmpeg mp3 xvid x264 x265 cpudetection faac aac mmx mmxext theora threads truetype vorbis webp cpu_flags_x86_3dnow cpu_flags_x86_3dnowext cpu_flags_x86_avx cpu_flags_x86_mmx cpu_flags_x86_mmxext cpu_flags_x86_ssse3
+

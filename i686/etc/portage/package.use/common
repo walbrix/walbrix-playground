@@ -26,7 +26,6 @@ media-libs/sdl-image png jpeg
 app-editors/emacs -gpm -xpm
 net-analyzer/zabbix ipv6 curl frontend jabber java mysql openipmi server snmp ssh agent
 sys-libs/openipmi snmp
-media-video/ffmpeg mp3 xvid x264 3dnow 3dnowext cpudetection aac mmx mmxext theora threads vorbis ssse3
 media-sound/lame mmx
 
 dev-lang/erlang smp kpoll

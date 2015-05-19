@@ -73,6 +73,7 @@ net-misc/dropbox-cli
 net-misc/ntp
 net-misc/openvpn
 net-misc/s3cmd
+sys-apps/dstat
 sys-auth/nss-mdns
 sys-auth/nss-myhostname
 sys-fs/btrfs-progs

@@ -16,7 +16,7 @@
 #require components/apscheduler.lst
 #portage dev-python/xlrd-0.9.3
 #portage dev-python/pyasn1-0.1.7
-#portage dev-python/lxml-3.3.5
+#portage dev-python/lxml-3.4.1
 #portage dev-python/pyinotify-0.9.4-r1
 #portage dev-python/pyxattr-0.5.3
 #portage dev-python/python-ldap-2.4.15
@@ -27,7 +27,7 @@
 
 #portage app-text/poppler-data-0.4.7
 #portage app-text/ps2pkm-1.5_p20120701 
-#portage sys-apps/ed-1.6 
+#portage sys-apps/ed-1.10
 #portage www-client/lynx-2.8.8_p2
 #portage www-client/elinks-0.12_pre6
 #portage app-i18n/nkf-2.1.3

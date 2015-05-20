@@ -1,5 +1,5 @@
 #portage media-video/ffmpeg-2.2.14
-#portage media-video/gpac-0.5.0-r1
+#portage media-video/gpac-0.5.1_pre5456
 
 # media-sound/lame
 /usr/bin/lame

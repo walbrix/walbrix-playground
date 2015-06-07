@@ -1,5 +1,5 @@
 #require apache.lst
-#portage dev-lang/php-5.4.40 ^/usr/lib(64)?/php[0-9]+\.[0-9]+/(man|include|lib)/
+#portage dev-lang/php-5.4.41 ^/usr/lib(64)?/php[0-9]+\.[0-9]+/(man|include|lib)/
 #symlink /usr/bin/php php5.4
 #chrootexec ln -sf /usr/lib/php5.4/apache2/* /usr/lib/apache2/modules/
 #dir /etc/php/apache2-php5.4/ext

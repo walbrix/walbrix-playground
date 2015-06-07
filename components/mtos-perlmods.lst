@@ -53,7 +53,7 @@
 #portage dev-perl/HTTP-Date-6.20.0-r1
 #portage dev-perl/Net-HTTP-6.60.0
 #portage dev-perl/LWP-Authen-Wsse-0.50.0-r1
-#portage dev-perl/XML-LibXML-2.1.400-r1
+#portage dev-perl/XML-LibXML-2.12.100
 #portage dev-perl/WWW-RobotRules-6.20.0
 #portage dev-perl/GD-2.460.0-r1
 #portage dev-perl/Cache-2.40.0-r1

@@ -2,8 +2,8 @@
 =virtual/jdk-1.7.0
 =dev-java/icedtea-bin-7.2.5.3
 =dev-java/hawtjni-runtime-1.8 
-=www-servers/tomcat-8.0.21
+=www-servers/tomcat-8.0.23
 =dev-java/eclipse-ecj-4.2.1
 =dev-java/ant-eclipse-ecj-4.2.1
-=dev-java/tomcat-servlet-api-8.0.21
+=dev-java/tomcat-servlet-api-8.0.23
 =dev-java/commons-pool-2.2

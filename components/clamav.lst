@@ -1,4 +1,4 @@
-#portage app-antivirus/clamav-0.98.1
+#portage app-antivirus/clamav-0.98.7
 #symlink /etc/runlevels/default/clamd /etc/init.d/clamd
 
 

@@ -34,7 +34,7 @@
 #portage net-analyzer/traceroute-2.0.20
 #portage sys-apps/sed-4.2.1-r1
 #portage app-arch/tar-1.27.1-r2 
-#portage app-shells/bash-4.2_p53
+#portage app-shells/bash-4.3_p33-r2
 /bin/sh
 /bin/busybox
 #require sysvinit.lst

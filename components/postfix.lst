@@ -1,5 +1,5 @@
 #require mailbase.lst
 #require sasl.lst
-#portage mail-mta/postfix-3.0.0
+#portage mail-mta/postfix-3.0.1-r1
 #symlink /etc/runlevels/default/postfix /etc/init.d/postfix
 #chrootexec /usr/bin/newaliases

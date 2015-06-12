@@ -3,7 +3,7 @@
 =dev-ruby/rake-10.4.2
 =dev-ruby/rdoc-4.1.2-r1
 =dev-ruby/rubygems-2.4.6
-=dev-ruby/json-1.8.2-r1
+=dev-ruby/json-1.8.3
 =dev-ruby/minitest-5.5.1
 =virtual/rubygems-10
 =dev-ruby/test-unit-3.0.9-r1

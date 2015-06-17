@@ -5,7 +5,7 @@
 =dev-ruby/rubygems-2.4.6
 =dev-ruby/json-1.8.3
 =dev-ruby/minitest-5.5.1
-=virtual/rubygems-10
+=virtual/rubygems-11
 =dev-ruby/test-unit-3.0.9-r1
 =app-eselect/eselect-ruby-20141227
 =dev-lang/ruby-2.2.1

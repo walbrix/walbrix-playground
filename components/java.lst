@@ -1,7 +1,7 @@
 #require python-exec.lst
 #portage dev-java/java-config-2.2.0 ^/usr/lib(64)?/(python3.*/|.*\.egg-info(\/|$)|.+\.py(c|o)$)
 #symlink /usr/bin/java-config java-config-2
-#portage dev-java/icedtea-bin-7.2.5.3 ^\/opt\/.+\/man\/
+#portage dev-java/icedtea-bin-7.2.5.5 ^\/opt\/.+\/man\/
 #portage app-eselect/eselect-java-0.1.0
 #chrootexec java-config -S icedtea-bin-7
 

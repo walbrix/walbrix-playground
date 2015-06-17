@@ -9,7 +9,7 @@
 #portage dev-ruby/minitest-5.5.1 ^\/usr\/lib(64)?\/ruby\/(.+\/)?2\.2\.0\/
 #portage dev-ruby/power_assert-0.2.3 ^\/usr\/lib(64)?\/ruby\/(.+\/)?2\.2\.0\/
 #portage dev-ruby/rake-10.4.2 ^\/usr\/lib(64)?\/ruby\/(.+\/)?2\.2\.0\/
-#portage dev-ruby/json-1.8.2-r1 ^\/usr\/lib(64)?\/ruby\/(.+\/)?2\.2\.0\/
+#portage dev-ruby/json-1.8.3 ^\/usr\/lib(64)?\/ruby\/(.+\/)?2\.2\.0\/
 #portage dev-ruby/test-unit-3.0.9-r1 ^\/usr\/lib(64)?\/ruby\/(.+\/)?2\.2\.0\/
 #portage dev-ruby/racc-1.4.12 ^\/usr\/lib(64)?\/ruby\/(.+\/)?2\.2\.0\/
 #portage dev-ruby/rdoc-4.1.2-r1 ^\/usr\/lib(64)?\/ruby\/(.+\/)?2\.2\.0\/

@@ -9,13 +9,12 @@
 #require components/libreoffice.lst
 #require components/pecl-imagick.lst
 #portage dev-php/xcache-3.2.0
-#portage media-video/ffmpeg-1.2.6-r1
+#require components/ffmpeg.lst
 #copy owncloud/smb.conf /etc/samba/smb.conf
 #sed /etc/conf.d/hostname s/^\(hostname="\).*\("\)$/\1owncloud\2/
 #copy domU/fstab-with-zramswap /etc/fstab
-#chrootexec wget -O - https://download.owncloud.org/community/owncloud-8.0.2.tar.bz2 | tar jxvf - -C /var/www/localhost
+#chrootexec wget -O - https://download.owncloud.org/community/owncloud-8.0.4.tar.bz2 | tar jxvf - -C /var/www/localhost
 #chrootexec rm -rf /var/www/localhost/htdocs && mv /var/www/localhost/owncloud /var/www/localhost/htdocs
-##patchsinglefile /var/www/localhost/htdocs/.htaccess owncloud/htaccess.patch
 #copy owncloud/config.php /var/www/localhost/htdocs/config/config.php
 #chrootexec mv /var/www/localhost/htdocs/core/fonts/OpenSans-Regular.ttf /var/www/localhost/htdocs/core/fonts/OpenSans-Regular.ttf.orig
 /usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf

@@ -1,6 +1,5 @@
 #require nodejs.lst
 #require ruby19.lst
-#require rack.lst
 #require builder.lst
 #require tilt.lst
 #require ffi.lst

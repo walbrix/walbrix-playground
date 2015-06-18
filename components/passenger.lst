@@ -2,7 +2,7 @@
 ## perl is for apxs2
 #require perl.lst
 #portage dev-ruby/daemon_controller-1.2.0-r1
-#portage dev-ruby/rack-1.5.2-r4
+#portage dev-ruby/rack-1.5.4
 #portage www-apache/passenger-4.0.59
 /etc/conf.d/apache2
 #sed /etc/conf.d/apache2 s/^\(APACHE2_OPTS=.*\)\"$/\1 -D PASSENGER"/

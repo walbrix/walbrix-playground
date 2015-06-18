@@ -1,4 +1,3 @@
-#require rack.lst
 #require builder.lst
 #require tilt.lst
 #require passenger.lst

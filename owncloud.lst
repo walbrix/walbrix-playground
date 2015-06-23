@@ -21,6 +21,7 @@
 #symlink /var/www/localhost/htdocs/core/fonts/OpenSans-Regular.ttf /usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf
 #chrootexec mkdir -p /var/www/localhost/htdocs/data/admin/cache && touch /var/www/localhost/htdocs/data/index.html /var/www/localhost/htdocs/data/.ocdata
 #copy owncloud/data-htaccess /var/www/localhost/htdocs/data/.htaccess
+#patchsinglefile /var/www/localhost/htdocs/apps/files_texteditor/ajax/loadfile.php owncloud/loadfile.php.patch
 #chrootexec cp -a /var/www/localhost/htdocs/core/skeleton /var/www/localhost/htdocs/data/admin/files
 #chrootexec mkdir /var/lib/owncloud
 #chrootexec chown -R apache.apache /var/www/localhost /var/lib/owncloud

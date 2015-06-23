@@ -38,7 +38,7 @@
 /bin/sh
 /bin/busybox
 #require sysvinit.lst
-#portage sys-fs/fuse-2.9.3
+#portage sys-fs/fuse-2.9.4
 /etc/host.conf
 /etc/ld.so.conf
 /etc/ld.so.cache
